@@ -1,0 +1,281 @@
+@import '../../../../styles/components/product_details.scss';
+
+$primary-color: var(--primary);
+$secondary-color: var(--secondary);
+$text-color: var(--text-color);
+
+.product-page {
+  padding: 2rem 0;
+  overflow-x: hidden;
+
+  section {
+    padding: 4rem 0;
+    
+    @media (max-width: 768px) {
+      padding: 3rem 0;
+    }
+  }
+}
+
+// Hero Section
+/*.hero-section {
+  background: linear-gradient(to right, rgba($primary-color, 0.05), rgba($primary-color, 0.1));
+  
+  .product-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $primary-color;
+    margin-bottom: 1rem;
+    
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .product-tagline {
+    font-size: 1.5rem;
+    color: $secondary-color;
+    margin-bottom: 2rem;
+  }
+
+  .product-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: $text-color;
+    margin-bottom: 2rem;
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .usps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .usp-tag {
+      background: rgba($primary-color, 0.1);
+      color: $primary-color;
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      i {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .product-image-container {
+    position: relative;
+    padding: 2rem;
+
+    .product-image-inner {
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+        bottom: -1rem;
+        left: -1rem;
+        background: rgba($primary-color, 0.05);
+        border-radius: 1rem;
+        z-index: -1;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+      }
+    }
+  }
+}*/
+
+// Benefits Section
+/*.benefits-section {
+  background-color: #fff;
+
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      .benefit-icon {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba($primary-color, 0.1);
+        border-radius: 50%;
+        color: $primary-color;
+        font-size: 1.2rem;
+      }
+
+      .benefit-content {
+        flex: 1;
+
+        h3 {
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+          color: $primary-color;
+        }
+
+        p {
+          margin: 0;
+          color: $text-color;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}*/
+
+// Pest Cards
+/*.pest-cards {
+  .pest-card {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .pest-icon {
+      width: 4rem;
+      height: 4rem;
+      margin: 0 auto 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba($primary-color, 0.1);
+      border-radius: 50%;
+      color: $primary-color;
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      color: $primary-color;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: $text-color;
+      margin: 0;
+      line-height: 1.6;
+    }
+  }
+}*/
+
+// Technical Specifications
+.specs-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+
+  .specs-header {
+    background: $primary-color;
+    color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    i {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.3rem;
+    }
+  }
+
+  .specs-content {
+    padding: 1.5rem;
+
+    .spec-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .spec-label {
+        color: $text-color;
+        font-weight: 500;
+      }
+
+      .spec-value {
+        color: $primary-color;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// Application Guidelines
+.application-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  .application-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+
+    .detail-item {
+      text-align: center;
+
+      i {
+        font-size: 2rem;
+        color: $primary-color;
+        margin-bottom: 1rem;
+      }
+
+      h4 {
+        color: $primary-color;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        color: $text-color;
+        margin: 0;
+      }
+    }
+  }
+}

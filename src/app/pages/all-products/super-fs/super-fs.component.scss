@@ -1,0 +1,387 @@
+@import '../../../../styles/components/product_details.scss';
+
+// Enhanced styling specific to Super FS component
+
+// Crop & Applications Section
+.crops-section {
+  padding: 5rem 0;
+  background-color: rgba(var(--primary-rgb), 0.03);
+  
+  .crop-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    }
+    
+    .crop-image {
+      height: 200px;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+        
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+    
+    .crop-content {
+      padding: 1.5rem;
+      
+      h3 {
+        color: var(--primary);
+        font-size: var(--text-xl);
+        margin-bottom: 0.75rem;
+        font-weight: var(--font-semibold);
+      }
+      
+      p {
+        color: var(--text);
+        margin-bottom: 1rem;
+        font-size: var(--text-base);
+        line-height: 1.6;
+      }
+      
+      .crop-details {
+        margin-top: 1rem;
+        
+        .crop-detail {
+          display: flex;
+          margin-bottom: 0.5rem;
+          
+          .detail-label {
+            font-weight: var(--font-medium);
+            color: var(--secondary);
+            min-width: 100px;
+          }
+          
+          .detail-value {
+            color: var(--text);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mode of Action Section
+.mode-of-action-section {
+  padding: 5rem 0;
+  
+  .action-illustration {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    
+    // Create square box with primary color border
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: white;
+      border: 2px solid var(--primary);
+      border-radius: 12px;
+      z-index: 0;
+      box-shadow: 
+        0 10px 30px rgba(var(--primary-rgb), 0.2),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.9);
+      transition: all 0.3s ease;
+    }
+    
+    // Accent corner detail
+    &::after {
+      content: '';
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      width: 60px;
+      height: 60px;
+      background: var(--accent);
+      border-radius: 0 12px 0 60px;
+      z-index: -1;
+      transition: all 0.3s ease;
+    }
+    
+    &:hover {
+      &::before {
+        box-shadow: 
+          0 15px 40px rgba(var(--primary-rgb), 0.3),
+          inset 0 0 0 1px rgba(255, 255, 255, 0.9);
+        transform: translateY(-5px);
+      }
+      
+      &::after {
+        transform: scale(1.1) translateY(-5px);
+      }
+      
+      .product-image {
+        transform: scale(1.8);
+      }
+    }
+    
+    // Inner container
+    .action-image-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 85%;
+      height: 85%;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      z-index: 1;
+    }
+    
+    // Zoomed image styling
+    .product-image {
+      max-width: 90%;
+      max-height: 90%;
+      transform: scale(1.7);
+      position: relative;
+      transition: transform 0.3s ease;
+      filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.1));
+      object-fit: contain;
+      z-index: 1;
+    }
+  }
+  
+  .action-steps {
+    .action-step {
+      display: flex;
+      margin-bottom: 2rem;
+      
+      .step-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: var(--primary);
+        color: white;
+        font-weight: var(--font-bold);
+        font-size: 1.25rem;
+        margin-right: 1rem;
+        flex-shrink: 0;
+      }
+      
+      .step-content {
+        h3 {
+          color: var(--primary);
+          font-size: var(--text-xl);
+          margin-bottom: 0.5rem;
+          font-weight: var(--font-semibold);
+        }
+        
+        p {
+          color: var(--text);
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}
+
+// Results & Performance Section
+.results-section {
+  padding: 5rem 0;
+  background-color: rgba(var(--primary-rgb), 0.03);
+  
+  .results-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    padding: 2rem;
+    height: 100%;
+    
+    .results-title {
+      color: var(--primary);
+      font-size: var(--text-xl);
+      margin-bottom: 1.5rem;
+      font-weight: var(--font-semibold);
+      text-align: center;
+    }
+    
+    .chart-container {
+      height: 300px;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      .chart-svg {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        max-width: 100%;
+        transition: transform 0.3s ease;
+        
+        &:hover {
+          transform: scale(1.02);
+        }
+      }
+    }
+    
+    .results-description {
+      color: var(--text);
+      text-align: center;
+      font-size: var(--text-sm);
+    }
+  }
+  
+  .results-highlight-card {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(var(--primary-rgb), 0.3);
+    padding: 2rem;
+    margin-top: 1rem;
+    
+    .highlight-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+    }
+    
+    h3 {
+      font-size: var(--text-2xl);
+      margin-bottom: 1rem;
+      font-weight: var(--font-semibold);
+    }
+    
+    .highlight-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      li {
+        margin-bottom: 0.75rem;
+        font-size: var(--text-lg);
+        
+        .highlight-value {
+          font-weight: var(--font-bold);
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+// Product Comparison Section
+.comparison-section {
+  padding: 5rem 0;
+  
+  .comparison-table-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    padding: 2rem;
+    margin-top: 2rem;
+    
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      
+      th, td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+      }
+      
+      th {
+        background-color: rgba(var(--primary-rgb), 0.05);
+        color: var(--primary);
+        font-weight: var(--font-semibold);
+      }
+      
+      tr:last-child {
+        td {
+          border-bottom: none;
+        }
+      }
+      
+      .super-fs-value {
+        color: var(--primary);
+        font-weight: var(--font-medium);
+      }
+    }
+  }
+}
+
+// Responsive Adjustments
+@media (max-width: 991.98px) {
+  .mode-of-action-section {
+    .action-illustration {
+      margin-bottom: 3rem;
+    }
+  }
+  
+  .results-section {
+    .results-card {
+      margin-bottom: 2rem;
+    }
+    
+    .results-highlight-card {
+      .highlight-icon {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .crops-section {
+    .crop-card {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  .comparison-section {
+    .comparison-table {
+      th, td {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+// Performance Optimizations
+:host {
+  display: block;
+  
+  // Use will-change for elements with animations to optimize rendering
+  [data-aos] {
+    will-change: transform, opacity;
+  }
+  
+  // Optimize images for faster loading
+  img {
+    max-width: 100%;
+  }
+  
+  // Use contain property for paint performance
+  .product-image-container {
+    contain: layout paint;
+  }
+}

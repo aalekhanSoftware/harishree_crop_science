@@ -1,0 +1,404 @@
+<main class="product-page product-page--detail product-page--abamectin" itemscope>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <p class="product-brand-line" data-aos="fade-right">DR. SUPREME</p>
+          <h1 class="product-title" data-aos="fade-right" data-aos-delay="50">Abamectin 1.9% EC</h1>
+          <p class="product-tagline" data-aos="fade-right" data-aos-delay="100">
+            Insecticide &nbsp;·&nbsp; Acaricide &nbsp;·&nbsp; EC translaminar coverage
+          </p>
+          <div class="product-description" data-aos="fade-right" data-aos-delay="200">
+            <p>
+              <strong>Dr. Supreme</strong> is our <strong>Abamectin 1.9% EC</strong> for growers who lose sleep over
+              <strong>mites, thrips and leaf miners</strong>. It is a liquid emulsifiable concentrate from
+              <strong>Harishree Crop Science</strong>, meant for foliar programmes where leaf quality and fruit finish
+              need to hold through the season—always sprayed on threshold and always according to the registered label.
+            </p>
+            <div class="usps" data-aos="fade-right" data-aos-delay="250">
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Mites &amp; thrips focus</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> 20 ml per pump (field guide)</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> IRAC Group 6</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Made in India</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="product-image-container" data-aos="zoom-in">
+            <div class="product-image-inner">
+              <img
+                src="assets/products/abamectin-1-9-ec.png"
+                alt="Dr. Supreme Abamectin 1.9% EC insecticide and acaricide bottle by Harishree Crop Science"
+                class="product-image"
+                width="400"
+                height="400"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pack Sizes Section -->
+  <section class="product-pack-section" aria-labelledby="abm-pack-heading">
+    <div class="container">
+      <h2 id="abm-pack-heading" class="section-title text-center" data-aos="fade-up">Pack sizes</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        Pick the volume that matches your plot—<strong>contact us</strong> for dealer stock and agronomy backup.
+      </p>
+      <div class="pack-grid" data-aos="fade-up" data-aos-delay="100">
+        <article *ngFor="let pack of packSizes" class="pack-card" [class.pack-card--featured]="pack.featured">
+          <h3 class="pack-card__volume">{{ pack.volume }}</h3>
+          <p class="pack-card__hint">Harishree quality &nbsp;·&nbsp; dealer network</p>
+          <a routerLink="/contact-us" class="pack-card__cta">Enquire</a>
+        </article>
+      </div>
+      <p class="dose-callout text-center" data-aos="fade-up">
+        <strong>Recommended dose:</strong> 20 ml per knapsack pump — confirm on label and with your agronomist.
+      </p>
+    </div>
+  </section>
+
+  <!-- Key Benefits Section -->
+  <section class="benefits-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Key benefits</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        What growers notice when <strong>Abamectin 1.9% EC</strong> is applied with care and clean water.
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let b of keyBenefits; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <div class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="b.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ b.title }}</h3>
+              <p>{{ b.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Target Pests Section -->
+  <section class="pests-section" id="target-pests">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Target pests</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        <strong>Dr. Supreme</strong> is aimed at sucking pests and miners that punish leaf and fruit quality.
+      </p>
+      <div class="pest-cards">
+        <div class="row">
+          <div *ngFor="let w of targetPests; let i = index" class="col-md-6">
+            <div class="pest-card" data-aos="flip-up" [attr.data-aos-delay]="80 * i">
+              <div class="pest-icon"><i class="fas fa-bug"></i></div>
+              <h3>{{ w.name }}</h3>
+              <p>{{ w.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crops & Applications Section -->
+  <section class="crops-section product-applications" id="applications">
+    <div class="product-applications__band">
+      <div class="container">
+        <div class="row align-items-end mb-2">
+          <div class="col-lg-8">
+            <h2 class="section-title product-applications__title" data-aos="fade-up">Crops &amp; applications</h2>
+            <p class="section-subtitle product-applications__lead" data-aos="fade-up" data-aos-delay="40">
+              Typical uses for <strong>Abamectin 1.9% EC</strong> where the label and local advice align.
+            </p>
+          </div>
+        </div>
+        <ul class="product-applications__grid list-unstyled mb-0" role="list">
+          <li *ngFor="let app of applications; let i = index" class="product-applications__item" data-aos="fade-up" [attr.data-aos-delay]="40 * i">
+            <article class="product-app-tile">
+              <div class="product-app-tile__head" aria-hidden="true"></div>
+              <div class="product-app-tile__body">
+                <div class="product-app-tile__icon-wrap">
+                  <span class="product-app-tile__icon"><i [class]="app.icon"></i></span>
+                </div>
+                <h3 class="product-app-tile__title">{{ app.title }}</h3>
+                <p class="product-app-tile__text">{{ app.description }}</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Specifications Section -->
+  <section class="tech-specs-section" id="specifications">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Technical specifications</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Snapshot for agronomists and dealers—pair with the printed label in the field.
+      </p>
+      <div class="row" data-aos="fade-up" data-aos-delay="80">
+        <div class="col-lg-6 mb-4">
+          <div class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-flask specs-icon"></i>
+              <h3>Product information</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.productInfo" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-prescription-bottle specs-icon"></i>
+              <h3>Packs &amp; application</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.packs" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-spec-figure-block" data-aos="fade-up" data-aos-delay="100">
+        <figure class="product-spec-figure">
+          <!-- <img
+            [src]="specFigureImage"
+            alt="Dr. Supreme bottle label showing Abamectin 1.9% EC insecticide and acaricide classification"
+            class="product-spec-figure__img img-fluid"
+            width="520"
+            height="520"
+            loading="lazy"
+          /> -->
+          <figcaption class="product-spec-figure__caption">
+            Label reference for <strong>Dr. Supreme</strong> Abamectin 1.9% EC. For live marketplace parameters, see our
+            <a [href]="indiaMartUrl" rel="noopener noreferrer nofollow" target="_blank">official IndiaMART listing</a>.
+          </figcaption>
+        </figure>
+      </div>
+
+      <p class="text-center product-indiamart-lead" data-aos="fade-up">
+        <a class="btn btn-outline-primary product-indiamart-btn" [href]="indiaMartUrl" rel="noopener noreferrer nofollow" target="_blank">
+          View Dr. Supreme on IndiaMART
+        </a>
+      </p>
+
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="120">
+        <article class="product-official-specs__card">
+          <header class="product-official-specs__head">
+            <h3>Dr. Supreme — full parameter table</h3>
+            <p>Technical profile for meetings, quotations and stock planning (text equivalent of supplier spec sheets).</p>
+          </header>
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="Dr. Supreme Abamectin 1.9% EC technical profile">
+              <thead>
+                <tr>
+                  <th scope="col">Parameter</th>
+                  <th scope="col">Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of officialProductDetails">
+                  <td>{{ row.label }}</td>
+                  <td>{{ row.value }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mode of Action Section -->
+  <section class="mode-of-action-section product-moa" aria-labelledby="moa-abm-heading">
+    <div class="container">
+      <h2 id="moa-abm-heading" class="section-title text-center" data-aos="fade-up">Mode of action</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>Abamectin 1.9% EC</strong> interrupts pests at the nerve level (IRAC Group 6).
+      </p>
+      <div class="product-moa__layout row justify-content-center mt-2 mt-lg-4">
+        <div class="col-12 col-xl-10" data-aos="fade-up">
+          <ol class="product-moa__steps list-unstyled mb-0" role="list">
+            <li *ngFor="let step of modeOfAction; let i = index" class="product-moa__step">
+              <div class="product-moa__step-num" aria-hidden="true">{{ i + 1 }}</div>
+              <div class="product-moa__step-body">
+                <h3 class="product-moa__step-title">{{ step.title }}</h3>
+                <p class="product-moa__step-text">{{ step.description }}</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Usage & Safety Guidelines Section -->
+  <section class="usage-safety-section" id="safety">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">Usage &amp; safety guidelines</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Practical habits that keep sprays effective and people out of harm’s way.
+      </p>
+      <div class="usage-safety-shell mt-4">
+        <div class="usage-safety-shell__intro" data-aos="fade-up" data-aos-delay="60">
+          <span class="usage-pill"><i class="fas fa-spray-can"></i> Coverage &amp; timing</span>
+          <span class="usage-pill"><i class="fas fa-user-shield"></i> PPE &amp; environment</span>
+        </div>
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <article class="usage-safety-panel usage-safety-panel--usage">
+              <header class="usage-safety-panel__head">
+                <h3>Usage best practices</h3>
+                <p>Mix clean, spray calm, scout again after a few days.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i < 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="140">
+            <article class="usage-safety-panel usage-safety-panel--safety">
+              <header class="usage-safety-panel__head">
+                <h3>Safety &amp; stewardship</h3>
+                <p>Respect the label hazard class and local disposal rules.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i >= 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results & Performance Section -->
+  <section class="results-section product-results">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Results &amp; performance</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        What the field team usually reports when weather and coverage cooperate.
+      </p>
+      <div class="row mt-4">
+        <div *ngFor="let ph of performanceHighlights; let i = index" class="col-md-6 col-lg-3" data-aos="fade-up" [attr.data-aos-delay]="70 * i">
+          <article class="product-highlight-card">
+            <h3 class="h6">{{ ph.label }}</h3>
+            <p>{{ ph.value }}</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Frequently asked questions</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Common questions on <strong>Abamectin 1.9% EC</strong> and the <strong>Dr. Supreme</strong> pack.
+      </p>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="accordion faq-accordion faq-accordion--abamectin" id="drSupremeFaqAccordion" data-aos="fade-up" data-aos-delay="90">
+            <ng-container *ngFor="let faq of faqs; let i = index">
+              <div class="accordion-item">
+                <h3 class="accordion-header" [id]="'drsup-heading-' + i">
+                  <button
+                    class="accordion-button"
+                    [class.collapsed]="i !== 0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#drsup-collapse-' + i"
+                    [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
+                    [attr.aria-controls]="'drsup-collapse-' + i"
+                  >
+                    {{ faq.question }}
+                  </button>
+                </h3>
+                <div
+                  [id]="'drsup-collapse-' + i"
+                  class="accordion-collapse collapse"
+                  [class.show]="i === 0"
+                  [attr.aria-labelledby]="'drsup-heading-' + i"
+                  data-bs-parent="#drSupremeFaqAccordion"
+                >
+                  <div class="accordion-body">
+                    <p [innerHTML]="faq.answer"></p>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">What growers say</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Feedback from farmers who run <strong>Dr. Supreme Abamectin 1.9% EC</strong> in real plots.
+      </p>
+      <div class="row">
+        <div *ngFor="let t of testimonials; let i = index" class="col-md-4" data-aos="fade-up" [attr.data-aos-delay]="60 * i">
+          <article class="testimonial-card">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">{{ t.text }}</p>
+            <div class="testimonial-author"></div>
+            <div class="testimonial-stars" [attr.aria-label]="t.rating + ' out of 5 stars'">
+              <i *ngFor="let star of [1, 2, 3, 4, 5]" class="fas fa-star" [class.star-filled]="star <= t.rating"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section product-detail-cta" aria-labelledby="abm-cta-title">
+    <div class="container">
+      <div class="cta-container" data-aos="zoom-in">
+        <h2 id="abm-cta-title" class="cta-title">Ready to tighten mite and thrips control?</h2>
+        <p class="cta-text">
+          Ask Harishree Crop Science for <strong>Dr. Supreme Abamectin 1.9% EC</strong> availability, tank-mix notes and crop-specific
+          label guidance.
+        </p>
+        <div class="cta-actions" role="group" aria-label="Contact and navigation">
+          <a routerLink="/contact-us" class="cta-button">Contact Harishree</a>
+          <a routerLink="/products" class="cta-button cta-button--outline">All products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

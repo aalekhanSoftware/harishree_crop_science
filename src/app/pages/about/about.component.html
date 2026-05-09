@@ -1,0 +1,169 @@
+<main class="about-page" itemscope itemtype="http://schema.org/Organization">
+  <!-- Hero Section -->
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="hero-content">
+      <span class="badge rounded-pill bg-accent text-primary mb-3" data-aos="fade-down">Since {{foundingYear}}</span>
+      <h1 data-aos="fade-up">Harishree Crop Science</h1>
+      <p data-aos="fade-up" data-aos-delay="200">
+        <strong>Pioneering the future of Sustainable Agriculture with innovation, integrity, and excellence.</strong>
+      </p>
+    </div>
+    <div class="hero-bg">
+      <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+        <path fill="#ffffff" d="M0,48L48,56C96,64,192,80,288,80C384,80,480,64,576,56C672,48,768,48,864,56C960,64,1056,80,1152,80C1248,80,1344,64,1392,56L1440,48L1440,160L1392,160C1344,160,1248,160,1152,160C1056,160,960,160,864,160C768,160,672,160,576,160C480,160,384,160,288,160C192,160,96,160,48,160L0,160Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Who We Are & Stats -->
+  <section class="section-padding who-we-are" id="who-we-are">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+          <div class="image-stack">
+            <div class="img-wrapper main-img">
+              <img src="assets/about-us/field-research.jpg" alt="Agricultural Research Field" class="img-fluid rounded shadow-lg">
+            </div>
+            <div class="experience-badge bounce-animate">
+              <span class="years">{{yearsExperience}}+</span>
+              <span class="text">Years of<br>Excellence</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+          <h6 class="text-primary text-uppercase letter-spacing-2 mb-2">Who We Are</h6>
+          <h2 class="section-heading mb-4">Empowering Farmers with <span class="text-primary">Next-Gen Solutions</span></h2>
+          <p class="text-muted mb-4 lead">Harishree Crop Science is a premier manufacturer of agricultural inputs, dedicated to enhancing crop productivity and soil health.</p>
+          <p class="text-muted mb-5">We specialize in developing high-performance bio-fertilizers, organic pesticides, and plant growth regulators. Our products are the result of rigorous research and a deep understanding of Indian farming conditions, ensuring that every farmer gets the best yield with minimal environmental impact.</p>
+          
+          <div class="row g-4 stats-row">
+            <div class="col-6 col-sm-6" *ngFor="let stat of stats">
+              <div class="stat-item">
+                <h3 class="font-weight-bold text-dark mb-0">{{stat.number}}</h3>
+                <p class="text-muted small text-uppercase mb-0">{{stat.label}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision & Mission -->
+  <section class="section-padding vision-mission">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="card h-100 border-0 shadow-sm hover-lift card-vision">
+            <div class="card-body p-4 p-lg-5">
+              <div class="icon-box mb-4 bg-primary-10 text-primary">
+                <i class="fas fa-eye fa-2x"></i> <!-- Fallback if SVG not available, or use SVG -->
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </div>
+              <h3 class="card-title font-weight-bold mb-3">Our Vision</h3>
+              <p class="card-text text-muted">To be the global leader in sustainable agricultural innovation, creating a world where farming is profitable, eco-friendly, and capable of feeding the future.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 border-0 shadow-sm hover-lift card-mission">
+            <div class="card-body p-4 p-lg-5">
+              <div class="icon-box mb-4 bg-secondary-10 text-secondary">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg>
+              </div>
+              <h3 class="card-title font-weight-bold mb-3">Our Mission</h3>
+              <p class="card-text text-muted">To engineer superior crop protection capability and deliver high-quality, cost-effective agricultural solutions that empower the farming community.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality Policy Banner -->
+  <section class="quality-policy py-5 bg-primary text-white position-relative overflow-hidden">
+    <div class="bg-pattern opacity-10 position-absolute w-100 h-100 top-0 start-0"></div>
+    <div class="container position-relative z-1 text-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-8" data-aos="zoom-in">
+          <h2 class="font-weight-bold mb-3">Quality Policy</h2>
+          <p class="lead mb-0 opacity-90">"We are committed to total customer satisfaction by providing high-quality agricultural inputs ensuring on-time delivery and continual improvement in our processes and products."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section-padding why-choose-us">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h6 class="text-primary text-uppercase letter-spacing-2">Why Choose Us</h6>
+        <h2 class="font-weight-bold">The Harishree Advantage</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" *ngFor="let item of whyChooseUs; let i = index" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="i * 100">
+          <div class="feature-card text-center p-4 rounded bg-white border h-100 transition-hover">
+            <div class="icon-circle mb-4 mx-auto bg-primary-lightest text-primary d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; border-radius: 50%;">
+              <span class="h4 mb-0">{{i + 1}}</span>
+            </div>
+            <h4 class="h5 font-weight-bold mb-3">{{item.title}}</h4>
+            <p class="text-muted small mb-0">{{item.desc}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Team -->
+  <section class="section-padding team-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h6 class="text-primary text-uppercase letter-spacing-2">Leadership</h6>
+        <h2 class="font-weight-bold">Meet Our Visionaries</h2>
+      </div>
+      <div class="row justify-content-center g-4">
+        <ng-container *ngFor="let member of team; let i = index">
+          <div class="col-md-6 col-lg-4" [attr.data-aos]="'fade-up'" [attr.data-aos-delay]="i * 100">
+            <div class="team-card-premium bg-white rounded overflow-hidden shadow-sm h-100 position-relative group-hover" itemscope itemtype="https://schema.org/Person">
+              <div class="img-wrapper position-relative overflow-hidden">
+                <img [src]="member.image" [alt]="member.name" class="img-fluid w-100" itemprop="image" style="height: 350px; object-fit: cover; object-position: top;">
+                <div class="overlay-gradient position-absolute w-100 h-100 top-0 start-0 opacity-0 transition-opacity"></div>
+              </div>
+              <div class="card-body p-4 text-center position-relative z-1">
+                <h3 class="h5 font-weight-bold mb-1" itemprop="name">{{member.name}}</h3>
+                <p class="text-primary small text-uppercase mb-3" itemprop="jobTitle">{{member.position}}</p>
+                <p class="text-muted small mb-0" itemprop="description">{{member.description}}</p>
+                <link itemprop="worksFor" href="https://harishreecropscience.com" />
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey Timeline -->
+  <section class="section-padding journey-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h6 class="text-primary text-uppercase letter-spacing-2">Our History</h6>
+        <h2 class="font-weight-bold">A Decade of Growth</h2>
+      </div>
+      <div class="timeline-clean">
+        <div class="timeline-items">
+          <div class="timeline-item" *ngFor="let item of milestones; let i = index; let isOdd = odd" [class.inverted]="isOdd" data-aos="fade-up">
+            <div class="timeline-badge bg-primary"></div>
+            <div class="timeline-content shadow-sm bg-white p-4 rounded relative">
+              <span class="date-badge bg-primary-lightest text-primary font-weight-bold px-3 py-1 rounded-pill mb-3 d-inline-block">{{item.year}}</span>
+              <h4 class="font-weight-bold h5">{{item.title}}</h4>
+              <p class="text-muted mb-0 small">{{item.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+

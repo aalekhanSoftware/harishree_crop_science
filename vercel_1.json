@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "server.ts",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "angular.json",
+        "use": "@vercel/static-build",
+        "config": { "distDir": "dist/harishree_crop_science/browser" }
+      }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/server.js" }
+    ]
+  }
+  

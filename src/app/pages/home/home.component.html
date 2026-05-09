@@ -1,0 +1,205 @@
+<main itemscope itemtype="https://schema.org/Organization">
+  <!-- Hero: single H1 on first slide only. No data-aos here to avoid scroll jank. -->
+  <div
+    id="heroSlider"
+    class="carousel slide premium-slider"
+    role="region"
+    aria-roledescription="carousel"
+    aria-label="Featured highlights"
+    tabindex="0"
+    (keydown)="onKeydown($event)"
+    (mouseenter)="pauseAutoplay()"
+    (mouseleave)="resumeAutoplay()"
+    (touchstart)="onTouchStart($event)"
+    (touchmove)="onTouchMove($event)"
+    (touchend)="onTouchEnd()"
+  >
+    <div class="carousel-indicators" role="tablist">
+      <button
+        *ngFor="let slide of slides; let i = index; trackBy: trackBySlide"
+        type="button"
+        [class.active]="i === currentSlideIndex"
+        [attr.aria-current]="i === currentSlideIndex ? 'true' : null"
+        [attr.aria-label]="'Go to slide ' + (i + 1)"
+        (click)="goToSlide(i)"
+      ></button>
+    </div>
+    <div class="carousel-inner" aria-live="polite">
+      <div
+        class="carousel-item"
+        *ngFor="let slide of slides; let i = index; trackBy: trackBySlide"
+        [class.active]="i === currentSlideIndex"
+      >
+        <img
+          [src]="slide.src"
+          class="d-block w-100"
+          [alt]="slide.alt"
+          [attr.loading]="i === 0 ? 'eager' : 'lazy'"
+          [attr.fetchpriority]="i === 0 ? 'high' : null"
+          decoding="async"
+        >
+        <div class="carousel-caption">
+          <h1 *ngIf="slide.h1; else heroSubTpl" itemprop="name"><strong>{{ slide.h1 }}</strong></h1>
+          <ng-template #heroSubTpl>
+            <h2 class="hero-subtitle">{{ slide.h2 }}</h2>
+          </ng-template>
+          <p *ngIf="slide.p" itemprop="description">{{ slide.p }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Crop protection categories: Insecticide, Fungicide, Herbicide, PGR -->
+  <section class="crop-categories" aria-labelledby="categories-heading">
+    <div class="container">
+      <h2 id="categories-heading" class="section-title">Our Crop Protection Range</h2>
+      <p class="section-subtitle">We offer <strong>insecticides</strong>, <strong>fungicides</strong>, <strong>herbicides</strong> and <strong>plant growth regulators (PGR)</strong> for field and horticultural crops.</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" *ngFor="let cat of cropCategories; trackBy: trackByCategory">
+          <a [routerLink]="['/products']" [queryParams]="{ category: cat.slug }" class="category-card">
+            <span class="category-icon" aria-hidden="true">
+              <i class="fas fa-{{ cat.icon }}"></i>
+            </span>
+            <h3>{{ cat.name }}</h3>
+            <p>{{ cat.shortDesc }}</p>
+            <span class="category-link">View products <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What we do -->
+  <section class="what-we-do" aria-labelledby="what-we-do-heading">
+    <div class="container">
+      <h2 id="what-we-do-heading" class="section-title">What We Do</h2>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="content">
+            <h3>Pesticides and crop protection, from the ground up</h3>
+            <p><strong>Harishree Crop Science</strong> makes <strong>insecticides</strong>, <strong>fungicides</strong>, <strong>herbicides</strong> and <strong>PGR</strong> products for Indian farmers. We focus on formulations that work in real field conditions—whether you grow cotton, paddy, vegetables or pulses.</p>
+            <p>Our team supports you with clear usage and timing so you get the best from each spray. We also invest in <strong>research</strong> and <strong>quality control</strong> so every batch meets the same standard.</p>
+            <a routerLink="/about-us" class="btn btn-primary">About us</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/home/about.jpeg" alt="Harishree Crop Science - crop protection and pesticides" class="img-fluid rounded shadow" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section class="key-features bg-primary-lightest" aria-labelledby="key-features-heading">
+    <div class="container">
+      <h2 id="key-features-heading" class="section-title">Why Farmers Choose Us</h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Tested formulations</h3>
+            <p>Our <strong>insecticides</strong>, <strong>fungicides</strong> and <strong>herbicides</strong> are developed and tested for efficacy and crop safety.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 3V7M15 3V7M3 10H21M7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="12" cy="14" r="3" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>R&amp;D and quality</h3>
+            <p>In-house research and strict <strong>quality assurance</strong> so you get consistent results season after season.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 6.5C10 4.5 7 4.5 5 6.5C3 8.5 3 12 5 14L12 21L19 14C21 12 21 8.5 19 6.5C17 4.5 14 4.5 12 6.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 6.5C14 4.5 17 4.5 19 6.5C21 8.5 21 12 19 14L12 21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Responsible use</h3>
+            <p>We emphasise correct dose and timing so <strong>crop protection</strong> stays effective and sustainable.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-card">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 15C4 15 5 14 8 14C11 14 13 16 16 16C19 16 20 15 20 15V3C20 3 19 4 16 4C13 4 11 2 8 2C5 2 4 3 4 3V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4 22V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Support when you need it</h3>
+            <p>Technical guidance on <strong>plant protection</strong>, mixing and application so you spray with confidence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products -->
+  <section class="premium-products" aria-labelledby="products-heading">
+    <div class="container">
+      <h2 id="products-heading" class="section-title">Some of Our Well-Known Products</h2>
+      <p class="section-subtitle">Widely used across India for <strong>pest control</strong>, <strong>disease control</strong> and <strong>weed management</strong>.</p>
+      <div class="row">
+        <ng-container *ngFor="let product of products; let i = index; trackBy: trackByProduct">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <article class="product-card" itemscope itemtype="https://schema.org/Product">
+              <div class="product-image">
+                <img [src]="product.image" [alt]="product.name + ' - ' + product.description" loading="lazy" decoding="async" itemprop="image">
+              </div>
+              <div class="product-content">
+                <h3 itemprop="name">{{ product.name }}</h3>
+                <p itemprop="description">{{ product.description }}</p>
+                <div class="product-footer">
+                  <button type="button" class="btn btn-primary btn-sm" (click)="navigateToProductDetails()">View all products</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <h2 id="testimonials-heading" class="section-title">What Farmers Say</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6" *ngFor="let testimonial of testimonials; trackBy: trackByTestimonial">
+          <div class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+            <div class="rating" aria-hidden="true">
+              <ng-container *ngFor="let star of [1,2,3,4,5]">
+                <i class="fas fa-star" [class.filled]="star <= testimonial.rating"></i>
+              </ng-container>
+            </div>
+            <p class="review" itemprop="reviewBody">{{ testimonial.review }}</p>
+            <div class="reviewer-info">
+              <div class="avatar">
+                <i class="fas fa-user-circle" aria-hidden="true"></i>
+              </div>
+              <div class="details">
+                <h4 itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ testimonial.name }}</span></h4>
+                <p class="location">
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  {{ testimonial.location }}
+                </p>
+                <small class="source">Verified on IndiaMart</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,406 @@
+<main class="product-page" itemscope itemtype="https://schema.org/Product">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="product-title" data-aos="fade-right" itemprop="name">{{product.name}}</h1>
+          <p class="product-tagline" data-aos="fade-right" data-aos-delay="100">Advanced Insect Control Solution</p>
+          <div class="product-description" data-aos="fade-right" data-aos-delay="200">
+            <p itemprop="description"><strong>Proceed</strong> is our premium insecticide formulation engineered for comprehensive agricultural pest management. Trusted by farmers across India, it delivers <strong>rapid knockdown action</strong> within 6-24 hours and provides <strong>long-lasting residual protection</strong> for up to 21 days against a broad spectrum of harmful crop pests including lepidopteran larvae, aphids, whiteflies, and soil insects. With its advanced dual-action formula of Chlorpyrifos 50% + Cypermethrin 5% EC, Proceed ensures superior crop protection, enhanced yields, and optimal return on investment for modern agriculture.</p>
+            
+            <div class="usps" data-aos="fade-right" data-aos-delay="250">
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Dual-Action Formula</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Rainfast Technology</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Trusted by Farmers</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="product-image-container" data-aos="zoom-in">
+            <div class="product-image-inner">
+              <img src="assets/products/PROCEED.png" alt="Proceed Insecticide Product Bottle" class="product-image" itemprop="image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Benefits Section -->
+  <section class="benefits-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Key Benefits</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="benefits-list">
+            <li data-aos="fade-up" data-aos-delay="100">
+              <span class="benefit-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+              </span>
+              <div class="benefit-content">
+                <h3>Rapid Knockdown Effect</h3>
+                <p>Quick action against target pests for immediate results</p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <span class="benefit-icon"><i class="fas fa-shield-alt"></i></span>
+              <div class="benefit-content">
+                <h3>Long-lasting Residual Control</h3>
+                <p>Extended protection that reduces the need for frequent applications</p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="300">
+              <span class="benefit-icon"><i class="fas fa-spray-can"></i></span>
+              <div class="benefit-content">
+                <h3>Better Crop Coverage</h3>
+                <p>Advanced formulation ensures thorough coverage of plant surfaces</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="benefits-list">
+            <li data-aos="fade-up" data-aos-delay="400">
+              <span class="benefit-icon"><i class="fas fa-tint-slash"></i></span>
+              <div class="benefit-content">
+                <h3>Enhanced Resistance to Wash-off</h3>
+                <p>Remains effective even after irrigation or light rainfall</p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="500">
+              <span class="benefit-icon"><i class="fas fa-bugs"></i></span>
+              <div class="benefit-content">
+                <h3>Broad Spectrum Pest Control</h3>
+                <p>Effective against multiple pest species with a single application</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Target Pests Section -->
+  <section class="pests-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Target Pests</h2>
+      <div class="pest-cards">
+        <div class="row">
+          <div *ngFor="let pest of targetPests; let i = index" class="col-md-4">
+            <div class="pest-card" data-aos="flip-up" [attr.data-aos-delay]="100 * i">
+              <div class="pest-icon">
+                <i class="fas fa-bug"></i>
+              </div>
+              <h3>{{pest.name}}</h3>
+              <p>{{pest.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW SECTION: Technical Specifications Section -->
+  <section class="tech-specs-section" id="specifications">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Technical Specifications</h2>
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-12">
+          <div class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-flask specs-icon"></i>
+              <h3>Product Information</h3>
+            </div>
+            <div class="specs-content">
+              <div class="spec-item">
+                <span class="spec-label">Active Ingredient:</span>
+                <span class="spec-value">Chlorpyrifos 50% + Cypermethrin 5% EC</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Formulation Type:</span>
+                <span class="spec-value">Emulsifiable Concentrate (EC)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Mode of Action:</span>
+                <span class="spec-value">Contact, Stomach, and Respiratory</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Contents:</span>
+                <span class="spec-value">250ml, 500ml, 1L bottle</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Shelf Life:</span>
+                <span class="spec-value">2 years from date of manufacture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-lg-6">
+          <div class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-seedling specs-icon"></i>
+              <h3>Application Details</h3>
+            </div>
+            <div class="specs-content">
+              <div class="spec-item">
+                <span class="spec-label">Recommended Crops:</span>
+                <span class="spec-value">Cotton, Rice, Vegetables, Fruits, Pulses</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Application Rate:</span>
+                <span class="spec-value">150-200 ml per acre</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Water Requirement:</span>
+                <span class="spec-value">200-250 liters per acre</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Pre-Harvest Interval:</span>
+                <span class="spec-value">14-21 days (crop dependent)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Re-Entry Period:</span>
+                <span class="spec-value">24 hours after application</span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Usage & Safety Guidelines Section -->
+  <section class="usage-safety-section">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">Usage & Safety Guidelines</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">Follow these professional recommendations for optimal results and safe handling</p>
+      
+      <div class="row g-4 mt-3">
+        <!-- Application Cards -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="usage-card">
+            <div class="usage-card-header">
+              <div class="icon-container">
+                <i class="fas fa-spray-can"></i>
+              </div>
+              <h3>Application Guidelines</h3>
+            </div>
+            <div class="usage-card-body">
+              <div class="usage-item">
+                <div class="usage-icon">
+                  <i class="fas fa-flask"></i>
+                </div>
+                <div class="usage-content">
+                  <h4>Recommended Dosage</h4>
+                  <p>150-200 ml per acre, depending on pest pressure and crop type</p>
+                </div>
+              </div>
+              
+              <div class="usage-item">
+                <div class="usage-icon">
+                  <i class="fas fa-hand-holding-water"></i>
+                </div>
+                <div class="usage-content">
+                  <h4>Dilution Rate</h4>
+                  <p>Mix with 200-250 liters of water per acre for optimal coverage</p>
+                </div>
+              </div>
+              
+              <div class="usage-item">
+                <div class="usage-icon">
+                  <i class="fas fa-shower"></i>
+                </div>
+                <div class="usage-content">
+                  <h4>Application Method</h4>
+                  <p>Foliar spray using standard spray equipment with medium-sized droplets</p>
+                </div>
+              </div>
+              
+              <div class="usage-item">
+                <div class="usage-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="usage-content">
+                  <h4>Timing & Frequency</h4>
+                  <p>Apply at first sign of pest infestation. Repeat after 14-21 days if necessary, depending on pest pressure</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Safety Precautions Card -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="safety-card">
+            <div class="safety-card-header">
+              <div class="icon-container">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Safety Precautions</h3>
+            </div>
+            <div class="safety-card-body">
+              <div class="safety-item">
+                <div class="safety-icon">
+                  <i class="fas fa-user-shield"></i>
+                </div>
+                <div class="safety-content">
+                  <h4>Personal Protection</h4>
+                  <p>Always wear protective equipment including gloves, face mask, eye protection, and appropriate clothing during handling and application</p>
+                </div>
+              </div>
+              
+              <div class="safety-item">
+                <div class="safety-icon">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="safety-content">
+                  <h4>Health Precautions</h4>
+                  <p>Avoid contact with eyes, skin, and inhalation. Wash hands thoroughly after handling. Do not eat, drink or smoke when using this product</p>
+                </div>
+              </div>
+              
+              <div class="safety-item">
+                <div class="safety-icon">
+                  <i class="fas fa-box"></i>
+                </div>
+                <div class="safety-content">
+                  <h4>Storage & Disposal</h4>
+                  <p>Store in original container away from direct sunlight, food, and feed. Keep at room temperature in a well-ventilated area. Triple rinse empty containers before disposal</p>
+                </div>
+              </div>
+              
+              <div class="safety-item">
+                <div class="safety-icon">
+                  <i class="fas fa-child"></i>
+                </div>
+                <div class="safety-content">
+                  <h4>General Safety</h4>
+                  <p>Keep out of reach of children and pets. Observe re-entry period of 24 hours after application. Follow local regulations for pesticide use</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mt-4">
+        <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+          <div class="disclaimer-box">
+            <div class="disclaimer-icon">
+              <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="disclaimer-content">
+              <h4>Important Notice</h4>
+              <p>Always read the product label and follow instructions carefully. The information provided here is general guidance. For specific crops and local conditions, consult with your agricultural advisor. Optimal application methods may vary by region and crop.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="accordion faq-accordion" id="faqAccordion" data-aos="fade-up" data-aos-delay="100">
+            <ng-container *ngFor="let faq of faqs; let i = index">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading{{i}}">
+                  <button class="accordion-button {{i !== 0 ? 'collapsed' : ''}}" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    [attr.data-bs-target]="'#collapse' + i" 
+                    [attr.aria-expanded]="i === 0 ? 'true' : 'false'" 
+                    [attr.aria-controls]="'collapse' + i">
+                    {{faq.question}}
+                  </button>
+                </h3>
+                <div [id]="'collapse' + i" class="accordion-collapse collapse {{i === 0 ? 'show' : ''}}" 
+                  [attr.aria-labelledby]="'heading' + i" 
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p [innerHTML]="faq.answer"></p>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW SECTION: Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Farmer Testimonials</h2>
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              After struggling with resistant pests in my cotton fields, Proceed provided excellent control where other products had failed. Saw visible results within a day and crop yield increased significantly.
+            </p>
+            <!-- <div class="testimonial-author">
+              <div class="author-img">
+                <img src="assets/testimonials/farmer1.jpg" alt="Farmer portrait">
+              </div>
+              <div class="author-info">
+                <h4>Ramesh Patel</h4>
+                <p>Cotton Farmer, Gujarat</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              Proceed's residual effect is impressive. One application protected my vegetable crops for nearly three weeks, even during the rainy season. This has reduced my overall pesticide costs.
+            </p>
+          </div>
+        </div>
+        
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              I've been using Proceed for two seasons now on my rice paddies. The broad-spectrum control is remarkable - handles multiple pest issues with a single application, saving time and money.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-container" data-aos="zoom-in">
+        <h2>Ready to enhance your crop protection?</h2>
+        <p>Contact us today to learn more about Proceed and our other premium agricultural solutions.</p>
+        <a href="/contact-us" class="cta-button">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</main>

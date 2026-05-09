@@ -1,0 +1,335 @@
+<main class="product-page product-page--detail" itemscope>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <p class="product-brand-line" data-aos="fade-right">Pendi Pro</p>
+          <h1 class="product-title" data-aos="fade-right" data-aos-delay="50" >
+            Paraquat Dichloride 24% SL
+          </h1>
+          <p class="product-tagline" data-aos="fade-right" data-aos-delay="100">Contact &mdash; Non-Selective &mdash; Rapid Burndown</p>
+          <div class="product-description" data-aos="fade-right" data-aos-delay="200">
+            <p>
+              Experience unmatched weed clearing power with <strong>Paraquat Dichloride 24% SL</strong> from Harishree Crop Science, offered under our trusted brand <strong>Pendi Pro</strong>. 
+              As a superior non-selective contact herbicide, it forcefully disrupts plant tissue to deliver <strong>rapid burndown of broadleaf weeds and grasses</strong>. 
+              With zero soil residual activity, it prepares your fields swiftly and dependably for immediate crop planting.
+            </p>
+            <div class="usps" data-aos="fade-right" data-aos-delay="250">
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Lightning-fast burndown</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Complete soil deactivation</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Rainfast in hours</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="product-image-container" data-aos="zoom-in">
+            <div class="product-image-inner">
+              <img
+                src="assets/products/herbicide/paraquat-dichloride-24-sl.jpg"
+                alt="Paraquat Dichloride 24% SL (Pendi Pro) packaging bottle"
+                class="product-image"
+                width="400"
+                height="400"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pack sizes with pricing -->
+  <section class="product-pack-section" aria-labelledby="pricing-heading">
+    <div class="container">
+      <h2 id="pricing-heading" class="section-title text-center" data-aos="fade-up">Pack sizes &amp; Pricing</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        Cost-effective weed control. <strong>Contact us</strong> for volume purchases, distribution opportunities, and technical assistance.
+      </p>
+      <div class="pack-grid" data-aos="fade-up" data-aos-delay="100">
+        <article *ngFor="let pack of packSizes" class="pack-card" [class.pack-card--featured]="pack.featured">
+          <h3 class="pack-card__volume">{{ pack.volume }}</h3>
+          <p class="pack-card__hint">Harishree Quality Assured</p>
+          <a routerLink="/contact-us" class="pack-card__cta">Enquire</a>
+        </article>
+      </div>
+      <p class="dose-callout text-center" data-aos="fade-up">
+        <strong>Dose:</strong> 35 ml per 16-20 litre knapsack pump. Ensure complete coverage of weed foliage.
+      </p>
+    </div>
+  </section>
+
+  <!-- Key Benefits -->
+  <section class="benefits-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Key benefits</h2>
+      <div class="row g-4">
+        <div *ngFor="let b of keyBenefits; let i = index" class="col-md-6" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <div class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="b.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ b.title }}</h3>
+              <p>{{ b.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Target Weeds -->
+  <section class="pests-section" id="target-weeds">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Target grassy &amp; broadleaf weeds</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        Decisive knockdown action against a wide variety of persistent annual weeds under the sun.
+      </p>
+      <div class="pest-cards">
+        <div class="row">
+          <div *ngFor="let w of targetWeeds; let i = index" class="col-md-4">
+            <div class="pest-card" data-aos="flip-up" [attr.data-aos-delay]="80 * i">
+              <div class="pest-icon"><i class="fas fa-leaf"></i></div>
+              <h3>{{ w.name }}</h3>
+              <p>{{ w.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crops & Applications -->
+  <section class="crops-section product-applications" id="applications">
+    <div class="product-applications__band">
+      <div class="container">
+        <div class="row align-items-end mb-2">
+          <div class="col-lg-8">
+            <h2 class="section-title product-applications__title" data-aos="fade-up">Crops &amp; applications</h2>
+            <p class="section-subtitle product-applications__lead" data-aos="fade-up" data-aos-delay="40">
+              <strong>Paraquat Dichloride 24% SL</strong> is exceptionally versatile, supporting agriculture and non-crop vegetation management efficiently.
+            </p>
+          </div>
+        </div>
+        <ul class="product-applications__grid list-unstyled mb-0" role="list">
+          <li *ngFor="let app of applications; let i = index" class="product-applications__item" data-aos="fade-up" [attr.data-aos-delay]="40 * i">
+            <article class="product-app-tile">
+              <div class="product-app-tile__head" aria-hidden="true"></div>
+              <div class="product-app-tile__body">
+                <div class="product-app-tile__icon-wrap">
+                  <span class="product-app-tile__icon"><i [class]="app.icon"></i></span>
+                </div>
+                <h3 class="product-app-tile__title">{{ app.title }}</h3>
+                <p class="product-app-tile__text">{{ app.description }}</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Specifications -->
+  <section class="tech-specs-section" id="specifications">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Technical specifications</h2>
+      <div class="row" data-aos="fade-up" data-aos-delay="80">
+        <div class="col-lg-6 mb-4">
+          <div class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-flask specs-icon"></i>
+              <h3>Product information</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.productInfo" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-prescription-bottle specs-icon"></i>
+              <h3>Packs &amp; application</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.packs" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mode of Action -->
+  <section class="mode-of-action-section product-moa" aria-labelledby="moa-heading">
+    <div class="container">
+      <h2 id="moa-heading" class="section-title text-center" data-aos="fade-up">Mode of action</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Paraquat attacks weed cells intensely, rupturing membranes to cause total shutdown within hours.
+      </p>
+      <div class="product-moa__layout row justify-content-center mt-2 mt-lg-4">
+        <div class="col-12 col-xl-10" data-aos="fade-up">
+          <ol class="product-moa__steps list-unstyled mb-0" role="list">
+            <li *ngFor="let step of modeOfAction; let i = index" class="product-moa__step">
+              <div class="product-moa__step-num" aria-hidden="true">{{ i + 1 }}</div>
+              <div class="product-moa__step-body">
+                <h3 class="product-moa__step-title">{{ step.title }}</h3>
+                <p class="product-moa__step-text">{{ step.description }}</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Usage & Safety Guidelines -->
+  <section class="usage-safety-section" id="safety">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">Usage &amp; safety guidelines</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Mandatory safety practices ensure full efficacy and shield operators during chemical handling.
+      </p>
+      <div class="usage-safety-shell mt-4">
+        <div class="usage-safety-shell__intro" data-aos="fade-up" data-aos-delay="60">
+          <span class="usage-pill"><i class="fas fa-spray-can"></i> Optimal spray delivery</span>
+          <span class="usage-pill"><i class="fas fa-shield-alt"></i> Critical PPE requirements</span>
+        </div>
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <article class="usage-safety-panel usage-safety-panel--usage">
+              <header class="usage-safety-panel__head">
+                <h3>Usage best practices</h3>
+                <p>Maximize burndown effectiveness through correct mixture and timing.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i < 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="140">
+            <article class="usage-safety-panel usage-safety-panel--safety">
+              <header class="usage-safety-panel__head">
+                <h3>Safety precautions</h3>
+                <p>Ensure uncompromising safety for humans, animals, and the farm environment.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i >= 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results & Performance -->
+  <section class="results-section product-results">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Results &amp; performance</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Transform overgrown plots into clean plots ready for action within 24-48 hours.
+      </p>
+      <div class="row mt-4">
+        <div *ngFor="let ph of performanceHighlights; let i = index" class="col-md-6 col-lg-3" data-aos="fade-up" [attr.data-aos-delay]="70 * i">
+          <article class="product-highlight-card">
+            <h3 class="h6">{{ ph.label }}</h3>
+            <p>{{ ph.value }}</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Frequently asked questions</h2>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="accordion faq-accordion" id="paraquatFaqAccordion" data-aos="fade-up" data-aos-delay="90">
+            <ng-container *ngFor="let faq of faqs; let i = index">
+              <div class="accordion-item">
+                <h3 class="accordion-header" [id]="'pq-heading-' + i">
+                  <button
+                    class="accordion-button"
+                    [class.collapsed]="i !== 0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#pq-collapse-' + i"
+                    [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
+                    [attr.aria-controls]="'pq-collapse-' + i"
+                  >
+                    {{ faq.question }}
+                  </button>
+                </h3>
+                <div
+                  [id]="'pq-collapse-' + i"
+                  class="accordion-collapse collapse"
+                  [class.show]="i === 0"
+                  [attr.aria-labelledby]="'pq-heading-' + i"
+                  data-bs-parent="#paraquatFaqAccordion"
+                >
+                  <div class="accordion-body">
+                    <p [innerHTML]="faq.answer"></p>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">What farmers say</h2>
+      <div class="row">
+        <div *ngFor="let t of testimonials; let i = index" class="col-md-4" data-aos="fade-up" [attr.data-aos-delay]="60 * i">
+          <article class="testimonial-card">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">{{ t.text }}</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section product-detail-cta" aria-labelledby="product-detail-cta-title">
+    <div class="container">
+      <div class="cta-container" data-aos="zoom-in">
+        <h2 id="product-detail-cta-title" class="cta-title">Need fast burndown using Paraquat Dichloride 24% SL?</h2>
+        <p class="cta-text">Clean up your fields reliably before sowing or manage tough inter-row grass with Pendi Pro. Contact Harishree Crop Science today.</p>
+        <div class="cta-actions" role="group" aria-label="Contact and navigation">
+          <a routerLink="/contact-us" class="cta-button">Contact Harishree</a>
+          <a routerLink="/products" class="cta-button cta-button--outline">Explore products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

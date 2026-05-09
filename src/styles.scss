@@ -1,0 +1,142 @@
+// Color Palette
+:root {
+  // Primary Colors
+  --primary: #009846;
+  --primary-light: #33b46e;
+  --primary-lighter: #66cf96;
+  --primary-lightest: #e6f5ed;
+
+  // Secondary Colors
+  --secondary: #529433;
+  --secondary-light: #75ac5c;
+  --secondary-lighter: #98c485;
+  --secondary-lightest: #edf4ea;
+
+  // Accent Colors
+  --accent: #fecd08;
+  --accent-light: #fed73d;
+  --accent-lighter: #fee172;
+  --accent-lightest: #fff9e6;
+
+  // Font Family Variables - premium, professional, agricultural feel
+  --font-primary: 'DM Sans', sans-serif;
+  --font-secondary: 'Libre Baskerville', serif;
+  --font-accent: 'Manrope', sans-serif;
+
+  // Font Weights
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  // Font Sizes
+  --text-xs: 0.75rem;    // 12px
+  --text-sm: 0.875rem;   // 14px
+  --text-base: 1rem;     // 16px
+  --text-lg: 1.125rem;   // 18px
+  --text-xl: 1.25rem;    // 20px
+  --text-2xl: 1.5rem;    // 24px
+  --text-3xl: 1.875rem;  // 30px
+  --text-4xl: 2.25rem;   // 36px
+  --text-5xl: 3rem;      // 48px
+
+  --primary-rgb: 0, 152, 70;    /* Match your primary color */
+  --secondary-rgb: 82, 148, 51; /* Match your secondary color */
+}
+
+// SCSS Variables
+$primary: var(--primary);
+$primary-light: var(--primary-light);
+$primary-lighter: var(--primary-lighter);
+$primary-lightest: var(--primary-lightest);
+
+$secondary: var(--secondary);
+$secondary-light: var(--secondary-light);
+$secondary-lighter: var(--secondary-lighter);
+$secondary-lightest: var(--secondary-lightest);
+
+$accent: var(--accent);
+$accent-light: var(--accent-light);
+$accent-lighter: var(--accent-lighter);
+$accent-lightest: var(--accent-lightest);
+
+// Additional utility classes - Using !important to override Bootstrap defaults
+.bg-primary { background-color: $primary !important; }
+.bg-primary-light { background-color: $primary-light !important; }
+.bg-primary-lighter { background-color: $primary-lighter !important; }
+.bg-primary-lightest { background-color: $primary-lightest !important; }
+
+.bg-secondary { background-color: $secondary !important; }
+.bg-secondary-light { background-color: $secondary-light !important; }
+.bg-secondary-lighter { background-color: $secondary-lighter !important; }
+.bg-secondary-lightest { background-color: $secondary-lightest !important; }
+
+.bg-accent { background-color: $accent !important; }
+.bg-accent-light { background-color: $accent-light !important; }
+.bg-accent-lighter { background-color: $accent-lighter !important; }
+.bg-accent-lightest { background-color: $accent-lightest !important; }
+
+.text-primary { color: $primary !important; }
+.text-secondary { color: $secondary !important; }
+.text-accent { color: $accent !important; }
+
+// Typography Utility Classes
+.font-primary { font-family: var(--font-primary); }
+.font-secondary { font-family: var(--font-secondary); }
+.font-accent { font-family: var(--font-accent); }
+
+.font-regular { font-weight: var(--font-regular); }
+.font-medium { font-weight: var(--font-medium); }
+.font-semibold { font-weight: var(--font-semibold); }
+.font-bold { font-weight: var(--font-bold); }
+
+// Base Typography Styles
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  color: var(--gray-700);
+  touch-action: manipulation;
+}
+
+body.mobile-menu-open {
+  overflow: hidden;
+}
+
+// Performance: only render content once visible
+// Applies to large sections and containers to reduce layout/paint during scroll
+.catalogue-page, .products-page, .premium-products, .what-we-do, .key-features, .testimonials, .crop-categories, .about-page {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 800px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  // Hint browser for better decoding and memory usage
+  image-rendering: -webkit-optimize-contrast;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-semibold);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: var(--text-5xl); }
+h2 { font-size: var(--text-4xl); }
+h3 { font-size: var(--text-3xl); }
+h4 { font-size: var(--text-2xl); }
+h5 { font-size: var(--text-xl); }
+h6 { font-size: var(--text-lg); }
+
+// Responsive Typography
+@media (max-width: 768px) {
+  h1 { font-size: var(--text-4xl); }
+  h2 { font-size: var(--text-3xl); }
+  h3 { font-size: var(--text-2xl); }
+  h4 { font-size: var(--text-xl); }
+  h5 { font-size: var(--text-lg); }
+  h6 { font-size: var(--text-base); }
+}

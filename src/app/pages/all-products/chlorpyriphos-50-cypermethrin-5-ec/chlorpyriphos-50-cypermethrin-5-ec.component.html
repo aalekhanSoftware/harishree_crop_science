@@ -1,0 +1,373 @@
+<main class="product-page product-page--detail product-page--combi505" itemscope>
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <p class="product-brand-line" data-aos="fade-right">{{ productName }}</p>
+          <h1 class="product-title" data-aos="fade-right" data-aos-delay="40">{{ productTitle }}</h1>
+          <p class="product-tagline" data-aos="fade-right" data-aos-delay="80">
+            EC Formulation &middot; Combination insecticide &middot; Broad-spectrum field performance
+          </p>
+          <div class="product-description" data-aos="fade-right" data-aos-delay="120">
+            <p>
+              <strong>Combi 505</strong> is Harishree Crop Science's
+              <strong>Chlorpyriphos 50% + Cypermethrin 5% EC</strong> solution for real farm conditions where mixed pest
+              pressure needs practical, dependable control.
+            </p>
+            <div class="usps" data-aos="fade-right" data-aos-delay="180">
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Dose: 25 ml/pump</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> EC (Emulsifiable Concentrate)</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Contact + stomach + fumigant action</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Company product: Combi 505</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="product-image-container" data-aos="zoom-in">
+            <div class="product-image-inner">
+              <img
+                src="assets/products/chlorpyriphos-50-cypermethrin-5-ec.png"
+                alt="Combi 505 bottle image for Chlorpyriphos 50% plus Cypermethrin 5% EC insecticide"
+                class="product-image"
+                width="400"
+                height="400"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-pack-section" aria-labelledby="combi-pack-heading">
+    <div class="container">
+      <h2 id="combi-pack-heading" class="section-title text-center" data-aos="fade-up">Pack sizes</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        Prices are included in structured data only. Contact us for live dealer availability.
+      </p>
+      <div class="pack-grid" data-aos="fade-up" data-aos-delay="100">
+        <article *ngFor="let pack of packSizes" class="pack-card" [class.pack-card--featured]="pack.featured">
+          <h3 class="pack-card__volume">{{ pack.volume }}</h3>
+          <p class="pack-card__hint">Professional crop protection support</p>
+          <a routerLink="/contact-us" class="pack-card__cta">Enquire now</a>
+        </article>
+      </div>
+      <p class="dose-callout text-center" data-aos="fade-up">
+        <strong>Recommended dose:</strong> 25 ml per pump (follow crop label and local advisory).
+      </p>
+    </div>
+  </section>
+
+  <section class="benefits-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Key benefits</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        Why growers choose <strong>Combi 505</strong> for trusted <strong>Chlorpyriphos 50% + Cypermethrin 5% EC</strong>
+        performance.
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let b of keyBenefits; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <div class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="b.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ b.title }}</h3>
+              <p>{{ b.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pests-section" id="target-pests">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Target pests</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        Built for practical field conditions where mixed pest complexes impact crop health and productivity.
+      </p>
+      <div class="pest-cards">
+        <div class="row">
+          <div *ngFor="let p of targetPests; let i = index" class="col-md-6">
+            <div class="pest-card" data-aos="flip-up" [attr.data-aos-delay]="80 * i">
+              <div class="pest-icon"><i [class]="p.icon"></i></div>
+              <h3>{{ p.name }}</h3>
+              <p>{{ p.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="crops-section product-applications" id="applications">
+    <div class="product-applications__band">
+      <div class="container">
+        <div class="row align-items-end mb-2">
+          <div class="col-lg-8">
+            <h2 class="section-title product-applications__title" data-aos="fade-up">Crops &amp; applications</h2>
+            <p class="section-subtitle product-applications__lead" data-aos="fade-up" data-aos-delay="40">
+              Field-ready application guidance for <strong>Combi 505</strong>.
+            </p>
+          </div>
+        </div>
+        <ul class="product-applications__grid list-unstyled mb-0" role="list">
+          <li *ngFor="let app of applications; let i = index" class="product-applications__item" data-aos="fade-up" [attr.data-aos-delay]="40 * i">
+            <article class="product-app-tile">
+              <div class="product-app-tile__head" aria-hidden="true"></div>
+              <div class="product-app-tile__body">
+                <div class="product-app-tile__icon-wrap">
+                  <span class="product-app-tile__icon"><i [class]="app.icon"></i></span>
+                </div>
+                <h3 class="product-app-tile__title">{{ app.title }}</h3>
+                <p class="product-app-tile__text">{{ app.description }}</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" id="specifications">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Technical specifications</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Official reference details for <strong>{{ productTitle }}</strong> and <strong>{{ productName }}</strong>.
+      </p>
+      <div class="row" data-aos="fade-up" data-aos-delay="80">
+        <div class="col-lg-6 mb-4">
+          <div class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-flask specs-icon"></i>
+              <h3>Product information</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.productInfo" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-prescription-bottle specs-icon"></i>
+              <h3>Dose &amp; commercial references</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.packs" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center product-indiamart-lead" data-aos="fade-up">
+        <a class="btn btn-outline-primary product-indiamart-btn" [href]="indiaMartUrl" rel="noopener noreferrer nofollow" target="_blank">
+          View official IndiaMART reference
+        </a>
+      </p>
+
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="120">
+        <article class="product-official-specs__card">
+          <header class="product-official-specs__head">
+            <h3>Combi 505 - parameter table</h3>
+            <p>Technical values compiled from your provided specification screenshot and official listing reference.</p>
+          </header>
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="Combi 505 Chlorpyriphos 50% plus Cypermethrin 5% EC technical profile">
+              <thead>
+                <tr>
+                  <th scope="col">Parameter</th>
+                  <th scope="col">Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of officialProductDetails">
+                  <td>{{ row.label }}</td>
+                  <td>{{ row.value }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mode-of-action-section product-moa" aria-labelledby="combi-moa-heading">
+    <div class="container">
+      <h2 id="combi-moa-heading" class="section-title text-center" data-aos="fade-up">Mode of action</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How Chlorpyriphos 50% + Cypermethrin 5% EC performs in practical application.
+      </p>
+      <div class="product-moa__layout row justify-content-center mt-2 mt-lg-4">
+        <div class="col-12 col-xl-10" data-aos="fade-up">
+          <ol class="product-moa__steps list-unstyled mb-0" role="list">
+            <li *ngFor="let step of modeOfAction; let i = index" class="product-moa__step">
+              <div class="product-moa__step-num" aria-hidden="true">{{ i + 1 }}</div>
+              <div class="product-moa__step-body">
+                <h3 class="product-moa__step-title">{{ step.title }}</h3>
+                <p class="product-moa__step-text">{{ step.description }}</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="usage-safety-section" id="safety">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">Usage &amp; safety guidelines</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Follow this checklist for safer handling and better field consistency.
+      </p>
+      <div class="usage-safety-shell mt-4">
+        <div class="usage-safety-shell__intro" data-aos="fade-up" data-aos-delay="60">
+          <span class="usage-pill"><i class="fas fa-spray-can"></i> Spray discipline</span>
+          <span class="usage-pill"><i class="fas fa-user-shield"></i> PPE and stewardship</span>
+        </div>
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <article class="usage-safety-panel usage-safety-panel--usage">
+              <header class="usage-safety-panel__head">
+                <h3>Usage best practices</h3>
+                <p>Measure right, mix clean, spray with coverage.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i < 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="140">
+            <article class="usage-safety-panel usage-safety-panel--safety">
+              <header class="usage-safety-panel__head">
+                <h3>Safety and responsibility</h3>
+                <p>Follow label, advisory and responsible disposal rules.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i >= 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Results &amp; performance</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Typical field outcomes when {{ productTitle }} is used with timing and dose discipline.
+      </p>
+      <div class="row mt-4">
+        <div *ngFor="let ph of performanceHighlights; let i = index" class="col-md-6 col-lg-3" data-aos="fade-up" [attr.data-aos-delay]="70 * i">
+          <article class="product-highlight-card">
+            <h3 class="h6">{{ ph.label }}</h3>
+            <p>{{ ph.value }}</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Frequently asked questions</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Common grower questions on <strong>Combi 505</strong> and <strong>{{ productTitle }}</strong>.
+      </p>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="accordion faq-accordion" id="combiFaqAccordion" data-aos="fade-up" data-aos-delay="90">
+            <ng-container *ngFor="let faq of faqs; let i = index">
+              <div class="accordion-item">
+                <h3 class="accordion-header" [id]="'combi-heading-' + i">
+                  <button
+                    class="accordion-button"
+                    [class.collapsed]="i !== 0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#combi-collapse-' + i"
+                    [attr.aria-expanded]="i === 0"
+                    [attr.aria-controls]="'combi-collapse-' + i"
+                  >
+                    {{ faq.question }}
+                  </button>
+                </h3>
+                <div
+                  [id]="'combi-collapse-' + i"
+                  class="accordion-collapse collapse"
+                  [class.show]="i === 0"
+                  [attr.aria-labelledby]="'combi-heading-' + i"
+                  data-bs-parent="#combiFaqAccordion"
+                >
+                  <div class="accordion-body" [innerHTML]="faq.answer"></div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-section" id="reviews">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">Testimonials</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Feedback from growers using {{ productName }} in practical field programs.
+      </p>
+      <div class="row g-4 mt-1">
+        <div *ngFor="let t of testimonials; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="70 * i">
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="Rating">
+              <i *ngFor="let r of [1, 2, 3, 4, 5]" class="fas fa-star" [class.text-warning]="r <= t.rating"></i>
+            </div>
+            <p class="testimonial-text">"{{ t.text }}"</p>
+            <!-- <h3 class="h6 mb-0">{{ t.name }}</h3> -->
+            <!-- <p class="testimonial-location">{{ t.location }}</p> -->
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="cta-section product-detail-cta" aria-labelledby="thiaCtaTitle">
+    <div class="container">
+      <div class="cta-container" data-aos="zoom-in">
+        <h2 id="thiaCtaTitle" class="cta-title">Need stock and crop-wise guidance for Combi 505?</h2>
+        <p class="cta-text">
+          Connect with Harishree Crop Science for dealer availability, treatment advisory and support for
+          <strong>{{ productTitle }}</strong>.
+        </p>
+        <div class="cta-actions" role="group" aria-label="Contact and navigation">
+          <a routerLink="/contact-us" class="cta-button">Contact Harishree</a>
+          <a routerLink="/products" class="cta-button cta-button--outline">All products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

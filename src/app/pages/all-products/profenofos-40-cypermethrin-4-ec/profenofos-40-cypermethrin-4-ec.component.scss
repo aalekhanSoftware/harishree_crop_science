@@ -1,0 +1,51 @@
+@import '../../../../styles/components/product_details.scss';
+
+:host {
+  --product-accent: #1f7a37;
+}
+
+.product-page--profenofos {
+  .product-title {
+    max-width: 18ch;
+  }
+
+  .product-tagline {
+    letter-spacing: 0.02em;
+  }
+
+  .product-image {
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.14));
+  }
+
+  .product-pack-section .pack-card {
+    border: 1px solid rgba(var(--primary-rgb), 0.12);
+  }
+
+  .product-official-specs__head p {
+    margin-bottom: 0;
+  }
+
+  .product-highlight-card h3 {
+    min-height: 2.5rem;
+  }
+
+  .testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: 0.55rem;
+
+    span {
+      color: var(--text-muted);
+      font-size: var(--text-sm);
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .product-page--profenofos {
+    .product-title {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+<main class="catalogue-page">
+  <!-- Hero Section -->
+  <section class="catalogue-hero">
+    <div class="hero-content">
+      <h1 data-aos="fade-up">Product Catalogue</h1>
+      <p data-aos="fade-up" data-aos-delay="200">
+        <strong>Explore our comprehensive range of agricultural solutions</strong>
+      </p>
+    </div>
+    <div class="hero-bg">
+      <svg viewBox="0 0 1440 160" preserveAspectRatio="none">
+        <path fill="var(--primary-lightest)" d="M0,48L48,56C96,64,192,80,288,80C384,80,480,64,576,56C672,48,768,48,864,56C960,64,1056,80,1152,80C1248,80,1344,64,1392,56L1440,48L1440,160L1392,160C1344,160,1248,160,1152,160C1056,160,960,160,864,160C768,160,672,160,576,160C480,160,384,160,288,160C192,160,96,160,48,160L0,160Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- PDF Viewer Section -->
+  <section class="pdf-viewer-section">
+    <div class="container">
+      <div class="pdf-container" data-aos="fade-up">
+        <ngx-extended-pdf-viewer
+          #pdfViewer
+          [src]="pdfSrc"
+          [height]="'90vh'"
+          [useBrowserLocale]="true"
+          [textLayer]="false"
+          [handTool]="true"
+          [zoom]="isMobile ? 'page-width' : 'page-fit'"
+          [minZoom]="0.5"
+          [maxZoom]="4"
+          [pageViewMode]="isMobile ? 'single' : 'book'"
+          [page]="currentPage"
+          [showBorders]="true"
+          [showDownloadButton]="true"
+          [showHandToolButton]="true"
+          [showPagingButtons]="true"
+          [showPresentationModeButton]="!isMobile"
+          [showPrintButton]="!isMobile"
+          [showSidebarButton]="!isMobile"
+          [showZoomButtons]="true"
+          [mobileFriendlyZoom]="isMobile ? '100%' : 'auto'"
+          [backgroundColor]="'#f8f9fa'"
+          (error)="handleError($event)"
+          (documentLoaded)="onPdfLoadComplete($event)"
+        ></ngx-extended-pdf-viewer>
+      </div>
+    </div>
+  </section>
+
+  <div *ngIf="pdfLoading" class="pdf-loading">
+    Loading PDF...
+  </div>
+
+  <div *ngIf="pdfLoadError" class="pdf-error">
+    Failed to load PDF. Please try again later.
+  </div>
+</main>

@@ -1,0 +1,347 @@
+<main class="product-page" itemscope itemtype="https://schema.org/Product">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="product-title" data-aos="fade-right" itemprop="name">{{product.name}}</h1>
+          <p class="product-tagline" data-aos="fade-right" data-aos-delay="100">Advanced Systemic Insecticide</p>
+          <div class="product-description" data-aos="fade-right" data-aos-delay="200">
+            <p itemprop="description"><strong>Thio-H</strong> is our premium systemic insecticide powered by advanced Thiamethoxam technology. Trusted by farmers nationwide, it delivers exceptional control of sucking pests, borers, and leaf miners through its unique systemic action. The water-dispersible granule formulation ensures superior plant uptake and extended protection for up to 15-20 days, maximizing crop yield potential while being safe for beneficial insects when used as directed.</p>
+            
+            <div class="usps" data-aos="fade-right" data-aos-delay="250">
+              <span class="usp-tag"><i class="fas fa-shield-alt"></i> Systemic Protection</span>
+              <span class="usp-tag"><i class="fas fa-leaf"></i> Plant-Safe Formula</span>
+              <span class="usp-tag"><i class="fas fa-clock"></i> Long-Lasting Action</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="product-image-container" data-aos="zoom-in">
+            <div class="product-image-inner">
+              <img src="assets/products/THIO-H.png" alt="Thio-H Systemic Insecticide Product Package" class="product-image" itemprop="image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Benefits Section -->
+  <section class="benefits-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Key Benefits</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="benefits-list">
+            <li data-aos="fade-up" data-aos-delay="100">
+              <span class="benefit-icon">
+                <i class="fas fa-seedling"></i>
+              </span>
+              <div class="benefit-content">
+                <h3>Systemic Action</h3>
+                <p>Rapidly absorbed and distributed throughout the plant for comprehensive protection</p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <span class="benefit-icon">
+                <i class="fas fa-shield-alt"></i>
+              </span>
+              <div class="benefit-content">
+                <h3>Extended Protection</h3>
+                <p>Long-lasting control that reduces the need for frequent applications</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="benefits-list">
+            <li data-aos="fade-up" data-aos-delay="300">
+              <span class="benefit-icon">
+                <i class="fas fa-bug-slash"></i>
+              </span>
+              <div class="benefit-content">
+                <h3>Broad Spectrum Control</h3>
+                <p>Effective against multiple pest species including sucking pests and borers</p>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="400">
+              <span class="benefit-icon">
+                <i class="fas fa-leaf"></i>
+              </span>
+              <div class="benefit-content">
+                <h3>Crop-Safe Formula</h3>
+                <p>Gentle on crops while being tough on target pests</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Target Pests Section -->
+  <section class="pests-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Target Pests</h2>
+      <div class="pest-cards">
+        <div class="row">
+          <div *ngFor="let pest of targetPests; let i = index" class="col-md-4">
+            <div class="pest-card" data-aos="flip-up" [attr.data-aos-delay]="100 * i">
+              <div class="pest-icon">
+                <i class="fas fa-bug"></i>
+              </div>
+              <h3>{{pest.name}}</h3>
+              <p>{{pest.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Specifications Section -->
+  <section class="tech-specs-section" id="specifications">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Technical Specifications</h2>
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-12">
+          <div class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-flask specs-icon"></i>
+              <h3>Product Information</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let spec of technicalSpecs.productInfo" class="spec-item">
+                <span class="spec-label">{{spec.label}}:</span>
+                <span class="spec-value">{{spec.value}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Guidelines Section -->
+  <section class="application-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Application Guidelines</h2>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="application-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="application-details">
+              <div class="detail-item">
+                <i class="fas fa-flask"></i>
+                <h4>Recommended Dosage</h4>
+                <p>{{applicationDetails.dosage}}</p>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-spray-can"></i>
+                <h4>Application Method</h4>
+                <p>{{applicationDetails.method}}</p>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-clock"></i>
+                <h4>Timing</h4>
+                <p>{{applicationDetails.timing}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Usage & Safety Guidelines Section -->
+  <section class="usage-safety-section">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">Usage & Safety Guidelines</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">Follow these professional recommendations for optimal results and safe handling</p>
+      
+      <div class="row g-4 mt-3">
+        <!-- Application Cards -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="usage-card">
+            <div class="usage-card-header">
+              <div class="icon-container">
+                <i class="fas fa-spray-can"></i>
+              </div>
+              <h3>Application Guidelines</h3>
+            </div>
+            <div class="usage-card-body">
+              <div class="usage-item">
+                <div class="usage-icon">
+                  <i class="fas fa-flask"></i>
+                </div>
+                <div class="usage-content">
+                  <h4>Recommended Dosage</h4>
+                  <p>{{safetyGuidelines.dosage}}</p>
+                </div>
+              </div>
+              
+              <div class="usage-item">
+                <div class="usage-icon">
+                  <i class="fas fa-hand-holding-water"></i>
+                </div>
+                <div class="usage-content">
+                  <h4>Dilution Rate</h4>
+                  <p>{{safetyGuidelines.dilutionRate}}</p>
+                </div>
+              </div>
+              
+              <div class="usage-item">
+                <div class="usage-icon">
+                  <i class="fas fa-shower"></i>
+                </div>
+                <div class="usage-content">
+                  <h4>Application Method</h4>
+                  <p>{{safetyGuidelines.applicationMethod}}</p>
+                </div>
+              </div>
+              
+              <div class="usage-item">
+                <div class="usage-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="usage-content">
+                  <h4>Timing & Frequency</h4>
+                  <p>{{safetyGuidelines.timing}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Safety Precautions Card -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="safety-card">
+            <div class="safety-card-header">
+              <div class="icon-container">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Safety Precautions</h3>
+            </div>
+            <div class="safety-card-body">
+              <div *ngFor="let precaution of safetyGuidelines.precautions" class="safety-item">
+                <div class="safety-icon">
+                  <i [class]="precaution.icon"></i>
+                </div>
+                <div class="safety-content">
+                  <h4>{{precaution.title}}</h4>
+                  <p>{{precaution.description}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mt-4">
+        <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+          <div class="disclaimer-box">
+            <div class="disclaimer-icon">
+              <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="disclaimer-content">
+              <h4>Important Notice</h4>
+              <p>Always read the product label and follow instructions carefully. The information provided here is general guidance. For specific crops and local conditions, consult with your agricultural advisor. Optimal application methods may vary by region and crop.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <!-- <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div *ngFor="let faq of faqs; let i = index" class="faq-item" data-aos="fade-up" [attr.data-aos-delay]="100 * i">
+          <h3 class="faq-question">{{faq.question}}</h3>
+          <p class="faq-answer" [innerHTML]="faq.answer"></p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="accordion faq-accordion" id="faqAccordion" data-aos="fade-up" data-aos-delay="100">
+            <ng-container *ngFor="let faq of faqs; let i = index">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="heading{{i}}">
+                  <button class="accordion-button {{i !== 0 ? 'collapsed' : ''}}" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    [attr.data-bs-target]="'#collapse' + i" 
+                    [attr.aria-expanded]="i === 0 ? 'true' : 'false'" 
+                    [attr.aria-controls]="'collapse' + i">
+                    {{faq.question}}
+                  </button>
+                </h3>
+                <div [id]="'collapse' + i" class="accordion-collapse collapse {{i === 0 ? 'show' : ''}}" 
+                  [attr.aria-labelledby]="'heading' + i" 
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p [innerHTML]="faq.answer"></p>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Farmer Testimonials</h2>
+      <div class="row">
+        <div *ngFor="let testimonial of testimonials; let i = index" class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <p class="testimonial-text">
+              {{testimonial.text}}
+            </p>
+            <!-- <div class="testimonial-author">
+              <div class="author-img">
+                <img src="assets/testimonials/farmer1.jpg" alt="Farmer portrait">
+              </div>
+              <div class="author-info">
+                <h4>Ramesh Patel</h4>
+                <p>Cotton Farmer, Gujarat</p>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-container" data-aos="zoom-in">
+        <h2>Ready to enhance your crop protection?</h2>
+        <p>Contact us today to learn more about Proceed and our other premium agricultural solutions.</p>
+        <a href="/contact-us" class="cta-button">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</main>

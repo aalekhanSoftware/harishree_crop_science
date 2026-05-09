@@ -1,0 +1,310 @@
+<main class="product-page product-page--detail" itemscope>
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <p class="product-brand-line" data-aos="fade-right">Thio-H 75</p>
+          <h1 class="product-title" data-aos="fade-right" data-aos-delay="40">
+            Thiamethoxam 75% SG
+          </h1>
+          <p class="product-tagline" data-aos="fade-right" data-aos-delay="80">Systemic - Broad spectrum - High strength neonicotinoid</p>
+          <div class="product-description" data-aos="fade-right" data-aos-delay="120">
+            <p>
+              <strong>Thiamethoxam 75% SG</strong> (marketed as <strong>Thio-H 75</strong>) is a premium, powerful systemic insecticide
+              engineered for exceptional control of sucking pests. The high-concentration soluble granule (SG) formulation ensures 
+              instant dissolution, rapid plant absorption, and comprehensive protection from within, shielding crops against 
+              aphids, jassids, hoppers, and whiteflies and promoting visibly greener, healthier growth.
+            </p>
+            <div class="usps" data-aos="fade-right" data-aos-delay="180">
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Rapid knockdown</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Excellent systemic activity</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Low dosage per pump</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="product-image-container" data-aos="zoom-in">
+            <div class="product-image-inner">
+              <img
+                src="assets/products/insecticide/thiamethoxam-75-sg.jpg"
+                alt="Thiamethoxam 75% SG (Thio-H 75) Insecticide Box"
+                class="product-image"
+                width="400"
+                height="400"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-pack-section" aria-labelledby="pack-heading">
+    <div class="container">
+      <h2 id="pack-heading" class="section-title text-center" data-aos="fade-up">Available pack sizes</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Authentic <strong>Thiamethoxam 75% SG</strong> packed securely to meet every commercial farming requirement.
+      </p>
+      <div class="pack-grid" data-aos="fade-up" data-aos-delay="80">
+        <article *ngFor="let pack of packSizes" class="pack-card" [class.pack-card--featured]="pack.featured">
+          <h3 class="pack-card__volume">{{ pack.volume }}</h3>
+          <p class="pack-card__hint">Harishree Quality Assured</p>
+          <a routerLink="/contact-us" class="pack-card__cta">Enquire now</a>
+        </article>
+      </div>
+      <p class="dose-callout text-center" data-aos="fade-up">
+        <strong>Recommended Dose:</strong> 10 gm per pump (15-litre water).
+      </p>
+    </div>
+  </section>
+
+  <section class="benefits-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Key benefits</h2>
+      <div class="row g-4">
+        <div *ngFor="let b of keyBenefits; let i = index" class="col-md-6" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="b.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ b.title }}</h3>
+              <p>{{ b.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pests-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Target pests</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Thiamethoxam 75% SG offers robust control against major sap-sucking agricultural pests.
+      </p>
+      <div class="pest-cards">
+        <div class="row">
+          <div *ngFor="let p of targetPests; let i = index" class="col-md-4">
+            <article class="pest-card" data-aos="flip-up" [attr.data-aos-delay]="60 * i">
+              <div class="pest-icon"><i class="fas fa-bug"></i></div>
+              <h3>{{ p.name }}</h3>
+              <p>{{ p.description }}</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="crops-section product-applications">
+    <div class="product-applications__band">
+      <div class="container">
+        <div class="row align-items-end mb-2">
+          <div class="col-lg-8">
+            <h2 class="section-title product-applications__title" data-aos="fade-up">Crops & applications</h2>
+            <p class="section-subtitle product-applications__lead" data-aos="fade-up" data-aos-delay="40">
+              <strong>Thiamethoxam 75% SG</strong> is highly trusted by farmers for ensuring crop vigor and high yields across India.
+            </p>
+          </div>
+        </div>
+        <ul class="product-applications__grid list-unstyled mb-0" role="list">
+          <li *ngFor="let app of applications; let i = index" class="product-applications__item" data-aos="fade-up" [attr.data-aos-delay]="40 * i">
+            <article class="product-app-tile">
+              <div class="product-app-tile__head" aria-hidden="true"></div>
+              <div class="product-app-tile__body">
+                <div class="product-app-tile__icon-wrap">
+                  <span class="product-app-tile__icon"><i [class]="app.icon"></i></span>
+                </div>
+                <h3 class="product-app-tile__title">{{ app.title }}</h3>
+                <p class="product-app-tile__text">{{ app.description }}</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Technical specifications</h2>
+      <div class="row" data-aos="fade-up" data-aos-delay="70">
+        <div class="col-lg-8 mx-auto mb-4">
+          <article class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-microscope specs-icon"></i>
+              <h3>Formulation Details</h3>
+            </div>
+            <div class="specs-content row">
+              <div *ngFor="let row of technicalSpecs" class="spec-item col-md-6 mb-3">
+                <strong class="d-block text-muted small">{{ row.label }}</strong>
+                <span class="spec-value h6 mb-0">{{ row.value }}</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mode-of-action-section product-moa" aria-labelledby="moa-heading">
+    <div class="container">
+      <h2 id="moa-heading" class="section-title text-center" data-aos="fade-up">Mode of action</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How Thiamethoxam 75% SG works from the inside out to protect your crops.
+      </p>
+      <div class="product-moa__layout row justify-content-center mt-2 mt-lg-4">
+        <div class="col-12 col-xl-10" data-aos="fade-up">
+          <ol class="product-moa__steps list-unstyled mb-0" role="list">
+            <li *ngFor="let step of modeOfAction; let i = index" class="product-moa__step">
+              <div class="product-moa__step-num" aria-hidden="true">{{ i + 1 }}</div>
+              <div class="product-moa__step-body">
+                <h3 class="product-moa__step-title">{{ step.title }}</h3>
+                <p class="product-moa__step-text">{{ step.description }}</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="usage-safety-section">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">Usage & safety guidelines</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Ensure strict adherence to best practices for effective application and personal responsibility.
+      </p>
+      <div class="usage-safety-shell mt-4">
+        <div class="usage-safety-shell__intro" data-aos="fade-up" data-aos-delay="60">
+          <span class="usage-pill"><i class="fas fa-spray-can"></i> Accurate 10gm dose</span>
+          <span class="usage-pill"><i class="fas fa-hard-hat"></i> Farm safety</span>
+        </div>
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <article class="usage-safety-panel usage-safety-panel--usage">
+              <header class="usage-safety-panel__head">
+                <h3>Application protocols</h3>
+                <p>Steps to achieve superior, uniform pest control.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i % 2 === 0" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true"><i class="fas fa-check"></i></span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="140">
+            <article class="usage-safety-panel usage-safety-panel--safety">
+              <header class="usage-safety-panel__head">
+                <h3>Stewardship & protection</h3>
+                <p>Secure operations and mitigate field risks.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i % 2 !== 0" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true"><i class="fas fa-exclamation-triangle"></i></span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Results & performance highlights</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Excellence in the field proven by consistent crop vitality and output.
+      </p>
+      <div class="row mt-4">
+        <div *ngFor="let ph of performanceHighlights; let i = index" class="col-md-6 col-lg-3" data-aos="fade-up" [attr.data-aos-delay]="70 * i">
+          <article class="product-highlight-card">
+            <h3 class="h6">{{ ph.label }}</h3>
+            <p>{{ ph.value }}</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Frequently asked questions</h2>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="accordion faq-accordion" id="thioFaqAccordion" data-aos="fade-up" data-aos-delay="90">
+            <ng-container *ngFor="let faq of faqs; let i = index">
+              <div class="accordion-item">
+                <h3 class="accordion-header" [id]="'thfq-heading-' + i">
+                  <button
+                    class="accordion-button"
+                    [class.collapsed]="i !== 0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#thfq-collapse-' + i"
+                    [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
+                    [attr.aria-controls]="'thfq-collapse-' + i"
+                  >
+                    {{ faq.question }}
+                  </button>
+                </h3>
+                <div
+                  [id]="'thfq-collapse-' + i"
+                  class="accordion-collapse collapse"
+                  [class.show]="i === 0"
+                  [attr.aria-labelledby]="'thfq-heading-' + i"
+                  data-bs-parent="#thioFaqAccordion"
+                >
+                  <div class="accordion-body">
+                    <p [innerHTML]="faq.answer"></p>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">What growers say</h2>
+      <div class="row">
+        <div *ngFor="let t of testimonials; let i = index" class="col-md-4" data-aos="fade-up" [attr.data-aos-delay]="60 * i">
+          <article class="testimonial-card">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">{{ t.text }}</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section product-detail-cta" aria-labelledby="product-detail-cta-title">
+    <div class="container">
+      <div class="cta-container" data-aos="zoom-in">
+        <h2 id="product-detail-cta-title" class="cta-title">Secure your crop yielding potential with Thiamethoxam 75% SG</h2>
+        <p class="cta-text">Contact our expert agronomy team at Harishree Crop Science for localized recommendations and dealer availability.</p>
+        <div class="cta-actions" role="group" aria-label="Contact and navigation">
+          <a routerLink="/contact-us" class="cta-button">Contact Harishree</a>
+          <a routerLink="/products" class="cta-button cta-button--outline">Browse all products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

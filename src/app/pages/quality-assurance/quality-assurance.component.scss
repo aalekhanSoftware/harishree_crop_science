@@ -1,0 +1,318 @@
+@import '../../../styles.scss';
+
+// Hero Section
+.quality-hero {
+    position: relative;
+    min-height: 52vh;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 152, 70, 0.9) 0%,
+        rgba(82, 148, 51, 0.85) 100%
+      );
+      z-index: 1;
+    }
+  
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: white;
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+  
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        font-weight: var(--font-bold);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+  
+      p {
+        font-size: 1.5rem;
+        opacity: 1;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+      }
+    }
+  
+    .hero-bg {
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      z-index: 3;
+      
+      svg {
+        width: 100%;
+        height: auto;
+        display: block;
+        path {
+          fill: var(--primary-lightest);
+        }
+      }
+    }
+}
+
+h2 {
+  color: var(--secondary);
+}
+
+// Section Spacing
+.quality-hero,
+.quality-overview,
+.quality-standards,
+.quality-process {
+  padding: 1rem 0;
+  
+  .row {
+    margin: -1.5rem;
+    
+    [class*="col-"] {
+      padding: 1.5rem;
+    }
+  }
+  
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
+
+// Standard Cards
+.standard-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  margin-bottom: 2rem;
+  
+  &:hover {
+    transform: translateY(-5px);
+    border-color: var(--secondary);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 2rem;
+    color: var(--primary);
+    transition: color 0.3s ease;
+  }
+
+  h3 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+
+  p {
+    color: var(--gray-700);
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  &:hover {
+    .icon {
+      color: var(--secondary);
+    }
+    
+    h3 {
+      color: var(--secondary);
+    }
+  }
+}
+
+// Quality Cards
+.quality-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  margin-bottom: 2rem;
+  
+  &:hover {
+    transform: translateY(-5px);
+    border-color: var(--secondary);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 2rem;
+    color: var(--primary);
+    transition: color 0.3s ease;
+  }
+
+  h3 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    li {
+      color: var(--gray-700);
+      margin-bottom: 0.75rem;
+      position: relative;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--primary-lightest);
+      
+      &:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &:hover {
+    .icon {
+      color: var(--secondary);
+    }
+    
+    h3 {
+      color: var(--secondary);
+    }
+  }
+}
+
+// Add after hero section and before existing h2 styles
+.overview-text {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--primary-lightest);
+
+  .lead {
+    font-size: 1.25rem;
+    color: var(--primary);
+    font-weight: var(--font-medium);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  p {
+    color: var(--gray-700);
+    margin-bottom: 1.25rem;
+    line-height: 1.7;
+  }
+
+  .testing-facilities {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+
+    li {
+      position: relative;
+      padding-left: 1.5rem;
+      color: var(--gray-700);
+      line-height: 1.6;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 8px;
+        background-color: var(--secondary);
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+// Responsive Styles
+@media (max-width: 991px) {
+  .quality-hero,
+  .quality-overview,
+  .quality-standards,
+  .quality-process {
+    padding: 6rem 0;
+    
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .quality-hero {
+    .hero-content {
+      h1 {
+        font-size: 2.5rem;
+      }
+      
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  
+  .quality-hero,
+  .quality-overview,
+  .quality-standards,
+  .quality-process {
+    padding: 4rem 0;
+    
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .quality-card {
+    padding: 2rem;
+    
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
+
+  .overview-text {
+    padding: 1.5rem;
+    
+    .lead {
+      font-size: 1.1rem;
+    }
+
+    .testing-facilities {
+      grid-template-columns: 1fr;
+    }
+  }
+}
