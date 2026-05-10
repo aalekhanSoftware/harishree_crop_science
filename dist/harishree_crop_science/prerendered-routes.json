@@ -1,0 +1,31 @@
+{
+  "routes": [
+    "/",
+    "/about-us",
+    "/catalogue",
+    "/contact-us",
+    "/product/abamectin-1-9-ec",
+    "/product/chlorantraniliprole-18-5-sc",
+    "/product/chlorpyriphos-20-ec",
+    "/product/chlorpyriphos-50-cypermethrin-5-ec",
+    "/product/cypermethrin-25-ec",
+    "/product/emamectin-benzoate-1-9-ec",
+    "/product/emamectin-benzoate-5-sg",
+    "/product/fipronil-40-imidacloprid-40-wg",
+    "/product/glufosinate-ammonium-13-5-sl",
+    "/product/glyphosate-41-sl",
+    "/product/mpire-404",
+    "/product/paraquat-dichloride-24-sl",
+    "/product/pendimethalin-30-ec",
+    "/product/profenofos-40-cypermethrin-4-ec",
+    "/product/quizalofop-ethyl-10-ec",
+    "/product/tembotrione-34-4-w-w-sc",
+    "/product/thiamethoxam-12-6-lambda-cyhalothrin-9-5-zc",
+    "/product/thiamethoxam-30-fs",
+    "/product/thiamethoxam-75-sg",
+    "/product/tolfenpyrad-15-ec",
+    "/products",
+    "/quality-assurance",
+    "/research"
+  ]
+}
