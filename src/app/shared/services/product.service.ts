@@ -118,10 +118,11 @@ export class ProductService {
             description: 'Chlorpyriphos 10% GR soil insecticide',
             fullDescription: 'Cloro GR (Chlorpyriphos 10% GR) provides targeted, season-long protection from soil-dwelling insects including termites and root grubs. The granular formulation enables convenient basal application and uniform distribution in the root zone, safeguarding emerging seedlings and establishing crops. Designed for reliability and ease of use in nursery and field situations.'
           },
-          { name: 'DR. Delta', 
-            image: 'assets/products/insecticide/dr-delta.jpg', 
+          { name: 'DR. Delta',
+            image: 'assets/products/insecticide/dr-delta.jpg',
             description: 'Deltamethrin 2.8% EC fast knockdown pyrethroid',
-            fullDescription: 'DR. Delta (Deltamethrin 2.8% EC) is a premium pyrethroid delivering lightning-fast knockdown and excellent residual control of lepidopteran and sucking pests. Its advanced solvent system improves spread, coverage and rainfastness while remaining gentle on crops when used as directed. A go-to choice for quick, visible results in vegetables, cotton and other labeled crops.'
+            fullDescription: 'DR. Delta (Deltamethrin 2.8% EC) is a premium pyrethroid delivering lightning-fast knockdown and excellent residual control of lepidopteran and sucking pests. Its advanced solvent system improves spread, coverage and rainfastness while remaining gentle on crops when used as directed. A go-to choice for quick, visible results in vegetables, cotton and other labeled crops.',
+            url: 'product/deltamethrin-2-8-ec'
           },
           { name: 'Eclipse', 
             image: 'assets/products/insecticide/eclipse.jpg', 

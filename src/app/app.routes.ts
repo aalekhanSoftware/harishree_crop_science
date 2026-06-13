@@ -38,6 +38,8 @@ export const routes: Routes = [
   { path: 'product/cora-5', redirectTo: 'product/chlorantraniliprole-18-5-sc', pathMatch: 'full' },
   { path: 'product/profenofos-40-cypermethrin-4-ec', loadComponent: () => import('./pages/all-products/profenofos-40-cypermethrin-4-ec/profenofos-40-cypermethrin-4-ec.component').then(m => m.Profenofos40Cypermethrin4EcComponent) }, //mpire-404
   { path: 'product/mpire-404', loadComponent: () => import('./pages/all-products/mpire-404/mpire-404.component').then(m => m.Mpire404Component) }, //profenofos-40-cypermethrin-4-ec
+  { path: 'product/deltamethrin-2-8-ec', loadComponent: () => import('./pages/all-products/deltamethrin-2-8-ec/deltamethrin-2-8-ec.component').then(m => m.Deltamethrin28EcComponent) },
+  { path: 'product/dr-delta', redirectTo: 'product/deltamethrin-2-8-ec', pathMatch: 'full' },
   { path: 'product/dr-supreme', redirectTo: 'product/abamectin-1-9-ec', pathMatch: 'full' },
   { path: 'product/round', redirectTo: 'product/glyphosate-41-sl', pathMatch: 'full' },
 ];
