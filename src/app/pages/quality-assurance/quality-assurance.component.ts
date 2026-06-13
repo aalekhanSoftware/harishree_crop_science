@@ -1,5 +1,5 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Meta, Title, MetaDefinition } from '@angular/platform-browser';
 import { TransferState, makeStateKey } from '@angular/platform-browser';
 import { environment } from '../../../environments/environment';
@@ -24,7 +24,8 @@ export class QualityAssuranceComponent implements OnInit, OnDestroy {
     private title: Title,
     private meta: Meta,
     private transferState: TransferState,
-    svgIconsService: SvgIconsService
+    svgIconsService: SvgIconsService,
+    @Inject(PLATFORM_ID) private platformId: object
   ) {
     this.svgIcons = svgIconsService;
   }
@@ -77,11 +78,13 @@ export class QualityAssuranceComponent implements OnInit, OnDestroy {
       "url": `${this.baseUrl}/quality-assurance`
     };
 
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(structuredData);
-    document.head.appendChild(script);
-
     this.transferState.set(STRUCTURED_DATA_KEY, JSON.stringify(structuredData));
+
+    if (isPlatformBrowser(this.platformId)) {
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.text = JSON.stringify(structuredData);
+      document.head.appendChild(script);
+    }
   }
 }

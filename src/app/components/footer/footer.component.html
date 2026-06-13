@@ -4,10 +4,9 @@
       <!-- Company Info -->
       <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
         <div class="footer-brand" itemscope itemtype="https://schema.org/Organization">
-          <link itemprop="url" [attr.href]="baseUrl || '/'" />
+          <meta itemprop="url" [attr.content]="organizationUrl" />
           <img
             src="assets/logo/HARISHREE.png"
-            [attr.content]="logoUrl"
             itemprop="logo"
             alt="Harishree Crop Science Logo"
             class="footer-logo mb-3"

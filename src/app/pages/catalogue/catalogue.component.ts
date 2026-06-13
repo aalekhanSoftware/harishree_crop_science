@@ -73,6 +73,8 @@ export class CatalogueComponent implements OnInit, OnDestroy {
       fromEvent(window, 'resize')
         .pipe(debounceTime(200))
         .subscribe(() => this.checkMobile());
+    } else {
+      this.pdfLoading = false;
     }
   }
 

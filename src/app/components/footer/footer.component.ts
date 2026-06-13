@@ -29,6 +29,7 @@ export class FooterComponent implements OnInit, OnDestroy {
   readonly organizationDescription =
     'Leading manufacturer of agricultural products committed to sustainable farming solutions and environmental stewardship. Empowering farmers with quality inputs for a better harvest.';
   readonly logoUrl = `${this.baseUrl}/assets/logo/HARISHREE.png`;
+  readonly organizationUrl = this.baseUrl || 'https://harishreecropscience.com';
 
   quickLinks: FooterNavLink[] = [
     { name: 'Home', path: '/' },
@@ -233,11 +234,11 @@ export class FooterComponent implements OnInit, OnDestroy {
       }))
     ];
 
-    this.appendScript({
-      '@context': 'https://schema.org',
-      '@type': 'ItemList',
-      name: 'Harishree Crop Science footer navigation',
-      itemListElement: [...quickNavItems, ...productNavItems]
-    });
+    // this.appendScript({
+    //   '@context': 'https://schema.org',
+    //   '@type': 'ItemList',
+    //   name: 'Harishree Crop Science footer navigation',
+    //   itemListElement: [...quickNavItems, ...productNavItems]
+    // });
   }
 }

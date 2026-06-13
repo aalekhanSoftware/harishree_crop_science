@@ -19,6 +19,7 @@
     <div class="container">
       <div class="pdf-container" data-aos="fade-up">
         <ngx-extended-pdf-viewer
+          *ngIf="isPlatformBrowser(platformId)"
           #pdfViewer
           [src]="pdfSrc"
           [height]="'90vh'"
@@ -43,6 +44,11 @@
           (error)="handleError($event)"
           (documentLoaded)="onPdfLoadComplete($event)"
         ></ngx-extended-pdf-viewer>
+
+        <div *ngIf="!isPlatformBrowser(platformId)" class="pdf-ssr-fallback">
+          <p>Our product catalogue is available as a PDF download.</p>
+          <a [href]="pdfSrc" class="btn btn-primary" download>Download catalogue PDF</a>
+        </div>
       </div>
     </div>
   </section>

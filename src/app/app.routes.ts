@@ -20,6 +20,7 @@ export const routes: Routes = [
   { path: 'product/h-fun', redirectTo: 'product/tolfenpyrad-15-ec', pathMatch: 'full' },
   { path: 'product/glyphosate-41-sl', loadComponent: () => import('./pages/all-products/glyphosate-41-sl/glyphosate-41-sl.component').then(m => m.Glyphosate41SlComponent) },
   { path: 'product/glufosinate-ammonium-13-5-sl', loadComponent: () => import('./pages/all-products/glufosinate-ammonium-13-5-sl/glufosinate-ammonium-13-5-sl.component').then(m => m.GlufosinateAmmonium135SlComponent) },
+  { path: 'product/glufo-13', redirectTo: 'product/glufosinate-ammonium-13-5-sl', pathMatch: 'full' },
   { path: 'product/quizalofop-ethyl-10-ec', loadComponent: () => import('./pages/all-products/quizalofop-ethyl-10-ec/quizalofop-ethyl-10-ec.component').then(m => m.QuizalofopEthyl10EcComponent) },
   { path: 'product/tembotrione-34-4-w-w-sc', loadComponent: () => import('./pages/all-products/tembotrione-34-4-w-w-sc/tembotrione-34-4-w-w-sc.component').then(m => m.Tembotrione344WwScComponent) },
   { path: 'product/paraquat-dichloride-24-sl', loadComponent: () => import('./pages/all-products/paraquat-dichloride-24-sl/paraquat-dichloride-24-sl.component').then(m => m.ParaquatDichloride24SlComponent) },
