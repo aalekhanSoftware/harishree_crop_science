@@ -3,18 +3,36 @@
     <div class="row g-4">
       <!-- Company Info -->
       <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-        <div class="footer-brand">
-          <img src="assets/logo/HARISHREE.png" alt="Harishree Crop Science Logo" class="footer-logo mb-3" width="150" height="85">
-          <p class="company-description">
+        <div class="footer-brand" itemscope itemtype="https://schema.org/Organization">
+          <link itemprop="url" [attr.href]="baseUrl || '/'" />
+          <img
+            src="assets/logo/HARISHREE.png"
+            [attr.content]="logoUrl"
+            itemprop="logo"
+            alt="Harishree Crop Science Logo"
+            class="footer-logo mb-3"
+            width="150"
+            height="85"
+          />
+          <meta itemprop="name" content="Harishree Crop Science" />
+          <p class="company-description" itemprop="description">
             Leading manufacturer of agricultural products committed to sustainable farming solutions and environmental stewardship. Empowering farmers with quality inputs for a better harvest.
           </p>
+          <meta itemprop="email" content="harishreecropscience@gmail.com" />
+          <meta itemprop="telephone" content="+919898197196" />
         </div>
-        
+
         <div class="social-connect mt-4">
           <h6 class="text-uppercase mb-3">Follow Us</h6>
           <div class="social-links">
             <ng-container *ngFor="let social of socialLinks">
-              <a [href]="social.url" target="_blank" rel="noopener noreferrer" [attr.aria-label]="social.label" class="social-btn">
+              <a
+                [href]="social.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                [attr.aria-label]="social.label"
+                class="social-btn"
+              >
                 <i [class]="social.icon"></i>
               </a>
             </ng-container>
@@ -23,29 +41,48 @@
       </div>
 
       <!-- Quick Links -->
-      <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+      <div class="col-lg-2 col-md-6 mb-4 mb-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <h5 class="footer-heading">Quick Links</h5>
         <nav aria-label="Footer Navigation">
           <ul class="footer-links">
-            <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
-            <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
-            <li><a routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
-            <li><a routerLink="/research" routerLinkActive="active">R&amp;D</a></li>
-            <li><a routerLink="/quality-assurance" routerLinkActive="active">Quality</a></li>
-            <li><a routerLink="/catalogue" routerLinkActive="active">Catalogue</a></li>
+            <li *ngFor="let link of quickLinks">
+              <a
+                [routerLink]="link.path"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="link.path === '/' ? { exact: true } : { exact: false }"
+                itemprop="url"
+                [attr.content]="absoluteUrl(link.path)"
+              >
+                <span itemprop="name">{{ link.name }}</span>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
 
       <!-- Products -->
-      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <h5 class="footer-heading">Our Products</h5>
         <nav aria-label="Product Navigation">
           <ul class="footer-links">
-            <li><a routerLink="/products" routerLinkActive="active">All Products</a></li>
+            <li>
+              <a
+                [routerLink]="allProductsLink.path"
+                routerLinkActive="active"
+                itemprop="url"
+                [attr.content]="absoluteUrl(allProductsLink.path)"
+              >
+                <span itemprop="name">{{ allProductsLink.name }}</span>
+              </a>
+            </li>
             <li *ngFor="let product of featuredProducts">
-              <a [routerLink]="['/products/', product.name]" routerLinkActive="active">
-                {{ product.name }}
+              <a
+                [routerLink]="productRouterLink(product)"
+                routerLinkActive="active"
+                itemprop="url"
+                [attr.content]="absoluteUrl(product.url!)"
+              >
+                <span itemprop="name">{{ product.name }}</span>
               </a>
             </li>
           </ul>
@@ -53,29 +90,31 @@
       </div>
 
       <!-- Contact Info -->
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-3 col-md-6" itemscope itemtype="https://schema.org/Organization">
         <h5 class="footer-heading">Get in Touch</h5>
         <address class="contact-info">
-          <div class="contact-item">
+          <div class="contact-item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
             <i class="fas fa-map-marker-alt icon"></i>
             <div class="details">
               <h6>Corporate Office</h6>
               <p>
-                G-11, Saikruti Complex,<br>
-                Gotri Road, Vadodara,<br>
-                Gujarat-390021, India
+                <span itemprop="streetAddress">G-11, Saikruti Complex, Gotri Road</span>,<br />
+                <span itemprop="addressLocality">Vadodara</span>,<br />
+                <span itemprop="addressRegion">Gujarat</span>-<span itemprop="postalCode">390021</span>,
+                <span itemprop="addressCountry">India</span>
               </p>
             </div>
           </div>
-          
-          <div class="contact-item">
+
+          <div class="contact-item" itemprop="location" itemscope itemtype="https://schema.org/Place">
             <i class="fas fa-industry icon"></i>
-            <div class="details">
-              <h6>Manufacturing Unit</h6>
+            <div class="details" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+              <h6 itemprop="name">Manufacturing Unit</h6>
               <p>
-                Survey No.751, Targhari,<br>
-                Jamnagar Road,<br>
-                Gujarat-360110, India
+                <span itemprop="streetAddress">Survey No.751, Targhari, Jamnagar Road</span>,<br />
+                <span itemprop="addressLocality">Rajkot</span>,<br />
+                <span itemprop="addressRegion">Gujarat</span>-<span itemprop="postalCode">360110</span>,
+                <span itemprop="addressCountry">India</span>
               </p>
             </div>
           </div>
@@ -84,7 +123,7 @@
             <i class="fas fa-phone-alt icon"></i>
             <div class="details">
               <h6>Phone</h6>
-              <a href="tel:+919898197196" class="contact-link">+91 9898 197 196</a>
+              <a href="tel:+919898197196" class="contact-link" itemprop="telephone">+91 9898 197 196</a>
             </div>
           </div>
 
@@ -92,7 +131,7 @@
             <i class="fas fa-envelope icon"></i>
             <div class="details">
               <h6>Email</h6>
-              <a href="mailto:harishreecropscience@gmail.com" class="contact-link">harishreecropscience&#64;gmail.com</a>
+              <a href="mailto:harishreecropscience@gmail.com" class="contact-link" itemprop="email">harishreecropscience&#64;gmail.com</a>
             </div>
           </div>
         </address>
@@ -104,15 +143,16 @@
       <div class="row align-items-center">
         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
           <p class="copyright-text">
-            &copy; {{currentYear}} <strong>Harishree Crop Science</strong>. All rights reserved.
+            &copy; {{ currentYear }} <strong>Harishree Crop Science</strong>. All rights reserved.
           </p>
         </div>
         <div class="col-md-6 text-center text-md-end">
           <p class="developer-text">
-            Managed by <a href="https://aalekhansoftware.com/" target="_blank" rel="noopener noreferrer" class="dev-link">Aalekhan Software</a>
+            Managed by
+            <a href="https://aalekhansoftware.com/" target="_blank" rel="noopener noreferrer" class="dev-link">Aalekhan Software</a>
           </p>
         </div>
       </div>
     </div>
   </div>
-</footer> 
+</footer>
