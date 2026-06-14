@@ -187,7 +187,7 @@ export class ProductService {
             fullDescription: 'Topaz (Buprofezin 15% + Acephate 35% WP) provides complementary action against planthoppers, whiteflies and a range of sucking pests. The wettable powder ensures strong suspension, uniform coverage and dependable efficacy, supporting resistance management and crop quality targets.'
           },
           { name: 'Turbo',
-            image: 'assets/products/insecticide/turbo.jpg',
+            image: 'assets/products/insecticide/novaluron-5-25-indoxacarb-4-5-sc-turbo.jpg',
             description: 'Novaluron 5.25% + Indoxacarb 4.5% SC dual-action',
             fullDescription: 'Turbo (Novaluron 5.25% + Indoxacarb 4.5% SC) pairs an insect growth regulator with a modern oxadiazine for powerful control of lepidopteran larvae. The advanced SC base delivers excellent spreading and leaf coverage, providing quick suppression and extended protection of valuable foliage.'
           },
