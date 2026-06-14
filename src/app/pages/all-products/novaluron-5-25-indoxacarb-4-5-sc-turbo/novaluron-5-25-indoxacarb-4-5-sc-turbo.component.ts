@@ -669,11 +669,11 @@ export class Novaluron525Indoxacarb45ScTurboComponent implements OnInit, OnDestr
 
   private applySeo(): void {
     const desc =
-      'Buy TURBO Novaluron 5.25% + Indoxacarb 4.5% SC dual-action insecticide by Harishree. Controls bollworms, fruit borers & caterpillars. Dose: 20 ml/pump.';
+      'Buy Novaluron 5.25% + Indoxacarb 4.5% w/w SC (TURBO) dual-action insecticide by Harishree Crop Science. Broad-spectrum control of bollworms, fruit borers & caterpillars. Dose: 20 ml/pump.';
 
     this.seo.setAll(
       {
-        title: 'Novaluron + Indoxacarb SC | TURBO Insecticide | Harishree',
+        title: 'Novaluron 5.25% + Indoxacarb 4.5% w/w SC | TURBO Insecticide | Harishree',
         description: desc,
         keywords:
           'Novaluron 5.25% + Indoxacarb 4.5% w/w SC, TURBO, Novaluron 5.25 Indoxacarb 4.5 SC, Novaluron + Indoxacarb Insecticide, Novaluron 5.25% SC, Indoxacarb 4.5% SC, Novaluron Insecticide, Indoxacarb Insecticide, Caterpillar Control Insecticide, Bollworm Control Insecticide, Pod Borer Control Insecticide, Fruit Borer Control, Stem Borer Control, Cotton Insecticide, Chilli Insecticide, Tomato Insecticide, Broad Spectrum Insecticide, Best Insecticide for Caterpillars, Best Insecticide for Cotton, Agricultural Insecticide, Crop Protection Solution, TURBO Insecticide, TURBO Novaluron Indoxacarb, Harishree Crop Science',
@@ -681,7 +681,7 @@ export class Novaluron525Indoxacarb45ScTurboComponent implements OnInit, OnDestr
         robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
         author: environment.metaDefaults.author,
         openGraph: {
-          title: 'Novaluron 5.25% + Indoxacarb 4.5% SC (TURBO) | Harishree Crop Science',
+          title: 'Novaluron 5.25% + Indoxacarb 4.5% w/w SC (TURBO) | Harishree Crop Science',
           description: desc,
           url: this.pageUrl,
           image: this.productImageUrl,
@@ -689,7 +689,7 @@ export class Novaluron525Indoxacarb45ScTurboComponent implements OnInit, OnDestr
           locale: 'en_IN'
         },
         twitter: {
-          title: 'TURBO | Novaluron + Indoxacarb 4.5% SC Insecticide',
+          title: 'Novaluron 5.25% + Indoxacarb 4.5% w/w SC | TURBO Insecticide',
           description: desc,
           image: this.productImageUrl,
           card: 'summary_large_image'
