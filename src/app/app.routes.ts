@@ -40,6 +40,9 @@ export const routes: Routes = [
   { path: 'product/mpire-404', loadComponent: () => import('./pages/all-products/mpire-404/mpire-404.component').then(m => m.Mpire404Component) }, //profenofos-40-cypermethrin-4-ec
   { path: 'product/deltamethrin-2-8-ec', loadComponent: () => import('./pages/all-products/deltamethrin-2-8-ec/deltamethrin-2-8-ec.component').then(m => m.Deltamethrin28EcComponent) },
   { path: 'product/dr-delta', redirectTo: 'product/deltamethrin-2-8-ec', pathMatch: 'full' },
+  { path: 'product/novaluron-5-25-indoxacarb-4-5-sc-turbo', loadComponent: () => import('./pages/all-products/novaluron-5-25-indoxacarb-4-5-sc-turbo/novaluron-5-25-indoxacarb-4-5-sc-turbo.component').then(m => m.Novaluron525Indoxacarb45ScTurboComponent) },
+  { path: 'products/insecticide/novaluron-5-25-indoxacarb-4-5-sc-turbo', loadComponent: () => import('./pages/all-products/novaluron-5-25-indoxacarb-4-5-sc-turbo/novaluron-5-25-indoxacarb-4-5-sc-turbo.component').then(m => m.Novaluron525Indoxacarb45ScTurboComponent) },
+  { path: 'product/turbo', redirectTo: 'product/novaluron-5-25-indoxacarb-4-5-sc-turbo', pathMatch: 'full' },
   { path: 'product/dr-supreme', redirectTo: 'product/abamectin-1-9-ec', pathMatch: 'full' },
   { path: 'product/round', redirectTo: 'product/glyphosate-41-sl', pathMatch: 'full' },
 ];

@@ -189,7 +189,8 @@ export class ProductService {
           { name: 'Turbo',
             image: 'assets/products/insecticide/novaluron-5-25-indoxacarb-4-5-sc-turbo.jpg',
             description: 'Novaluron 5.25% + Indoxacarb 4.5% SC dual-action',
-            fullDescription: 'Turbo (Novaluron 5.25% + Indoxacarb 4.5% SC) pairs an insect growth regulator with a modern oxadiazine for powerful control of lepidopteran larvae. The advanced SC base delivers excellent spreading and leaf coverage, providing quick suppression and extended protection of valuable foliage.'
+            fullDescription: 'Turbo (Novaluron 5.25% + Indoxacarb 4.5% w/w SC) is Harishree Crop Science\'s premium dual-action insecticide combining an IGR with an oxadiazine for powerful caterpillar and borer control in cotton, chilli, tomato, cole crops, soybean, pulses, and vegetables. Field guidance: 20 ml per pump when used at early larval stage as per label and local advisory.',
+            url: 'product/novaluron-5-25-indoxacarb-4-5-sc-turbo'
           },
           { name: 'Yoddha',
             image: 'assets/products/insecticide/yoddha.jpg',

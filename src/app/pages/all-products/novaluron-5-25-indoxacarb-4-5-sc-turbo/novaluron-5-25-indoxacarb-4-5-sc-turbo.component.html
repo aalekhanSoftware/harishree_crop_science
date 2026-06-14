@@ -1,0 +1,664 @@
+<main class="product-page product-page--detail product-page--turbo" itemscope>
+  <!-- Breadcrumb navigation -->
+  <nav class="container pt-3" aria-label="Breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+      <li class="breadcrumb-item"><a routerLink="/products">Products</a></li>
+      <li class="breadcrumb-item"><a routerLink="/products">Insecticides</a></li>
+      <li class="breadcrumb-item active" aria-current="page">TURBO</li>
+    </ol>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <p class="product-brand-line" data-aos="fade-right">{{ brandName }}</p>
+          <h1 class="product-title" data-aos="fade-right" data-aos-delay="40">
+            {{ productTitle }}
+          </h1>
+          <p class="product-tagline" data-aos="fade-right" data-aos-delay="80">
+            SC &middot; Dual action &middot; IGR + Oxadiazine &middot; Caterpillar &amp; borer control
+          </p>
+          <div class="product-description" data-aos="fade-right" data-aos-delay="120">
+            <p>
+              <strong>Novaluron 5.25% + Indoxacarb 4.5% w/w SC</strong> (marketed as <strong>TURBO</strong>) is a premium
+              dual-action suspension concentrate insecticide engineered for powerful lepidopteran control. The combination
+              pairs an insect growth regulator with a modern oxadiazine to stop caterpillar feeding fast and disrupt larval
+              moulting for extended crop protection in cotton, chilli, tomato, cole crops, soybean, pulses, and vegetables.
+            </p>
+            <p class="small text-muted mb-2" lang="hi">
+              टर्बो नोवाल्यूरॉन 5.25% + इंडोक्साकार्ब 4.5% एससी कीटनाशक - लेबल अनुसार 20 मिली प्रति पंप खुराक और समय फॉलो करें।
+            </p>
+            <div class="usps" data-aos="fade-right" data-aos-delay="180">
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> 20 ml/pump dose</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Dual action technology</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Caterpillar control</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Long residual effect</span>
+            </div>
+            <div class="cta-actions mt-3" role="group" aria-label="Hero actions">
+              <a routerLink="/contact-us" class="cta-button">Enquire now</a>
+              <a routerLink="/products" class="cta-button cta-button--outline">All products</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <div class="product-image-container" data-aos="zoom-in">
+            <div class="product-image-inner">
+              <img
+                [src]="productImagePath"
+                alt="TURBO Novaluron 5.25% + Indoxacarb 4.5% w/w SC Insecticide"
+                title="TURBO Insecticide"
+                class="product-image"
+                width="400"
+                height="400"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Quick Highlights -->
+  <section class="benefits-section" aria-labelledby="turbo-highlights-heading">
+    <div class="container">
+      <h2 id="turbo-highlights-heading" class="section-title" data-aos="fade-up">Quick highlights</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        At-a-glance reasons growers reach for <strong>TURBO</strong> (<strong>{{ productTitle }}</strong>).
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let h of quickHighlights; let i = index" class="col-md-6 col-lg-3" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="h.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ h.title }}</h3>
+              <p>{{ h.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pack Sizes -->
+  <section class="product-pack-section" aria-labelledby="turbo-pack-heading">
+    <div class="container">
+      <h2 id="turbo-pack-heading" class="section-title text-center" data-aos="fade-up">Pack sizes</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        Authentic <strong>{{ productTitle }}</strong> (TURBO) packed securely for every farming need.
+        Prices are shown in schema only; enquire for dealer availability.
+      </p>
+      <div class="pack-grid" data-aos="fade-up" data-aos-delay="100">
+        <article *ngFor="let pack of packSizes" class="pack-card" [class.pack-card--featured]="pack.featured">
+          <h3 class="pack-card__volume">{{ pack.volume }}</h3>
+          <p class="pack-card__hint">Harishree Quality &middot; dealer support</p>
+          <a routerLink="/contact-us" class="pack-card__cta">Enquire now</a>
+        </article>
+      </div>
+      <p class="dose-callout text-center" data-aos="fade-up">
+        <strong>Recommended dose:</strong> 20 ml per pump (15-litre water; confirm on label and crop advisory).
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Choose TURBO -->
+  <section class="benefits-section" aria-labelledby="turbo-why-heading">
+    <div class="container">
+      <h2 id="turbo-why-heading" class="section-title" data-aos="fade-up">Why choose TURBO</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        What sets <strong>TURBO</strong> apart as a premium Novaluron + Indoxacarb insecticide.
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let w of whyChoose; let i = index" class="col-md-6 col-lg-3" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="w.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ w.title }}</h3>
+              <p>{{ w.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Benefits -->
+  <section class="benefits-section" aria-labelledby="turbo-benefits-heading">
+    <div class="container">
+      <h2 id="turbo-benefits-heading" class="section-title" data-aos="fade-up">Key benefits</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        Why growers trust <strong>TURBO</strong> for dependable caterpillar and borer management.
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let b of keyBenefits; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="b.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ b.title }}</h3>
+              <p>{{ b.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Is (Featured Snippet) -->
+  <section class="results-section product-results" aria-labelledby="turbo-what-is-heading">
+    <div class="container">
+      <h2 id="turbo-what-is-heading" class="section-title" data-aos="fade-up">
+        What is Novaluron 5.25% + Indoxacarb 4.5% w/w SC?
+      </h2>
+      <article class="product-highlight-card product-snippet-answer" data-aos="fade-up" data-aos-delay="60">
+        <p>{{ featuredSnippetAnswer }}</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- How Does TURBO Work -->
+  <section class="mode-of-action-section product-moa" aria-labelledby="turbo-moa-heading">
+    <div class="container">
+      <h2 id="turbo-moa-heading" class="section-title text-center" data-aos="fade-up">How does TURBO work?</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Dual mode of action — <strong>Novaluron</strong> (IGR) plus <strong>Indoxacarb</strong> (oxadiazine) for comprehensive caterpillar control.
+      </p>
+      <div class="product-moa__layout row justify-content-center mt-2 mt-lg-4">
+        <div class="col-12 col-xl-10" data-aos="fade-up">
+          <ol class="product-moa__steps list-unstyled mb-0" role="list">
+            <li *ngFor="let step of modeOfAction; let i = index" class="product-moa__step">
+              <div class="product-moa__step-num" aria-hidden="true">{{ i + 1 }}</div>
+              <div class="product-moa__step-body">
+                <h3 class="product-moa__step-title">{{ step.title }}</h3>
+                <p class="product-moa__step-text">{{ step.description }}</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Target Pests -->
+  <section class="pests-section" id="target-pests" aria-labelledby="turbo-pests-heading">
+    <div class="container">
+      <h2 id="turbo-pests-heading" class="section-title" data-aos="fade-up">Target pests</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        <strong>TURBO</strong> delivers strong control against major lepidopteran pests when applied at early larval stages.
+      </p>
+      <div class="pest-cards">
+        <div class="row">
+          <div *ngFor="let p of targetPests; let i = index" class="col-md-6 col-lg-4">
+            <article class="pest-card" data-aos="flip-up" [attr.data-aos-delay]="80 * i">
+              <div class="pest-icon"><i class="fas fa-bug"></i></div>
+              <h3>{{ p.name }}</h3>
+              <p>{{ p.description }}</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommended Crops -->
+  <section class="crops-section product-applications" id="applications" aria-labelledby="turbo-crops-heading">
+    <div class="product-applications__band">
+      <div class="container">
+        <div class="row align-items-end mb-2">
+          <div class="col-lg-8">
+            <h2 id="turbo-crops-heading" class="section-title product-applications__title" data-aos="fade-up">Recommended crops</h2>
+            <p class="section-subtitle product-applications__lead" data-aos="fade-up" data-aos-delay="40">
+              <strong>TURBO</strong> is trusted across India for protecting field and vegetable crops from caterpillars and borers.
+            </p>
+          </div>
+        </div>
+        <ul class="product-applications__grid list-unstyled mb-0" role="list">
+          <li *ngFor="let app of applications; let i = index" class="product-applications__item" data-aos="fade-up" [attr.data-aos-delay]="40 * i">
+            <article class="product-app-tile">
+              <div class="product-app-tile__head" aria-hidden="true"></div>
+              <div class="product-app-tile__body">
+                <div class="product-app-tile__icon-wrap">
+                  <span class="product-app-tile__icon"><i [class]="app.icon"></i></span>
+                </div>
+                <h3 class="product-app-tile__title">{{ app.title }}</h3>
+                <p class="product-app-tile__text">{{ app.description }}</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crop-wise Usage Table -->
+  <section class="tech-specs-section" aria-labelledby="turbo-crop-table-heading">
+    <div class="container">
+      <h2 id="turbo-crop-table-heading" class="section-title" data-aos="fade-up">Crop-wise usage guide</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Practical <strong>TURBO</strong> application guidance by crop. Always confirm with label and local advisory.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="TURBO crop-wise usage table">
+              <thead>
+                <tr>
+                  <th scope="col">Crop</th>
+                  <th scope="col">Target pests</th>
+                  <th scope="col">Dose</th>
+                  <th scope="col">Best timing</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of cropWiseUsage">
+                  <td><strong>{{ row.crop }}</strong></td>
+                  <td>{{ row.pests }}</td>
+                  <td>{{ row.dose }}</td>
+                  <td>{{ row.timing }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pest-wise Control Table -->
+  <section class="tech-specs-section" aria-labelledby="turbo-pest-table-heading">
+    <div class="container">
+      <h2 id="turbo-pest-table-heading" class="section-title" data-aos="fade-up">Pest-wise control guide</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>TURBO</strong> performs against key lepidopteran pests across labeled crops.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="TURBO pest-wise control table">
+              <thead>
+                <tr>
+                  <th scope="col">Pest</th>
+                  <th scope="col">Crops</th>
+                  <th scope="col">Mode of action</th>
+                  <th scope="col">Expected efficacy</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of pestWiseControl">
+                  <td><strong>{{ row.pest }}</strong></td>
+                  <td>{{ row.crops }}</td>
+                  <td>{{ row.mode }}</td>
+                  <td>{{ row.efficacy }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Specifications -->
+  <section class="tech-specs-section" id="specifications" aria-labelledby="turbo-specs-heading">
+    <div class="container">
+      <h2 id="turbo-specs-heading" class="section-title" data-aos="fade-up">Technical specifications</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Snapshot for dealers and agronomists. Always pair with the printed label for final guidance.
+      </p>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="80">
+        <div class="col-lg-6 mb-4">
+          <article class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-flask specs-icon"></i>
+              <h3>Product information</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.productInfo" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <article class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-prescription-bottle specs-icon"></i>
+              <h3>Dose &amp; application</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.packs" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="120">
+        <article class="product-official-specs__card">
+          <header class="product-official-specs__head">
+            <h3>TURBO &mdash; full parameter table</h3>
+            <p>
+              Complete technical profile for <strong>{{ productTitle }}</strong> (TURBO). Values support dealer
+              review and agronomic planning.
+            </p>
+          </header>
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="TURBO Novaluron Indoxacarb technical profile">
+              <thead>
+                <tr>
+                  <th scope="col">Parameter</th>
+                  <th scope="col">Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of officialProductDetails">
+                  <td>{{ row.label }}</td>
+                  <td>{{ row.value }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dose & Application -->
+  <section class="results-section product-results" aria-labelledby="turbo-dose-heading">
+    <div class="container">
+      <h2 id="turbo-dose-heading" class="section-title" data-aos="fade-up">Dose &amp; application</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Clear, field-ready guidance for using <strong>TURBO</strong> effectively.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Recommended dose</h3>
+            <p><strong>20 ml per pump</strong> in a standard 15-litre knapsack sprayer. Confirm crop-wise rate on the label.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Mixing instructions</h3>
+            <p>Half-fill with water, add 20 ml TURBO, top up, and agitate. The SC formulation mixes cleanly without clogging.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Best spray timing</h3>
+            <p>Apply at early larval infestation or ETL during calm morning or evening hours with full canopy coverage.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results & Performance -->
+  <section class="results-section product-results" aria-labelledby="turbo-results-heading">
+    <div class="container">
+      <h2 id="turbo-results-heading" class="section-title" data-aos="fade-up">Results &amp; performance</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Field-level outcomes growers commonly report when dose, coverage, and pest stage are handled well.
+      </p>
+      <div class="row mt-4">
+        <div *ngFor="let ph of performanceHighlights; let i = index" class="col-md-6 col-lg-3" data-aos="fade-up" [attr.data-aos-delay]="70 * i">
+          <article class="product-highlight-card">
+            <h3 class="h6">{{ ph.label }}</h3>
+            <p>{{ ph.value }}</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety Guidelines -->
+  <section class="usage-safety-section" id="safety" aria-labelledby="turbo-safety-heading">
+    <div class="container">
+      <h2 id="turbo-safety-heading" class="section-title text-center" data-aos="fade-up">Safety guidelines</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        PPE, storage, disposal, and first aid guidance for safe use of <strong>TURBO</strong>.
+      </p>
+      <div class="usage-safety-shell mt-4">
+        <div class="usage-safety-shell__intro" data-aos="fade-up" data-aos-delay="60">
+          <span class="usage-pill"><i class="fas fa-spray-can"></i> 20 ml accurate dose</span>
+          <span class="usage-pill"><i class="fas fa-user-shield"></i> PPE &amp; environment</span>
+        </div>
+
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <article class="usage-safety-panel usage-safety-panel--usage">
+              <header class="usage-safety-panel__head">
+                <h3>Usage best practices</h3>
+                <p>Mix clean, spray calm, scout again after a few days.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i < 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="140">
+            <article class="usage-safety-panel usage-safety-panel--safety">
+              <header class="usage-safety-panel__head">
+                <h3>Storage, disposal &amp; first aid</h3>
+                <p>Respect the label hazard panel and local disposal rules.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i >= 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison: TURBO vs Traditional -->
+  <section class="tech-specs-section" aria-labelledby="turbo-compare-traditional-heading">
+    <div class="container">
+      <h2 id="turbo-compare-traditional-heading" class="section-title" data-aos="fade-up">TURBO vs traditional insecticides</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Semantic comparison showing why dual-action <strong>TURBO</strong> outperforms single-MOA traditional sprays.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="TURBO vs traditional insecticides comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col">TURBO</th>
+                  <th scope="col">Traditional insecticides</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonTraditional">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.turbo }}</td>
+                  <td>{{ row.traditional }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison: Combination vs Single Ingredient -->
+  <section class="tech-specs-section" aria-labelledby="turbo-compare-single-heading">
+    <div class="container">
+      <h2 id="turbo-compare-single-heading" class="section-title" data-aos="fade-up">Novaluron + Indoxacarb vs single ingredient products</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Why the <strong>TURBO</strong> combination delivers more complete caterpillar control than either active alone.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="Novaluron Indoxacarb vs single ingredient comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">TURBO (combination)</th>
+                  <th scope="col">Single ingredient</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonSingleIngredient">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.turbo }}</td>
+                  <td>{{ row.single }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials-section" aria-labelledby="turbo-testimonials-heading">
+    <div class="container">
+      <h2 id="turbo-testimonials-heading" class="section-title" data-aos="fade-up">What growers say</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Feedback from farmers using <strong>TURBO</strong> across cotton, chilli, tomato, and vegetable crops.
+      </p>
+      <div class="row">
+        <div *ngFor="let t of testimonials; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="60 * i">
+          <article class="testimonial-card">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">{{ t.text }}</p>
+            <!-- <div class="testimonial-author">
+              <strong>{{ t.name }}</strong>
+              <span class="testimonial-location">{{ t.location }}</span>
+            </div> -->
+            <div class="testimonial-stars" [attr.aria-label]="t.rating + ' out of 5 stars'">
+              <i *ngFor="let star of [1, 2, 3, 4, 5]" class="fas fa-star" [class.star-filled]="star <= t.rating"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section" aria-labelledby="turbo-faq-heading">
+    <div class="container">
+      <h2 id="turbo-faq-heading" class="section-title" data-aos="fade-up">Frequently asked questions</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Practical answers about <strong>{{ productTitle }}</strong>, <strong>TURBO</strong>, dose, uses, and safe field use.
+      </p>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="accordion faq-accordion" id="turboFaqAccordion" data-aos="fade-up" data-aos-delay="90">
+            <ng-container *ngFor="let faq of faqs; let i = index">
+              <div class="accordion-item">
+                <h3 class="accordion-header" [id]="'turbo-faq-heading-' + i">
+                  <button
+                    class="accordion-button"
+                    [class.collapsed]="i !== 0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#turbo-faq-collapse-' + i"
+                    [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
+                    [attr.aria-controls]="'turbo-faq-collapse-' + i"
+                  >
+                    {{ faq.question }}
+                  </button>
+                </h3>
+                <div
+                  [id]="'turbo-faq-collapse-' + i"
+                  class="accordion-collapse collapse"
+                  [class.show]="i === 0"
+                  [attr.aria-labelledby]="'turbo-faq-heading-' + i"
+                  data-bs-parent="#turboFaqAccordion"
+                >
+                  <div class="accordion-body">
+                    <p [innerHTML]="faq.answer"></p>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products -->
+  <section class="pests-section" aria-labelledby="turbo-related-heading">
+    <div class="container">
+      <h2 id="turbo-related-heading" class="section-title" data-aos="fade-up">Related products</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Explore more crop protection insecticides from <strong>Harishree Crop Science</strong> to build a strong IPM program.
+      </p>
+      <nav class="pest-cards product-related-grid" aria-label="Related insecticide products">
+        <div class="row">
+          <div *ngFor="let rp of relatedProducts; let i = index" class="col-md-6 col-lg-4">
+            <article class="product-related-card" data-aos="fade-up" [attr.data-aos-delay]="80 * i">
+              <a [routerLink]="rp.route" class="product-related-card__link">
+                <div class="product-related-card__image">
+                  <img
+                    [src]="rp.image"
+                    [alt]="rp.imageAlt"
+                    width="320"
+                    height="200"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product-related-card__body">
+                  <h3>{{ rp.name }}</h3>
+                  <p>{{ rp.description }}</p>
+                  <span class="pack-card__cta">View product</span>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section product-detail-cta" aria-labelledby="turboCtaTitle">
+    <div class="container">
+      <div class="cta-container" data-aos="zoom-in">
+        <h2 id="turboCtaTitle" class="cta-title">Get dual-action caterpillar control with TURBO</h2>
+        <p class="cta-text">
+          Contact Harishree Crop Science for dealer stock, crop-wise usage notes, and mixing guidance for
+          <strong>TURBO</strong> (<strong>{{ productTitle }}</strong>).
+        </p>
+        <div class="cta-actions" role="group" aria-label="Contact and navigation">
+          <a routerLink="/contact-us" class="cta-button">Contact Harishree</a>
+          <a routerLink="/products" class="cta-button cta-button--outline">All products</a>
+          <a routerLink="/about-us" class="cta-button cta-button--outline">About us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
