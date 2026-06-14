@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Allow: /products
+Allow: /research
+Allow: /quality-assurance
+Allow: /catalogue
+Allow: /about-us
+Allow: /contact-us
+
+# Sitemaps
+Sitemap: https://harishreecropscience.com/sitemap.xml
+Sitemap: https://harishreecropscience.com/sitemap_products.xml
