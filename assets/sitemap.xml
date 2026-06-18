@@ -74,4 +74,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
+
+  <!-- CHILLI H Product -->
+  <url>
+    <loc>https://harishreecropscience.com/products/insecticide/fipronil-2-92-ec</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
 </urlset> 
