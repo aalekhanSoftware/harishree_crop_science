@@ -66,4 +66,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
+
+  <!-- ECLIPSE Product -->
+  <url>
+    <loc>https://harishreecropscience.com/products/insecticide/ethion-40-cypermethrin-5-ec-eclipse</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
 </urlset> 
