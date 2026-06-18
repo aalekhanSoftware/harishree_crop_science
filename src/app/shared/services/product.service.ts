@@ -125,7 +125,7 @@ export class ProductService {
             url: 'product/deltamethrin-2-8-ec'
           },
           { name: 'Eclipse', 
-            image: 'assets/products/insecticide/eclipse.jpg', 
+            image: 'assets/products/insecticide/ethion-40-cypermethrin-5-ec', 
             description: 'Ethion 40% + Cypermethrin 5% EC synergy mix',
             fullDescription: 'Eclipse (Ethion 40% + Cypermethrin 5% EC) combines organophosphate and pyrethroid chemistries for broad-spectrum, dual-mode action. The formulation delivers rapid knockdown with strong residual effect, controlling both chewing and sucking pests over extended periods. Optimized for tank-mix compatibility and consistent performance across climates.'
           },
@@ -134,10 +134,11 @@ export class ProductService {
             description: 'Imidacloprid 70% WG high-load systemic',
             fullDescription: 'Extra Mida 70 (Imidacloprid 70% WG) is a high-load neonicotinoid that provides powerful systemic control of aphids, whiteflies and jassids at low use rates. The premium WG granules disperse instantly in water, offering excellent spray stability, superior leaf coverage and long-lasting protection for professional, residue-conscious programs.'
           },
-          { name: 'Extra Profex', 
-            image: 'assets/products/insecticide/extra-profex.jpg', 
-            description: 'Profenophos 50% EC contact and stomach poison',
-            fullDescription: 'Extra Profex (Profenophos 50% EC) is a trusted broad-spectrum insecticide providing strong contact and stomach action against bollworms, mites and other persistent pests. Its optimized EC technology ensures deep canopy reach, superior coverage and dependable field performance while fitting well into rotation strategies.'
+          { name: 'Profenofos 50% EC (EXTRA PROFEX)',
+            image: 'assets/products/insecticide/profenofos-50-ec.jpg',
+            description: 'Profenofos 50% EC broad-spectrum contact and stomach insecticide',
+            fullDescription: 'EXTRA PROFEX (Profenofos 50% EC) is Harishree Crop Science\'s premium broad-spectrum organophosphate insecticide for bollworms, whiteflies, aphids, thrips, jassids, and caterpillars in cotton, chilli, vegetables, pulses, and oilseeds. Recommended dose: 30 ml per pump.',
+            url: 'products/insecticide/profenofos-50-ec'
           },
           { name: 'H-Cyper 25 (Cypermethrin 25% EC)', 
             image: 'assets/products/insecticide/cypermethrin-25-ec.jpg', 
@@ -203,9 +204,10 @@ export class ProductService {
             fullDescription: 'Hil Thene offers extended protection against various insect pests. Its innovative slow-release technology ensures consistent pest control over longer periods. The product\'s unique formulation provides excellent stability under various environmental conditions.'
           },
           { name: 'H Gor', 
-            image: 'assets/products/insecticide/h-gor.jpg', 
+            image: 'assets/products/insecticide/dimethoate-30-ec.jpg', 
             description: 'Dimethoate 30% EC systemic and contact',
-            fullDescription: 'H Gor (Dimethoate 30% EC) is a systemic and contact organophosphate effective against aphids, thrips and jassids. It moves within plant tissues to protect new growth while providing strong contact action on exposed pests. The formulation balances efficacy with crop safety for dependable, professional results.'
+            fullDescription: 'H Gor (Dimethoate 30% EC) is a systemic and contact organophosphate effective against aphids, thrips and jassids. It moves within plant tissues to protect new growth while providing strong contact action on exposed pests. The formulation balances efficacy with crop safety for dependable, professional results.',
+            url: 'products/insecticide/dimethoate-30-ec-h-gor'
           }
       ]
     },

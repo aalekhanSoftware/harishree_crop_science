@@ -10,6 +10,7 @@
     "/product/chlorpyriphos-50-cypermethrin-5-ec",
     "/product/cypermethrin-25-ec",
     "/product/deltamethrin-2-8-ec",
+    "/product/dimethoate-30-ec",
     "/product/emamectin-benzoate-1-9-ec",
     "/product/emamectin-benzoate-5-sg",
     "/product/fipronil-40-imidacloprid-40-wg",
@@ -20,6 +21,7 @@
     "/product/paraquat-dichloride-24-sl",
     "/product/pendimethalin-30-ec",
     "/product/profenofos-40-cypermethrin-4-ec",
+    "/product/profenofos-50-ec",
     "/product/quizalofop-ethyl-10-ec",
     "/product/tembotrione-34-4-w-w-sc",
     "/product/thiamethoxam-12-6-lambda-cyhalothrin-9-5-zc",
@@ -27,7 +29,9 @@
     "/product/thiamethoxam-75-sg",
     "/product/tolfenpyrad-15-ec",
     "/products",
+    "/products/insecticide/dimethoate-30-ec-h-gor",
     "/products/insecticide/novaluron-5-25-indoxacarb-4-5-sc-turbo",
+    "/products/insecticide/profenofos-50-ec",
     "/quality-assurance",
     "/research"
   ]

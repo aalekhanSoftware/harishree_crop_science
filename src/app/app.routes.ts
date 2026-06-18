@@ -43,6 +43,12 @@ export const routes: Routes = [
   { path: 'product/novaluron-5-25-indoxacarb-4-5-sc-turbo', loadComponent: () => import('./pages/all-products/novaluron-5-25-indoxacarb-4-5-sc-turbo/novaluron-5-25-indoxacarb-4-5-sc-turbo.component').then(m => m.Novaluron525Indoxacarb45ScTurboComponent) },
   { path: 'products/insecticide/novaluron-5-25-indoxacarb-4-5-sc-turbo', loadComponent: () => import('./pages/all-products/novaluron-5-25-indoxacarb-4-5-sc-turbo/novaluron-5-25-indoxacarb-4-5-sc-turbo.component').then(m => m.Novaluron525Indoxacarb45ScTurboComponent) },
   { path: 'product/turbo', redirectTo: 'product/novaluron-5-25-indoxacarb-4-5-sc-turbo', pathMatch: 'full' },
+  { path: 'products/insecticide/profenofos-50-ec', loadComponent: () => import('./pages/all-products/profenofos-50-ec/profenofos-50-ec.component').then(m => m.ProfenofosFiftyEcComponent) },
+  { path: 'product/profenofos-50-ec', loadComponent: () => import('./pages/all-products/profenofos-50-ec/profenofos-50-ec.component').then(m => m.ProfenofosFiftyEcComponent) },
+  { path: 'product/extra-profex', redirectTo: 'products/insecticide/profenofos-50-ec', pathMatch: 'full' },
+  { path: 'products/insecticide/dimethoate-30-ec-h-gor', loadComponent: () => import('./pages/all-products/dimethoate-30-ec-h-gor/dimethoate-30-ec-h-gor.component').then(m => m.Dimethoate30EcHGorComponent) },
+  { path: 'product/dimethoate-30-ec', loadComponent: () => import('./pages/all-products/dimethoate-30-ec-h-gor/dimethoate-30-ec-h-gor.component').then(m => m.Dimethoate30EcHGorComponent) },
+  { path: 'product/h-gor', redirectTo: 'products/insecticide/dimethoate-30-ec-h-gor', pathMatch: 'full' },
   { path: 'product/dr-supreme', redirectTo: 'product/abamectin-1-9-ec', pathMatch: 'full' },
   { path: 'product/round', redirectTo: 'product/glyphosate-41-sl', pathMatch: 'full' },
 ];
