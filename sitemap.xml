@@ -82,4 +82,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
+
+  <!-- AMPIGO Product -->
+  <url>
+    <loc>https://harishreecropscience.com/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
 </urlset> 
