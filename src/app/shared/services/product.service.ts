@@ -193,7 +193,7 @@ export class ProductService {
             url: 'product/thiamethoxam-75-sg'
           },
           { name: 'Topaz',
-            image: 'assets/products/insecticide/topaz.jpg',
+            image: 'assets/products/insecticide/buprofezin-15-acephate-50.jpg',
             description: 'Buprofezin 15% + Acephate 35% WP combination',
             fullDescription: 'Topaz (Buprofezin 15% + Acephate 35% WP) provides complementary action against planthoppers, whiteflies and a range of sucking pests. The wettable powder ensures strong suspension, uniform coverage and dependable efficacy, supporting resistance management and crop quality targets.'
           },
@@ -202,6 +202,12 @@ export class ProductService {
             description: 'Novaluron 5.25% + Indoxacarb 4.5% SC dual-action',
             fullDescription: 'Turbo (Novaluron 5.25% + Indoxacarb 4.5% w/w SC) is Harishree Crop Science\'s premium dual-action insecticide combining an IGR with an oxadiazine for powerful caterpillar and borer control in cotton, chilli, tomato, cole crops, soybean, pulses, and vegetables. Field guidance: 20 ml per pump when used at early larval stage as per label and local advisory.',
             url: 'product/novaluron-5-25-indoxacarb-4-5-sc-turbo'
+          },
+          { name: 'Fenvalerate 20% EC (FENVAL)',
+            image: 'assets/products/insecticide/fenvalerate-20-ec.png',
+            description: 'Fenvalerate 20% EC synthetic pyrethroid insecticide',
+            fullDescription: 'FENVAL (Fenvalerate 20% EC) is Harishree Crop Science\'s premium synthetic pyrethroid insecticide with contact and stomach action for bollworms, caterpillars, borers, and chewing pests on cotton, chilli, vegetables, and pulses. Field guidance: 30 ml per pump.',
+            url: 'products/insecticide/fenvalerate-20-ec-fenval'
           },
           { name: 'Runner',
             image: 'assets/products/insecticide/novaluron-10-ec.png',

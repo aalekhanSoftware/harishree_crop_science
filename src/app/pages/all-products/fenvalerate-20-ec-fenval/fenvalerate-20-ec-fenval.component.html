@@ -1,0 +1,1187 @@
+<main class="product-page product-page--detail product-page--fenval" itemscope>
+  <nav class="container pt-3" aria-label="Breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+      <li class="breadcrumb-item"><a routerLink="/products">Products</a></li>
+      <li class="breadcrumb-item"><a routerLink="/products">Insecticides</a></li>
+      <li class="breadcrumb-item active" aria-current="page">FENVAL</li>
+    </ol>
+  </nav>
+
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <p class="product-brand-line" data-aos="fade-right">{{ brandName }}</p>
+          <h1 class="product-title" data-aos="fade-right" data-aos-delay="40">
+            {{ productTitle }}
+          </h1>
+          <p class="product-tagline" data-aos="fade-right" data-aos-delay="80">
+            EC &middot; Synthetic Pyrethroid &middot; Contact &amp; stomach action &middot; Broad spectrum pest control
+          </p>
+          <div class="product-description" data-aos="fade-right" data-aos-delay="120">
+            <p>
+              <strong>Fenvalerate 20% EC</strong> (marketed as <strong>FENVAL</strong>) is a premium synthetic pyrethroid
+              insecticide engineered for powerful control of bollworms, caterpillars, fruit borers, shoot borers, pod borers,
+              and leaf-eating chewing pests. The emulsifiable concentrate delivers fast knockdown with contact and stomach
+              action for dependable crop protection in cotton, chilli, brinjal, tomato, okra, pulses, oilseed crops, and vegetables.
+            </p>
+            <p class="small text-muted mb-2" lang="hi">
+              फेनवाल फेनवालरेट 20% EC कीटनाशक — लेबल अनुसार 30 मिली प्रति पंप खुराक और समय फॉलो करें।
+            </p>
+            <div class="usps" data-aos="fade-right" data-aos-delay="180">
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> 30 ml/pump dose</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Broad spectrum</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Fast knockdown</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Bollworm &amp; caterpillar control</span>
+            </div>
+            <div class="cta-actions mt-3" role="group" aria-label="Hero actions">
+              <a routerLink="/contact-us" class="cta-button">Enquire now</a>
+              <a routerLink="/products" class="cta-button cta-button--outline">All products</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <div class="product-image-container" data-aos="zoom-in">
+            <div class="product-image-inner">
+              <picture>
+                <source [srcset]="productImageWebpPath" type="image/webp" />
+                <img
+                  [src]="productImagePath"
+                  alt="FENVAL Fenvalerate 20% EC Insecticide"
+                  title="FENVAL Fenvalerate 20% EC"
+                  class="product-image"
+                  width="400"
+                  height="400"
+                  loading="eager"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="benefits-section" aria-labelledby="fenval-highlights-heading">
+    <div class="container">
+      <h2 id="fenval-highlights-heading" class="section-title" data-aos="fade-up">Quick highlights</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        At-a-glance reasons growers reach for <strong>FENVAL</strong> (<strong>{{ productTitle }}</strong>).
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let h of quickHighlights; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="h.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ h.title }}</h3>
+              <p>{{ h.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-pack-section" aria-labelledby="fenval-pack-heading">
+    <div class="container">
+      <h2 id="fenval-pack-heading" class="section-title text-center" data-aos="fade-up">Pack sizes</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        Authentic <strong>{{ productTitle }}</strong> (FENVAL) packed securely for every farming need.
+        Prices are shown in schema only; enquire for dealer availability.
+      </p>
+      <div class="pack-grid" data-aos="fade-up" data-aos-delay="100">
+        <article *ngFor="let pack of packSizes" class="pack-card" [class.pack-card--featured]="pack.featured">
+          <h3 class="pack-card__volume">{{ pack.volume }}</h3>
+          <p class="pack-card__hint">Harishree Quality &middot; dealer support</p>
+          <a routerLink="/contact-us" class="pack-card__cta">Enquire now</a>
+        </article>
+      </div>
+      <p class="dose-callout text-center" data-aos="fade-up">
+        <strong>Recommended dose:</strong> 30 ml per pump (15-litre water; confirm on label and crop advisory).
+      </p>
+    </div>
+  </section>
+
+  <section class="benefits-section" aria-labelledby="fenval-why-heading">
+    <div class="container">
+      <h2 id="fenval-why-heading" class="section-title" data-aos="fade-up">Why choose FENVAL</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        What sets <strong>FENVAL</strong> apart as a premium Fenvalerate 20% EC insecticide for Indian agriculture.
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let w of whyChoose; let i = index" class="col-md-6 col-lg-3" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="w.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ w.title }}</h3>
+              <p>{{ w.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits-section" aria-labelledby="fenval-benefits-heading">
+    <div class="container">
+      <h2 id="fenval-benefits-heading" class="section-title" data-aos="fade-up">Key benefits</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        Why growers trust <strong>FENVAL</strong> for dependable caterpillar and borer management.
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let b of keyBenefits; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="b.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ b.title }}</h3>
+              <p>{{ b.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-what-is-heading">
+    <div class="container">
+      <h2 id="fenval-what-is-heading" class="section-title" data-aos="fade-up">
+        What is Fenvalerate 20% EC?
+      </h2>
+      <article class="product-highlight-card product-snippet-answer" data-aos="fade-up" data-aos-delay="60">
+        <p>{{ featuredSnippetAnswer }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="mode-of-action-section product-moa" aria-labelledby="fenval-moa-heading">
+    <div class="container">
+      <h2 id="fenval-moa-heading" class="section-title text-center" data-aos="fade-up">How does Fenvalerate 20% EC work?</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Synthetic pyrethroid mode of action — <strong>Fenvalerate</strong> disrupts sodium channels for contact and stomach pest control.
+      </p>
+      <div class="product-moa__layout row justify-content-center mt-2 mt-lg-4">
+        <div class="col-12 col-xl-10" data-aos="fade-up">
+          <ol class="product-moa__steps list-unstyled mb-0" role="list">
+            <li *ngFor="let step of modeOfAction; let i = index" class="product-moa__step">
+              <div class="product-moa__step-num" aria-hidden="true">{{ i + 1 }}</div>
+              <div class="product-moa__step-body">
+                <h3 class="product-moa__step-title">{{ step.title }}</h3>
+                <p class="product-moa__step-text">{{ step.description }}</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pests-section" id="target-pests" aria-labelledby="fenval-pests-heading">
+    <div class="container">
+      <h2 id="fenval-pests-heading" class="section-title" data-aos="fade-up">Target pests</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        <strong>FENVAL</strong> delivers strong contact and stomach action against major caterpillar and borer species when applied at early larval stages with full canopy coverage.
+      </p>
+      <div class="pest-cards">
+        <div class="row">
+          <div *ngFor="let p of targetPests; let i = index" class="col-md-6 col-lg-4">
+            <article class="pest-card" data-aos="flip-up" [attr.data-aos-delay]="80 * i">
+              <div class="pest-icon"><i class="fas fa-bug"></i></div>
+              <h3>{{ p.name }}</h3>
+              <p>{{ p.description }}</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="crops-section product-applications" id="applications" aria-labelledby="fenval-crops-heading">
+    <div class="product-applications__band">
+      <div class="container">
+        <div class="row align-items-end mb-2">
+          <div class="col-lg-8">
+            <h2 id="fenval-crops-heading" class="section-title product-applications__title" data-aos="fade-up">Recommended crops</h2>
+            <p class="section-subtitle product-applications__lead" data-aos="fade-up" data-aos-delay="40">
+              <strong>FENVAL</strong> is trusted across India for protecting cotton, chilli, tomato, brinjal, okra, pulses, oilseed crops, and vegetables from bollworm, caterpillar, and borer damage.
+            </p>
+          </div>
+        </div>
+        <ul class="product-applications__grid list-unstyled mb-0" role="list">
+          <li *ngFor="let app of applications; let i = index" class="product-applications__item" data-aos="fade-up" [attr.data-aos-delay]="40 * i">
+            <article class="product-app-tile">
+              <div class="product-app-tile__head" aria-hidden="true"></div>
+              <div class="product-app-tile__body">
+                <div class="product-app-tile__icon-wrap">
+                  <span class="product-app-tile__icon"><i [class]="app.icon"></i></span>
+                </div>
+                <h3 class="product-app-tile__title">{{ app.title }}</h3>
+                <p class="product-app-tile__text">{{ app.description }}</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="fenval-crop-table-heading">
+    <div class="container">
+      <h2 id="fenval-crop-table-heading" class="section-title" data-aos="fade-up">Crop-wise usage guide</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Practical <strong>FENVAL</strong> application guidance by crop. Always confirm with label and local advisory.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="FENVAL crop-wise usage table">
+              <thead>
+                <tr>
+                  <th scope="col">Crop</th>
+                  <th scope="col">Target pests</th>
+                  <th scope="col">Dose</th>
+                  <th scope="col">Best timing</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of cropWiseUsage">
+                  <td><strong>{{ row.crop }}</strong></td>
+                  <td>{{ row.pests }}</td>
+                  <td>{{ row.dose }}</td>
+                  <td>{{ row.timing }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="fenval-pest-table-heading">
+    <div class="container">
+      <h2 id="fenval-pest-table-heading" class="section-title" data-aos="fade-up">Pest-wise control guide</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>FENVAL</strong> performs against key caterpillar and borer species across labeled crops.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="FENVAL pest-wise control table">
+              <thead>
+                <tr>
+                  <th scope="col">Pest</th>
+                  <th scope="col">Crops</th>
+                  <th scope="col">Mode of action</th>
+                  <th scope="col">Expected efficacy</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of pestWiseControl">
+                  <td><strong>{{ row.pest }}</strong></td>
+                  <td>{{ row.crops }}</td>
+                  <td>{{ row.mode }}</td>
+                  <td>{{ row.efficacy }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" id="specifications" aria-labelledby="fenval-specs-heading">
+    <div class="container">
+      <h2 id="fenval-specs-heading" class="section-title" data-aos="fade-up">Technical specifications</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Snapshot for dealers and agronomists. Always pair with the printed label for final guidance.
+      </p>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="80">
+        <div class="col-lg-6 mb-4">
+          <article class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-flask specs-icon"></i>
+              <h3>Product information</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.productInfo" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <article class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-prescription-bottle specs-icon"></i>
+              <h3>Dose &amp; application</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.packs" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="120">
+        <article class="product-official-specs__card">
+          <header class="product-official-specs__head">
+            <h3>FENVAL &mdash; full parameter table</h3>
+            <p>
+              Complete technical profile for <strong>{{ productTitle }}</strong> (FENVAL). Values support dealer
+              review and agronomic planning.
+            </p>
+          </header>
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="FENVAL Fenvalerate 20% EC technical profile">
+              <thead>
+                <tr>
+                  <th scope="col">Parameter</th>
+                  <th scope="col">Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of officialProductDetails">
+                  <td>{{ row.label }}</td>
+                  <td>{{ row.value }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-uses-heading">
+    <div class="container">
+      <h2 id="fenval-uses-heading" class="section-title" data-aos="fade-up">Fenvalerate 20% EC uses</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Key agricultural applications of <strong>FENVAL</strong> across Indian farming systems.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Fenvalerate application</h3>
+            <p>Foliar spray at 30 ml per pump in a 15-litre knapsack sprayer. Apply at early larval infestation or economic threshold with full canopy and underside coverage.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Fenvalerate benefits</h3>
+            <p>Contact and stomach action delivers fast knockdown and sustained suppression of fruit borers, pod borers, bollworms, and defoliating caterpillars on treated crops.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Crop protection solution</h3>
+            <p>Trusted EC insecticide for cotton bollworm, chilli fruit borer, tomato caterpillar, pulse pod borer, and mixed lepidopteran pressure across India.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-dose-heading">
+    <div class="container">
+      <h2 id="fenval-dose-heading" class="section-title" data-aos="fade-up">Fenvalerate 20% EC dose</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Clear, field-ready guidance for using <strong>FENVAL</strong> effectively.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Recommended dose</h3>
+            <p><strong>30 ml per pump</strong> in a standard 15-litre knapsack sprayer. Confirm crop-wise rate on the label.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Mixing instructions</h3>
+            <p>Half-fill with water, add 30 ml FENVAL, top up, and agitate. The EC formulation emulsifies easily for uniform spray coverage on leaf surfaces.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Best spray timing</h3>
+            <p>Apply at early larval infestation or ETL during calm morning or evening hours with emphasis on leaf undersides where caterpillars feed.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-price-heading">
+    <div class="container">
+      <h2 id="fenval-price-heading" class="section-title" data-aos="fade-up">Fenvalerate 20% EC price — buy online at best price</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>FENVAL</strong> is available in 100 ml, 250 ml, 500 ml, and 1 LTR packs through authorized
+          Harishree Crop Science dealers across India. Indicative list prices: 100 ml — ₹53, 250 ml — ₹112,
+          500 ml — ₹207, 1 litre — ₹389. Contact your nearest dealer or Harishree directly for current rates,
+          bulk availability, and buy online enquiry support.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-moa-long-heading">
+    <div class="container">
+      <h2 id="fenval-moa-long-heading" class="section-title" data-aos="fade-up">Fenvalerate 20% EC mode of action</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>Fenvalerate</strong> in <strong>FENVAL</strong> delivers contact and stomach action for comprehensive caterpillar and borer control.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Contact action — rapid paralysis</h3>
+            <p>Fenvalerate acts on contact, disrupting sodium channels in insect nerve tissue. Pests exposed to the spray deposit experience rapid paralysis and immediate cessation of feeding.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Stomach poison action</h3>
+            <p>When caterpillars, borers, and bollworms ingest treated plant tissue, Fenvalerate delivers strong stomach poison insecticide activity against hidden feeders.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Residual field protection</h3>
+            <p>The EC formulation adheres to foliage and maintains contact insecticide activity on treated surfaces, protecting crops from pest resurgence between spray intervals.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Resistance management benefits</h3>
+            <p>Rotate FENVAL with IGRs, organophosphates, and other MOA groups across the season to reduce selection pressure on bollworm and caterpillar populations.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-cotton-heading">
+    <div class="container">
+      <h2 id="fenval-cotton-heading" class="section-title" data-aos="fade-up">FENVAL for cotton</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>FENVAL</strong> fits cotton programs facing bollworm and Helicoverpa pressure during square, flowering,
+          and boll development stages. Use <strong>30 ml per pump</strong> at early larval infestation with full canopy
+          spray and underside coverage. Residual contact and stomach action helps maintain cleaner foliage and healthier bolls throughout
+          the season when integrated into a broader IPM rotation.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-chilli-heading">
+    <div class="container">
+      <h2 id="fenval-chilli-heading" class="section-title" data-aos="fade-up">FENVAL for chilli</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          In chilli, <strong>FENVAL</strong> controls fruit borers, Spodoptera, and leaf-eating caterpillars that cause
+          pod damage, defoliation, and export quality loss. Spray at early larval stage with 30 ml per pump, ensuring
+          coverage of pods and leaf undersides. Timely application at vegetative and fruit-set stages protects foliage
+          colour, pod size, and marketable yield.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-tomato-heading">
+    <div class="container">
+      <h2 id="fenval-tomato-heading" class="section-title" data-aos="fade-up">FENVAL for tomato</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          On tomato, <strong>FENVAL</strong> manages fruit borers and leaf-eating caterpillars that bore into tender
+          fruits and strip foliage during flowering and fruit development. Apply at economic threshold with 30 ml per
+          pump and thorough canopy coverage. Contact and stomach action supports cleaner harvest grade and reduced
+          fruit drop in high-value tomato programs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-brinjal-heading">
+    <div class="container">
+      <h2 id="fenval-brinjal-heading" class="section-title" data-aos="fade-up">FENVAL for brinjal</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          On brinjal, <strong>FENVAL</strong> manages shoot and fruit borer larvae that bore into tender fruits during
+          flowering and continuous harvest cycles. American bollworm and fruit borer complexes cause entry holes, premature
+          fruit drop, and unmarketable produce. Apply at economic threshold with <strong>30 ml per pump</strong>, ensuring
+          coverage of shoots, fruits, and leaf undersides. As a contact insecticide for crops with dense foliage, FENVAL
+          delivers fast knockdown when timed at early larval infestation, supporting cleaner harvest grade and improved
+          vegetable crop protection throughout the season.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-okra-heading">
+    <div class="container">
+      <h2 id="fenval-okra-heading" class="section-title" data-aos="fade-up">FENVAL for okra</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Okra faces fruit borer and caterpillar pressure during pod formation and continuous harvest cycles. <strong>FENVAL</strong>
+          protects okra pods and leaves from chewing pest feeding damage that causes scarring, pod deformation, and yield loss.
+          Spray at early larval stage with 30 ml per pump and thorough canopy coverage. Timely Fenvalerate insecticide
+          application preserves pod quality, supports continuous picking schedules, and helps maintain marketable yield in
+          high-value okra programs across Indian vegetable farming systems.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-pulses-heading">
+    <div class="container">
+      <h2 id="fenval-pulses-heading" class="section-title" data-aos="fade-up">FENVAL for pulses</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          In gram, pigeon pea, and other pulse crops, <strong>FENVAL</strong> helps manage pod borers and Helicoverpa larvae
+          that attack developing pods and cause shriveled, unmarketable grains. Spray at pod formation with 30 ml per pump
+          before larvae enter pods. Contact and stomach action on early instars supports better pod fill, grain weight, and
+          harvest quality. Integrate FENVAL into pulse crop protection programs with scouting and rotation across MOA groups
+          for sustainable pod borer control throughout the growing season.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-oilseed-heading">
+    <div class="container">
+      <h2 id="fenval-oilseed-heading" class="section-title" data-aos="fade-up">FENVAL for oilseed crops</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          On soybean, groundnut, and other oilseed crops, <strong>FENVAL</strong> controls pod borers and defoliating
+          caterpillars during pod initiation and fill stages. Chewing pests reduce leaf area, attack developing pods, and
+          weaken overall crop vigour during critical reproductive windows. Apply at economic threshold with 30 ml per pump
+          and full canopy spray. This broad spectrum insecticide supports healthier pod development, better grain fill, and
+          improved field crop protection in oilseed programs facing mixed lepidopteran pest pressure.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-vegetables-heading">
+    <div class="container">
+      <h2 id="fenval-vegetables-heading" class="section-title" data-aos="fade-up">FENVAL for vegetables</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Across brinjal, okra, cabbage, cauliflower, and mixed vegetable crops, <strong>FENVAL</strong> controls
+          fruit borers, diamondback moth, armyworms, and leaf-eating caterpillar outbreaks. Use 30 ml per pump at early
+          larval colonization or ETL with full canopy coverage. Integrate with scouting and rotation across MOA groups
+          for sustainable vegetable crop protection throughout the growing season.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-caterpillar-heading">
+    <div class="container">
+      <h2 id="fenval-caterpillar-heading" class="section-title" data-aos="fade-up">FENVAL for caterpillar control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>FENVAL</strong> delivers dependable contact insecticide control of leaf-eating caterpillars, tobacco
+          caterpillar, and Spodoptera on chilli, cotton, brinjal, tomato, and vegetable crops. Apply at economic
+          threshold with 30 ml per pump and thorough underside coverage. Fast knockdown through sodium channel modulation
+          suppresses active feeders for sustained caterpillar population reduction between spray intervals.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-fruit-borer-heading">
+    <div class="container">
+      <h2 id="fenval-fruit-borer-heading" class="section-title" data-aos="fade-up">Fenvalerate 20% EC for fruit borer control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>Fenvalerate 20% EC</strong> in <strong>FENVAL</strong> provides strong contact and stomach action against shoot and
+          fruit borers in tomato, brinjal, and chilli when sprayed early at larval stage with emphasis on fruit and
+          shoot coverage. Timely application before larvae tunnel deep into produce helps restore harvest quality and
+          supports healthier marketable yields.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-pod-borer-heading">
+    <div class="container">
+      <h2 id="fenval-pod-borer-heading" class="section-title" data-aos="fade-up">FENVAL for pod borer control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>FENVAL</strong> helps manage pod borers in pulses and soybean that attack developing pods and cause
+          shriveled, unmarketable grains. Spray at pod formation with 30 ml per pump before larvae enter pods. Contact
+          and stomach action on early instars supports better pod fill, grain weight, and harvest quality in pulse and oilseed
+          programs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-fenvalerate-longtail-heading">
+    <div class="container">
+      <h2 id="fenval-fenvalerate-longtail-heading" class="section-title" data-aos="fade-up">Fenvalerate insecticide for agriculture</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Fenvalerate 20 EC uses</h3>
+            <p>Foliar contact insecticide spray for caterpillar, borer, and lepidopteran larval management on cotton, chilli, tomato, pulses, soybean, and vegetables at 30 ml/pump.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Fenvalerate dose per pump</h3>
+            <p>Standard knapsack guidance for FENVAL is <strong>30 ml per 15-litre pump</strong>. Confirm acre-wise calculations with label and local advisory.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Fenvalerate mode of action</h3>
+            <p>Synthetic pyrethroid (IRAC Group 3A) modulates sodium channels in nerve tissue, delivering contact and stomach action against chewing pests on treated foliage.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-best-caterpillar-heading">
+    <div class="container">
+      <h2 id="fenval-best-caterpillar-heading" class="section-title" data-aos="fade-up">Best insecticide for caterpillar control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Growers across India choose <strong>FENVAL</strong> as a trusted <strong>insecticide for caterpillar control</strong>
+          programs targeting Spodoptera, armyworms, leaf-eating caterpillars, and bollworm larvae. Apply at ETL with
+          30 ml per pump, rotate with contact MOA classes, and maintain regular scouting for early detection — a proven
+          approach for cleaner foliage and better harvest quality.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-best-fruit-borer-heading">
+    <div class="container">
+      <h2 id="fenval-best-fruit-borer-heading" class="section-title" data-aos="fade-up">Best fruit borer control solution</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          For fields facing persistent fruit borer pressure in chilli, tomato, and brinjal, <strong>FENVAL</strong>
+          combines dedicated synthetic pyrethroid chemistry with long residual EC protection. Unlike general knockdown-only
+          sprays with limited coverage, Fenvalerate 20% EC delivers contact and stomach action when applied at early
+          infestation with 30 ml per pump and full canopy spray coverage.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-pyrethroid-heading">
+    <div class="container">
+      <h2 id="fenval-pyrethroid-heading" class="section-title" data-aos="fade-up">Synthetic pyrethroid insecticide for crop protection</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>FENVAL</strong> is a reliable <strong>synthetic pyrethroid insecticide for crop protection</strong> in cotton,
+          chilli, tomato, pulses, soybean, and vegetable programs facing caterpillar and borer outbreaks. The EC
+          formulation mixes cleanly, spreads evenly, and maintains contact and stomach action on treated foliage — supporting
+          effective pest control growers and agronomists expect in modern IPM systems.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-application-heading">
+    <div class="container">
+      <h2 id="fenval-application-heading" class="section-title" data-aos="fade-up">Application method</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Step-by-step guide for applying <strong>FENVAL</strong> ({{ productTitle }}) in the field.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 1 — Prepare clean water</h3>
+            <p>Half-fill a standard 15-litre knapsack sprayer with clean water before adding the insecticide for safe, even mixing.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 2 — Measure 30 ml</h3>
+            <p>Accurately measure 30 ml of FENVAL for one knapsack pump. Use a graduated measure for consistent dosing.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 3 — Mix thoroughly</h3>
+            <p>Add product to water, top up the tank, and agitate. The EC formulation emulsifies easily into a uniform spray mix.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 4 — Spray uniformly</h3>
+            <p>Apply in calm weather. Cover both leaf surfaces and undersides where caterpillars, borers, and bollworms feed.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-storage-heading">
+    <div class="container">
+      <h2 id="fenval-storage-heading" class="section-title" data-aos="fade-up">Storage instructions</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Store <strong>FENVAL</strong> in the original sealed container in a cool, dry, well-ventilated place away from direct
+          sunlight, food, feed, seed, and children. Keep containers upright and locked. Do not store near heat sources or open flames.
+          Shelf life is approximately 24 months from date of manufacture when stored properly. Triple-rinse empty bottles before disposal
+          as per local pesticide container management rules.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-harishree-heading">
+    <div class="container">
+      <h2 id="fenval-harishree-heading" class="section-title" data-aos="fade-up">Why buy FENVAL from Harishree Crop Science</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>Harishree Crop Science</strong> manufactures <strong>FENVAL</strong> with strict quality assurance, reliable EC
+          formulation, and farmer-focused support that dealers and agronomists trust across India. Buy through authorized Harishree
+          dealers for authentic Fenvalerate 20% EC insecticide at competitive pricing, dependable field performance, crop-wise usage
+          guidance, and responsive customer service. Harishree is committed to delivering effective synthetic pyrethroid insecticide
+          solutions for sustainable bollworm and caterpillar management in modern Indian agriculture.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-results-heading">
+    <div class="container">
+      <h2 id="fenval-results-heading" class="section-title" data-aos="fade-up">Results &amp; performance</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Field-level outcomes growers commonly report when dose, coverage, and larval stage are handled well.
+      </p>
+      <div class="row mt-4">
+        <div *ngFor="let ph of performanceHighlights; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="70 * i">
+          <article class="product-highlight-card">
+            <h3 class="h6">{{ ph.label }}</h3>
+            <p>{{ ph.value }}</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="usage-safety-section" id="safety" aria-labelledby="fenval-safety-heading">
+    <div class="container">
+      <h2 id="fenval-safety-heading" class="section-title text-center" data-aos="fade-up">Safety guidelines</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        PPE, storage, disposal, and first aid guidance for safe use of <strong>FENVAL</strong>.
+      </p>
+      <div class="usage-safety-shell mt-4">
+        <div class="usage-safety-shell__intro" data-aos="fade-up" data-aos-delay="60">
+          <span class="usage-pill"><i class="fas fa-spray-can"></i> 30 ml accurate dose</span>
+          <span class="usage-pill"><i class="fas fa-user-shield"></i> PPE &amp; environment</span>
+        </div>
+
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <article class="usage-safety-panel usage-safety-panel--usage">
+              <header class="usage-safety-panel__head">
+                <h3>Usage best practices</h3>
+                <p>Mix clean, spray calm, scout again after a few days.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i < 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="140">
+            <article class="usage-safety-panel usage-safety-panel--safety">
+              <header class="usage-safety-panel__head">
+                <h3>Storage, disposal &amp; first aid</h3>
+                <p>Respect the label hazard panel and local disposal rules.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i >= 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-compatibility-heading">
+    <div class="container">
+      <h2 id="fenval-compatibility-heading" class="section-title" data-aos="fade-up">Compatibility &amp; tank mix</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>FENVAL</strong> is generally compatible with commonly used insecticides and fungicides when
+          tank-mixed for integrated crop protection programs. Always perform a <strong>jar test</strong> before
+          mixing to confirm physical compatibility. Avoid alkaline mixes that may degrade active ingredients.
+          Consult your local Harishree dealer or agronomist for crop-specific tank-mix recommendations.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-resistance-heading">
+    <div class="container">
+      <h2 id="fenval-resistance-heading" class="section-title" data-aos="fade-up">Resistance management</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Synthetic pyrethroid chemistry in <strong>FENVAL</strong> supports focused bollworm and caterpillar management when rotated
+          with other mode-of-action groups. For sustainable borer and caterpillar control, rotate FENVAL with IGRs,
+          organophosphates, and other larval control classes across the season and avoid repeated applications
+          of the same pyrethroid chemistry alone.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="fenval-compare-traditional-heading">
+    <div class="container">
+      <h2 id="fenval-compare-traditional-heading" class="section-title" data-aos="fade-up">FENVAL vs conventional caterpillar sprays</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Semantic comparison showing why <strong>FENVAL</strong> outperforms many conventional larval control sprays.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="FENVAL vs conventional caterpillar sprays comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col">FENVAL</th>
+                  <th scope="col">Conventional sprays</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonTraditional">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.fenval }}</td>
+                  <td>{{ row.traditional }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="fenval-compare-pyrethroid-contact-heading">
+    <div class="container">
+      <h2 id="fenval-compare-pyrethroid-contact-heading" class="section-title" data-aos="fade-up">Fenvalerate insecticide vs contact insecticides</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>FENVAL</strong> residual contact protection compares with contact-only caterpillar control options.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="Fenvalerate insecticide vs contact insecticides comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">FENVAL (Fenvalerate insecticide)</th>
+                  <th scope="col">Contact insecticides</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonPyrethroidContact">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.fenval }}</td>
+                  <td>{{ row.contact }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="fenval-compare-igr-traditional-heading">
+    <div class="container">
+      <h2 id="fenval-compare-igr-traditional-heading" class="section-title" data-aos="fade-up">Fenvalerate insecticide vs traditional caterpillar control</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Why <strong>FENVAL</strong> Fenvalerate 20% EC delivers broader larval protection than traditional caterpillar approaches.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="Fenvalerate insecticide vs traditional caterpillar control comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">FENVAL (Fenvalerate 20% EC)</th>
+                  <th scope="col">Traditional caterpillar control</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonPyrethroidTraditional">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.fenval }}</td>
+                  <td>{{ row.traditional }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="fenval-compare-ec-heading">
+    <div class="container">
+      <h2 id="fenval-compare-ec-heading" class="section-title" data-aos="fade-up">EC formulation benefits</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>FENVAL</strong> EC emulsifiable concentrate technology compares with other formulation types.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="EC formulation benefits comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">FENVAL (EC formulation)</th>
+                  <th scope="col">Other formulation types</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonEcFormulation">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.fenval }}</td>
+                  <td>{{ row.other }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-expert-heading">
+    <div class="container">
+      <h2 id="fenval-expert-heading" class="section-title" data-aos="fade-up">Expert recommendation</h2>
+      <aside class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Agricultural advisors recommend <strong>FENVAL</strong> when fields show caterpillar or borer pressure —
+          particularly fruit borers, pod borers, bollworms, Spodoptera, or mixed lepidopteran larvae on cotton, chilli,
+          and vegetables. Apply at early larval infestation or economic threshold with 30 ml per pump and thorough leaf
+          underside coverage for best results. Integrate FENVAL into a broader IPM program with scouting, ETL-based
+          decisions, and rotation across MOA groups for long-term sustainable caterpillar management.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="testimonials-section" aria-labelledby="fenval-testimonials-heading">
+    <div class="container">
+      <h2 id="fenval-testimonials-heading" class="section-title" data-aos="fade-up">What growers say</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Feedback from farmers using <strong>FENVAL</strong> across cotton, chilli, tomato, pulses, and vegetable crops.
+      </p>
+      <div class="row">
+        <div *ngFor="let t of testimonials; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="60 * i">
+          <article class="testimonial-card">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">{{ t.text }}</p>
+            <div class="testimonial-stars" [attr.aria-label]="t.rating + ' out of 5 stars'">
+              <i *ngFor="let star of [1, 2, 3, 4, 5]" class="fas fa-star" [class.star-filled]="star <= t.rating"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" aria-labelledby="fenval-faq-heading">
+    <div class="container">
+      <h2 id="fenval-faq-heading" class="section-title" data-aos="fade-up">Frequently asked questions</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Practical answers about <strong>{{ productTitle }}</strong>, <strong>FENVAL</strong>, dose, uses, and safe field use.
+      </p>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="accordion faq-accordion" id="fenvalFaqAccordion" data-aos="fade-up" data-aos-delay="90">
+            <ng-container *ngFor="let faq of faqs; let i = index">
+              <div class="accordion-item">
+                <h3 class="accordion-header" [id]="'fenval-faq-heading-' + i">
+                  <button
+                    class="accordion-button"
+                    [class.collapsed]="i !== 0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#fenval-faq-collapse-' + i"
+                    [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
+                    [attr.aria-controls]="'fenval-faq-collapse-' + i"
+                  >
+                    {{ faq.question }}
+                  </button>
+                </h3>
+                <div
+                  [id]="'fenval-faq-collapse-' + i"
+                  class="accordion-collapse collapse"
+                  [class.show]="i === 0"
+                  [attr.aria-labelledby]="'fenval-faq-heading-' + i"
+                  data-bs-parent="#fenvalFaqAccordion"
+                >
+                  <div class="accordion-body">
+                    <p [innerHTML]="faq.answer"></p>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-trust-heading">
+    <div class="container">
+      <h2 id="fenval-trust-heading" class="section-title" data-aos="fade-up">Trust &amp; quality assurance</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Product quality</h3>
+            <p>FENVAL is manufactured under strict quality control with batch-to-batch consistency growers depend on.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Manufacturing standards</h3>
+            <p>Harishree Crop Science follows rigorous formulation and packaging standards for reliable FENVAL field performance.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Farmer confidence</h3>
+            <p>FENVAL is trusted by growers across Gujarat, Maharashtra, Andhra Pradesh, and other major agricultural regions in India.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Crop protection commitment</h3>
+            <p>Harishree is committed to delivering effective, farmer-friendly FENVAL caterpillar and borer control solutions for sustainable agriculture.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="fenval-resources-heading">
+    <div class="container">
+      <h2 id="fenval-resources-heading" class="section-title" data-aos="fade-up">Downloadable resources</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Product documentation — contact Harishree for the latest materials.
+      </p>
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Product brochure</h3>
+            <p>Coming soon — enquire for FENVAL product brochure and technical details.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request brochure</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Product label</h3>
+            <p>Coming soon — enquire for the official FENVAL product label and usage directions.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request label</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Technical sheet</h3>
+            <p>Coming soon — enquire for crop-wise usage technical sheet and mixing guidance.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request technical sheet</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Safety data sheet</h3>
+            <p>Coming soon — enquire for safety data sheet and handling guidelines.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request safety sheet</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pests-section" aria-labelledby="fenval-related-heading">
+    <div class="container">
+      <h2 id="fenval-related-heading" class="section-title" data-aos="fade-up">Related products</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Explore more crop protection insecticides from <strong>Harishree Crop Science</strong> to build a strong IPM program.
+      </p>
+      <nav class="pest-cards product-related-grid" aria-label="Related insecticide products">
+        <div class="row">
+          <div *ngFor="let rp of relatedProducts; let i = index" class="col-md-6 col-lg-4">
+            <article class="product-related-card" data-aos="fade-up" [attr.data-aos-delay]="80 * i">
+              <a [routerLink]="rp.route" class="product-related-card__link">
+                <div class="product-related-card__image">
+                  <img
+                    [src]="rp.image"
+                    [alt]="rp.imageAlt"
+                    width="320"
+                    height="200"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product-related-card__body">
+                  <h3>{{ rp.name }}</h3>
+                  <p>{{ rp.description }}</p>
+                  <span class="pack-card__cta">View product</span>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section class="cta-section product-detail-cta" aria-labelledby="fenvalCtaTitle">
+    <div class="container">
+      <div class="cta-container" data-aos="zoom-in">
+        <h2 id="fenvalCtaTitle" class="cta-title">Get reliable bollworm &amp; caterpillar control with FENVAL</h2>
+        <p class="cta-text">
+          Contact Harishree Crop Science for dealer stock, competitive pricing, crop-wise usage notes, and mixing guidance for
+          <strong>FENVAL</strong> (<strong>{{ productTitle }}</strong>) — buy online at best price through authorized dealers.
+        </p>
+        <div class="cta-actions" role="group" aria-label="Contact and navigation">
+          <a routerLink="/contact-us" class="cta-button">Contact Harishree</a>
+          <a routerLink="/products" class="cta-button cta-button--outline">All products</a>
+          <a routerLink="/about-us" class="cta-button cta-button--outline">About us</a>
+          <a routerLink="/quality-assurance" class="cta-button cta-button--outline">Quality assurance</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
