@@ -340,6 +340,13 @@ export class Deltamethrin28EcComponent implements OnInit, OnDestroy {
 
   relatedProducts = [
     {
+      name: 'DELTA PLUS (Deltamethrin 11% w/w EC)',
+      description: 'High-strength deltamethrin pyrethroid for bollworms, borers, caterpillars, thrips, and aphids.',
+      route: '/products/insecticide/deltamethrin-11-w-w-ec-delta-plus',
+      image: 'assets/products/insecticide/deltamethrin-11-w-w-ec.png',
+      imageAlt: 'DELTA PLUS Deltamethrin 11% w/w EC insecticide by Harishree Crop Science'
+    },
+    {
       name: 'Cypermethrin 25% EC',
       description: 'Fast-acting synthetic pyrethroid for broad-spectrum chewing and sucking pest control.',
       route: '/product/cypermethrin-25-ec',

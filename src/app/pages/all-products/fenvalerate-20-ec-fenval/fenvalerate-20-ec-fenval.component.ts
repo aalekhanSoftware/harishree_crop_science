@@ -514,6 +514,13 @@ export class Fenvalerate20EcFenvalComponent implements OnInit, OnDestroy {
 
   relatedProducts = [
     {
+      name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
+      description: 'Dual-action insecticide for thrips, whiteflies, aphids, jassids, and mites in cotton and vegetables.',
+      route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum',
+      image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
+      imageAlt: 'MEGNUM Tolfenpyrad 15% + Bifenthrin 7.5% SE insecticide by Harishree Crop Science'
+    },
+    {
       name: 'RUNNER (Novaluron 10% EC)',
       description: 'IGR insecticide for fruit borers, pod borers, bollworms, and caterpillars with chitin synthesis inhibition.',
       route: '/products/insecticide/novaluron-10-ec-runner',
@@ -545,8 +552,15 @@ export class Fenvalerate20EcFenvalComponent implements OnInit, OnDestroy {
       name: 'DR. DELTA (Deltamethrin 2.8% EC)',
       description: 'Pyrethroid insecticide for bollworms, caterpillars, and leaf-eating pests with fast knockdown action.',
       route: '/product/deltamethrin-2-8-ec',
-      image: 'assets/products/insecticide/deltamethrin-11-w-w-ec.png',
+      image: 'assets/products/insecticide/dr-delta.jpg',
       imageAlt: 'DR. DELTA Deltamethrin 2.8% EC insecticide by Harishree Crop Science'
+    },
+    {
+      name: 'DELTA PLUS (Deltamethrin 11% w/w EC)',
+      description: 'High-strength deltamethrin pyrethroid for bollworms, borers, caterpillars, thrips, and aphids.',
+      route: '/products/insecticide/deltamethrin-11-w-w-ec-delta-plus',
+      image: 'assets/products/insecticide/deltamethrin-11-w-w-ec.png',
+      imageAlt: 'DELTA PLUS Deltamethrin 11% w/w EC insecticide by Harishree Crop Science'
     },
     {
       name: 'PRO-5G (Emamectin + Fipronil SC)',

@@ -1,0 +1,1283 @@
+<main class="product-page product-page--detail product-page--topaz" itemscope>
+  <nav class="container pt-3" aria-label="Breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+      <li class="breadcrumb-item"><a routerLink="/products">Products</a></li>
+      <li class="breadcrumb-item"><a routerLink="/products">Insecticides</a></li>
+      <li class="breadcrumb-item active" aria-current="page">TOPAZ</li>
+    </ol>
+  </nav>
+
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <p class="product-brand-line" data-aos="fade-right">{{ brandName }}</p>
+          <h1 class="product-title" data-aos="fade-right" data-aos-delay="40">
+            {{ productTitle }}
+          </h1>
+          <p class="product-tagline" data-aos="fade-right" data-aos-delay="80">
+            WP &middot; Dual action &middot; IGR + systemic + contact &middot; Sucking pest control
+          </p>
+          <div class="product-description" data-aos="fade-right" data-aos-delay="120">
+            <p>
+              <strong>Buprofezin 15% + ACEPHATE 50%</strong> (marketed as <strong>TOPAZ</strong>) is an advanced dual-action
+              insecticide engineered for fast pest suppression and long-lasting protection against whiteflies, brown planthoppers, aphids,
+              jassids, thrips, leafhoppers, and other sucking pests. The wettable powder combines buprofezin insect growth regulator activity
+              with acephate systemic and contact action for dependable crop protection in cotton, paddy, chilli, tomato, brinjal, okra, and vegetables.
+            </p>
+            <p class="small text-muted mb-2" lang="hi">
+              टोपाज ब्यूप्रोफेजिन 15% + एसिफेट 50% कीटनाशक — लेबल अनुसार 20 ग्राम प्रति पंप खुराक और समय फॉलो करें।
+            </p>
+            <div class="usps" data-aos="fade-right" data-aos-delay="180">
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> 20 gm/pump dose</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Dual action formula</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Systemic protection</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Whitefly &amp; BPH control</span>
+            </div>
+            <div class="cta-actions mt-3" role="group" aria-label="Hero actions">
+              <a routerLink="/contact-us" class="cta-button">Enquire now</a>
+              <a routerLink="/products" class="cta-button cta-button--outline">All products</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <div class="product-image-container" data-aos="zoom-in">
+            <div class="product-image-inner">
+              <picture>
+                <source [srcset]="productImageWebpPath" type="image/webp" />
+                <img
+                  [src]="productImagePath"
+                  alt="TOPAZ Buprofezin 15% + ACEPHATE 50% Insecticide"
+                  title="TOPAZ Buprofezin 15% + ACEPHATE 50%"
+                  class="product-image"
+                  width="400"
+                  height="400"
+                  loading="eager"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="benefits-section" aria-labelledby="topaz-highlights-heading">
+    <div class="container">
+      <h2 id="topaz-highlights-heading" class="section-title" data-aos="fade-up">Quick highlights</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        At-a-glance reasons growers reach for <strong>TOPAZ</strong> (<strong>{{ productTitle }}</strong>).
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let h of quickHighlights; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="h.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ h.title }}</h3>
+              <p>{{ h.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-pack-section" aria-labelledby="topaz-pack-heading">
+    <div class="container">
+      <h2 id="topaz-pack-heading" class="section-title text-center" data-aos="fade-up">Pack sizes</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        Authentic <strong>{{ productTitle }}</strong> (TOPAZ) packed securely for every farming need.
+        Prices are shown in schema only; enquire for dealer availability.
+      </p>
+      <div class="pack-grid" data-aos="fade-up" data-aos-delay="100">
+        <article *ngFor="let pack of packSizes" class="pack-card" [class.pack-card--featured]="pack.featured">
+          <h3 class="pack-card__volume">{{ pack.volume }}</h3>
+          <p class="pack-card__hint">Harishree Quality &middot; dealer support</p>
+          <a routerLink="/contact-us" class="pack-card__cta">Enquire now</a>
+        </article>
+      </div>
+      <p class="dose-callout text-center" data-aos="fade-up">
+        <strong>Recommended dose:</strong> 20 gm per pump (15-litre water; confirm on label and crop advisory).
+      </p>
+    </div>
+  </section>
+
+  <section class="benefits-section" aria-labelledby="topaz-why-heading">
+    <div class="container">
+      <h2 id="topaz-why-heading" class="section-title" data-aos="fade-up">Why choose TOPAZ</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        What sets <strong>TOPAZ</strong> apart as a premium Buprofezin 15% + ACEPHATE 50% insecticide for Indian agriculture.
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let w of whyChoose; let i = index" class="col-md-6 col-lg-3" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="w.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ w.title }}</h3>
+              <p>{{ w.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits-section" aria-labelledby="topaz-benefits-heading">
+    <div class="container">
+      <h2 id="topaz-benefits-heading" class="section-title" data-aos="fade-up">Key benefits</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        Why growers trust <strong>TOPAZ</strong> for dependable whitefly, brown planthopper, jassid, and thrips management.
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let b of keyBenefits; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="b.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ b.title }}</h3>
+              <p>{{ b.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-what-is-heading">
+    <div class="container">
+      <h2 id="topaz-what-is-heading" class="section-title" data-aos="fade-up">
+        What is Buprofezin 15% + ACEPHATE 50%?
+      </h2>
+      <article class="product-highlight-card product-snippet-answer" data-aos="fade-up" data-aos-delay="60">
+        <p>{{ featuredSnippetAnswer }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-intro-heading">
+    <div class="container">
+      <h2 id="topaz-intro-heading" class="section-title" data-aos="fade-up">Introduction — modern pest management with TOPAZ</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Indian agriculture faces rising pressure from whiteflies, brown planthoppers, aphids, thrips, jassids, and leafhoppers — sucking pests that drain crop vigour,
+          transmit stress, and reduce marketable yield. Modern pest management demands insecticides that combine <strong>fast pest suppression</strong> with
+          <strong>long-lasting IGR and systemic protection</strong> while supporting resistance management through distinct chemistry groups.
+          <strong>Buprofezin 15% + ACEPHATE 50%</strong> addresses this need as a scientifically formulated dual action insect growth regulator insecticide.
+          Farmers prefer <strong>TOPAZ</strong> from Harishree Crop Science because it pairs proven Buprofezin IGR lifecycle disruption with
+          dependable Acephate insecticide systemic and contact knockdown in one wettable powder pack — simplifying tank preparation, dosing at 20 gm per pump,
+          and field execution across cotton, paddy, chilli, and vegetable insecticide programs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-what-is-topaz-heading">
+    <div class="container">
+      <h2 id="topaz-what-is-topaz-heading" class="section-title" data-aos="fade-up">What is TOPAZ?</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>TOPAZ</strong> is Harishree Crop Science's advanced dual-action broad-spectrum insecticide for sucking pest management.
+          It delivers fast pest suppression through Acephate contact and systemic action, long-lasting protection via Buprofezin IGR disruption of immature pest stages,
+          and modern WP formulation technology that ensures uniform spray coverage. As an insect growth regulator insecticide with systemic and contact activity,
+          TOPAZ is engineered for whitefly control, brown planthopper control, aphid control, thrips control, jassid control, and leafhopper control in high-value cotton, paddy,
+          chilli, brinjal, tomato, okra, and mixed vegetable crops. Whether you search for Buprofezin Acephate insecticide,
+          TOPAZ insecticide, or the technical name Buprofezin 15% + ACEPHATE 50%, this product represents Harishree's commitment to
+          crop protection, pest management, and agricultural insecticide innovation for Indian growers.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-dual-active-heading">
+    <div class="container">
+      <h2 id="topaz-dual-active-heading" class="section-title" data-aos="fade-up">Dual active ingredient technology</h2>
+      <div class="row mt-4">
+        <div class="col-md-6" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Buprofezin 15% — insect growth regulator (IGR)</h3>
+            <p>
+              Buprofezin (IRAC Group 16) inhibits chitin biosynthesis in immature pest stages, preventing successful moulting and development.
+              This buprofezin insecticide mechanism disrupts whitefly nymphs, planthopper nymphs, and aphid nymphs — reducing pest multiplication
+              and resurgence. Benefits include long residual IGR activity, effective control of immature sucking pest populations, and reduced
+              crop damage from developing pest generations between spray intervals.
+            </p>
+            <h4 class="h6 mt-3">Long residual effect</h4>
+            <p>
+              Buprofezin provides extended protection on treated foliage, maintaining IGR activity against newly hatching nymphs and supporting
+              sustainable sucking pest management when rotated within integrated pest management programs.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">ACEPHATE 50% — organophosphate insecticide</h3>
+            <p>
+              Acephate (IRAC Group 1B) inhibits acetylcholinesterase in insect nerve tissue, causing rapid nervous-system disruption and feeding cessation.
+              This acephate insecticide delivers contact action, systemic absorption through plant tissue, and fast knockdown against whiteflies,
+              brown planthoppers, aphids, jassids, thrips, and allied sap feeders. Benefits include quick visible results and broad-spectrum
+              field performance on high-pressure sucking pest outbreaks.
+            </p>
+            <h4 class="h6 mt-3">Broad-spectrum control</h4>
+            <p>
+              Acephate provides effective activity on multiple sucking pest species in cotton, paddy, chilli, and vegetable crops — delivering
+              the fast-acting component that complements buprofezin IGR lifecycle disruption in TOPAZ.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section product-detail-cta product-detail-cta--inline" aria-labelledby="topazMidCtaTitle">
+    <div class="container">
+      <div class="cta-container cta-container--compact" data-aos="fade-up">
+        <h2 id="topazMidCtaTitle" class="cta-title h4">Buy TOPAZ at best price — trusted dual action performance</h2>
+        <p class="cta-text mb-3">
+          Competitive pricing at ₹342/500 GM, quality WP formulation, and farmer satisfaction across India. Enquire for dealer availability today.
+        </p>
+        <a routerLink="/contact-us" class="cta-button">Enquire now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mode-of-action-section product-moa" aria-labelledby="topaz-moa-heading">
+    <div class="container">
+      <h2 id="topaz-moa-heading" class="section-title text-center" data-aos="fade-up">How does Buprofezin 15% + ACEPHATE 50% work?</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Dual-action mode of action — <strong>Acephate</strong> delivers contact and systemic knockdown while <strong>Buprofezin</strong> provides IGR lifecycle disruption and long residual protection.
+      </p>
+      <div class="product-moa__layout row justify-content-center mt-2 mt-lg-4">
+        <div class="col-12 col-xl-10" data-aos="fade-up">
+          <ol class="product-moa__steps list-unstyled mb-0" role="list">
+            <li *ngFor="let step of modeOfAction; let i = index" class="product-moa__step">
+              <div class="product-moa__step-num" aria-hidden="true">{{ i + 1 }}</div>
+              <div class="product-moa__step-body">
+                <h3 class="product-moa__step-title">{{ step.title }}</h3>
+                <p class="product-moa__step-text">{{ step.description }}</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pests-section" id="target-pests" aria-labelledby="topaz-pests-heading">
+    <div class="container">
+      <h2 id="topaz-pests-heading" class="section-title" data-aos="fade-up">Target pests</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        <strong>TOPAZ</strong> delivers dual MOA activity against whiteflies, brown planthoppers, aphids, thrips, jassids, leafhoppers, and other sucking pests when applied at early infestation with full canopy coverage.
+      </p>
+      <div class="pest-cards">
+        <div class="row">
+          <div *ngFor="let p of targetPests; let i = index" class="col-md-6 col-lg-4">
+            <article class="pest-card" data-aos="flip-up" [attr.data-aos-delay]="80 * i">
+              <div class="pest-icon"><i class="fas fa-bug"></i></div>
+              <h3>{{ p.name }}</h3>
+              <p>{{ p.description }}</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="crops-section product-applications" id="applications" aria-labelledby="topaz-crops-heading">
+    <div class="product-applications__band">
+      <div class="container">
+        <div class="row align-items-end mb-2">
+          <div class="col-lg-8">
+            <h2 id="topaz-crops-heading" class="section-title product-applications__title" data-aos="fade-up">Recommended crops</h2>
+            <p class="section-subtitle product-applications__lead" data-aos="fade-up" data-aos-delay="40">
+              <strong>TOPAZ</strong> is trusted across India for protecting cotton, paddy, chilli, tomato, brinjal, okra, and vegetables from whitefly, brown planthopper, aphid, thrips, jassid, and leafhopper damage.
+            </p>
+          </div>
+        </div>
+        <ul class="product-applications__grid list-unstyled mb-0" role="list">
+          <li *ngFor="let app of applications; let i = index" class="product-applications__item" data-aos="fade-up" [attr.data-aos-delay]="40 * i">
+            <article class="product-app-tile">
+              <div class="product-app-tile__head" aria-hidden="true"></div>
+              <div class="product-app-tile__body">
+                <div class="product-app-tile__icon-wrap">
+                  <span class="product-app-tile__icon"><i [class]="app.icon"></i></span>
+                </div>
+                <h3 class="product-app-tile__title">{{ app.title }}</h3>
+                <p class="product-app-tile__text">{{ app.description }}</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="topaz-crop-table-heading">
+    <div class="container">
+      <h2 id="topaz-crop-table-heading" class="section-title" data-aos="fade-up">Crop-wise usage guide</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Practical <strong>TOPAZ</strong> application guidance by crop. Always confirm with label and local advisory.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="TOPAZ crop-wise usage table">
+              <thead>
+                <tr>
+                  <th scope="col">Crop</th>
+                  <th scope="col">Target pests</th>
+                  <th scope="col">Dose</th>
+                  <th scope="col">Best timing</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of cropWiseUsage">
+                  <td><strong>{{ row.crop }}</strong></td>
+                  <td>{{ row.pests }}</td>
+                  <td>{{ row.dose }}</td>
+                  <td>{{ row.timing }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="topaz-pest-table-heading">
+    <div class="container">
+      <h2 id="topaz-pest-table-heading" class="section-title" data-aos="fade-up">Pest-wise control guide</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>TOPAZ</strong> performs against key sucking pest species across labeled crops.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="TOPAZ pest-wise control table">
+              <thead>
+                <tr>
+                  <th scope="col">Pest</th>
+                  <th scope="col">Crops</th>
+                  <th scope="col">Mode of action</th>
+                  <th scope="col">Expected efficacy</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of pestWiseControl">
+                  <td><strong>{{ row.pest }}</strong></td>
+                  <td>{{ row.crops }}</td>
+                  <td>{{ row.mode }}</td>
+                  <td>{{ row.efficacy }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" id="specifications" aria-labelledby="topaz-specs-heading">
+    <div class="container">
+      <h2 id="topaz-specs-heading" class="section-title" data-aos="fade-up">Technical specifications</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Snapshot for dealers and agronomists. Always pair with the printed label for final guidance.
+      </p>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="80">
+        <div class="col-lg-6 mb-4">
+          <article class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-flask specs-icon"></i>
+              <h3>Product information</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.productInfo" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <article class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-prescription-bottle specs-icon"></i>
+              <h3>Dose &amp; application</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.packs" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="120">
+        <article class="product-official-specs__card">
+          <header class="product-official-specs__head">
+            <h3>TOPAZ &mdash; full parameter table</h3>
+            <p>
+              Complete technical profile for <strong>{{ productTitle }}</strong> (TOPAZ). Values support dealer
+              review and agronomic planning.
+            </p>
+          </header>
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="TOPAZ Buprofezin 15% + ACEPHATE 50% technical profile">
+              <thead>
+                <tr>
+                  <th scope="col">Parameter</th>
+                  <th scope="col">Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of officialProductDetails">
+                  <td>{{ row.label }}</td>
+                  <td>{{ row.value }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-uses-heading">
+    <div class="container">
+      <h2 id="topaz-uses-heading" class="section-title" data-aos="fade-up">Buprofezin 15% + ACEPHATE 50% uses</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Key agricultural applications of <strong>TOPAZ</strong> across Indian farming systems.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">TOPAZ application</h3>
+            <p>Foliar spray at 20 gm per pump in a 15-litre knapsack sprayer. Apply at early sucking pest infestation or economic threshold with full canopy and underside coverage.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Dual action benefits</h3>
+            <p>Acephate systemic absorption plus Buprofezin contact and systemic action delivers fast pest control and sustained suppression of thrips, whiteflies, aphids, jassids, and mites on treated crops.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Crop protection solution</h3>
+            <p>Trusted dual action insecticide for cotton whitefly, chilli thrips, tomato aphids, brinjal jassids, and mixed sucking pest pressure across India.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-dose-heading">
+    <div class="container">
+      <h2 id="topaz-dose-heading" class="section-title" data-aos="fade-up">Buprofezin 15% + ACEPHATE 50% dose</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Clear, field-ready guidance for using <strong>TOPAZ</strong> effectively.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Recommended dose</h3>
+            <p><strong>20 gm per pump</strong> in a standard 15-litre knapsack sprayer. Confirm crop-wise rate on the label.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Mixing instructions</h3>
+            <p>Half-fill with water, add 20 gm TOPAZ, top up, and agitate. The WP formulation suspends easily for uniform spray coverage on leaf surfaces and undersides.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Best spray timing</h3>
+            <p>Apply at early sucking pest infestation or ETL during calm morning or evening hours with emphasis on leaf undersides where thrips, whiteflies, and aphids colonize.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-price-heading">
+    <div class="container">
+      <h2 id="topaz-price-heading" class="section-title" data-aos="fade-up">Buprofezin 15% + ACEPHATE 50% price — buy online at best price</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>TOPAZ</strong> is available in 500 GM and 1 KG packs through authorized
+          Harishree Crop Science dealers across India. Indicative list prices: 500 GM — ₹342, 1 KG — ₹661.
+          Contact your nearest dealer or Harishree directly for current rates,
+          bulk availability, and buy online enquiry support.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-moa-long-heading">
+    <div class="container">
+      <h2 id="topaz-moa-long-heading" class="section-title" data-aos="fade-up">Buprofezin 15% + ACEPHATE 50% mode of action</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>Acephate</strong> and <strong>Buprofezin</strong> in <strong>TOPAZ</strong> deliver contact, stomach, and systemic absorption for comprehensive sucking pest control.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Contact action — rapid knockdown</h3>
+            <p>Acephate acts on contact, inhibiting acetylcholinesterase in insect nerve tissue. Whiteflies, planthoppers, jassids, and aphids exposed to the spray deposit experience rapid nervous-system disruption and immediate cessation of feeding damage.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Systemic action</h3>
+            <p>When sucking pests ingest treated plant tissue, acephate delivers strong systemic insecticide activity against hidden feeders on leaf undersides and in dense canopy — protecting new shoots after foliar uptake.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Growth regulation — Buprofezin IGR</h3>
+            <p>Buprofezin inhibits chitin biosynthesis in immature pest stages, preventing successful moulting. Whitefly nymphs, planthopper nymphs, and aphid nymphs fail to develop — reducing pest multiplication and resurgence between spray intervals.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Resistance management benefits</h3>
+            <p>Rotate TOPAZ with neonicotinoids, pyrethroids, and other MOA groups across the season to reduce selection pressure on whitefly, planthopper, and jassid populations in integrated pest management programs.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-cotton-heading">
+    <div class="container">
+      <h2 id="topaz-cotton-heading" class="section-title" data-aos="fade-up">TOPAZ for cotton</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>TOPAZ</strong> fits cotton programs facing whitefly, aphid, jassid, and mite pressure during square, flowering,
+          and boll development stages. Use <strong>20 gm per pump</strong> at early sucking pest infestation with full canopy
+          spray and underside coverage. Dual action contact, stomach, and systemic absorption helps maintain cleaner foliage and healthier bolls throughout
+          the season when integrated into a broader IPM rotation.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-chilli-heading">
+    <div class="container">
+      <h2 id="topaz-chilli-heading" class="section-title" data-aos="fade-up">TOPAZ for chilli</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          In chilli, <strong>TOPAZ</strong> controls thrips, aphids, mites, and whiteflies that cause
+          flower scarring, silvering, and export quality loss. Spray at early colonization with 20 gm per pump, ensuring
+          coverage of flowers, pods, and leaf undersides. Timely application at vegetative and fruit-set stages protects foliage
+          colour, pod size, and marketable yield — essential for chilli thrips control programs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-tomato-heading">
+    <div class="container">
+      <h2 id="topaz-tomato-heading" class="section-title" data-aos="fade-up">TOPAZ for tomato</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          On tomato, <strong>TOPAZ</strong> manages whiteflies, aphids, thrips, and mites that reduce fruit set and transmit stress during flowering and fruit development. Apply at economic threshold with 20 gm per
+          pump and thorough canopy coverage. Dual action insecticide activity supports cleaner harvest grade and reduced
+          honeydew deposition in high-value tomato programs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-brinjal-heading">
+    <div class="container">
+      <h2 id="topaz-brinjal-heading" class="section-title" data-aos="fade-up">TOPAZ for brinjal</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          On brinjal, <strong>TOPAZ</strong> manages aphids, jassids, whiteflies, and mites that weaken plants during
+          flowering and continuous harvest cycles. Sucking pest complexes cause leaf curling, hopper burn, and reduced fruit quality. Apply at economic threshold with <strong>20 gm per pump</strong>, ensuring
+          coverage of shoots, fruits, and leaf undersides. As a contact and systemic action insecticide for crops with dense foliage, TOPAZ
+          delivers fast pest control when timed at early infestation, supporting cleaner harvest grade and improved
+          vegetable crop protection throughout the season.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-okra-heading">
+    <div class="container">
+      <h2 id="topaz-okra-heading" class="section-title" data-aos="fade-up">TOPAZ for okra</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Okra faces jassid, aphid, and whitefly pressure during pod formation and continuous harvest cycles. <strong>TOPAZ</strong>
+          protects okra pods and leaves from sucking pest feeding damage that causes scarring, pod deformation, and yield loss.
+          Spray at early infestation with 20 gm per pump and thorough canopy coverage. Timely Buprofezin Acephate insecticide
+          application preserves pod quality, supports continuous picking schedules, and helps maintain marketable yield in
+          high-value okra programs across Indian vegetable farming systems.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-paddy-heading">
+    <div class="container">
+      <h2 id="topaz-paddy-heading" class="section-title" data-aos="fade-up">TOPAZ for paddy</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          In paddy, <strong>TOPAZ</strong> controls brown planthoppers (BPH), leafhoppers, and other sucking pests during vegetative and reproductive stages.
+          These pests cause hopper burn, yellowing, and reduced tillering that can significantly lower grain yield. Apply at economic threshold with
+          <strong>20 gm per pump</strong> and thorough foliar coverage. Systemic acephate activity combined with buprofezin IGR nymph suppression supports
+          healthier rice stands and improved brown planthopper control when integrated into broader IPM rotation.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-bph-heading">
+    <div class="container">
+      <h2 id="topaz-bph-heading" class="section-title" data-aos="fade-up">TOPAZ for brown planthopper control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>TOPAZ</strong> delivers dependable brown planthopper control in paddy through acephate systemic and contact knockdown combined with
+          buprofezin IGR disruption of nymph development. Brown planthoppers (Nilaparvata lugens) feed on rice phloem sap, causing hopper burn,
+          wilting, and significant yield loss during vegetative and reproductive stages. Apply at early infestation with 20 gm per pump and thorough
+          foliar coverage. Timely TOPAZ application before populations explode helps restore crop vigour and supports healthier grain fill at harvest.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-cauliflower-heading">
+    <div class="container">
+      <h2 id="topaz-cauliflower-heading" class="section-title" data-aos="fade-up">TOPAZ for cauliflower</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          On cauliflower, <strong>TOPAZ</strong> controls aphids, thrips, and whiteflies during curd development.
+          Sucking pests cause honeydew, sooty mould, and quality loss on exposed curds. Apply at economic threshold with 20 gm per pump
+          and thorough foliar coverage. This broad spectrum insecticide supports healthier curd quality and improved
+          horticultural crop protection in cauliflower programs facing mixed sucking pest pressure.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-vegetables-heading">
+    <div class="container">
+      <h2 id="topaz-vegetables-heading" class="section-title" data-aos="fade-up">TOPAZ for vegetables</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Across brinjal, okra, cabbage, cauliflower, and mixed vegetable crops, <strong>TOPAZ</strong> controls
+          thrips, whiteflies, aphids, jassids, and mite outbreaks. Use 20 gm per pump at early
+          colonization or ETL with full canopy coverage. Integrate with scouting and rotation across MOA groups
+          for sustainable vegetable insecticide programs throughout the growing season.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-thrips-heading">
+    <div class="container">
+      <h2 id="topaz-thrips-heading" class="section-title" data-aos="fade-up">TOPAZ for thrips control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>TOPAZ</strong> delivers dependable dual action insecticide control of chilli thrips and vegetable thrips
+          on chilli, tomato, brinjal, and mixed vegetable crops. Thrips scar flowers, silver leaves, and reduce export quality —
+          economic losses can be severe in high-value chilli programs. Apply at economic
+          threshold with 20 gm per pump and thorough flower and leaf coverage. fast pest control through Buprofezin plus feeding cessation via Acephate
+          suppresses active thrips populations for sustained thrips control in chilli between spray intervals.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-whitefly-heading">
+    <div class="container">
+      <h2 id="topaz-whitefly-heading" class="section-title" data-aos="fade-up">Buprofezin 15% + ACEPHATE 50% for whitefly control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>Buprofezin 15% + ACEPHATE 50%</strong> in <strong>TOPAZ</strong> provides strong contact, stomach, and systemic absorption against cotton whitefly and vegetable whitefly when sprayed early at infestation with emphasis on leaf
+          undersides. Whitefly control in cotton supports cleaner bolls, reduced honeydew, and healthier fibre quality. Timely application before populations explode helps restore crop vigour and
+          supports healthier marketable yields.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-aphid-heading">
+    <div class="container">
+      <h2 id="topaz-aphid-heading" class="section-title" data-aos="fade-up">TOPAZ for aphid control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>TOPAZ</strong> helps manage cotton aphids and vegetable aphids that colonize tender shoots and leaf undersides,
+          causing curling, stunting, and honeydew deposition. Spray at first colonization with 20 gm per pump before populations
+          spread across the canopy. Aphid control insecticide activity through dual MOA supports better leaf integrity, fruit development, and harvest quality in cotton and vegetable
+          programs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-longtail-heading">
+    <div class="container">
+      <h2 id="topaz-longtail-heading" class="section-title" data-aos="fade-up">Acephate Buprofezin insecticide for agriculture</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Buprofezin 15 Acephate 50 uses</h3>
+            <p>Foliar dual action insecticide spray for whitefly, brown planthopper, aphid, jassid, and thrips management on cotton, paddy, chilli, tomato, brinjal, okra, and vegetables at 20 gm/pump.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">TOPAZ dose per pump</h3>
+            <p>Standard knapsack guidance for TOPAZ is <strong>20 gm per 15-litre pump</strong>. Confirm acre-wise calculations with label and local advisory.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Dual mode of action</h3>
+            <p>Buprofezin (IRAC 16) inhibits chitin synthesis while Acephate (IRAC 1B) inhibits acetylcholinesterase — IGR lifecycle disruption plus contact and systemic action on treated foliage.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-best-thrips-heading">
+    <div class="container">
+      <h2 id="topaz-best-thrips-heading" class="section-title" data-aos="fade-up">Best insecticide for thrips</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Growers across India choose <strong>TOPAZ</strong> as a trusted <strong>best insecticide for thrips</strong>
+          programs targeting chilli thrips and vegetable thrips on high-value crops. Apply at ETL with
+          20 gm per pump, rotate with other MOA classes, and maintain regular scouting for early detection — a proven
+          approach for cleaner flowers, pods, and better harvest quality.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-best-whitefly-heading">
+    <div class="container">
+      <h2 id="topaz-best-whitefly-heading" class="section-title" data-aos="fade-up">Best insecticide for whitefly</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          For fields facing persistent whitefly pressure in cotton, tomato, and brinjal, <strong>TOPAZ</strong>
+          combines Acephate systemic absorption with Buprofezin pest control chemistry. Unlike single-active
+          sprays with limited dual MOA coverage, Buprofezin 15% + ACEPHATE 50% delivers contact, stomach, and respiratory action when applied at early
+          infestation with 20 gm per pump and full canopy spray coverage.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-dual-action-heading">
+    <div class="container">
+      <h2 id="topaz-dual-action-heading" class="section-title" data-aos="fade-up">Dual action insecticide for crop protection</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>TOPAZ</strong> is a reliable <strong>dual action insecticide for crop protection</strong> in cotton,
+          chilli, tomato, brinjal, okra, and vegetable programs facing thrips, whitefly, and aphid outbreaks. The SE
+          formulation mixes cleanly, spreads evenly, and maintains contact, stomach, and systemic absorption on treated foliage — supporting
+          effective pest management growers and agronomists expect in modern integrated pest management systems.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-application-heading">
+    <div class="container">
+      <h2 id="topaz-application-heading" class="section-title" data-aos="fade-up">Application method</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Step-by-step guide for applying <strong>TOPAZ</strong> ({{ productTitle }}) in the field.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 1 — Prepare clean water</h3>
+            <p>Half-fill a standard 15-litre knapsack sprayer with clean water before adding the insecticide for safe, even mixing.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 2 — Measure 20 gm</h3>
+            <p>Accurately measure 20 gm of TOPAZ for one knapsack pump. Use a graduated measure for consistent dosing.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 3 — Mix thoroughly</h3>
+            <p>Add product to water, top up the tank, and agitate. The WP formulation suspends easily into a uniform spray mix.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 4 — Spray uniformly</h3>
+            <p>Apply in calm weather. Cover both leaf surfaces and undersides where thrips, whiteflies, aphids, and jassids feed.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-storage-heading">
+    <div class="container">
+      <h2 id="topaz-storage-heading" class="section-title" data-aos="fade-up">Storage instructions</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Store <strong>TOPAZ</strong> in the original sealed container in a cool, dry, well-ventilated place away from direct
+          sunlight, food, feed, seed, and children. Keep containers upright and locked. Do not store near heat sources or open flames.
+          Shelf life is approximately 24 months from date of manufacture when stored properly. Triple-rinse empty bottles before disposal
+          as per local pesticide container management rules.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-harishree-heading">
+    <div class="container">
+      <h2 id="topaz-harishree-heading" class="section-title" data-aos="fade-up">Why buy TOPAZ from Harishree Crop Science</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>Harishree Crop Science</strong> manufactures <strong>TOPAZ</strong> with strict quality assurance, reliable SE
+          formulation, and farmer-focused support that dealers and agronomists trust across India. Buy through authorized Harishree
+          dealers for authentic Buprofezin 15% + ACEPHATE 50% insecticide at competitive pricing, dependable field performance, crop-wise usage
+          guidance, and responsive customer service. Harishree is committed to delivering effective dual action insecticide
+          solutions for sustainable thrips, whitefly, and aphid management in modern Indian agriculture.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-results-heading">
+    <div class="container">
+      <h2 id="topaz-results-heading" class="section-title" data-aos="fade-up">Results &amp; performance</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Field-level outcomes growers commonly report when dose, coverage, and larval stage are handled well.
+      </p>
+      <div class="row mt-4">
+        <div *ngFor="let ph of performanceHighlights; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="70 * i">
+          <article class="product-highlight-card">
+            <h3 class="h6">{{ ph.label }}</h3>
+            <p>{{ ph.value }}</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="usage-safety-section" id="safety" aria-labelledby="topaz-safety-heading">
+    <div class="container">
+      <h2 id="topaz-safety-heading" class="section-title text-center" data-aos="fade-up">Safety guidelines</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        PPE, storage, disposal, and first aid guidance for safe use of <strong>TOPAZ</strong>.
+      </p>
+      <div class="usage-safety-shell mt-4">
+        <div class="usage-safety-shell__intro" data-aos="fade-up" data-aos-delay="60">
+          <span class="usage-pill"><i class="fas fa-spray-can"></i> 20 gm accurate dose</span>
+          <span class="usage-pill"><i class="fas fa-user-shield"></i> PPE &amp; environment</span>
+        </div>
+
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <article class="usage-safety-panel usage-safety-panel--usage">
+              <header class="usage-safety-panel__head">
+                <h3>Usage best practices</h3>
+                <p>Mix clean, spray calm, scout again after a few days.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i < 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="140">
+            <article class="usage-safety-panel usage-safety-panel--safety">
+              <header class="usage-safety-panel__head">
+                <h3>Storage, disposal &amp; first aid</h3>
+                <p>Respect the label hazard panel and local disposal rules.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i >= 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-compatibility-heading">
+    <div class="container">
+      <h2 id="topaz-compatibility-heading" class="section-title" data-aos="fade-up">Compatibility &amp; tank mix</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>TOPAZ</strong> is generally compatible with commonly used insecticides and fungicides when
+          tank-mixed for integrated crop protection programs. Always perform a <strong>jar test</strong> before
+          mixing to confirm physical compatibility. Avoid alkaline mixes that may degrade active ingredients.
+          Consult your local Harishree dealer or agronomist for crop-specific tank-mix recommendations.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-resistance-heading">
+    <div class="container">
+      <h2 id="topaz-resistance-heading" class="section-title" data-aos="fade-up">Resistance management</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Dual-action chemistry in <strong>TOPAZ</strong> supports focused thrips, whitefly, and aphid management when rotated
+          with other mode-of-action groups. For sustainable sucking pest control, rotate TOPAZ with insect growth regulators,
+          IGRs, and other insecticide classes across the season and avoid repeated applications
+          of the same chemistry alone.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="topaz-compare-traditional-heading">
+    <div class="container">
+      <h2 id="topaz-compare-traditional-heading" class="section-title" data-aos="fade-up">TOPAZ vs conventional sucking pest sprays</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Semantic comparison showing why <strong>TOPAZ</strong> outperforms many conventional single-active sucking pest sprays.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="TOPAZ vs conventional sucking pest sprays comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col">TOPAZ</th>
+                  <th scope="col">Conventional sprays</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonTraditional">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.topaz }}</td>
+                  <td>{{ row.traditional }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="topaz-compare-pyrethroid-contact-heading">
+    <div class="container">
+      <h2 id="topaz-compare-dual-action-heading" class="section-title" data-aos="fade-up">TOPAZ vs single-active insecticides</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>TOPAZ</strong> dual-action protection compares with single-active sucking pest control options.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="TOPAZ vs single-active insecticides comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">TOPAZ (Dual action insecticide)</th>
+                  <th scope="col">Single-active insecticides</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonDualAction">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.topaz }}</td>
+                  <td>{{ row.singleAi }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="topaz-compare-igr-traditional-heading">
+    <div class="container">
+      <h2 id="topaz-compare-acephate-heading" class="section-title" data-aos="fade-up">TOPAZ vs generic Acephate products</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Why <strong>TOPAZ</strong> Buprofezin 15% + ACEPHATE 50% delivers broader sucking pest protection than generic Acephate products alone.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="TOPAZ vs Acephate-only insecticides comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">TOPAZ (Acephate + Buprofezin SP)</th>
+                  <th scope="col">Generic Acephate SP</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonAcephateOnly">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.topaz }}</td>
+                  <td>{{ row.generic }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="topaz-compare-ec-heading">
+    <div class="container">
+      <h2 id="topaz-compare-sp-heading" class="section-title" data-aos="fade-up">WP formulation benefits</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>TOPAZ</strong> wettable powder technology compares with other formulation types.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="WP formulation benefits comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">TOPAZ (WP formulation)</th>
+                  <th scope="col">Other formulation types</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonWpFormulation">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.topaz }}</td>
+                  <td>{{ row.other }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-expert-heading">
+    <div class="container">
+      <h2 id="topaz-expert-heading" class="section-title" data-aos="fade-up">Expert recommendation</h2>
+      <aside class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Agricultural advisors recommend <strong>TOPAZ</strong> when fields show thrips, whitefly, or aphid pressure —
+          particularly chilli thrips, cotton whitefly, vegetable aphids, jassids, or mixed sucking pest complexes on cotton, chilli,
+          and vegetables. Apply at early infestation or economic threshold with 20 gm per pump and thorough leaf
+          underside coverage for best results. Integrate TOPAZ into a broader integrated pest management program with scouting, ETL-based
+          decisions, and rotation across MOA groups for long-term sustainable sucking pest management.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="testimonials-section" aria-labelledby="topaz-testimonials-heading">
+    <div class="container">
+      <h2 id="topaz-testimonials-heading" class="section-title" data-aos="fade-up">What growers say</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Feedback from farmers using <strong>TOPAZ</strong> across cotton, chilli, tomato, brinjal, and vegetable crops.
+      </p>
+      <div class="row">
+        <div *ngFor="let t of testimonials; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="60 * i">
+          <article class="testimonial-card">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">{{ t.text }}</p>
+            <div class="testimonial-stars" [attr.aria-label]="t.rating + ' out of 5 stars'">
+              <i *ngFor="let star of [1, 2, 3, 4, 5]" class="fas fa-star" [class.star-filled]="star <= t.rating"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" aria-labelledby="topaz-faq-heading">
+    <div class="container">
+      <h2 id="topaz-faq-heading" class="section-title" data-aos="fade-up">Frequently asked questions</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Practical answers about <strong>{{ productTitle }}</strong>, <strong>TOPAZ</strong>, dose, uses, and safe field use.
+      </p>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="accordion faq-accordion" id="topazFaqAccordion" data-aos="fade-up" data-aos-delay="90">
+            <ng-container *ngFor="let faq of faqs; let i = index">
+              <div class="accordion-item">
+                <h3 class="accordion-header" [id]="'topaz-faq-heading-' + i">
+                  <button
+                    class="accordion-button"
+                    [class.collapsed]="i !== 0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#topaz-faq-collapse-' + i"
+                    [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
+                    [attr.aria-controls]="'topaz-faq-collapse-' + i"
+                  >
+                    {{ faq.question }}
+                  </button>
+                </h3>
+                <div
+                  [id]="'topaz-faq-collapse-' + i"
+                  class="accordion-collapse collapse"
+                  [class.show]="i === 0"
+                  [attr.aria-labelledby]="'topaz-faq-heading-' + i"
+                  data-bs-parent="#topazFaqAccordion"
+                >
+                  <div class="accordion-body">
+                    <p [innerHTML]="faq.answer"></p>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-trust-heading">
+    <div class="container">
+      <h2 id="topaz-trust-heading" class="section-title" data-aos="fade-up">Trust &amp; quality assurance</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Product quality</h3>
+            <p>TOPAZ is manufactured under strict quality control with batch-to-batch consistency growers depend on.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Manufacturing standards</h3>
+            <p>Harishree Crop Science follows rigorous formulation and packaging standards for reliable TOPAZ field performance.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Farmer confidence</h3>
+            <p>TOPAZ is trusted by growers across Gujarat, Maharashtra, Andhra Pradesh, and other major agricultural regions in India.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Crop protection commitment</h3>
+            <p>Harishree is committed to delivering effective, farmer-friendly TOPAZ thrips, whitefly, and aphid control solutions for sustainable agriculture.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="topaz-resources-heading">
+    <div class="container">
+      <h2 id="topaz-resources-heading" class="section-title" data-aos="fade-up">Downloadable resources</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Product documentation — contact Harishree for the latest materials.
+      </p>
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Product brochure</h3>
+            <p>Coming soon — enquire for TOPAZ product brochure and technical details.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request brochure</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Product label</h3>
+            <p>Coming soon — enquire for the official TOPAZ product label and usage directions.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request label</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Technical sheet</h3>
+            <p>Coming soon — enquire for crop-wise usage technical sheet and mixing guidance.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request technical sheet</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Safety data sheet</h3>
+            <p>Coming soon — enquire for safety data sheet and handling guidelines.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request safety sheet</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pests-section" aria-labelledby="topaz-related-heading">
+    <div class="container">
+      <h2 id="topaz-related-heading" class="section-title" data-aos="fade-up">Related products</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Explore more crop protection insecticides from <strong>Harishree Crop Science</strong> to build a strong IPM program.
+      </p>
+      <nav class="pest-cards product-related-grid" aria-label="Related insecticide products">
+        <div class="row">
+          <div *ngFor="let rp of relatedProducts; let i = index" class="col-md-6 col-lg-4">
+            <article class="product-related-card" data-aos="fade-up" [attr.data-aos-delay]="80 * i">
+              <a [routerLink]="rp.route" class="product-related-card__link">
+                <div class="product-related-card__image">
+                  <img
+                    [src]="rp.image"
+                    [alt]="rp.imageAlt"
+                    width="320"
+                    height="200"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product-related-card__body">
+                  <h3>{{ rp.name }}</h3>
+                  <p>{{ rp.description }}</p>
+                  <span class="pack-card__cta">View product</span>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section class="cta-section product-detail-cta" aria-labelledby="topazCtaTitle">
+    <div class="container">
+      <div class="cta-container" data-aos="zoom-in">
+        <h2 id="topazCtaTitle" class="cta-title">Get reliable whitefly &amp; brown planthopper control with TOPAZ</h2>
+        <p class="cta-text">
+          Contact Harishree Crop Science for dealer stock, competitive pricing (₹342/500 GM), crop-wise usage notes, and mixing guidance for
+          <strong>TOPAZ</strong> (<strong>{{ productTitle }}</strong>) — buy online at best price through authorized dealers.
+        </p>
+        <div class="cta-actions" role="group" aria-label="Contact and navigation">
+          <a routerLink="/contact-us" class="cta-button">Contact Harishree</a>
+          <a routerLink="/products" class="cta-button cta-button--outline">All products</a>
+          <a routerLink="/about-us" class="cta-button cta-button--outline">About us</a>
+          <a routerLink="/quality-assurance" class="cta-button cta-button--outline">Quality assurance</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

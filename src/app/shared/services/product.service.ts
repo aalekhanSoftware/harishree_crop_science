@@ -40,6 +40,18 @@ export class ProductService {
             fullDescription: 'H Fun (Tolfenpyrad 15% EC) is Harishree Crop Science’s emulsifiable concentrate for sucking pests and early-instar caterpillars—contact and stomach action via IRAC Group 21A (mitochondrial Complex I). Field guidance: 30 ml per knapsack pump with ~200 L water per acre on cotton, chilli, tomato, brinjal, okra, groundnut, tea, paddy, soybean and other label crops when used with scouting and rotation.',
             url: 'product/tolfenpyrad-15-ec'
           },
+         { name: 'Tolfenpyrad 15% + Bifenthrin 7.5% SE (MEGNUM)',
+            image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
+            description: 'Dual-action SE insecticide for thrips, whiteflies, aphids, jassids and mites',
+            fullDescription: 'MEGNUM (Tolfenpyrad 15% + Bifenthrin 7.5% SE) is Harishree Crop Science’s dual-action suspension emulsion for fast knockdown and long-lasting control of thrips, whiteflies, aphids, jassids, mites and other sucking pests. Combines IRAC 21A respiratory inhibition with IRAC 3A contact and stomach action. Field guidance: 25 ml per knapsack pump on cotton, chilli, brinjal, tomato, okra, cabbage, cauliflower and vegetables.',
+            url: 'products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum'
+          },
+         { name: 'Pyriproxyfen 10% + Bifenthrin 10% w/w EC (FINAL)',
+            image: 'assets/products/insecticide/pyriproxyfen-10-bifenthrin-10-w-w-ec.png',
+            description: 'Dual-action EC insecticide for whiteflies, thrips, mites, aphids and jassids',
+            fullDescription: 'FINAL (Pyriproxyfen 10% + Bifenthrin 10% w/w EC) is Harishree Crop Science’s dual-action emulsifiable concentrate combining insect growth regulation with contact and stomach action for fast knockdown and long-term suppression of whiteflies, thrips, mites, aphids, jassids and other sucking pests. Field guidance: 30 ml per knapsack pump on cotton, chilli, brinjal, tomato, okra, cabbage, cauliflower and vegetables.',
+            url: 'product/pyriproxyfen-10-bifenthrin-10-w-w-ec'
+          },
           { name: 'Neem Pro', 
             image: 'assets/products/NEEM PRO.png', 
             description: 'Natural pest control',
@@ -56,10 +68,11 @@ export class ProductService {
             description: 'Protective insect shield',
             fullDescription: 'Kavach creates a powerful protective shield against destructive insect pests. This innovative formulation provides both contact and residual activity, ensuring comprehensive crop protection. Its unique shield technology ensures better adherence to plant surfaces and resistance to environmental factors.'
           },
-          { name: 'Pride-H', 
-            image: 'assets/products/acetamiprid-20-sp.png', 
-            description: 'Professional pest control',
-            fullDescription: 'Pride-H represents professional-grade pest management technology. This advanced formulation combines rapid knockdown with long-lasting protection, making it ideal for commercial farming operations. Its balanced composition ensures optimal performance across various crop stages and conditions.'
+          { name: 'Pride H (Acetamiprid 20% SP)',
+            image: 'assets/products/insecticide/acetamiprid-20-sp.png',
+            description: 'Systemic neonicotinoid insecticide for whitefly, aphid & thrips control',
+            fullDescription: 'PRIDE H (Acetamiprid 20% SP) is Harishree Crop Science\'s systemic neonicotinoid insecticide for whitefly control, aphid control, thrips control, and jassid control in cotton, chilli, tomato, brinjal, okra, cabbage, and vegetables. Recommended dose: 10 gm per pump. Competitive pricing from ₹100 for 100 GM.',
+            url: 'product/acetamiprid-20-sp'
           },
           { name: 'Hmida', 
             image: 'assets/products/H MIDA.png', 
@@ -103,10 +116,11 @@ export class ProductService {
             fullDescription: 'Fipronil 40% + Imidacloprid 40% WG (FI 40) combines two proven actives to deliver both contact and systemic action against tough pest complexes. The water-dispersible granule ensures quick dispersion, uniform spray coverage and strong residual control on key crops. Designed for professional growers, FI 40 provides rapid knockdown of chewing and sucking insects while promoting excellent crop safety and resistance-management value.',
             url: 'product/fipronil-40-imidacloprid-40-wg'
           },
-          { name: 'Hilthene', 
+          { name: 'Hil Thene', 
             image: 'assets/products/insecticide/acephate-75-sp.jpg', 
             description: 'Acephate 75% SP broad-spectrum control',
-            fullDescription: 'Hilthene (Acephate 75% SP) is a professional, systemic and contact insecticide that provides quick knockdown and dependable control of caterpillars, aphids and other economic pests. The high-quality SP formulation dissolves rapidly, offering consistent performance, excellent leaf coverage and strong compatibility in tank mixes. Trusted by growers for its reliability and value across vegetables, cotton and other labeled crops.'
+            fullDescription: 'Hil Thene (Acephate 75% SP) is a professional, systemic and contact insecticide that provides quick knockdown and dependable control of thrips, aphids, whiteflies, jassids, bollworms, and caterpillars. The high-quality SP formulation dissolves rapidly, offering consistent performance, excellent leaf coverage and strong compatibility in tank mixes. Trusted by growers for its reliability and value across cotton, chilli, paddy, and vegetable crops.',
+            url: 'product/acephate-75-sp'
           },
           { name: 'Chilli H', 
             image: 'assets/products/insecticide/fipronil-2-92-ec.jpg', 
@@ -130,6 +144,18 @@ export class ProductService {
             description: 'Deltamethrin 2.8% EC fast knockdown pyrethroid',
             fullDescription: 'DR. Delta (Deltamethrin 2.8% EC) is a premium pyrethroid delivering lightning-fast knockdown and excellent residual control of lepidopteran and sucking pests. Its advanced solvent system improves spread, coverage and rainfastness while remaining gentle on crops when used as directed. A go-to choice for quick, visible results in vegetables, cotton and other labeled crops.',
             url: 'product/deltamethrin-2-8-ec'
+          },
+          { name: 'DELTA PLUS',
+            image: 'assets/products/insecticide/deltamethrin-11-w-w-ec.png',
+            description: 'Deltamethrin 11% w/w EC fast knockdown pyrethroid',
+            fullDescription: 'DELTA PLUS (Deltamethrin 11% w/w EC) is Harishree Crop Science\'s premium synthetic pyrethroid insecticide for bollworms, fruit borers, stem borers, caterpillars, thrips, and aphids in cotton, chilli, vegetables, paddy, pulses, and oilseeds. Recommended dose: 10 ml per pump.',
+            url: 'products/insecticide/deltamethrin-11-w-w-ec-delta-plus'
+          },
+          { name: 'INTERPRID',
+            image: 'assets/products/insecticide/chlorfenapyr-10-sc.png',
+            description: 'Chlorfenapyr 10% SC pyrrole insecticide and acaricide',
+            fullDescription: 'INTERPRID (Chlorfenapyr 10% SC) is Harishree Crop Science\'s premium pyrrole insecticide and acaricide for thrips, mites, caterpillars, diamondback moth, and fruit borers in chilli, cotton, brinjal, tomato, cabbage, cauliflower, okra, and vegetables. Recommended dose: 30 ml per pump.',
+            url: 'products/chlorfenapyr-10-sc-interprid'
           },
           { name: 'Eclipse', 
             image: 'assets/products/insecticide/ethion-40-cypermethrin-5-ec.jpg', 
@@ -162,7 +188,8 @@ export class ProductService {
           { name: 'Lanser Gold',
             image: 'assets/products/insecticide/acephate-50-imidacloprid-1-8-sp.jpg',
             description: 'Acephate 50% + Imidacloprid 1.8% SP dual-mode',
-            fullDescription: 'Lanser Gold (Acephate 50% + Imidacloprid 1.8% SP) delivers a powerful combination of contact and systemic action for fast control of sucking and chewing pests. The soluble powder technology disperses quickly, offers excellent tank-mix compatibility and supports resistance management with two proven modes of action.'
+            fullDescription: 'Lanser Gold (Acephate 50% + Imidacloprid 1.8% SP) delivers a powerful combination of contact and systemic action for fast control of sucking and chewing pests. The soluble powder technology disperses quickly, offers excellent tank-mix compatibility and supports resistance management with two proven modes of action.',
+            url: 'products/insecticide/acephate-50-imidacloprid-1-8-sp-lanser-gold'
           },
           { name: 'Mite',
             image: 'assets/products/insecticide/mite.jpg',
@@ -194,8 +221,9 @@ export class ProductService {
           },
           { name: 'Topaz',
             image: 'assets/products/insecticide/buprofezin-15-acephate-50.jpg',
-            description: 'Buprofezin 15% + Acephate 35% WP combination',
-            fullDescription: 'Topaz (Buprofezin 15% + Acephate 35% WP) provides complementary action against planthoppers, whiteflies and a range of sucking pests. The wettable powder ensures strong suspension, uniform coverage and dependable efficacy, supporting resistance management and crop quality targets.'
+            description: 'Buprofezin 15% + ACEPHATE 50% WP',
+            fullDescription: 'TOPAZ (Buprofezin 15% + ACEPHATE 50% WP) combines IGR lifecycle disruption with acephate systemic and contact knockdown for whitefly, brown planthopper, jassid, aphid, and thrips control. The wettable powder ensures strong suspension, uniform coverage, and dependable efficacy in cotton, paddy, chilli, and vegetables.',
+            url: 'products/insecticide/buprofezin-15-acephate-50'
           },
           { name: 'Turbo',
             image: 'assets/products/insecticide/novaluron-5-25-indoxacarb-4-5-sc-turbo.jpg',
@@ -220,11 +248,6 @@ export class ProductService {
             description: 'Flufenzine 20% EC miticide/acaricide',
             fullDescription: 'YODDHA (Flufenzine 20% EC) is Harishree Crop Science\'s premium miticide and acaricide for red spider mites, yellow mites, and broad mites on chilli, cotton, brinjal, tomato, vegetables, and horticulture crops. Field guidance: 25 ml per pump when used at early mite infestation as per label and local advisory.',
             url: 'products/insecticide/flufenzine-20-ec-yoddha'
-          },
-          { name: 'Hil Thene', 
-            image: 'assets/products/HILTHENE.png', 
-            description: 'Long-lasting protection',
-            fullDescription: 'Hil Thene offers extended protection against various insect pests. Its innovative slow-release technology ensures consistent pest control over longer periods. The product\'s unique formulation provides excellent stability under various environmental conditions.'
           },
           { name: 'H Gor',
             image: 'assets/products/insecticide/dimethoate-30-ec.jpg',

@@ -440,6 +440,13 @@ export class ProfenofosFiftyEcComponent implements OnInit, OnDestroy {
 
   relatedProducts = [
     {
+      name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
+      description: 'Dual-action insecticide for thrips, whiteflies, aphids, jassids, and mites in cotton and vegetables.',
+      route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum',
+      image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
+      imageAlt: 'MEGNUM Tolfenpyrad 15% + Bifenthrin 7.5% SE insecticide by Harishree Crop Science'
+    },
+    {
       name: 'Profenofos 40% + Cypermethrin 4% EC',
       description: 'MPIRE 404 for broad-spectrum contact and stomach action on mixed pest complexes.',
       route: '/product/profenofos-40-cypermethrin-4-ec',

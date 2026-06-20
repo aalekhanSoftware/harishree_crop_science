@@ -429,6 +429,13 @@ export class Dimethoate30EcHGorComponent implements OnInit, OnDestroy {
 
   relatedProducts = [
     {
+      name: 'HIL THENE (Acephate 75% SP)',
+      description: 'Single-AI organophosphate insecticide for thrips, aphids, whiteflies, jassids, and bollworm control in cotton, chilli, and vegetables.',
+      route: '/product/acephate-75-sp',
+      image: 'assets/products/insecticide/acephate-75-sp.jpg',
+      imageAlt: 'HIL THENE Acephate 75% SP insecticide by Harishree Crop Science'
+    },
+    {
       name: 'Profenofos 50% EC (EXTRA PROFEX)',
       description: 'Broad-spectrum organophosphate for bollworms, whiteflies, aphids, and caterpillars in cotton and vegetables.',
       route: '/products/insecticide/profenofos-50-ec',

@@ -478,6 +478,13 @@ export class Imidacloprid70WgExtraMida70Component implements OnInit, OnDestroy {
 
   relatedProducts = [
     {
+      name: 'LANSER GOLD (Acephate 50% + Imidacloprid 1.8% SP)',
+      description: 'Dual-action systemic insecticide for whitefly, aphid, thrips, jassid, and leafhopper control in cotton, chilli, paddy, and vegetables.',
+      route: '/products/insecticide/acephate-50-imidacloprid-1-8-sp-lanser-gold',
+      image: 'assets/products/insecticide/acephate-50-imidacloprid-1-8-sp.jpg',
+      imageAlt: 'LANSER GOLD Acephate Imidacloprid SP insecticide by Harishree Crop Science'
+    },
+    {
       name: 'Fipronil 40% + Imidacloprid 40% WG (FI 40)',
       description: 'Dual-action WG for chewing and sucking pest complexes with contact and systemic protection.',
       route: '/product/fipronil-40-imidacloprid-40-wg',

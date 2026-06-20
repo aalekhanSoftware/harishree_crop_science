@@ -467,6 +467,13 @@ export class Ethion40Cypermethrin5EcEclipseComponent implements OnInit, OnDestro
 
   relatedProducts = [
     {
+      name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
+      description: 'Dual-action insecticide for thrips, whiteflies, aphids, jassids, and mites in cotton and vegetables.',
+      route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum',
+      image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
+      imageAlt: 'MEGNUM Tolfenpyrad 15% + Bifenthrin 7.5% SE insecticide by Harishree Crop Science'
+    },
+    {
       name: 'Chlorpyriphos 50% + Cypermethrin 5% EC (Combi 505)',
       description: 'Dual-action organophosphate and pyrethroid for bollworms, aphids, and mixed pest pressure in cotton and vegetables.',
       route: '/product/chlorpyriphos-50-cypermethrin-5-ec',

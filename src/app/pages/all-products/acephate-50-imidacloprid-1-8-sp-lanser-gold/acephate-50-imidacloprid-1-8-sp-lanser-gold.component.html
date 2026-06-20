@@ -1,0 +1,1258 @@
+<main class="product-page product-page--detail product-page--lanser-gold" itemscope>
+  <nav class="container pt-3" aria-label="Breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+      <li class="breadcrumb-item"><a routerLink="/products">Products</a></li>
+      <li class="breadcrumb-item"><a routerLink="/products">Insecticides</a></li>
+      <li class="breadcrumb-item active" aria-current="page">LANSER GOLD</li>
+    </ol>
+  </nav>
+
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <p class="product-brand-line" data-aos="fade-right">{{ brandName }}</p>
+          <h1 class="product-title" data-aos="fade-right" data-aos-delay="40">
+            {{ productTitle }}
+          </h1>
+          <p class="product-tagline" data-aos="fade-right" data-aos-delay="80">
+            SP &middot; Dual action &middot; Systemic + contact + translaminar &middot; Sucking pest control
+          </p>
+          <div class="product-description" data-aos="fade-right" data-aos-delay="120">
+            <p>
+              <strong>ACEPHATE 50% + IMIDACLOPRID 1.8% SP</strong> (marketed as <strong>LANSER GOLD</strong>) is an advanced dual-action
+              systemic insecticide engineered for fast pest control and long-lasting protection against whiteflies, aphids, thrips,
+              jassids, leafhoppers, and other sucking and chewing pests. The soluble powder combines organophosphate contact and translaminar
+              action with neonicotinoid systemic absorption for dependable crop protection in cotton, chilli, paddy, tomato, brinjal, okra, and vegetables.
+            </p>
+            <p class="small text-muted mb-2" lang="hi">
+              लांसर गोल्ड एसिफेट 50% + इमिडाक्लोप्रिड 1.8% SP कीटनाशक — लेबल अनुसार 25 ग्राम प्रति पंप खुराक और समय फॉलो करें।
+            </p>
+            <div class="usps" data-aos="fade-right" data-aos-delay="180">
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> 25 gm/pump dose</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Dual action formula</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Systemic protection</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Whitefly &amp; aphid control</span>
+            </div>
+            <div class="cta-actions mt-3" role="group" aria-label="Hero actions">
+              <a routerLink="/contact-us" class="cta-button">Enquire now</a>
+              <a routerLink="/products" class="cta-button cta-button--outline">All products</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <div class="product-image-container" data-aos="zoom-in">
+            <div class="product-image-inner">
+              <picture>
+                <source [srcset]="productImageWebpPath" type="image/webp" />
+                <img
+                  [src]="productImagePath"
+                  alt="LANSER GOLD ACEPHATE 50% + IMIDACLOPRID 1.8% SP Insecticide"
+                  title="LANSER GOLD ACEPHATE 50% + IMIDACLOPRID 1.8% SP"
+                  class="product-image"
+                  width="400"
+                  height="400"
+                  loading="eager"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="benefits-section" aria-labelledby="lansergold-highlights-heading">
+    <div class="container">
+      <h2 id="lansergold-highlights-heading" class="section-title" data-aos="fade-up">Quick highlights</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        At-a-glance reasons growers reach for <strong>LANSER GOLD</strong> (<strong>{{ productTitle }}</strong>).
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let h of quickHighlights; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="h.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ h.title }}</h3>
+              <p>{{ h.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-pack-section" aria-labelledby="lansergold-pack-heading">
+    <div class="container">
+      <h2 id="lansergold-pack-heading" class="section-title text-center" data-aos="fade-up">Pack sizes</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        Authentic <strong>{{ productTitle }}</strong> (LANSER GOLD) packed securely for every farming need.
+        Prices are shown in schema only; enquire for dealer availability.
+      </p>
+      <div class="pack-grid" data-aos="fade-up" data-aos-delay="100">
+        <article *ngFor="let pack of packSizes" class="pack-card" [class.pack-card--featured]="pack.featured">
+          <h3 class="pack-card__volume">{{ pack.volume }}</h3>
+          <p class="pack-card__hint">Harishree Quality &middot; dealer support</p>
+          <a routerLink="/contact-us" class="pack-card__cta">Enquire now</a>
+        </article>
+      </div>
+      <p class="dose-callout text-center" data-aos="fade-up">
+        <strong>Recommended dose:</strong> 25 gm per pump (15-litre water; confirm on label and crop advisory).
+      </p>
+    </div>
+  </section>
+
+  <section class="benefits-section" aria-labelledby="lansergold-why-heading">
+    <div class="container">
+      <h2 id="lansergold-why-heading" class="section-title" data-aos="fade-up">Why choose LANSER GOLD</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        What sets <strong>LANSER GOLD</strong> apart as a premium ACEPHATE 50% + IMIDACLOPRID 1.8% SP insecticide for Indian agriculture.
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let w of whyChoose; let i = index" class="col-md-6 col-lg-3" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="w.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ w.title }}</h3>
+              <p>{{ w.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits-section" aria-labelledby="lansergold-benefits-heading">
+    <div class="container">
+      <h2 id="lansergold-benefits-heading" class="section-title" data-aos="fade-up">Key benefits</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        Why growers trust <strong>LANSER GOLD</strong> for dependable thrips, whitefly, and aphid management.
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let b of keyBenefits; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="b.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ b.title }}</h3>
+              <p>{{ b.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-what-is-heading">
+    <div class="container">
+      <h2 id="lansergold-what-is-heading" class="section-title" data-aos="fade-up">
+        What is ACEPHATE 50% + IMIDACLOPRID 1.8% SP?
+      </h2>
+      <article class="product-highlight-card product-snippet-answer" data-aos="fade-up" data-aos-delay="60">
+        <p>{{ featuredSnippetAnswer }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-intro-heading">
+    <div class="container">
+      <h2 id="lansergold-intro-heading" class="section-title" data-aos="fade-up">Introduction — modern pest management with LANSER GOLD</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Indian agriculture faces rising pressure from whiteflies, aphids, thrips, jassids, and leafhoppers — sucking pests that drain crop vigour,
+          transmit stress, and reduce marketable yield. Modern pest management demands insecticides that combine <strong>fast pest control</strong> with
+          <strong>long-lasting systemic protection</strong> while supporting resistance management through distinct chemistry groups.
+          <strong>ACEPHATE 50% + IMIDACLOPRID 1.8% SP</strong> addresses this need as a scientifically formulated dual action systemic insecticide.
+          Farmers prefer <strong>LANSER GOLD</strong> from Harishree Crop Science because it pairs proven Acephate insecticide contact and translaminar technology with
+          dependable Imidacloprid insecticide systemic absorption in one soluble powder pack — simplifying tank preparation, dosing at 25 gm per pump,
+          and field execution across cotton, chilli, paddy, and vegetable insecticide programs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-what-is-lansergold-heading">
+    <div class="container">
+      <h2 id="lansergold-what-is-lansergold-heading" class="section-title" data-aos="fade-up">What is LANSER GOLD?</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>LANSER GOLD</strong> is Harishree Crop Science's advanced dual-action broad-spectrum systemic insecticide for sucking and chewing pest management.
+          It delivers fast pest control through Acephate contact and translaminar action, long-lasting protection via Imidacloprid systemic absorption into plant tissue,
+          and modern SP formulation technology that ensures uniform spray coverage. As a contact and systemic insecticide with translaminar activity,
+          LANSER GOLD is engineered for whitefly control, aphid control, thrips control, jassid control, and leafhopper control in high-value cotton, chilli,
+          paddy, brinjal, tomato, okra, and mixed vegetable crops. Whether you search for Acephate Imidacloprid insecticide,
+          LANSER GOLD insecticide, or the technical name ACEPHATE 50% + IMIDACLOPRID 1.8% SP, this product represents Harishree's commitment to
+          crop protection, pest management, and agricultural insecticide innovation for Indian growers.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-dual-active-heading">
+    <div class="container">
+      <h2 id="lansergold-dual-active-heading" class="section-title" data-aos="fade-up">Dual active ingredient technology</h2>
+      <div class="row mt-4">
+        <div class="col-md-6" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Acephate 50% — organophosphate insecticide</h3>
+            <p>
+              Acephate (IRAC Group 1B) inhibits acetylcholinesterase in insect nerve tissue, disrupting nervous-system function rapidly.
+              This Acephate insecticide mechanism delivers contact action, translaminar movement through leaf cuticle, and fast pest suppression
+              against sucking and chewing pests. Benefits include quick visible results, effective activity against whiteflies, aphids, thrips, jassids,
+              and allied sap feeders, plus deep crop protection through translaminar penetration.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Imidacloprid 1.8% — neonicotinoid systemic action</h3>
+            <p>
+              Imidacloprid (IRAC Group 4A) binds to nicotinic acetylcholine receptors, causing feeding cessation and progressive pest mortality.
+              The Imidacloprid insecticide component absorbs through foliage and translocates systemically via xylem and phloem, protecting new shoots
+              and unsprayed plant parts. This makes LANSER GOLD a true systemic insecticide with long-lasting crop protection between spray intervals.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section product-detail-cta product-detail-cta--inline" aria-labelledby="lansergoldMidCtaTitle">
+    <div class="container">
+      <div class="cta-container cta-container--compact" data-aos="fade-up">
+        <h2 id="lansergoldMidCtaTitle" class="cta-title h4">Buy LANSER GOLD at best price — trusted dual action performance</h2>
+        <p class="cta-text mb-3">
+          Competitive pricing at ₹454/500 GM, quality SP formulation, and farmer satisfaction across India. Enquire for dealer availability today.
+        </p>
+        <a routerLink="/contact-us" class="cta-button">Enquire now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mode-of-action-section product-moa" aria-labelledby="lansergold-moa-heading">
+    <div class="container">
+      <h2 id="lansergold-moa-heading" class="section-title text-center" data-aos="fade-up">How does ACEPHATE 50% + IMIDACLOPRID 1.8% SP work?</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Dual-action mode of action — <strong>Acephate</strong> delivers contact and translaminar action while <strong>Imidacloprid</strong> provides systemic absorption and long residual protection.
+      </p>
+      <div class="product-moa__layout row justify-content-center mt-2 mt-lg-4">
+        <div class="col-12 col-xl-10" data-aos="fade-up">
+          <ol class="product-moa__steps list-unstyled mb-0" role="list">
+            <li *ngFor="let step of modeOfAction; let i = index" class="product-moa__step">
+              <div class="product-moa__step-num" aria-hidden="true">{{ i + 1 }}</div>
+              <div class="product-moa__step-body">
+                <h3 class="product-moa__step-title">{{ step.title }}</h3>
+                <p class="product-moa__step-text">{{ step.description }}</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pests-section" id="target-pests" aria-labelledby="lansergold-pests-heading">
+    <div class="container">
+      <h2 id="lansergold-pests-heading" class="section-title" data-aos="fade-up">Target pests</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        <strong>LANSER GOLD</strong> delivers dual MOA activity against whiteflies, aphids, thrips, jassids, leafhoppers, and other sucking pests when applied at early infestation with full canopy coverage.
+      </p>
+      <div class="pest-cards">
+        <div class="row">
+          <div *ngFor="let p of targetPests; let i = index" class="col-md-6 col-lg-4">
+            <article class="pest-card" data-aos="flip-up" [attr.data-aos-delay]="80 * i">
+              <div class="pest-icon"><i class="fas fa-bug"></i></div>
+              <h3>{{ p.name }}</h3>
+              <p>{{ p.description }}</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="crops-section product-applications" id="applications" aria-labelledby="lansergold-crops-heading">
+    <div class="product-applications__band">
+      <div class="container">
+        <div class="row align-items-end mb-2">
+          <div class="col-lg-8">
+            <h2 id="lansergold-crops-heading" class="section-title product-applications__title" data-aos="fade-up">Recommended crops</h2>
+            <p class="section-subtitle product-applications__lead" data-aos="fade-up" data-aos-delay="40">
+              <strong>LANSER GOLD</strong> is trusted across India for protecting cotton, chilli, paddy, tomato, brinjal, okra, and vegetables from whitefly, aphid, thrips, jassid, and leafhopper damage.
+            </p>
+          </div>
+        </div>
+        <ul class="product-applications__grid list-unstyled mb-0" role="list">
+          <li *ngFor="let app of applications; let i = index" class="product-applications__item" data-aos="fade-up" [attr.data-aos-delay]="40 * i">
+            <article class="product-app-tile">
+              <div class="product-app-tile__head" aria-hidden="true"></div>
+              <div class="product-app-tile__body">
+                <div class="product-app-tile__icon-wrap">
+                  <span class="product-app-tile__icon"><i [class]="app.icon"></i></span>
+                </div>
+                <h3 class="product-app-tile__title">{{ app.title }}</h3>
+                <p class="product-app-tile__text">{{ app.description }}</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="lansergold-crop-table-heading">
+    <div class="container">
+      <h2 id="lansergold-crop-table-heading" class="section-title" data-aos="fade-up">Crop-wise usage guide</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Practical <strong>LANSER GOLD</strong> application guidance by crop. Always confirm with label and local advisory.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="LANSER GOLD crop-wise usage table">
+              <thead>
+                <tr>
+                  <th scope="col">Crop</th>
+                  <th scope="col">Target pests</th>
+                  <th scope="col">Dose</th>
+                  <th scope="col">Best timing</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of cropWiseUsage">
+                  <td><strong>{{ row.crop }}</strong></td>
+                  <td>{{ row.pests }}</td>
+                  <td>{{ row.dose }}</td>
+                  <td>{{ row.timing }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="lansergold-pest-table-heading">
+    <div class="container">
+      <h2 id="lansergold-pest-table-heading" class="section-title" data-aos="fade-up">Pest-wise control guide</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>LANSER GOLD</strong> performs against key sucking pest species across labeled crops.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="LANSER GOLD pest-wise control table">
+              <thead>
+                <tr>
+                  <th scope="col">Pest</th>
+                  <th scope="col">Crops</th>
+                  <th scope="col">Mode of action</th>
+                  <th scope="col">Expected efficacy</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of pestWiseControl">
+                  <td><strong>{{ row.pest }}</strong></td>
+                  <td>{{ row.crops }}</td>
+                  <td>{{ row.mode }}</td>
+                  <td>{{ row.efficacy }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" id="specifications" aria-labelledby="lansergold-specs-heading">
+    <div class="container">
+      <h2 id="lansergold-specs-heading" class="section-title" data-aos="fade-up">Technical specifications</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Snapshot for dealers and agronomists. Always pair with the printed label for final guidance.
+      </p>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="80">
+        <div class="col-lg-6 mb-4">
+          <article class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-flask specs-icon"></i>
+              <h3>Product information</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.productInfo" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <article class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-prescription-bottle specs-icon"></i>
+              <h3>Dose &amp; application</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.packs" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="120">
+        <article class="product-official-specs__card">
+          <header class="product-official-specs__head">
+            <h3>LANSER GOLD &mdash; full parameter table</h3>
+            <p>
+              Complete technical profile for <strong>{{ productTitle }}</strong> (LANSER GOLD). Values support dealer
+              review and agronomic planning.
+            </p>
+          </header>
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="LANSER GOLD ACEPHATE 50% + IMIDACLOPRID 1.8% SP technical profile">
+              <thead>
+                <tr>
+                  <th scope="col">Parameter</th>
+                  <th scope="col">Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of officialProductDetails">
+                  <td>{{ row.label }}</td>
+                  <td>{{ row.value }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-uses-heading">
+    <div class="container">
+      <h2 id="lansergold-uses-heading" class="section-title" data-aos="fade-up">ACEPHATE 50% + IMIDACLOPRID 1.8% SP uses</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Key agricultural applications of <strong>LANSER GOLD</strong> across Indian farming systems.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">LANSER GOLD application</h3>
+            <p>Foliar spray at 25 gm per pump in a 15-litre knapsack sprayer. Apply at early sucking pest infestation or economic threshold with full canopy and underside coverage.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Dual action benefits</h3>
+            <p>Acephate systemic absorption plus Imidacloprid contact and systemic action delivers fast pest control and sustained suppression of thrips, whiteflies, aphids, jassids, and mites on treated crops.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Crop protection solution</h3>
+            <p>Trusted dual action insecticide for cotton whitefly, chilli thrips, tomato aphids, brinjal jassids, and mixed sucking pest pressure across India.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-dose-heading">
+    <div class="container">
+      <h2 id="lansergold-dose-heading" class="section-title" data-aos="fade-up">ACEPHATE 50% + IMIDACLOPRID 1.8% SP dose</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Clear, field-ready guidance for using <strong>LANSER GOLD</strong> effectively.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Recommended dose</h3>
+            <p><strong>25 gm per pump</strong> in a standard 15-litre knapsack sprayer. Confirm crop-wise rate on the label.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Mixing instructions</h3>
+            <p>Half-fill with water, add 25 gm LANSER GOLD, top up, and agitate. The SP formulation suspends easily for uniform spray coverage on leaf surfaces and undersides.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Best spray timing</h3>
+            <p>Apply at early sucking pest infestation or ETL during calm morning or evening hours with emphasis on leaf undersides where thrips, whiteflies, and aphids colonize.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-price-heading">
+    <div class="container">
+      <h2 id="lansergold-price-heading" class="section-title" data-aos="fade-up">ACEPHATE 50% + IMIDACLOPRID 1.8% SP price — buy online at best price</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>LANSER GOLD</strong> is available in 500 GM and 1 KG packs through authorized
+          Harishree Crop Science dealers across India. Indicative list prices: 500 GM — ₹454, 1 KG — ₹885.
+          Contact your nearest dealer or Harishree directly for current rates,
+          bulk availability, and buy online enquiry support.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-moa-long-heading">
+    <div class="container">
+      <h2 id="lansergold-moa-long-heading" class="section-title" data-aos="fade-up">ACEPHATE 50% + IMIDACLOPRID 1.8% SP mode of action</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>Acephate</strong> and <strong>Imidacloprid</strong> in <strong>LANSER GOLD</strong> deliver contact, stomach, and systemic absorption for comprehensive sucking pest control.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Contact action — rapid paralysis</h3>
+            <p>Imidacloprid acts on contact, disrupting acetylcholinesterase in insect nerve tissue. Thrips, whiteflies, and aphids exposed to the spray deposit experience rapid paralysis and immediate cessation of feeding.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">systemic action</h3>
+            <p>When sucking pests ingest treated plant tissue, Imidacloprid delivers strong systemic insecticide activity against hidden feeders on leaf undersides and in dense canopy.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">systemic absorption — Acephate</h3>
+            <p>Acephate blocks nicotinic acetylcholine receptors, interrupting energy production. Susceptible pests lose the ability to feed and move normally — a powerful Acephate insecticide mechanism.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Resistance management benefits</h3>
+            <p>Rotate LANSER GOLD with neonicotinoids, IGRs, and other MOA groups across the season to reduce selection pressure on thrips, whitefly, and aphid populations.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-cotton-heading">
+    <div class="container">
+      <h2 id="lansergold-cotton-heading" class="section-title" data-aos="fade-up">LANSER GOLD for cotton</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>LANSER GOLD</strong> fits cotton programs facing whitefly, aphid, jassid, and mite pressure during square, flowering,
+          and boll development stages. Use <strong>25 gm per pump</strong> at early sucking pest infestation with full canopy
+          spray and underside coverage. Dual action contact, stomach, and systemic absorption helps maintain cleaner foliage and healthier bolls throughout
+          the season when integrated into a broader IPM rotation.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-chilli-heading">
+    <div class="container">
+      <h2 id="lansergold-chilli-heading" class="section-title" data-aos="fade-up">LANSER GOLD for chilli</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          In chilli, <strong>LANSER GOLD</strong> controls thrips, aphids, mites, and whiteflies that cause
+          flower scarring, silvering, and export quality loss. Spray at early colonization with 25 gm per pump, ensuring
+          coverage of flowers, pods, and leaf undersides. Timely application at vegetative and fruit-set stages protects foliage
+          colour, pod size, and marketable yield — essential for chilli thrips control programs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-tomato-heading">
+    <div class="container">
+      <h2 id="lansergold-tomato-heading" class="section-title" data-aos="fade-up">LANSER GOLD for tomato</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          On tomato, <strong>LANSER GOLD</strong> manages whiteflies, aphids, thrips, and mites that reduce fruit set and transmit stress during flowering and fruit development. Apply at economic threshold with 25 gm per
+          pump and thorough canopy coverage. Dual action insecticide activity supports cleaner harvest grade and reduced
+          honeydew deposition in high-value tomato programs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-brinjal-heading">
+    <div class="container">
+      <h2 id="lansergold-brinjal-heading" class="section-title" data-aos="fade-up">LANSER GOLD for brinjal</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          On brinjal, <strong>LANSER GOLD</strong> manages aphids, jassids, whiteflies, and mites that weaken plants during
+          flowering and continuous harvest cycles. Sucking pest complexes cause leaf curling, hopper burn, and reduced fruit quality. Apply at economic threshold with <strong>25 gm per pump</strong>, ensuring
+          coverage of shoots, fruits, and leaf undersides. As a contact and systemic action insecticide for crops with dense foliage, LANSER GOLD
+          delivers fast pest control when timed at early infestation, supporting cleaner harvest grade and improved
+          vegetable crop protection throughout the season.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-okra-heading">
+    <div class="container">
+      <h2 id="lansergold-okra-heading" class="section-title" data-aos="fade-up">LANSER GOLD for okra</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Okra faces jassid, aphid, and whitefly pressure during pod formation and continuous harvest cycles. <strong>LANSER GOLD</strong>
+          protects okra pods and leaves from sucking pest feeding damage that causes scarring, pod deformation, and yield loss.
+          Spray at early infestation with 25 gm per pump and thorough canopy coverage. Timely Acephate Imidacloprid insecticide
+          application preserves pod quality, supports continuous picking schedules, and helps maintain marketable yield in
+          high-value okra programs across Indian vegetable farming systems.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-paddy-heading">
+    <div class="container">
+      <h2 id="lansergold-paddy-heading" class="section-title" data-aos="fade-up">LANSER GOLD for paddy</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          In paddy, <strong>LANSER GOLD</strong> controls plant hoppers, leafhoppers, and other sucking pests during vegetative and reproductive stages.
+          These pests cause hopper burn, yellowing, and reduced tillering that can significantly lower grain yield. Apply at economic threshold with
+          <strong>25 gm per pump</strong> and thorough foliar coverage. Systemic imidacloprid absorption combined with acephate contact action supports
+          healthier rice stands and improved paddy insecticide program outcomes when integrated into broader IPM rotation.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-cauliflower-heading">
+    <div class="container">
+      <h2 id="lansergold-cauliflower-heading" class="section-title" data-aos="fade-up">LANSER GOLD for cauliflower</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          On cauliflower, <strong>LANSER GOLD</strong> controls aphids, thrips, and whiteflies during curd development.
+          Sucking pests cause honeydew, sooty mould, and quality loss on exposed curds. Apply at economic threshold with 25 gm per pump
+          and thorough foliar coverage. This broad spectrum insecticide supports healthier curd quality and improved
+          horticultural crop protection in cauliflower programs facing mixed sucking pest pressure.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-vegetables-heading">
+    <div class="container">
+      <h2 id="lansergold-vegetables-heading" class="section-title" data-aos="fade-up">LANSER GOLD for vegetables</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Across brinjal, okra, cabbage, cauliflower, and mixed vegetable crops, <strong>LANSER GOLD</strong> controls
+          thrips, whiteflies, aphids, jassids, and mite outbreaks. Use 25 gm per pump at early
+          colonization or ETL with full canopy coverage. Integrate with scouting and rotation across MOA groups
+          for sustainable vegetable insecticide programs throughout the growing season.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-thrips-heading">
+    <div class="container">
+      <h2 id="lansergold-thrips-heading" class="section-title" data-aos="fade-up">LANSER GOLD for thrips control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>LANSER GOLD</strong> delivers dependable dual action insecticide control of chilli thrips and vegetable thrips
+          on chilli, tomato, brinjal, and mixed vegetable crops. Thrips scar flowers, silver leaves, and reduce export quality —
+          economic losses can be severe in high-value chilli programs. Apply at economic
+          threshold with 25 gm per pump and thorough flower and leaf coverage. fast pest control through Imidacloprid plus feeding cessation via Acephate
+          suppresses active thrips populations for sustained thrips control in chilli between spray intervals.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-whitefly-heading">
+    <div class="container">
+      <h2 id="lansergold-whitefly-heading" class="section-title" data-aos="fade-up">ACEPHATE 50% + IMIDACLOPRID 1.8% SP for whitefly control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>ACEPHATE 50% + IMIDACLOPRID 1.8% SP</strong> in <strong>LANSER GOLD</strong> provides strong contact, stomach, and systemic absorption against cotton whitefly and vegetable whitefly when sprayed early at infestation with emphasis on leaf
+          undersides. Whitefly control in cotton supports cleaner bolls, reduced honeydew, and healthier fibre quality. Timely application before populations explode helps restore crop vigour and
+          supports healthier marketable yields.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-aphid-heading">
+    <div class="container">
+      <h2 id="lansergold-aphid-heading" class="section-title" data-aos="fade-up">LANSER GOLD for aphid control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>LANSER GOLD</strong> helps manage cotton aphids and vegetable aphids that colonize tender shoots and leaf undersides,
+          causing curling, stunting, and honeydew deposition. Spray at first colonization with 25 gm per pump before populations
+          spread across the canopy. Aphid control insecticide activity through dual MOA supports better leaf integrity, fruit development, and harvest quality in cotton and vegetable
+          programs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-longtail-heading">
+    <div class="container">
+      <h2 id="lansergold-longtail-heading" class="section-title" data-aos="fade-up">Acephate Imidacloprid insecticide for agriculture</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Acephate 50 Imidacloprid 1.8 SP uses</h3>
+            <p>Foliar dual action insecticide spray for thrips, whitefly, aphid, jassid, and mite management on cotton, chilli, tomato, brinjal, okra, and vegetables at 25 gm/pump.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">LANSER GOLD dose per pump</h3>
+            <p>Standard knapsack guidance for LANSER GOLD is <strong>25 gm per 15-litre pump</strong>. Confirm acre-wise calculations with label and local advisory.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Dual mode of action</h3>
+            <p>Acephate (IRAC 21A) inhibits nicotinic acetylcholine receptors while Imidacloprid (IRAC 3A) modulates acetylcholinesterase — contact, stomach, and systemic absorption on treated foliage.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-best-thrips-heading">
+    <div class="container">
+      <h2 id="lansergold-best-thrips-heading" class="section-title" data-aos="fade-up">Best insecticide for thrips</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Growers across India choose <strong>LANSER GOLD</strong> as a trusted <strong>best insecticide for thrips</strong>
+          programs targeting chilli thrips and vegetable thrips on high-value crops. Apply at ETL with
+          25 gm per pump, rotate with other MOA classes, and maintain regular scouting for early detection — a proven
+          approach for cleaner flowers, pods, and better harvest quality.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-best-whitefly-heading">
+    <div class="container">
+      <h2 id="lansergold-best-whitefly-heading" class="section-title" data-aos="fade-up">Best insecticide for whitefly</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          For fields facing persistent whitefly pressure in cotton, tomato, and brinjal, <strong>LANSER GOLD</strong>
+          combines Acephate systemic absorption with Imidacloprid pest control chemistry. Unlike single-active
+          sprays with limited dual MOA coverage, ACEPHATE 50% + IMIDACLOPRID 1.8% SP delivers contact, stomach, and respiratory action when applied at early
+          infestation with 25 gm per pump and full canopy spray coverage.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-dual-action-heading">
+    <div class="container">
+      <h2 id="lansergold-dual-action-heading" class="section-title" data-aos="fade-up">Dual action insecticide for crop protection</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>LANSER GOLD</strong> is a reliable <strong>dual action insecticide for crop protection</strong> in cotton,
+          chilli, tomato, brinjal, okra, and vegetable programs facing thrips, whitefly, and aphid outbreaks. The SE
+          formulation mixes cleanly, spreads evenly, and maintains contact, stomach, and systemic absorption on treated foliage — supporting
+          effective pest management growers and agronomists expect in modern integrated pest management systems.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-application-heading">
+    <div class="container">
+      <h2 id="lansergold-application-heading" class="section-title" data-aos="fade-up">Application method</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Step-by-step guide for applying <strong>LANSER GOLD</strong> ({{ productTitle }}) in the field.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 1 — Prepare clean water</h3>
+            <p>Half-fill a standard 15-litre knapsack sprayer with clean water before adding the insecticide for safe, even mixing.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 2 — Measure 25 gm</h3>
+            <p>Accurately measure 25 gm of LANSER GOLD for one knapsack pump. Use a graduated measure for consistent dosing.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 3 — Mix thoroughly</h3>
+            <p>Add product to water, top up the tank, and agitate. The SP formulation suspends easily into a uniform spray mix.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 4 — Spray uniformly</h3>
+            <p>Apply in calm weather. Cover both leaf surfaces and undersides where thrips, whiteflies, aphids, and jassids feed.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-storage-heading">
+    <div class="container">
+      <h2 id="lansergold-storage-heading" class="section-title" data-aos="fade-up">Storage instructions</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Store <strong>LANSER GOLD</strong> in the original sealed container in a cool, dry, well-ventilated place away from direct
+          sunlight, food, feed, seed, and children. Keep containers upright and locked. Do not store near heat sources or open flames.
+          Shelf life is approximately 24 months from date of manufacture when stored properly. Triple-rinse empty bottles before disposal
+          as per local pesticide container management rules.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-harishree-heading">
+    <div class="container">
+      <h2 id="lansergold-harishree-heading" class="section-title" data-aos="fade-up">Why buy LANSER GOLD from Harishree Crop Science</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>Harishree Crop Science</strong> manufactures <strong>LANSER GOLD</strong> with strict quality assurance, reliable SE
+          formulation, and farmer-focused support that dealers and agronomists trust across India. Buy through authorized Harishree
+          dealers for authentic ACEPHATE 50% + IMIDACLOPRID 1.8% SP insecticide at competitive pricing, dependable field performance, crop-wise usage
+          guidance, and responsive customer service. Harishree is committed to delivering effective dual action insecticide
+          solutions for sustainable thrips, whitefly, and aphid management in modern Indian agriculture.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-results-heading">
+    <div class="container">
+      <h2 id="lansergold-results-heading" class="section-title" data-aos="fade-up">Results &amp; performance</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Field-level outcomes growers commonly report when dose, coverage, and larval stage are handled well.
+      </p>
+      <div class="row mt-4">
+        <div *ngFor="let ph of performanceHighlights; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="70 * i">
+          <article class="product-highlight-card">
+            <h3 class="h6">{{ ph.label }}</h3>
+            <p>{{ ph.value }}</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="usage-safety-section" id="safety" aria-labelledby="lansergold-safety-heading">
+    <div class="container">
+      <h2 id="lansergold-safety-heading" class="section-title text-center" data-aos="fade-up">Safety guidelines</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        PPE, storage, disposal, and first aid guidance for safe use of <strong>LANSER GOLD</strong>.
+      </p>
+      <div class="usage-safety-shell mt-4">
+        <div class="usage-safety-shell__intro" data-aos="fade-up" data-aos-delay="60">
+          <span class="usage-pill"><i class="fas fa-spray-can"></i> 25 gm accurate dose</span>
+          <span class="usage-pill"><i class="fas fa-user-shield"></i> PPE &amp; environment</span>
+        </div>
+
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <article class="usage-safety-panel usage-safety-panel--usage">
+              <header class="usage-safety-panel__head">
+                <h3>Usage best practices</h3>
+                <p>Mix clean, spray calm, scout again after a few days.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i < 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="140">
+            <article class="usage-safety-panel usage-safety-panel--safety">
+              <header class="usage-safety-panel__head">
+                <h3>Storage, disposal &amp; first aid</h3>
+                <p>Respect the label hazard panel and local disposal rules.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i >= 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-compatibility-heading">
+    <div class="container">
+      <h2 id="lansergold-compatibility-heading" class="section-title" data-aos="fade-up">Compatibility &amp; tank mix</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>LANSER GOLD</strong> is generally compatible with commonly used insecticides and fungicides when
+          tank-mixed for integrated crop protection programs. Always perform a <strong>jar test</strong> before
+          mixing to confirm physical compatibility. Avoid alkaline mixes that may degrade active ingredients.
+          Consult your local Harishree dealer or agronomist for crop-specific tank-mix recommendations.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-resistance-heading">
+    <div class="container">
+      <h2 id="lansergold-resistance-heading" class="section-title" data-aos="fade-up">Resistance management</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Dual-action chemistry in <strong>LANSER GOLD</strong> supports focused thrips, whitefly, and aphid management when rotated
+          with other mode-of-action groups. For sustainable sucking pest control, rotate LANSER GOLD with neonicotinoids,
+          IGRs, and other insecticide classes across the season and avoid repeated applications
+          of the same chemistry alone.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="lansergold-compare-traditional-heading">
+    <div class="container">
+      <h2 id="lansergold-compare-traditional-heading" class="section-title" data-aos="fade-up">LANSER GOLD vs conventional sucking pest sprays</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Semantic comparison showing why <strong>LANSER GOLD</strong> outperforms many conventional single-active sucking pest sprays.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="LANSER GOLD vs conventional sucking pest sprays comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col">LANSER GOLD</th>
+                  <th scope="col">Conventional sprays</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonTraditional">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.lanserGold }}</td>
+                  <td>{{ row.traditional }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="lansergold-compare-pyrethroid-contact-heading">
+    <div class="container">
+      <h2 id="lansergold-compare-dual-action-heading" class="section-title" data-aos="fade-up">LANSER GOLD vs single-active insecticides</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>LANSER GOLD</strong> dual-action protection compares with single-active sucking pest control options.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="LANSER GOLD vs single-active insecticides comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">LANSER GOLD (Dual action insecticide)</th>
+                  <th scope="col">Single-active insecticides</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonDualAction">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.lanserGold }}</td>
+                  <td>{{ row.singleAi }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="lansergold-compare-igr-traditional-heading">
+    <div class="container">
+      <h2 id="lansergold-compare-acephate-heading" class="section-title" data-aos="fade-up">LANSER GOLD vs generic Acephate products</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Why <strong>LANSER GOLD</strong> ACEPHATE 50% + IMIDACLOPRID 1.8% SP delivers broader sucking pest protection than generic Acephate SP alone.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="LANSER GOLD vs Acephate-only insecticides comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">LANSER GOLD (Acephate + Imidacloprid SP)</th>
+                  <th scope="col">Generic Acephate SP</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonAcephateOnly">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.lanserGold }}</td>
+                  <td>{{ row.generic }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="lansergold-compare-ec-heading">
+    <div class="container">
+      <h2 id="lansergold-compare-sp-heading" class="section-title" data-aos="fade-up">SP formulation benefits</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>LANSER GOLD</strong> soluble powder technology compares with other formulation types.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="SP formulation benefits comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">LANSER GOLD (SP formulation)</th>
+                  <th scope="col">Other formulation types</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonSpFormulation">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.lanserGold }}</td>
+                  <td>{{ row.other }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-expert-heading">
+    <div class="container">
+      <h2 id="lansergold-expert-heading" class="section-title" data-aos="fade-up">Expert recommendation</h2>
+      <aside class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Agricultural advisors recommend <strong>LANSER GOLD</strong> when fields show thrips, whitefly, or aphid pressure —
+          particularly chilli thrips, cotton whitefly, vegetable aphids, jassids, or mixed sucking pest complexes on cotton, chilli,
+          and vegetables. Apply at early infestation or economic threshold with 25 gm per pump and thorough leaf
+          underside coverage for best results. Integrate LANSER GOLD into a broader integrated pest management program with scouting, ETL-based
+          decisions, and rotation across MOA groups for long-term sustainable sucking pest management.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="testimonials-section" aria-labelledby="lansergold-testimonials-heading">
+    <div class="container">
+      <h2 id="lansergold-testimonials-heading" class="section-title" data-aos="fade-up">What growers say</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Feedback from farmers using <strong>LANSER GOLD</strong> across cotton, chilli, tomato, brinjal, and vegetable crops.
+      </p>
+      <div class="row">
+        <div *ngFor="let t of testimonials; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="60 * i">
+          <article class="testimonial-card">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">{{ t.text }}</p>
+            <div class="testimonial-stars" [attr.aria-label]="t.rating + ' out of 5 stars'">
+              <i *ngFor="let star of [1, 2, 3, 4, 5]" class="fas fa-star" [class.star-filled]="star <= t.rating"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" aria-labelledby="lansergold-faq-heading">
+    <div class="container">
+      <h2 id="lansergold-faq-heading" class="section-title" data-aos="fade-up">Frequently asked questions</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Practical answers about <strong>{{ productTitle }}</strong>, <strong>LANSER GOLD</strong>, dose, uses, and safe field use.
+      </p>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="accordion faq-accordion" id="lansergoldFaqAccordion" data-aos="fade-up" data-aos-delay="90">
+            <ng-container *ngFor="let faq of faqs; let i = index">
+              <div class="accordion-item">
+                <h3 class="accordion-header" [id]="'lansergold-faq-heading-' + i">
+                  <button
+                    class="accordion-button"
+                    [class.collapsed]="i !== 0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#lansergold-faq-collapse-' + i"
+                    [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
+                    [attr.aria-controls]="'lansergold-faq-collapse-' + i"
+                  >
+                    {{ faq.question }}
+                  </button>
+                </h3>
+                <div
+                  [id]="'lansergold-faq-collapse-' + i"
+                  class="accordion-collapse collapse"
+                  [class.show]="i === 0"
+                  [attr.aria-labelledby]="'lansergold-faq-heading-' + i"
+                  data-bs-parent="#lansergoldFaqAccordion"
+                >
+                  <div class="accordion-body">
+                    <p [innerHTML]="faq.answer"></p>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-trust-heading">
+    <div class="container">
+      <h2 id="lansergold-trust-heading" class="section-title" data-aos="fade-up">Trust &amp; quality assurance</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Product quality</h3>
+            <p>LANSER GOLD is manufactured under strict quality control with batch-to-batch consistency growers depend on.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Manufacturing standards</h3>
+            <p>Harishree Crop Science follows rigorous formulation and packaging standards for reliable LANSER GOLD field performance.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Farmer confidence</h3>
+            <p>LANSER GOLD is trusted by growers across Gujarat, Maharashtra, Andhra Pradesh, and other major agricultural regions in India.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Crop protection commitment</h3>
+            <p>Harishree is committed to delivering effective, farmer-friendly LANSER GOLD thrips, whitefly, and aphid control solutions for sustainable agriculture.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="lansergold-resources-heading">
+    <div class="container">
+      <h2 id="lansergold-resources-heading" class="section-title" data-aos="fade-up">Downloadable resources</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Product documentation — contact Harishree for the latest materials.
+      </p>
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Product brochure</h3>
+            <p>Coming soon — enquire for LANSER GOLD product brochure and technical details.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request brochure</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Product label</h3>
+            <p>Coming soon — enquire for the official LANSER GOLD product label and usage directions.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request label</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Technical sheet</h3>
+            <p>Coming soon — enquire for crop-wise usage technical sheet and mixing guidance.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request technical sheet</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Safety data sheet</h3>
+            <p>Coming soon — enquire for safety data sheet and handling guidelines.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request safety sheet</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pests-section" aria-labelledby="lansergold-related-heading">
+    <div class="container">
+      <h2 id="lansergold-related-heading" class="section-title" data-aos="fade-up">Related products</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Explore more crop protection insecticides from <strong>Harishree Crop Science</strong> to build a strong IPM program.
+      </p>
+      <nav class="pest-cards product-related-grid" aria-label="Related insecticide products">
+        <div class="row">
+          <div *ngFor="let rp of relatedProducts; let i = index" class="col-md-6 col-lg-4">
+            <article class="product-related-card" data-aos="fade-up" [attr.data-aos-delay]="80 * i">
+              <a [routerLink]="rp.route" class="product-related-card__link">
+                <div class="product-related-card__image">
+                  <img
+                    [src]="rp.image"
+                    [alt]="rp.imageAlt"
+                    width="320"
+                    height="200"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product-related-card__body">
+                  <h3>{{ rp.name }}</h3>
+                  <p>{{ rp.description }}</p>
+                  <span class="pack-card__cta">View product</span>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section class="cta-section product-detail-cta" aria-labelledby="lansergoldCtaTitle">
+    <div class="container">
+      <div class="cta-container" data-aos="zoom-in">
+        <h2 id="lansergoldCtaTitle" class="cta-title">Get reliable whitefly &amp; aphid control with LANSER GOLD</h2>
+        <p class="cta-text">
+          Contact Harishree Crop Science for dealer stock, competitive pricing (₹454/500 GM), crop-wise usage notes, and mixing guidance for
+          <strong>LANSER GOLD</strong> (<strong>{{ productTitle }}</strong>) — buy online at best price through authorized dealers.
+        </p>
+        <div class="cta-actions" role="group" aria-label="Contact and navigation">
+          <a routerLink="/contact-us" class="cta-button">Contact Harishree</a>
+          <a routerLink="/products" class="cta-button cta-button--outline">All products</a>
+          <a routerLink="/about-us" class="cta-button cta-button--outline">About us</a>
+          <a routerLink="/quality-assurance" class="cta-button cta-button--outline">Quality assurance</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

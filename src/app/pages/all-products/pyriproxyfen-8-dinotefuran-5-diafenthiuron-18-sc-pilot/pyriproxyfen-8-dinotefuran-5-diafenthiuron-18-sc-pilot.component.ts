@@ -435,9 +435,16 @@ export class Pyriproxyfen8Dinotefuran5Diafenthiuron18ScPilotComponent implements
 
   relatedProducts = [
     {
+      name: 'FINAL (Pyriproxyfen + Bifenthrin EC)',
+      description: 'Dual-action IGR and pyrethroid insecticide for whitefly, thrips, mite, aphid, and jassid control.',
+      route: '/product/pyriproxyfen-10-bifenthrin-10-w-w-ec',
+      image: 'assets/products/insecticide/pyriproxyfen-10-bifenthrin-10-w-w-ec.png',
+      imageAlt: 'FINAL Pyriproxyfen Bifenthrin EC insecticide by Harishree Crop Science'
+    },
+    {
       name: 'LANSER GOLD (Acephate + Imidacloprid SP)',
       description: 'Dual-mode soluble powder insecticide for fast contact and systemic control of sucking and chewing pests.',
-      route: '/products',
+      route: '/products/insecticide/acephate-50-imidacloprid-1-8-sp-lanser-gold',
       image: 'assets/products/insecticide/acephate-50-imidacloprid-1-8-sp.jpg',
       imageAlt: 'LANSER GOLD Acephate Imidacloprid SP insecticide by Harishree Crop Science'
     },

@@ -1,0 +1,1340 @@
+<main class="product-page product-page--detail product-page--hil-thene" itemscope>
+  <nav class="container pt-3" aria-label="Breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+      <li class="breadcrumb-item"><a routerLink="/products">Products</a></li>
+      <li class="breadcrumb-item"><a routerLink="/products">Insecticides</a></li>
+      <li class="breadcrumb-item active" aria-current="page">HIL THENE</li>
+    </ol>
+  </nav>
+
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <p class="product-brand-line" data-aos="fade-right">{{ brandName }}</p>
+          <h1 class="product-title" data-aos="fade-right" data-aos-delay="40">
+            {{ productTitle }}
+          </h1>
+          <p class="product-tagline" data-aos="fade-right" data-aos-delay="80">
+            SP &middot; Systemic organophosphate &middot; Broad-spectrum pest control
+          </p>
+          <div class="product-description" data-aos="fade-right" data-aos-delay="120">
+            <p>
+              <strong>ACEPHATE 75% SP</strong> (marketed as <strong>HIL THENE</strong>) is an advanced systemic organophosphate
+              insecticide engineered for fast pest control and long-lasting protection against thrips, aphids, whiteflies,
+              jassids, bollworms, and leaf-eating caterpillars. The soluble powder combines systemic and contact action for dependable crop protection
+              in cotton, chilli, paddy, tomato, brinjal, okra, and vegetables.
+            </p>
+            <p class="small text-muted mb-2" lang="hi">
+              हिल थेने एसिफेट 75% SP कीटनाशक — लेबल अनुसार 25 ग्राम प्रति पंप खुराक और समय फॉलो करें।
+            </p>
+            <div class="usps" data-aos="fade-right" data-aos-delay="180">
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> 25 gm/pump dose</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Organophosphate formula</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Systemic protection</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Thrips &amp; bollworm control</span>
+            </div>
+            <div class="cta-actions mt-3" role="group" aria-label="Hero actions">
+              <a routerLink="/contact-us" class="cta-button">Enquire now</a>
+              <a routerLink="/products" class="cta-button cta-button--outline">All products</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <div class="product-image-container" data-aos="zoom-in">
+            <div class="product-image-inner">
+              <picture>
+                <source [srcset]="productImageWebpPath" type="image/webp" />
+                <img
+                  [src]="productImagePath"
+                  alt="HIL THENE ACEPHATE 75% SP Insecticide"
+                  title="HIL THENE ACEPHATE 75% SP"
+                  class="product-image"
+                  width="400"
+                  height="400"
+                  loading="eager"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="benefits-section" aria-labelledby="hilthene-highlights-heading">
+    <div class="container">
+      <h2 id="hilthene-highlights-heading" class="section-title" data-aos="fade-up">Quick highlights</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        At-a-glance reasons growers reach for <strong>HIL THENE</strong> (<strong>{{ productTitle }}</strong>).
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let h of quickHighlights; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="h.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ h.title }}</h3>
+              <p>{{ h.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-pack-section" aria-labelledby="hilthene-pack-heading">
+    <div class="container">
+      <h2 id="hilthene-pack-heading" class="section-title text-center" data-aos="fade-up">Pack sizes</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        Authentic <strong>{{ productTitle }}</strong> (HIL THENE) packed securely for every farming need.
+        Prices are shown in schema only; enquire for dealer availability.
+      </p>
+      <div class="pack-grid" data-aos="fade-up" data-aos-delay="100">
+        <article *ngFor="let pack of packSizes" class="pack-card" [class.pack-card--featured]="pack.featured">
+          <h3 class="pack-card__volume">{{ pack.volume }}</h3>
+          <p class="pack-card__hint">Harishree Quality &middot; dealer support</p>
+          <a routerLink="/contact-us" class="pack-card__cta">Enquire now</a>
+        </article>
+      </div>
+      <p class="dose-callout text-center" data-aos="fade-up">
+        <strong>Recommended dose:</strong> 25 gm per pump (15-litre water; confirm on label and crop advisory).
+      </p>
+    </div>
+  </section>
+
+  <section class="benefits-section" aria-labelledby="hilthene-why-heading">
+    <div class="container">
+      <h2 id="hilthene-why-heading" class="section-title" data-aos="fade-up">Why choose HIL THENE</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        What sets <strong>HIL THENE</strong> apart as a premium ACEPHATE 75% SP insecticide for Indian agriculture.
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let w of whyChoose; let i = index" class="col-md-6 col-lg-3" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="w.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ w.title }}</h3>
+              <p>{{ w.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits-section" aria-labelledby="hilthene-benefits-heading">
+    <div class="container">
+      <h2 id="hilthene-benefits-heading" class="section-title" data-aos="fade-up">Key benefits</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        Why growers trust <strong>HIL THENE</strong> for dependable thrips, whitefly, and aphid management.
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let b of keyBenefits; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="b.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ b.title }}</h3>
+              <p>{{ b.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-what-is-heading">
+    <div class="container">
+      <h2 id="hilthene-what-is-heading" class="section-title" data-aos="fade-up">
+        What is ACEPHATE 75% SP?
+      </h2>
+      <article class="product-highlight-card product-snippet-answer" data-aos="fade-up" data-aos-delay="60">
+        <p>{{ featuredSnippetAnswer }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-intro-heading">
+    <div class="container">
+      <h2 id="hilthene-intro-heading" class="section-title" data-aos="fade-up">Introduction — modern pest management with HIL THENE</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Indian agriculture faces rising pressure from thrips, aphids, whiteflies, jassids, bollworms, and leaf-eating caterpillars — pests that drain crop vigour,
+          damage flowers and fruits, and reduce marketable yield. Modern pest management demands insecticides that combine <strong>fast pest control</strong> with
+          <strong>long-lasting systemic protection</strong> while delivering proven organophosphate chemistry trusted by farmers for decades.
+          <strong>ACEPHATE 75% SP</strong> addresses this need as a scientifically formulated systemic organophosphate insecticide.
+          Farmers prefer <strong>HIL THENE</strong> from Harishree Crop Science because it pairs proven Acephate insecticide contact and systemic technology with
+          dependable translaminar absorption in one soluble powder pack — simplifying tank preparation, dosing at 25 gm per pump,
+          and field execution across cotton, chilli, paddy, and vegetable insecticide programs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-what-is-hilthene-heading">
+    <div class="container">
+      <h2 id="hilthene-what-is-hilthene-heading" class="section-title" data-aos="fade-up">What is HIL THENE?</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>HIL THENE</strong> is Harishree Crop Science's premium Acephate 75% SP insecticide for broad-spectrum pest management.
+          It delivers fast pest suppression through acephate contact action, long-lasting protection via systemic absorption into plant tissue,
+          and modern SP formulation technology that ensures uniform spray coverage. As a systemic insecticide with contact activity,
+          HIL THENE is engineered for thrips control, aphid control, whitefly control, jassid control, and bollworm control in high-value cotton, chilli,
+          paddy, brinjal, tomato, okra, and mixed vegetable crops. Whether you search for Acephate insecticide,
+          Hil Thene insecticide, or the technical name ACEPHATE 75% SP, this product represents Harishree's commitment to
+          crop protection, pest management, and agricultural insecticide innovation for Indian growers.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-active-ingredient-heading">
+    <div class="container">
+      <h2 id="hilthene-active-ingredient-heading" class="section-title" data-aos="fade-up">Active ingredient technology</h2>
+      <div class="row mt-4">
+        <div class="col-md-6" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Acephate 75% SP — organophosphate chemistry</h3>
+            <p>
+              Acephate (IRAC Group 1B) is a proven organophosphate insecticide that inhibits acetylcholinesterase in insect nerve tissue,
+              causing feeding disruption and nervous-system impact. This widely trusted chemistry delivers effective pest control against thrips, aphids,
+              whiteflies, jassids, bollworms, and allied sucking and chewing pests across Indian farming systems.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Systemic action — absorbed by plant tissues</h3>
+            <p>
+              Acephate absorbs through foliage and translocates via xylem, protecting new shoots and unsprayed plant parts from inside out.
+              Systemic movement ensures long-lasting activity against newly active pests between spray intervals, making HIL THENE a true
+              systemic insecticide for dependable crop protection in cotton, chilli, paddy, tomato, brinjal, okra, and vegetable programs.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-12 mt-3" data-aos="fade-up" data-aos-delay="100">
+          <article class="product-highlight-card">
+            <h3 class="h6">Contact action — quick pest knockdown</h3>
+            <p>
+              Acephate delivers rapid contact kill on pests directly exposed to the spray deposit. Thrips, whiteflies, aphids, and jassids
+              experience immediate feeding cessation and nervous-system disruption — providing fast pest suppression when applied at economic threshold
+              with thorough leaf surface and underside coverage at 25 gm per pump.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section product-detail-cta product-detail-cta--inline" aria-labelledby="hiltheneMidCtaTitle">
+    <div class="container">
+      <div class="cta-container cta-container--compact" data-aos="fade-up">
+        <h2 id="hiltheneMidCtaTitle" class="cta-title h4">Buy HIL THENE at best price — trusted organophosphate performance</h2>
+        <p class="cta-text mb-3">
+          Competitive pricing at ₹277/500 GM, quality SP formulation, and farmer satisfaction across India. Enquire for dealer availability today.
+        </p>
+        <a routerLink="/contact-us" class="cta-button">Enquire now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mode-of-action-section product-moa" aria-labelledby="hilthene-moa-heading">
+    <div class="container">
+      <h2 id="hilthene-moa-heading" class="section-title text-center" data-aos="fade-up">How does ACEPHATE 75% SP work?</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Systemic organophosphate mode of action — <strong>ACEPHATE 75% SP</strong> delivers contact activity, feeding inhibition, nervous-system disruption, and long residual protection inside plant tissue.
+      </p>
+      <div class="product-moa__layout row justify-content-center mt-2 mt-lg-4">
+        <div class="col-12 col-xl-10" data-aos="fade-up">
+          <ol class="product-moa__steps list-unstyled mb-0" role="list">
+            <li *ngFor="let step of modeOfAction; let i = index" class="product-moa__step">
+              <div class="product-moa__step-num" aria-hidden="true">{{ i + 1 }}</div>
+              <div class="product-moa__step-body">
+                <h3 class="product-moa__step-title">{{ step.title }}</h3>
+                <p class="product-moa__step-text">{{ step.description }}</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pests-section" id="target-pests" aria-labelledby="hilthene-pests-heading">
+    <div class="container">
+      <h2 id="hilthene-pests-heading" class="section-title" data-aos="fade-up">Target pests</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        <strong>HIL THENE</strong> delivers systemic MOA activity against whiteflies, aphids, thrips, jassids, leafhoppers, and other sucking pests when applied at early infestation with full canopy coverage.
+      </p>
+      <div class="pest-cards">
+        <div class="row">
+          <div *ngFor="let p of targetPests; let i = index" class="col-md-6 col-lg-4">
+            <article class="pest-card" data-aos="flip-up" [attr.data-aos-delay]="80 * i">
+              <div class="pest-icon"><i class="fas fa-bug"></i></div>
+              <h3>{{ p.name }}</h3>
+              <p>{{ p.description }}</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="crops-section product-applications" id="applications" aria-labelledby="hilthene-crops-heading">
+    <div class="product-applications__band">
+      <div class="container">
+        <div class="row align-items-end mb-2">
+          <div class="col-lg-8">
+            <h2 id="hilthene-crops-heading" class="section-title product-applications__title" data-aos="fade-up">Recommended crops</h2>
+            <p class="section-subtitle product-applications__lead" data-aos="fade-up" data-aos-delay="40">
+              <strong>HIL THENE</strong> is trusted across India for protecting cotton, chilli, tomato, brinjal, okra, and vegetables from whitefly, aphid, thrips, jassid, and leafhopper damage.
+            </p>
+          </div>
+        </div>
+        <ul class="product-applications__grid list-unstyled mb-0" role="list">
+          <li *ngFor="let app of applications; let i = index" class="product-applications__item" data-aos="fade-up" [attr.data-aos-delay]="40 * i">
+            <article class="product-app-tile">
+              <div class="product-app-tile__head" aria-hidden="true"></div>
+              <div class="product-app-tile__body">
+                <div class="product-app-tile__icon-wrap">
+                  <span class="product-app-tile__icon"><i [class]="app.icon"></i></span>
+                </div>
+                <h3 class="product-app-tile__title">{{ app.title }}</h3>
+                <p class="product-app-tile__text">{{ app.description }}</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="hilthene-crop-table-heading">
+    <div class="container">
+      <h2 id="hilthene-crop-table-heading" class="section-title" data-aos="fade-up">Crop-wise usage guide</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Practical <strong>HIL THENE</strong> application guidance by crop. Always confirm with label and local advisory.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="HIL THENE crop-wise usage table">
+              <thead>
+                <tr>
+                  <th scope="col">Crop</th>
+                  <th scope="col">Target pests</th>
+                  <th scope="col">Dose</th>
+                  <th scope="col">Best timing</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of cropWiseUsage">
+                  <td><strong>{{ row.crop }}</strong></td>
+                  <td>{{ row.pests }}</td>
+                  <td>{{ row.dose }}</td>
+                  <td>{{ row.timing }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="hilthene-pest-table-heading">
+    <div class="container">
+      <h2 id="hilthene-pest-table-heading" class="section-title" data-aos="fade-up">Pest-wise control guide</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>HIL THENE</strong> performs against key sucking pest species across labeled crops.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="HIL THENE pest-wise control table">
+              <thead>
+                <tr>
+                  <th scope="col">Pest</th>
+                  <th scope="col">Crops</th>
+                  <th scope="col">Mode of action</th>
+                  <th scope="col">Expected efficacy</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of pestWiseControl">
+                  <td><strong>{{ row.pest }}</strong></td>
+                  <td>{{ row.crops }}</td>
+                  <td>{{ row.mode }}</td>
+                  <td>{{ row.efficacy }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" id="specifications" aria-labelledby="hilthene-specs-heading">
+    <div class="container">
+      <h2 id="hilthene-specs-heading" class="section-title" data-aos="fade-up">Technical specifications</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Snapshot for dealers and agronomists. Always pair with the printed label for final guidance.
+      </p>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="80">
+        <div class="col-lg-6 mb-4">
+          <article class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-flask specs-icon"></i>
+              <h3>Product information</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.productInfo" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <article class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-prescription-bottle specs-icon"></i>
+              <h3>Dose &amp; application</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.packs" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="120">
+        <article class="product-official-specs__card">
+          <header class="product-official-specs__head">
+            <h3>HIL THENE &mdash; full parameter table</h3>
+            <p>
+              Complete technical profile for <strong>{{ productTitle }}</strong> (HIL THENE). Values support dealer
+              review and agronomic planning.
+            </p>
+          </header>
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="HIL THENE ACEPHATE 75% SP technical profile">
+              <thead>
+                <tr>
+                  <th scope="col">Parameter</th>
+                  <th scope="col">Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of officialProductDetails">
+                  <td>{{ row.label }}</td>
+                  <td>{{ row.value }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-uses-heading">
+    <div class="container">
+      <h2 id="hilthene-uses-heading" class="section-title" data-aos="fade-up">ACEPHATE 75% SP uses</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Key agricultural applications of <strong>HIL THENE</strong> across Indian farming systems.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">HIL THENE application</h3>
+            <p>Foliar spray at 25 gm per pump in a 15-litre knapsack sprayer. Apply at early sucking pest infestation or economic threshold with full canopy and underside coverage.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Systemic organophosphate benefits</h3>
+            <p>Acephate systemic absorption plus Acephate contact and systemic action delivers fast pest control and sustained suppression of thrips, whiteflies, aphids, jassids, and mites on treated crops.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Crop protection solution</h3>
+            <p>Trusted Systemic organophosphate insecticide for cotton whitefly, chilli thrips, tomato aphids, brinjal jassids, and mixed sucking pest pressure across India.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-dose-heading">
+    <div class="container">
+      <h2 id="hilthene-dose-heading" class="section-title" data-aos="fade-up">ACEPHATE 75% SP dose</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Clear, field-ready guidance for using <strong>HIL THENE</strong> effectively.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Recommended dose</h3>
+            <p><strong>25 gm per pump</strong> in a standard 15-litre knapsack sprayer. Confirm crop-wise rate on the label.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Mixing instructions</h3>
+            <p>Half-fill with water, add 25 gm HIL THENE, top up, and agitate. The SP formulation suspends easily for uniform spray coverage on leaf surfaces and undersides.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Best spray timing</h3>
+            <p>Apply at early sucking pest infestation or ETL during calm morning or evening hours with emphasis on leaf undersides where thrips, whiteflies, and aphids colonize.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-price-heading">
+    <div class="container">
+      <h2 id="hilthene-price-heading" class="section-title" data-aos="fade-up">ACEPHATE 75% SP price — buy online at best price</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>HIL THENE</strong> is available in 250 GM, 500 GM, and 1 KG packs through authorized
+          Harishree Crop Science dealers across India. Indicative list prices: 250 GM — ₹147, 500 GM — ₹277, 1 KG — ₹531.
+          Contact your nearest dealer or Harishree directly for current rates,
+          bulk availability, and buy online enquiry support.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-moa-long-heading">
+    <div class="container">
+      <h2 id="hilthene-moa-long-heading" class="section-title" data-aos="fade-up">ACEPHATE 75% SP mode of action</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>Acephate</strong> in <strong>HIL THENE</strong> delivers contact, systemic, and translaminar action for comprehensive thrips, aphid, whitefly, and bollworm control.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Contact action — rapid knockdown</h3>
+            <p>Acephate acts on contact, inhibiting acetylcholinesterase in insect nerve tissue. Thrips, whiteflies, aphids, and jassids exposed to the spray deposit experience rapid nervous-system disruption and immediate cessation of feeding.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Systemic activity</h3>
+            <p>When pests ingest treated plant tissue, acephate delivers strong systemic insecticide activity against hidden feeders on leaf undersides and in dense canopy — protecting the entire crop from inside out.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Feeding disruption</h3>
+            <p>Acephate disrupts normal nerve signalling through acetylcholinesterase inhibition. Susceptible pests lose the ability to feed and move normally — a powerful organophosphate insecticide mechanism.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Long residual protection</h3>
+            <p>Systemic acephate activity within plant tissue maintains protection against newly active pests between spray intervals. Rotate HIL THENE with neonicotinoids, IGRs, and other MOA groups across the season.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-cotton-heading">
+    <div class="container">
+      <h2 id="hilthene-cotton-heading" class="section-title" data-aos="fade-up">HIL THENE for cotton</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>HIL THENE</strong> fits cotton programs facing jassid, bollworm, whitefly, and aphid pressure during square, flowering,
+          and boll development stages. Use <strong>25 gm per pump</strong> at early pest infestation with full canopy
+          spray and underside coverage. Systemic and contact acephate action helps maintain cleaner foliage and healthier bolls throughout
+          the season when integrated into a broader IPM rotation.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-chilli-heading">
+    <div class="container">
+      <h2 id="hilthene-chilli-heading" class="section-title" data-aos="fade-up">HIL THENE for chilli</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          In chilli, <strong>HIL THENE</strong> controls thrips, aphids, mites, and whiteflies that cause
+          flower scarring, silvering, and export quality loss. Spray at early colonization with 25 gm per pump, ensuring
+          coverage of flowers, pods, and leaf undersides. Timely application at vegetative and fruit-set stages protects foliage
+          colour, pod size, and marketable yield — essential for chilli thrips control programs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-tomato-heading">
+    <div class="container">
+      <h2 id="hilthene-tomato-heading" class="section-title" data-aos="fade-up">HIL THENE for tomato</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          On tomato, <strong>HIL THENE</strong> manages whiteflies, aphids, thrips, and mites that reduce fruit set and transmit stress during flowering and fruit development. Apply at economic threshold with 25 gm per
+          pump and thorough canopy coverage. Systemic organophosphate insecticide activity supports cleaner harvest grade and reduced
+          honeydew deposition in high-value tomato programs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-brinjal-heading">
+    <div class="container">
+      <h2 id="hilthene-brinjal-heading" class="section-title" data-aos="fade-up">HIL THENE for brinjal</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          On brinjal, <strong>HIL THENE</strong> manages aphids, jassids, whiteflies, and mites that weaken plants during
+          flowering and continuous harvest cycles. Sucking pest complexes cause leaf curling, hopper burn, and reduced fruit quality. Apply at economic threshold with <strong>25 gm per pump</strong>, ensuring
+          coverage of shoots, fruits, and leaf undersides. As a contact and systemic action insecticide for crops with dense foliage, HIL THENE
+          delivers fast pest control when timed at early infestation, supporting cleaner harvest grade and improved
+          vegetable crop protection throughout the season.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-okra-heading">
+    <div class="container">
+      <h2 id="hilthene-okra-heading" class="section-title" data-aos="fade-up">HIL THENE for okra</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Okra faces jassid, aphid, and whitefly pressure during pod formation and continuous harvest cycles. <strong>HIL THENE</strong>
+          protects okra pods and leaves from sucking pest feeding damage that causes scarring, pod deformation, and yield loss.
+          Spray at early infestation with 25 gm per pump and thorough canopy coverage. Timely Acephate insecticide
+          application preserves pod quality, supports continuous picking schedules, and helps maintain marketable yield in
+          high-value okra programs across Indian vegetable farming systems.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-paddy-heading">
+    <div class="container">
+      <h2 id="hilthene-paddy-heading" class="section-title" data-aos="fade-up">HIL THENE for paddy</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          In paddy, <strong>HIL THENE</strong> controls stem borer, leaf folder, plant hoppers, and green leafhopper during vegetative and reproductive stages.
+          These pests cause hopper burn, yellowing, and reduced tillering that can significantly lower grain yield. Apply at economic threshold with
+          <strong>25 gm per pump</strong> and thorough foliar coverage. Systemic acephate absorption combined with contact action supports
+          healthier rice stands and improved paddy insecticide program outcomes when integrated into broader IPM rotation.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-horticultural-heading">
+    <div class="container">
+      <h2 id="hilthene-horticultural-heading" class="section-title" data-aos="fade-up">HIL THENE for horticultural crops</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          On horticultural crops, <strong>HIL THENE</strong> controls thrips, aphids, whiteflies, and leaf-eating caterpillars during flowering and fruit development.
+          Sucking and chewing pests cause honeydew, sooty mould, and quality loss on marketable produce. Apply at economic threshold with 25 gm per pump
+          and thorough foliar coverage. This broad spectrum insecticide supports healthier fruit quality and improved
+          horticultural crop protection in programs facing mixed pest pressure.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-vegetables-heading">
+    <div class="container">
+      <h2 id="hilthene-vegetables-heading" class="section-title" data-aos="fade-up">HIL THENE for vegetables</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Across brinjal, okra, tomato, and mixed vegetable crops, <strong>HIL THENE</strong> controls
+          thrips, whiteflies, aphids, jassids, bollworms, and caterpillar outbreaks. Use 25 gm per pump at early
+          colonization or ETL with full canopy coverage. Integrate with scouting and rotation across MOA groups
+          for sustainable vegetable insecticide programs throughout the growing season.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-thrips-heading">
+    <div class="container">
+      <h2 id="hilthene-thrips-heading" class="section-title" data-aos="fade-up">HIL THENE for thrips control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>HIL THENE</strong> delivers dependable organophosphate insecticide control of chilli thrips and vegetable thrips
+          on chilli, tomato, brinjal, and mixed vegetable crops. Thrips are small, slender insects that scar flowers, silver leaves, and reduce export quality —
+          economic losses can be severe in high-value chilli programs. <strong>Identification:</strong> Thrips appear as tiny, fast-moving insects on flowers and leaf undersides.
+          <strong>Damage:</strong> Silver streaks on leaves, flower scarring, and pod deformation. <strong>How HIL THENE controls thrips:</strong> Apply at economic
+          threshold with 25 gm per pump and thorough flower and leaf coverage. Contact and systemic acephate action delivers fast pest suppression and sustained thrips control between spray intervals.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-whitefly-heading">
+    <div class="container">
+      <h2 id="hilthene-whitefly-heading" class="section-title" data-aos="fade-up">ACEPHATE 75% SP for whitefly control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>ACEPHATE 75% SP</strong> in <strong>HIL THENE</strong> provides strong contact, stomach, and systemic absorption against cotton whitefly and vegetable whitefly when sprayed early at infestation with emphasis on leaf
+          undersides. Whitefly control in cotton supports cleaner bolls, reduced honeydew, and healthier fibre quality. Timely application before populations explode helps restore crop vigour and
+          supports healthier marketable yields.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-aphid-heading">
+    <div class="container">
+      <h2 id="hilthene-aphid-heading" class="section-title" data-aos="fade-up">HIL THENE for aphid control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>HIL THENE</strong> helps manage cotton aphids and vegetable aphids that colonize tender shoots and leaf undersides,
+          causing curling, stunting, and honeydew deposition. Spray at first colonization with 25 gm per pump before populations
+          spread across the canopy. Aphid control insecticide activity through systemic MOA supports better leaf integrity, fruit development, and harvest quality in cotton and vegetable
+          programs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-bollworm-heading">
+    <div class="container">
+      <h2 id="hilthene-bollworm-heading" class="section-title" data-aos="fade-up">HIL THENE for bollworm control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>HIL THENE</strong> provides effective bollworm control on cotton through acephate contact and translaminar action.
+          Bollworm larvae feed on squares, flowers, and bolls, causing significant yield loss when left unchecked.
+          <strong>Identification:</strong> Larvae vary in colour and feed inside bolls and on developing fruit.
+          <strong>Damage:</strong> Bore holes in bolls, shedding of squares, and reduced fibre quality.
+          Apply at early larval stage with 25 gm per pump and thorough canopy coverage for best bollworm management results.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-jassid-heading">
+    <div class="container">
+      <h2 id="hilthene-jassid-heading" class="section-title" data-aos="fade-up">HIL THENE for jassid control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>HIL THENE</strong> manages jassids (leafhoppers) in cotton and vegetables that cause hopper burn — characteristic browning along leaf margins.
+          Jassids suck sap from phloem tissue, reducing photosynthesis and plant vigour.
+          Apply at economic threshold with 25 gm per pump. Systemic acephate activity interrupts feeding and reduces hopper burn on treated foliage,
+          supporting healthier cotton stands and improved vegetable crop protection.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-farmers-heading">
+    <div class="container">
+      <h2 id="hilthene-farmers-heading" class="section-title" data-aos="fade-up">Why farmers prefer HIL THENE</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Farmers across India prefer <strong>HIL THENE</strong> for its <strong>proven field performance</strong> against thrips, aphids, whiteflies, jassids, and bollworms;
+          <strong>easy application</strong> at a straightforward 25 gm per pump dose; <strong>reliable results</strong> season after season from Harishree's consistent SP formulation;
+          <strong>wide pest spectrum</strong> covering both sucking and chewing pests in a single spray; and <strong>affordable crop protection</strong> at competitive pricing of ₹277 for 500 GM.
+          Whether managing cotton jassids, chilli thrips, or vegetable aphids, HIL THENE delivers the dependable acephate insecticide performance growers trust.
+        </p>
+      </article>
+    </div>
+  </section>
+  <section class="results-section product-results" aria-labelledby="hilthene-longtail-heading">
+    <div class="container">
+      <h2 id="hilthene-longtail-heading" class="section-title" data-aos="fade-up">Acephate insecticide for agriculture</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Acephate 75 SP uses</h3>
+            <p>Foliar systemic organophosphate insecticide spray for thrips, whitefly, aphid, jassid, bollworm, and caterpillar management on cotton, chilli, paddy, tomato, brinjal, okra, and vegetables at 25 gm/pump.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">HIL THENE dose per pump</h3>
+            <p>Standard knapsack guidance for HIL THENE is <strong>25 gm per 15-litre pump</strong>. Confirm acre-wise calculations with label and local advisory.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Organophosphate mode of action</h3>
+            <p>Acephate (IRAC 1B) inhibits acetylcholinesterase in insect nerve tissue — delivering contact, systemic, and translaminar action on treated foliage for broad-spectrum pest control.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-best-thrips-heading">
+    <div class="container">
+      <h2 id="hilthene-best-thrips-heading" class="section-title" data-aos="fade-up">Best insecticide for thrips</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Growers across India choose <strong>HIL THENE</strong> as a trusted <strong>best insecticide for thrips</strong>
+          programs targeting chilli thrips and vegetable thrips on high-value crops. Apply at ETL with
+          25 gm per pump, rotate with other MOA classes, and maintain regular scouting for early detection — a proven
+          approach for cleaner flowers, pods, and better harvest quality.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-best-whitefly-heading">
+    <div class="container">
+      <h2 id="hilthene-best-whitefly-heading" class="section-title" data-aos="fade-up">Best insecticide for whitefly</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          For fields facing persistent whitefly pressure in cotton, tomato, and brinjal, <strong>HIL THENE</strong>
+          combines Acephate systemic absorption with Acephate pest control chemistry. Unlike single-active
+          sprays with limited systemic MOA coverage, ACEPHATE 75% SP delivers contact, stomach, and respiratory action when applied at early
+          infestation with 25 gm per pump and full canopy spray coverage.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-Systemic organophosphate-heading">
+    <div class="container">
+      <h2 id="hilthene-Systemic organophosphate-heading" class="section-title" data-aos="fade-up">Systemic organophosphate insecticide for crop protection</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>HIL THENE</strong> is a reliable <strong>Systemic organophosphate insecticide for crop protection</strong> in cotton,
+          chilli, tomato, brinjal, okra, and vegetable programs facing thrips, whitefly, and aphid outbreaks. The SE
+          formulation mixes cleanly, spreads evenly, and maintains contact, stomach, and systemic absorption on treated foliage — supporting
+          effective pest management growers and agronomists expect in modern integrated pest management systems.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-application-heading">
+    <div class="container">
+      <h2 id="hilthene-application-heading" class="section-title" data-aos="fade-up">Application method</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Step-by-step guide for applying <strong>HIL THENE</strong> ({{ productTitle }}) in the field.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 1 — Prepare clean water</h3>
+            <p>Half-fill a standard 15-litre knapsack sprayer with clean water before adding the insecticide for safe, even mixing.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 2 — Measure 25 gm</h3>
+            <p>Accurately measure 25 gm of HIL THENE for one knapsack pump. Use a graduated measure for consistent dosing.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 3 — Mix thoroughly</h3>
+            <p>Add product to water, top up the tank, and agitate. The SP formulation suspends easily into a uniform spray mix.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 4 — Spray uniformly</h3>
+            <p>Apply in calm weather. Cover both leaf surfaces and undersides where thrips, whiteflies, aphids, and jassids feed.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-storage-heading">
+    <div class="container">
+      <h2 id="hilthene-storage-heading" class="section-title" data-aos="fade-up">Storage instructions</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Store <strong>HIL THENE</strong> in the original sealed container in a cool, dry, well-ventilated place away from direct
+          sunlight, food, feed, seed, and children. Keep containers upright and locked. Do not store near heat sources or open flames.
+          Shelf life is approximately 24 months from date of manufacture when stored properly. Triple-rinse empty bottles before disposal
+          as per local pesticide container management rules.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-harishree-heading">
+    <div class="container">
+      <h2 id="hilthene-harishree-heading" class="section-title" data-aos="fade-up">Why buy HIL THENE from Harishree Crop Science</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>Harishree Crop Science</strong> manufactures <strong>HIL THENE</strong> with strict quality assurance, reliable SE
+          formulation, and farmer-focused support that dealers and agronomists trust across India. Buy through authorized Harishree
+          dealers for authentic ACEPHATE 75% SP insecticide at competitive pricing, dependable field performance, crop-wise usage
+          guidance, and responsive customer service. Harishree is committed to delivering effective Systemic organophosphate insecticide
+          solutions for sustainable thrips, whitefly, and aphid management in modern Indian agriculture.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-results-heading">
+    <div class="container">
+      <h2 id="hilthene-results-heading" class="section-title" data-aos="fade-up">Results &amp; performance</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Field-level outcomes growers commonly report when dose, coverage, and larval stage are handled well.
+      </p>
+      <div class="row mt-4">
+        <div *ngFor="let ph of performanceHighlights; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="70 * i">
+          <article class="product-highlight-card">
+            <h3 class="h6">{{ ph.label }}</h3>
+            <p>{{ ph.value }}</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="usage-safety-section" id="safety" aria-labelledby="hilthene-safety-heading">
+    <div class="container">
+      <h2 id="hilthene-safety-heading" class="section-title text-center" data-aos="fade-up">Safety guidelines</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        PPE, storage, disposal, and first aid guidance for safe use of <strong>HIL THENE</strong>.
+      </p>
+      <div class="usage-safety-shell mt-4">
+        <div class="usage-safety-shell__intro" data-aos="fade-up" data-aos-delay="60">
+          <span class="usage-pill"><i class="fas fa-spray-can"></i> 25 gm accurate dose</span>
+          <span class="usage-pill"><i class="fas fa-user-shield"></i> PPE &amp; environment</span>
+        </div>
+
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <article class="usage-safety-panel usage-safety-panel--usage">
+              <header class="usage-safety-panel__head">
+                <h3>Usage best practices</h3>
+                <p>Mix clean, spray calm, scout again after a few days.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i < 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="140">
+            <article class="usage-safety-panel usage-safety-panel--safety">
+              <header class="usage-safety-panel__head">
+                <h3>Storage, disposal &amp; first aid</h3>
+                <p>Respect the label hazard panel and local disposal rules.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i >= 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-compatibility-heading">
+    <div class="container">
+      <h2 id="hilthene-compatibility-heading" class="section-title" data-aos="fade-up">Compatibility &amp; tank mix</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>HIL THENE</strong> is generally compatible with commonly used insecticides and fungicides when
+          tank-mixed for integrated crop protection programs. Always perform a <strong>jar test</strong> before
+          mixing to confirm physical compatibility. Avoid alkaline mixes that may degrade active ingredients.
+          Consult your local Harishree dealer or agronomist for crop-specific tank-mix recommendations.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-resistance-heading">
+    <div class="container">
+      <h2 id="hilthene-resistance-heading" class="section-title" data-aos="fade-up">Resistance management</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          ACEPHATE 75% SP chemistry in <strong>HIL THENE</strong> supports focused thrips, whitefly, and aphid management when rotated
+          with other mode-of-action groups. For sustainable sucking pest control, rotate HIL THENE with organophosphates,
+          IGRs, and other insecticide classes across the season and avoid repeated applications
+          of the same chemistry alone.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="hilthene-compare-traditional-heading">
+    <div class="container">
+      <h2 id="hilthene-compare-traditional-heading" class="section-title" data-aos="fade-up">HIL THENE vs conventional sucking pest sprays</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Semantic comparison showing why <strong>HIL THENE</strong> outperforms many conventional single-active sucking pest sprays.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="HIL THENE vs conventional sucking pest sprays comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col">HIL THENE</th>
+                  <th scope="col">Conventional sprays</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonTraditional">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.hilThene }}</td>
+                  <td>{{ row.traditional }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="hilthene-compare-pyrethroid-contact-heading">
+    <div class="container">
+      <h2 id="hilthene-compare-Systemic organophosphate-heading" class="section-title" data-aos="fade-up">HIL THENE vs single-active insecticides</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>HIL THENE</strong> Systemic organophosphate protection compares with single-active sucking pest control options.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="HIL THENE vs single-active insecticides comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">HIL THENE (Systemic organophosphate insecticide)</th>
+                  <th scope="col">Single-active insecticides</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonDualAction">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.hilThene }}</td>
+                  <td>{{ row.singleAi }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="hilthene-compare-igr-traditional-heading">
+    <div class="container">
+      <h2 id="hilthene-compare-Acephate-heading" class="section-title" data-aos="fade-up">HIL THENE vs generic Acephate products</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Why <strong>HIL THENE</strong> ACEPHATE 75% SP delivers broader sucking pest protection than generic Acephate SP alone.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="HIL THENE vs Acephate-only insecticides comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">HIL THENE (Acephate 75% SP)</th>
+                  <th scope="col">Generic Acephate 75% SP</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonAcephateOnly">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.hilThene }}</td>
+                  <td>{{ row.generic }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="hilthene-compare-lanser-heading">
+    <div class="container">
+      <h2 id="hilthene-compare-lanser-heading" class="section-title" data-aos="fade-up">HIL THENE vs LANSER GOLD</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>HIL THENE</strong> single-AI acephate compares with <strong>LANSER GOLD</strong> dual-AI premium formulation.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="HIL THENE vs LANSER GOLD comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">HIL THENE (Acephate 75% SP)</th>
+                  <th scope="col">LANSER GOLD (Dual-AI)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonLanserGold">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.hilThene }}</td>
+                  <td>{{ row.lanserGold }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="hilthene-compare-ec-heading">
+    <div class="container">
+      <h2 id="hilthene-compare-sp-heading" class="section-title" data-aos="fade-up">SP formulation benefits</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>HIL THENE</strong> soluble powder technology compares with other formulation types.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="SP formulation benefits comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">HIL THENE (SP formulation)</th>
+                  <th scope="col">Other formulation types</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonSpFormulation">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.hilThene }}</td>
+                  <td>{{ row.other }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-expert-heading">
+    <div class="container">
+      <h2 id="hilthene-expert-heading" class="section-title" data-aos="fade-up">Expert recommendation</h2>
+      <aside class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Agricultural advisors recommend <strong>HIL THENE</strong> when fields show thrips, whitefly, or aphid pressure —
+          particularly chilli thrips, cotton whitefly, vegetable aphids, jassids, or mixed sucking pest complexes on cotton, chilli,
+          and vegetables. Apply at early infestation or economic threshold with 25 gm per pump and thorough leaf
+          underside coverage for best results. Integrate HIL THENE into a broader integrated pest management program with scouting, ETL-based
+          decisions, and rotation across MOA groups for long-term sustainable sucking pest management.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="testimonials-section" aria-labelledby="hilthene-testimonials-heading">
+    <div class="container">
+      <h2 id="hilthene-testimonials-heading" class="section-title" data-aos="fade-up">What growers say</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Feedback from farmers using <strong>HIL THENE</strong> across cotton, chilli, tomato, brinjal, and vegetable crops.
+      </p>
+      <div class="row">
+        <div *ngFor="let t of testimonials; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="60 * i">
+          <article class="testimonial-card">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">{{ t.text }}</p>
+            <div class="testimonial-stars" [attr.aria-label]="t.rating + ' out of 5 stars'">
+              <i *ngFor="let star of [1, 2, 3, 4, 5]" class="fas fa-star" [class.star-filled]="star <= t.rating"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" aria-labelledby="hilthene-faq-heading">
+    <div class="container">
+      <h2 id="hilthene-faq-heading" class="section-title" data-aos="fade-up">Frequently asked questions</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Practical answers about <strong>{{ productTitle }}</strong>, <strong>HIL THENE</strong>, dose, uses, and safe field use.
+      </p>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="accordion faq-accordion" id="hiltheneFaqAccordion" data-aos="fade-up" data-aos-delay="90">
+            <ng-container *ngFor="let faq of faqs; let i = index">
+              <div class="accordion-item">
+                <h3 class="accordion-header" [id]="'hilthene-faq-heading-' + i">
+                  <button
+                    class="accordion-button"
+                    [class.collapsed]="i !== 0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#hilthene-faq-collapse-' + i"
+                    [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
+                    [attr.aria-controls]="'hilthene-faq-collapse-' + i"
+                  >
+                    {{ faq.question }}
+                  </button>
+                </h3>
+                <div
+                  [id]="'hilthene-faq-collapse-' + i"
+                  class="accordion-collapse collapse"
+                  [class.show]="i === 0"
+                  [attr.aria-labelledby]="'hilthene-faq-heading-' + i"
+                  data-bs-parent="#hiltheneFaqAccordion"
+                >
+                  <div class="accordion-body">
+                    <p [innerHTML]="faq.answer"></p>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-trust-heading">
+    <div class="container">
+      <h2 id="hilthene-trust-heading" class="section-title" data-aos="fade-up">Trust &amp; quality assurance</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Product quality</h3>
+            <p>HIL THENE is manufactured under strict quality control with batch-to-batch consistency growers depend on.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Manufacturing standards</h3>
+            <p>Harishree Crop Science follows rigorous formulation and packaging standards for reliable HIL THENE field performance.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Farmer confidence</h3>
+            <p>HIL THENE is trusted by growers across Gujarat, Maharashtra, Andhra Pradesh, and other major agricultural regions in India.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Crop protection commitment</h3>
+            <p>Harishree is committed to delivering effective, farmer-friendly HIL THENE thrips, whitefly, and aphid control solutions for sustainable agriculture.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="hilthene-resources-heading">
+    <div class="container">
+      <h2 id="hilthene-resources-heading" class="section-title" data-aos="fade-up">Downloadable resources</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Product documentation — contact Harishree for the latest materials.
+      </p>
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Product brochure</h3>
+            <p>Coming soon — enquire for HIL THENE product brochure and technical details.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request brochure</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Product label</h3>
+            <p>Coming soon — enquire for the official HIL THENE product label and usage directions.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request label</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Technical sheet</h3>
+            <p>Coming soon — enquire for crop-wise usage technical sheet and mixing guidance.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request technical sheet</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Safety data sheet</h3>
+            <p>Coming soon — enquire for safety data sheet and handling guidelines.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request safety sheet</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pests-section" aria-labelledby="hilthene-related-heading">
+    <div class="container">
+      <h2 id="hilthene-related-heading" class="section-title" data-aos="fade-up">Related products</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Explore more crop protection insecticides from <strong>Harishree Crop Science</strong> to build a strong IPM program.
+      </p>
+      <nav class="pest-cards product-related-grid" aria-label="Related insecticide products">
+        <div class="row">
+          <div *ngFor="let rp of relatedProducts; let i = index" class="col-md-6 col-lg-4">
+            <article class="product-related-card" data-aos="fade-up" [attr.data-aos-delay]="80 * i">
+              <a [routerLink]="rp.route" class="product-related-card__link">
+                <div class="product-related-card__image">
+                  <img
+                    [src]="rp.image"
+                    [alt]="rp.imageAlt"
+                    width="320"
+                    height="200"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product-related-card__body">
+                  <h3>{{ rp.name }}</h3>
+                  <p>{{ rp.description }}</p>
+                  <span class="pack-card__cta">View product</span>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section class="cta-section product-detail-cta" aria-labelledby="hiltheneCtaTitle">
+    <div class="container">
+      <div class="cta-container" data-aos="zoom-in">
+        <h2 id="hiltheneCtaTitle" class="cta-title">Get reliable thrips &amp; bollworm control with HIL THENE</h2>
+        <p class="cta-text">
+          Contact Harishree Crop Science for dealer stock, competitive pricing (₹277/500 GM), crop-wise usage notes, and mixing guidance for
+          <strong>HIL THENE</strong> (<strong>{{ productTitle }}</strong>) — buy online at best price through authorized dealers.
+        </p>
+        <div class="cta-actions" role="group" aria-label="Contact and navigation">
+          <a routerLink="/contact-us" class="cta-button">Contact Harishree</a>
+          <a routerLink="/products" class="cta-button cta-button--outline">All products</a>
+          <a routerLink="/about-us" class="cta-button cta-button--outline">About us</a>
+          <a routerLink="/quality-assurance" class="cta-button cta-button--outline">Quality assurance</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
