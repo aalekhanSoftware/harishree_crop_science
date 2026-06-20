@@ -114,4 +114,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
+
+  <!-- PILOT Product -->
+  <url>
+    <loc>https://harishreecropscience.com/products/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc-pilot</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
 </urlset> 

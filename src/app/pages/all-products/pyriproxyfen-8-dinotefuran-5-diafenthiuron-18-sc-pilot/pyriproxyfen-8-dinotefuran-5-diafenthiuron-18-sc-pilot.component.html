@@ -1,0 +1,1227 @@
+<main class="product-page product-page--detail product-page--pilot" itemscope>
+  <nav class="container pt-3" aria-label="Breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+      <li class="breadcrumb-item"><a routerLink="/products">Products</a></li>
+      <li class="breadcrumb-item"><a routerLink="/products">Insecticides</a></li>
+      <li class="breadcrumb-item active" aria-current="page">PILOT</li>
+    </ol>
+  </nav>
+
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <p class="product-brand-line" data-aos="fade-right">{{ brandName }}</p>
+          <h1 class="product-title" data-aos="fade-right" data-aos-delay="40">
+            {{ productTitle }}
+          </h1>
+          <p class="product-tagline" data-aos="fade-right" data-aos-delay="80">
+            SC &middot; Triple Action &middot; Systemic + Contact + IGR &middot; Sucking pest control
+          </p>
+          <div class="product-description" data-aos="fade-right" data-aos-delay="120">
+            <p>
+              <strong>{{ productTitle }}</strong> (marketed as <strong>PILOT</strong>) is a premium triple action
+              insecticide by Harishree Crop Science for reliable control of whitefly, aphids, thrips, and jassids.
+              Pyriproxyfen disrupts pest lifecycles, Dinotefuran delivers fast systemic knockdown, and Diafenthiuron
+              provides long residual contact protection on cotton, brinjal, chilli, okra, tomato, and vegetables.
+              Buy online at best price through authorized Harishree dealers.
+            </p>
+            <p class="small text-muted mb-2" lang="hi">
+              पायलट पाइरिप्रोक्सीफेन 8% + डाइनोटेफ्यूरान 5% + डायफेंथियूरॉन 18% SC कीटनाशक — लेबल अनुसार 30 मिली प्रति पंप खुराक फॉलो करें।
+            </p>
+            <div class="usps" data-aos="fade-right" data-aos-delay="180">
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> 30 ml/pump</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Whitefly control</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Aphid &amp; thrips control</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Triple action insecticide</span>
+            </div>
+            <div class="cta-actions mt-3" role="group" aria-label="Hero actions">
+              <a routerLink="/contact-us" class="cta-button">Buy online — enquire now</a>
+              <a routerLink="/products" class="cta-button cta-button--outline">All products</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <div class="product-image-container" data-aos="zoom-in">
+            <div class="product-image-inner">
+              <picture>
+                <source [srcset]="productImageWebpPath" type="image/webp" />
+                <img
+                  [src]="productImagePath"
+                  alt="PILOT Pyriproxyfen Dinotefuran Diafenthiuron SC Insecticide"
+                  title="PILOT Pyriproxyfen 8% Dinotefuran 5% Diafenthiuron 18% SC"
+                  class="product-image"
+                  width="400"
+                  height="400"
+                  loading="eager"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="benefits-section" aria-labelledby="pilot-highlights-heading">
+    <div class="container">
+      <h2 id="pilot-highlights-heading" class="section-title" data-aos="fade-up">Quick highlights</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        At-a-glance reasons growers reach for <strong>PILOT</strong> (<strong>{{ productTitle }}</strong>).
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let h of quickHighlights; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="h.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ h.title }}</h3>
+              <p>{{ h.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-pack-section" aria-labelledby="pilot-pack-heading">
+    <div class="container">
+      <h2 id="pilot-pack-heading" class="section-title text-center" data-aos="fade-up">Pack sizes</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        Authentic <strong>{{ productTitle }}</strong> (PILOT) packed securely for every farming need.
+        Prices are shown in schema only; enquire for dealer availability.
+      </p>
+      <div class="pack-grid" data-aos="fade-up" data-aos-delay="100">
+        <article *ngFor="let pack of packSizes" class="pack-card" [class.pack-card--featured]="pack.featured">
+          <h3 class="pack-card__volume">{{ pack.volume }}</h3>
+          <p class="pack-card__hint">Harishree Quality &middot; dealer support</p>
+          <a routerLink="/contact-us" class="pack-card__cta">Enquire now</a>
+        </article>
+      </div>
+      <p class="dose-callout text-center" data-aos="fade-up">
+        <strong>Recommended dose:</strong> 30 ml per pump (15-litre water; confirm on label and crop advisory).
+      </p>
+    </div>
+  </section>
+
+  <section class="benefits-section" aria-labelledby="pilot-why-heading">
+    <div class="container">
+      <h2 id="pilot-why-heading" class="section-title" data-aos="fade-up">Why choose PILOT</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        What sets <strong>PILOT</strong> apart as a premium triple action insecticide for Indian agriculture.
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let w of whyChoose; let i = index" class="col-md-6 col-lg-3" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="w.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ w.title }}</h3>
+              <p>{{ w.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits-section" aria-labelledby="pilot-benefits-heading">
+    <div class="container">
+      <h2 id="pilot-benefits-heading" class="section-title" data-aos="fade-up">Key benefits</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        Why growers trust <strong>PILOT</strong> for dependable whitefly, aphid, thrips, and jassid management.
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let b of keyBenefits; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="b.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ b.title }}</h3>
+              <p>{{ b.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-what-is-heading">
+    <div class="container">
+      <h2 id="pilot-what-is-heading" class="section-title" data-aos="fade-up">
+        What is Pyriproxyfen 8% + Dinotefuran 5% + Diafenthiuron 18% SC?
+      </h2>
+      <article class="product-highlight-card product-snippet-answer" data-aos="fade-up" data-aos-delay="60">
+        <p>{{ featuredSnippetAnswer }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="mode-of-action-section product-moa" aria-labelledby="pilot-moa-heading">
+    <div class="container">
+      <h2 id="pilot-moa-heading" class="section-title text-center" data-aos="fade-up">How does PILOT triple action technology work?</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Systemic, contact, and insect growth regulation — <strong>Pyriproxyfen</strong>, <strong>Dinotefuran</strong>, and <strong>Diafenthiuron</strong> work together for comprehensive sucking pest control.
+      </p>
+      <div class="product-moa__layout row justify-content-center mt-2 mt-lg-4">
+        <div class="col-12 col-xl-10" data-aos="fade-up">
+          <ol class="product-moa__steps list-unstyled mb-0" role="list">
+            <li *ngFor="let step of modeOfAction; let i = index" class="product-moa__step">
+              <div class="product-moa__step-num" aria-hidden="true">{{ i + 1 }}</div>
+              <div class="product-moa__step-body">
+                <h3 class="product-moa__step-title">{{ step.title }}</h3>
+                <p class="product-moa__step-text">{{ step.description }}</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pests-section" id="target-pests" aria-labelledby="pilot-pests-heading">
+    <div class="container">
+      <h2 id="pilot-pests-heading" class="section-title" data-aos="fade-up">Target pests</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        <strong>PILOT</strong> delivers strong triple-action activity against whitefly, aphids, thrips, and jassids when applied at economic threshold with full canopy and underside coverage.
+      </p>
+      <div class="pest-cards">
+        <div class="row">
+          <div *ngFor="let p of targetPests; let i = index" class="col-md-6 col-lg-4">
+            <article class="pest-card" data-aos="flip-up" [attr.data-aos-delay]="80 * i">
+              <div class="pest-icon"><i class="fas fa-bug"></i></div>
+              <h3>{{ p.name }}</h3>
+              <p>{{ p.description }}</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="crops-section product-applications" id="applications" aria-labelledby="pilot-crops-heading">
+    <div class="product-applications__band">
+      <div class="container">
+        <div class="row align-items-end mb-2">
+          <div class="col-lg-8">
+            <h2 id="pilot-crops-heading" class="section-title product-applications__title" data-aos="fade-up">Recommended crops</h2>
+            <p class="section-subtitle product-applications__lead" data-aos="fade-up" data-aos-delay="40">
+              <strong>PILOT</strong> is trusted across India for protecting cotton, brinjal, chilli, okra, tomato, and vegetables from whitefly, aphid, thrips, and jassid damage.
+            </p>
+          </div>
+        </div>
+        <ul class="product-applications__grid list-unstyled mb-0" role="list">
+          <li *ngFor="let app of applications; let i = index" class="product-applications__item" data-aos="fade-up" [attr.data-aos-delay]="40 * i">
+            <article class="product-app-tile">
+              <div class="product-app-tile__head" aria-hidden="true"></div>
+              <div class="product-app-tile__body">
+                <div class="product-app-tile__icon-wrap">
+                  <span class="product-app-tile__icon"><i [class]="app.icon"></i></span>
+                </div>
+                <h3 class="product-app-tile__title">{{ app.title }}</h3>
+                <p class="product-app-tile__text">{{ app.description }}</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="pilot-crop-table-heading">
+    <div class="container">
+      <h2 id="pilot-crop-table-heading" class="section-title" data-aos="fade-up">Crop-wise usage guide</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Practical <strong>PILOT</strong> application guidance by crop. Always confirm with label and local advisory.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="PILOT crop-wise usage table">
+              <thead>
+                <tr>
+                  <th scope="col">Crop</th>
+                  <th scope="col">Target pests</th>
+                  <th scope="col">Dose</th>
+                  <th scope="col">Best timing</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of cropWiseUsage">
+                  <td><strong>{{ row.crop }}</strong></td>
+                  <td>{{ row.pests }}</td>
+                  <td>{{ row.dose }}</td>
+                  <td>{{ row.timing }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="pilot-pest-table-heading">
+    <div class="container">
+      <h2 id="pilot-pest-table-heading" class="section-title" data-aos="fade-up">Pest-wise control guide</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>PILOT</strong> performs against key sucking pest species across labeled crops.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="PILOT pest-wise control table">
+              <thead>
+                <tr>
+                  <th scope="col">Pest</th>
+                  <th scope="col">Crops</th>
+                  <th scope="col">Mode of action</th>
+                  <th scope="col">Expected efficacy</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of pestWiseControl">
+                  <td><strong>{{ row.pest }}</strong></td>
+                  <td>{{ row.crops }}</td>
+                  <td>{{ row.mode }}</td>
+                  <td>{{ row.efficacy }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" id="specifications" aria-labelledby="pilot-specs-heading">
+    <div class="container">
+      <h2 id="pilot-specs-heading" class="section-title" data-aos="fade-up">Technical specifications</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Snapshot for dealers and agronomists. Always pair with the printed label for final guidance.
+      </p>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="80">
+        <div class="col-lg-6 mb-4">
+          <article class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-flask specs-icon"></i>
+              <h3>Product information</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.productInfo" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <article class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-prescription-bottle specs-icon"></i>
+              <h3>Dose &amp; application</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.packs" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="120">
+        <article class="product-official-specs__card">
+          <header class="product-official-specs__head">
+            <h3>PILOT &mdash; full parameter table</h3>
+            <p>
+              Complete technical profile for <strong>{{ productTitle }}</strong> (PILOT). Values support dealer
+              review and agronomic planning.
+            </p>
+          </header>
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="PILOT Pyriproxyfen Dinotefuran Diafenthiuron SC technical profile">
+              <thead>
+                <tr>
+                  <th scope="col">Parameter</th>
+                  <th scope="col">Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of officialProductDetails">
+                  <td>{{ row.label }}</td>
+                  <td>{{ row.value }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-uses-heading">
+    <div class="container">
+      <h2 id="pilot-uses-heading" class="section-title" data-aos="fade-up">Pyriproxyfen 8% + Dinotefuran 5% + Diafenthiuron 18% SC uses</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Key agricultural applications of <strong>PILOT</strong> as a best insecticide for sucking pests across Indian farming systems.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Foliar application</h3>
+            <p>Foliar spray at 30 ml per pump in a 15-litre knapsack sprayer. Apply at early whitefly, aphid, thrips, or jassid infestation with full canopy and underside coverage on cotton, brinjal, chilli, okra, tomato, and vegetables.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Triple action benefits</h3>
+            <p>Pyriproxyfen IGR prevents egg hatch and nymph development. Dinotefuran delivers systemic knockdown. Diafenthiuron provides long residual contact control — together forming a complete sucking pest management solution.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Crop protection solution</h3>
+            <p>Trusted systemic insecticide for cotton whitefly, brinjal whitefly, chilli thrips, tomato aphids, okra jassids, and mixed vegetable sucking pest pressure across India.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-triple-action-heading">
+    <div class="container">
+      <h2 id="pilot-triple-action-heading" class="section-title" data-aos="fade-up">Triple action technology in PILOT</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Three proven actives — each targeting a different stage and mode of sucking pest control.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Pyriproxyfen 8% — Insect Growth Regulator</h3>
+            <p>Pyriproxyfen mimics juvenile hormone to prevent whitefly and aphid eggs from hatching and stops nymphs from completing moults. This IGR action breaks pest lifecycles at source, reducing rapid population resurgence between spray intervals on treated foliage.</p>
+          </article>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Dinotefuran 5% — Systemic knockdown</h3>
+            <p>Dinotefuran is a neonicotinoid that moves systemically within plant tissues, disrupting the nervous system of hidden aphids, whitefly, thrips, and jassids feeding on new growth. Fast feeding cessation reduces honeydew, sooty mould, and virus transmission risk quickly after application.</p>
+          </article>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Diafenthiuron 18% — Contact residual control</h3>
+            <p>Diafenthiuron provides strong contact and translaminar activity on foliage, maintaining long residual control against exposed and resistant sucking pest populations. Its thiourea chemistry complements the IGR and systemic actives for season-long protection.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-benefits-long-heading">
+    <div class="container">
+      <h2 id="pilot-benefits-long-heading" class="section-title" data-aos="fade-up">Benefits of PILOT insecticide</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Farmers choose <strong>PILOT</strong> because it delivers quick pest control with long-lasting protection across
+          multiple sucking pests in a single spray. The triple action insecticide improves crop health by reducing sap-feeding
+          damage, sooty mould, and viral vector pressure — supporting better yield potential in cotton, brinjal, chilli, okra,
+          tomato, and vegetable programs. When rotated in IPM, PILOT helps manage resistant whitefly and aphid populations that
+          no longer respond to repeated single-ingredient neonic or pyrethroid sprays alone.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-dose-heading">
+    <div class="container">
+      <h2 id="pilot-dose-heading" class="section-title" data-aos="fade-up">Recommended dose — 30 ml per pump</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Clear, field-ready guidance for using <strong>PILOT</strong> effectively against sucking pests.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Recommended dose</h3>
+            <p><strong>30 ml per pump</strong> in a standard 15-litre knapsack sprayer. Confirm crop-wise rate on the label and with local agronomic advisory.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Mixing instructions</h3>
+            <p>Half-fill with water, add 30 ml PILOT, top up, and agitate. The SC formulation disperses easily for uniform spray coverage on leaf surfaces and undersides.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Best spray timing</h3>
+            <p>Apply at early sucking pest infestation or economic threshold during calm morning or evening hours. Emphasize leaf undersides where whitefly, aphids, thrips, and jassids feed and colonize.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-application-heading">
+    <div class="container">
+      <h2 id="pilot-application-heading" class="section-title" data-aos="fade-up">Application method</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Step-by-step field guidance for preparing and applying <strong>PILOT</strong>.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 1 — Prepare PPE</h3>
+            <p>Wear gloves, goggles, and a mask. Keep children and animals away from the mixing area before handling concentrate.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 2 — Measure 30 ml</h3>
+            <p>Accurately measure 30 ml of PILOT for a standard 15-litre knapsack pump. Use a graduated measure for consistent dosing.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 3 — Mix and spray</h3>
+            <p>Half-fill tank with water, add product, top up, and agitate. Spray evenly in calm weather with full canopy and underside coverage.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Step 4 — Post-spray care</h3>
+            <p>Wash exposed skin, clean equipment, store leftover product safely, and observe re-entry interval before field work resumes.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-storage-heading">
+    <div class="container">
+      <h2 id="pilot-storage-heading" class="section-title" data-aos="fade-up">Storage instructions</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Store <strong>PILOT</strong> in the original sealed container in a cool, dry, well-ventilated place away from direct
+          sunlight, food, feed, seed, and children. Keep containers upright and locked. Do not store near heat sources or open flames.
+          Shelf life is approximately 24 months from date of manufacture when stored properly. Triple-rinse empty bottles before disposal
+          as per local pesticide container management rules.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-harishree-heading">
+    <div class="container">
+      <h2 id="pilot-harishree-heading" class="section-title" data-aos="fade-up">Why buy PILOT from Harishree Crop Science</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>Harishree Crop Science</strong> manufactures <strong>PILOT</strong> with strict quality control, batch-to-batch
+          consistency, and farmer-friendly guidance that dealers and agronomists trust across India. Buy online at best price through
+          authorized Harishree dealers for authentic product, dependable field performance, crop-wise usage support, and responsive
+          customer service. Harishree is committed to delivering effective triple action insecticide solutions for sustainable sucking
+          pest management in modern Indian agriculture.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-price-heading">
+    <div class="container">
+      <h2 id="pilot-price-heading" class="section-title" data-aos="fade-up">PILOT price — buy online at best price</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>PILOT</strong> is available in 250 ML, 500 ML, and 1 LTR packs through authorized Harishree Crop Science
+          dealers across India. Indicative list prices: 250 ml — ₹336, 500 ml — ₹661, 1 litre — ₹1298. Contact your nearest
+          dealer or Harishree directly for current rates, bulk availability, and buy online enquiry support.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-moa-long-heading">
+    <div class="container">
+      <h2 id="pilot-moa-long-heading" class="section-title" data-aos="fade-up">Mode of action — systemic, contact, and IGR</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>PILOT</strong> delivers triple action insecticide performance for comprehensive sucking pest control.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Systemic action — Dinotefuran</h3>
+            <p>Dinotefuran moves within plant tissues to protect new growth from hidden aphids, whitefly, thrips, and jassids that contact-only sprays miss on dense canopies.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Contact action — Diafenthiuron</h3>
+            <p>Diafenthiuron deposits on foliage with translaminar activity, providing long residual knockdown and control of resistant sucking pest populations on treated surfaces.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Growth regulation — Pyriproxyfen</h3>
+            <p>Pyriproxyfen prevents egg hatching and stops nymph moulting, breaking whitefly and aphid reproductive cycles alongside adult knockdown from systemic and contact actives.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Resistance management benefits</h3>
+            <p>Rotate PILOT with other MOA groups across the season to reduce selection pressure on whitefly, aphid, thrips, and jassid populations in IPM programs.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-whitefly-heading">
+    <div class="container">
+      <h2 id="pilot-whitefly-heading" class="section-title" data-aos="fade-up">Whitefly control with PILOT</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>PILOT</strong> is a proven <strong>whitefly insecticide</strong> for cotton, brinjal, chilli, and vegetables.
+          Whitefly adults and nymphs feed on sap, excrete honeydew, and transmit viral diseases that devastate crop quality and yield.
+          Pyriproxyfen prevents egg hatch and nymph development, Dinotefuran delivers fast systemic knockdown, and Diafenthiuron maintains
+          residual contact control. Apply at economic threshold with <strong>30 ml per pump</strong> and thorough underside coverage for
+          best results against both standard and resistant whitefly populations.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-aphid-heading">
+    <div class="container">
+      <h2 id="pilot-aphid-heading" class="section-title" data-aos="fade-up">Aphid control with PILOT</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          For fields facing aphid outbreaks on cotton, chilli, tomato, okra, and vegetables, <strong>PILOT</strong> delivers dependable
+          <strong>aphid control</strong> through systemic Dinotefuran uptake and contact Diafenthiuron deposit. Aphids cause leaf curling,
+          stunted shoots, honeydew, and sooty mould that reduce photosynthesis and marketable grade. Timely PILOT sprays at early colonization
+          with 30 ml per pump suppress aphid populations before they reach damaging levels and spread across the crop canopy.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-thrips-heading">
+    <div class="container">
+      <h2 id="pilot-thrips-heading" class="section-title" data-aos="fade-up">Thrips control with PILOT</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>PILOT</strong> provides effective <strong>thrips control</strong> on chilli, cotton, brinjal, and vegetable crops when
+          applied with coverage of tender leaves, buds, and flowers where thrips feed and hide. Thrips cause silvery scarring on leaves and
+          fruits, reducing export quality in chilli and marketable grade in other crops. The systemic and contact actives in PILOT work together
+          to knock down active thrips and protect new growth — apply at first sign of infestation with 30 ml per pump during calm hours.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-jassid-heading">
+    <div class="container">
+      <h2 id="pilot-jassid-heading" class="section-title" data-aos="fade-up">Jassid control with PILOT</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          On cotton and okra, <strong>PILOT</strong> manages <strong>jassid control</strong> programs targeting leafhopper species that cause
+          hopper burn, marginal leaf scorch, and premature leaf drop. Dinotefuran systemic movement protects new shoots while Diafenthiuron
+          contact deposit controls exposed jassids on treated foliage. Spray at economic threshold with 30 ml per pump and full canopy coverage
+          during vegetative and reproductive growth stages for sustained jassid suppression.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-cotton-heading">
+    <div class="container">
+      <h2 id="pilot-cotton-heading" class="section-title" data-aos="fade-up">PILOT for cotton — systemic insecticide for cotton</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>PILOT</strong> fits cotton programs facing whitefly, aphid, and jassid pressure during square, flowering,
+          and boll development stages. Use <strong>30 ml per pump</strong> at economic threshold with full canopy spray and
+          underside coverage. As a trusted <strong>systemic insecticide for cotton</strong>, Dinotefuran protects new growth
+          while Diafenthiuron and Pyriproxyfen maintain residual and IGR activity — helping preserve leaf health, boll quality,
+          and yield potential throughout the season when integrated into a broader IPM rotation.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-brinjal-heading">
+    <div class="container">
+      <h2 id="pilot-brinjal-heading" class="section-title" data-aos="fade-up">Insecticide for brinjal whitefly</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          In brinjal, <strong>PILOT</strong> is a leading <strong>insecticide for brinjal whitefly</strong> and aphid complexes
+          that cause leaf curling, sooty mould, and reduced fruit quality during vegetative and harvest stages. Spray at early
+          colonization with 30 ml per pump, ensuring coverage of leaf undersides where whitefly nymphs feed. Timely application
+          restores foliage colour, supports healthier fruit development, and improves marketable yield in high-value brinjal programs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-chilli-heading">
+    <div class="container">
+      <h2 id="pilot-chilli-heading" class="section-title" data-aos="fade-up">PILOT for chilli — thrips and aphid control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          In chilli, <strong>PILOT</strong> controls thrips, aphids, and whitefly that cause pod scarring, defoliation, and export
+          quality loss. Spray at early infestation with 30 ml per pump, ensuring coverage of pods, buds, and leaf undersides.
+          Timely application at vegetative and fruit-set stages protects foliage colour, pod size, and marketable yield in export
+          and domestic chilli programs facing persistent sucking pest pressure.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-tomato-heading">
+    <div class="container">
+      <h2 id="pilot-tomato-heading" class="section-title" data-aos="fade-up">PILOT for tomato</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          On tomato, <strong>PILOT</strong> manages aphids and whitefly on leaves and shoots that strip plant vigour and transmit
+          viral diseases during flowering and fruit development. Apply at economic threshold with 30 ml per pump and thorough canopy
+          coverage. Systemic and contact triple action supports cleaner foliage, healthier fruit set, and reduced virus vector
+          pressure in high-value tomato programs across India.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-okra-heading">
+    <div class="container">
+      <h2 id="pilot-okra-heading" class="section-title" data-aos="fade-up">PILOT for okra</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          On okra, <strong>PILOT</strong> defends pods and foliage from jassids and aphids during continuous harvest cycles.
+          Jassids cause hopper burn and leaf margin scorch that reduce pod quality and plant vigour. Apply at economic threshold
+          with 30 ml per pump and full canopy spray. Systemic Dinotefuran protects new shoots while contact and IGR actives suppress
+          exposed pest populations between spray intervals.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-vegetables-heading">
+    <div class="container">
+      <h2 id="pilot-vegetables-heading" class="section-title" data-aos="fade-up">Insecticide for vegetable sucking pests</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Across brinjal, okra, beans, and mixed vegetable crops, <strong>PILOT</strong> is a reliable
+          <strong>insecticide for vegetable sucking pests</strong> including whitefly, aphids, thrips, and jassids. Use 30 ml per
+          pump at early colonization or ETL with full canopy coverage. Integrate with scouting and rotation across MOA groups for
+          sustainable vegetable crop protection throughout the growing season.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-resistant-whitefly-heading">
+    <div class="container">
+      <h2 id="pilot-resistant-whitefly-heading" class="section-title" data-aos="fade-up">Best insecticide for resistant whiteflies</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Growers facing <strong>resistant whitefly</strong> populations that no longer respond to repeated neonic or pyrethroid
+          sprays choose <strong>PILOT</strong> for its triple MOA approach. Pyriproxyfen IGR breaks the lifecycle, Dinotefuran delivers
+          systemic knockdown, and Diafenthiuron provides contact residual control — together offering the best insecticide for resistant
+          whiteflies when applied at ETL with 30 ml per pump and rotated with other chemistry classes in IPM programs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-aphids-thrips-heading">
+    <div class="container">
+      <h2 id="pilot-aphids-thrips-heading" class="section-title" data-aos="fade-up">Insecticide for aphids and thrips</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          When fields show combined aphid and thrips pressure — common in chilli, cotton, brinjal, and vegetables —
+          <strong>PILOT</strong> simplifies crop protection with one <strong>insecticide for aphids and thrips</strong> in a single
+          spray. Systemic Dinotefuran reaches hidden feeders, Diafenthiuron controls exposed populations, and Pyriproxyfen suppresses
+          nymph development. Apply at early infestation with 30 ml per pump for dependable dual-pest management without complex tank mixes.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-sucking-pests-heading">
+    <div class="container">
+      <h2 id="pilot-sucking-pests-heading" class="section-title" data-aos="fade-up">Best insecticide for sucking pests</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>PILOT</strong> is widely recognized as the <strong>best insecticide for sucking pests</strong> in cotton, brinjal,
+          chilli, okra, tomato, and vegetable programs. The Pyriproxyfen + Dinotefuran + Diafenthiuron combination addresses eggs, nymphs,
+          and adults through IGR, systemic, and contact pathways — delivering comprehensive protection that single-MOA products cannot match.
+          Apply at ETL with 30 ml per pump and maintain regular scouting for early detection.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-pyriproxyfen-longtail-heading">
+    <div class="container">
+      <h2 id="pilot-pyriproxyfen-longtail-heading" class="section-title" data-aos="fade-up">Pyriproxyfen Dinotefuran Diafenthiuron insecticide</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Pyriproxyfen 8 Dinotefuran 5 Diafenthiuron 18 SC uses</h3>
+            <p>Foliar triple-action spray for whitefly, aphid, thrips, and jassid management on cotton, brinjal, chilli, okra, tomato, and vegetables at 30 ml/pump.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">PILOT dose per pump</h3>
+            <p>Standard knapsack guidance for PILOT is <strong>30 ml per 15-litre pump</strong>. Confirm acre-wise calculations with label and local advisory.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">PILOT Pyriproxyfen insecticide mode of action</h3>
+            <p>Triple MOA — Pyriproxyfen IGR + Dinotefuran systemic neonic + Diafenthiuron contact thiourea — for comprehensive sucking pest lifecycle control.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-systemic-heading">
+    <div class="container">
+      <h2 id="pilot-systemic-heading" class="section-title" data-aos="fade-up">Systemic insecticide for sucking pest control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>PILOT</strong> is a reliable <strong>systemic insecticide</strong> for crop protection in cotton, brinjal, chilli,
+          tomato, okra, and vegetable programs facing whitefly, aphid, thrips, and jassid outbreaks. The SC formulation mixes cleanly,
+          spreads evenly, and maintains triple action activity on treated foliage — supporting sustainable sucking pest population
+          suppression growers and agronomists expect in modern IPM systems.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-results-heading">
+    <div class="container">
+      <h2 id="pilot-results-heading" class="section-title" data-aos="fade-up">Results &amp; performance</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Field-level outcomes growers commonly report when dose, coverage, and pest stage are handled well.
+      </p>
+      <div class="row mt-4">
+        <div *ngFor="let ph of performanceHighlights; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="70 * i">
+          <article class="product-highlight-card">
+            <h3 class="h6">{{ ph.label }}</h3>
+            <p>{{ ph.value }}</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="usage-safety-section" id="safety" aria-labelledby="pilot-safety-heading">
+    <div class="container">
+      <h2 id="pilot-safety-heading" class="section-title text-center" data-aos="fade-up">Safety guidelines</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        PPE, storage, disposal, and first aid guidance for safe use of <strong>PILOT</strong>.
+      </p>
+      <div class="usage-safety-shell mt-4">
+        <div class="usage-safety-shell__intro" data-aos="fade-up" data-aos-delay="60">
+          <span class="usage-pill"><i class="fas fa-spray-can"></i> 30 ml accurate dose</span>
+          <span class="usage-pill"><i class="fas fa-user-shield"></i> PPE &amp; environment</span>
+        </div>
+
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <article class="usage-safety-panel usage-safety-panel--usage">
+              <header class="usage-safety-panel__head">
+                <h3>Usage best practices</h3>
+                <p>Mix clean, spray calm, scout again after a few days.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i < 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="140">
+            <article class="usage-safety-panel usage-safety-panel--safety">
+              <header class="usage-safety-panel__head">
+                <h3>Storage, disposal &amp; first aid</h3>
+                <p>Respect the label hazard panel and local disposal rules.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i >= 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-compatibility-heading">
+    <div class="container">
+      <h2 id="pilot-compatibility-heading" class="section-title" data-aos="fade-up">Compatibility &amp; tank mix</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>PILOT</strong> is generally compatible with commonly used insecticides and fungicides when
+          tank-mixed for integrated crop protection programs. Always perform a <strong>jar test</strong> before
+          mixing to confirm physical compatibility. Avoid alkaline mixes that may degrade active ingredients.
+          Consult your local Harishree dealer or agronomist for crop-specific tank-mix recommendations.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-resistance-heading">
+    <div class="container">
+      <h2 id="pilot-resistance-heading" class="section-title" data-aos="fade-up">Resistance management</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Dedicated triple-action chemistry in <strong>PILOT</strong> supports focused sucking pest management when rotated
+          with other mode-of-action groups. For sustainable whitefly, aphid, thrips, and jassid control, rotate PILOT with
+          contact insecticides, IGRs, and other classes across the season and avoid repeated applications of the same chemistry alone.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="pilot-compare-traditional-heading">
+    <div class="container">
+      <h2 id="pilot-compare-traditional-heading" class="section-title" data-aos="fade-up">PILOT vs Conventional sucking pest sprays</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Semantic comparison showing why <strong>PILOT</strong> outperforms many conventional sucking pest sprays.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="PILOT vs Conventional sucking pest sprays comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col">PILOT</th>
+                  <th scope="col">Conventional sprays</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonTraditional">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.pilot }}</td>
+                  <td>{{ row.traditional }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="pilot-compare-triple-heading">
+    <div class="container">
+      <h2 id="pilot-compare-triple-heading" class="section-title" data-aos="fade-up">Triple action vs dual-combination insecticides</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>PILOT</strong> three-way chemistry compares with two-way combination products.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="Triple action vs dual combination insecticides comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">PILOT (Triple action SC)</th>
+                  <th scope="col">Dual-combination products</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonTripleAction">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.pilot }}</td>
+                  <td>{{ row.dual }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="pilot-compare-igr-traditional-heading">
+    <div class="container">
+      <h2 id="pilot-compare-igr-traditional-heading" class="section-title" data-aos="fade-up">PILOT vs traditional sucking pest control</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Why <strong>PILOT</strong> triple action SC delivers broader sucking pest protection than traditional approaches.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="PILOT vs traditional sucking pest control comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">PILOT (Triple action SC)</th>
+                  <th scope="col">Traditional sucking pest control</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonIgrTraditional">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.pilot }}</td>
+                  <td>{{ row.traditional }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="pilot-compare-sc-heading">
+    <div class="container">
+      <h2 id="pilot-compare-sc-heading" class="section-title" data-aos="fade-up">SC formulation benefits</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>PILOT</strong> suspension concentrate technology compares with other formulation types.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="SC formulation benefits comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">PILOT (SC formulation)</th>
+                  <th scope="col">Other formulation types</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonScFormulation">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.pilot }}</td>
+                  <td>{{ row.other }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-expert-heading">
+    <div class="container">
+      <h2 id="pilot-expert-heading" class="section-title" data-aos="fade-up">Expert recommendation</h2>
+      <aside class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Agricultural advisors recommend <strong>PILOT</strong> when fields show whitefly, aphid, thrips, or jassid pressure —
+          particularly on cotton, brinjal, chilli, okra, tomato, and vegetables. Apply at early sucking pest infestation or
+          economic threshold with 30 ml per pump and thorough leaf underside coverage for best results. Integrate PILOT into a
+          broader IPM program with scouting, ETL-based decisions, and rotation across MOA groups for long-term sustainable
+          sucking pest management.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="testimonials-section" aria-labelledby="pilot-testimonials-heading">
+    <div class="container">
+      <h2 id="pilot-testimonials-heading" class="section-title" data-aos="fade-up">What growers say</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Feedback from farmers using <strong>PILOT</strong> across cotton, brinjal, and chilli crops.
+      </p>
+      <div class="row">
+        <div *ngFor="let t of testimonials; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="60 * i">
+          <article class="testimonial-card">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">{{ t.text }}</p>
+            <div class="testimonial-stars" [attr.aria-label]="t.rating + ' out of 5 stars'">
+              <i *ngFor="let star of [1, 2, 3, 4, 5]" class="fas fa-star" [class.star-filled]="star <= t.rating"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" aria-labelledby="pilot-faq-heading">
+    <div class="container">
+      <h2 id="pilot-faq-heading" class="section-title" data-aos="fade-up">Frequently asked questions</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Practical answers about <strong>{{ productTitle }}</strong>, <strong>PILOT</strong>, dose, uses, and safe field use.
+      </p>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="accordion faq-accordion" id="pilotFaqAccordion" data-aos="fade-up" data-aos-delay="90">
+            <ng-container *ngFor="let faq of faqs; let i = index">
+              <div class="accordion-item">
+                <h3 class="accordion-header" [id]="'pilot-faq-heading-' + i">
+                  <button
+                    class="accordion-button"
+                    [class.collapsed]="i !== 0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#pilot-faq-collapse-' + i"
+                    [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
+                    [attr.aria-controls]="'pilot-faq-collapse-' + i"
+                  >
+                    {{ faq.question }}
+                  </button>
+                </h3>
+                <div
+                  [id]="'pilot-faq-collapse-' + i"
+                  class="accordion-collapse collapse"
+                  [class.show]="i === 0"
+                  [attr.aria-labelledby]="'pilot-faq-heading-' + i"
+                  data-bs-parent="#pilotFaqAccordion"
+                >
+                  <div class="accordion-body">
+                    <p [innerHTML]="faq.answer"></p>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-trust-heading">
+    <div class="container">
+      <h2 id="pilot-trust-heading" class="section-title" data-aos="fade-up">Trust &amp; quality assurance</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Product quality</h3>
+            <p>PILOT is manufactured under strict quality control with batch-to-batch consistency growers depend on.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Manufacturing standards</h3>
+            <p>Harishree Crop Science follows rigorous formulation and packaging standards for reliable PILOT field performance.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Farmer confidence</h3>
+            <p>PILOT is trusted by growers across Gujarat, Maharashtra, Andhra Pradesh, and other major agricultural regions in India.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Crop protection commitment</h3>
+            <p>Harishree is committed to delivering effective, farmer-friendly PILOT sucking pest control solutions for sustainable agriculture.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="pilot-resources-heading">
+    <div class="container">
+      <h2 id="pilot-resources-heading" class="section-title" data-aos="fade-up">Downloadable resources</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Product documentation — contact Harishree for the latest materials.
+      </p>
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Product brochure</h3>
+            <p>Coming soon — enquire for PILOT product brochure and technical details.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request brochure</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Product label</h3>
+            <p>Coming soon — enquire for the official PILOT product label and usage directions.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request label</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Technical sheet</h3>
+            <p>Coming soon — enquire for crop-wise usage technical sheet and mixing guidance.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request technical sheet</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Safety data sheet</h3>
+            <p>Coming soon — enquire for safety data sheet and handling guidelines.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request safety sheet</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pests-section" aria-labelledby="pilot-related-heading">
+    <div class="container">
+      <h2 id="pilot-related-heading" class="section-title" data-aos="fade-up">Related products</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Explore more crop protection insecticides from <strong>Harishree Crop Science</strong> to build a strong IPM program.
+      </p>
+      <nav class="pest-cards product-related-grid" aria-label="Related insecticide products">
+        <div class="row">
+          <div *ngFor="let rp of relatedProducts; let i = index" class="col-md-6 col-lg-4">
+            <article class="product-related-card" data-aos="fade-up" [attr.data-aos-delay]="80 * i">
+              <a [routerLink]="rp.route" class="product-related-card__link">
+                <div class="product-related-card__image">
+                  <img
+                    [src]="rp.image"
+                    [alt]="rp.imageAlt"
+                    width="320"
+                    height="200"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product-related-card__body">
+                  <h3>{{ rp.name }}</h3>
+                  <p>{{ rp.description }}</p>
+                  <span class="pack-card__cta">View product</span>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section class="cta-section product-detail-cta" aria-labelledby="pilotCtaTitle">
+    <div class="container">
+      <div class="cta-container" data-aos="zoom-in">
+        <h2 id="pilotCtaTitle" class="cta-title">Get reliable sucking pest control with PILOT — buy online at best price</h2>
+        <p class="cta-text">
+          Contact Harishree Crop Science for dealer stock, crop-wise usage notes, and mixing guidance for
+          <strong>PILOT</strong> (<strong>{{ productTitle }}</strong>). Enquire now to buy online at best price.
+        </p>
+        <div class="cta-actions" role="group" aria-label="Contact and navigation">
+          <a routerLink="/contact-us" class="cta-button">Contact Harishree</a>
+          <a routerLink="/products" class="cta-button cta-button--outline">All products</a>
+          <a routerLink="/about-us" class="cta-button cta-button--outline">About us</a>
+          <a routerLink="/quality-assurance" class="cta-button cta-button--outline">Quality assurance</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

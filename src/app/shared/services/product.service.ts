@@ -57,7 +57,7 @@ export class ProductService {
             fullDescription: 'Kavach creates a powerful protective shield against destructive insect pests. This innovative formulation provides both contact and residual activity, ensuring comprehensive crop protection. Its unique shield technology ensures better adherence to plant surfaces and resistance to environmental factors.'
           },
           { name: 'Pride-H', 
-            image: 'assets/products/PRIDE-H_2.png', 
+            image: 'assets/products/acetamiprid-20-sp.png', 
             description: 'Professional pest control',
             fullDescription: 'Pride-H represents professional-grade pest management technology. This advanced formulation combines rapid knockdown with long-lasting protection, making it ideal for commercial farming operations. Its balanced composition ensures optimal performance across various crop stages and conditions.'
           },
@@ -104,7 +104,7 @@ export class ProductService {
             url: 'product/fipronil-40-imidacloprid-40-wg'
           },
           { name: 'Hilthene', 
-            image: 'assets/products/insecticide/hilthene.jpg', 
+            image: 'assets/products/insecticide/acephate-75-sp.jpg', 
             description: 'Acephate 75% SP broad-spectrum control',
             fullDescription: 'Hilthene (Acephate 75% SP) is a professional, systemic and contact insecticide that provides quick knockdown and dependable control of caterpillars, aphids and other economic pests. The high-quality SP formulation dissolves rapidly, offering consistent performance, excellent leaf coverage and strong compatibility in tank mixes. Trusted by growers for its reliability and value across vegetables, cotton and other labeled crops.'
           },
@@ -174,11 +174,12 @@ export class ProductService {
             description: 'Reliable broad-spectrum insecticide',
             fullDescription: 'Oscar is a reliable, grower-friendly insecticide designed for consistent control of key sucking and chewing pests. The formulation focuses on superior coverage, quick uptake and strong adherence to plant surfaces, supporting clean foliage and market-ready produce with minimal sprays.'
           },
-          // { name: 'Pilot',
-          //   image: 'assets/products/insecticide/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc.jpg',
-          //   description: 'Pyriproxyfen 8% + Dinotefuran 5% + Diafenthiuron 18% SC',
-          //   fullDescription: 'Pilot combines Pyriproxyfen 8%, Dinotefuran 5% and Diafenthiuron 18% SC to deliver a modern, three-way assault on resistant pest populations. The unique blend targets multiple life stages, providing rapid knockdown, strong systemic movement and lasting residual control with excellent crop safety.'
-          // },
+          { name: 'Pilot',
+            image: 'assets/products/insecticide/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc.jpg',
+            description: 'Pyriproxyfen 8% + Dinotefuran 5% + Diafenthiuron 18% SC',
+            fullDescription: 'Pilot (Pyriproxyfen 8% + Dinotefuran 5% + Diafenthiuron 18% SC) combines three proven actives to deliver a modern triple-action assault on whitefly, aphids, thrips, and jassids. The unique blend targets multiple life stages with rapid knockdown, strong systemic movement, IGR lifecycle disruption, and lasting residual control with excellent crop safety.',
+            url: 'products/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc-pilot'
+          },
           { name: 'Pro 5G',
             image: 'assets/products/insecticide/emamectin-benzoate-1-5-fipronil-3-5-sc.jpg',
             description: 'Emamectin benzoate 1.5% + Fipronil 3.5% SC synergy',
