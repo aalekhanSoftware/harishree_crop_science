@@ -168,7 +168,7 @@ export class ProductSchemaService {
       category: data.category,
       sku: data.sku,
       mpn: data.mpn,
-      material: 'SC (Suspension Concentrate)',
+      material: data.formulationMaterial ?? 'SC (Suspension Concentrate)',
       activeIngredient: data.productTitle,
       audience: {
         '@type': 'PeopleAudience',

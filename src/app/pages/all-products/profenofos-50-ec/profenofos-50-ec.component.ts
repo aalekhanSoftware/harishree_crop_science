@@ -209,7 +209,7 @@ export class ProfenofosFiftyEcComponent implements OnInit, OnDestroy {
       title: 'Brinjal',
       description:
         'Controls shoot and fruit borers, jassids, and leaf-eating caterpillars to reduce fruit drop and improve harvest grade.',
-      icon: 'fas fa-eggplant'
+      icon: 'fas fa-leaf'
     },
     {
       title: 'Tomato',

@@ -62,4 +62,5 @@ export interface ProductSeoData {
   benefits: string[];
   breadcrumbLabel: string;
   speakableSelectors?: string[];
+  formulationMaterial?: string;
 }

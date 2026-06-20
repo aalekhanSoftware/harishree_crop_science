@@ -200,7 +200,7 @@ export class Dimethoate30EcHGorComponent implements OnInit, OnDestroy {
       title: 'Brinjal',
       description:
         'Controls jassids, aphids, and whiteflies to reduce leaf damage, fruit drop, and quality loss during flowering and fruiting.',
-      icon: 'fas fa-eggplant'
+      icon: 'fas fa-leaf'
     },
     {
       title: 'Tomato',

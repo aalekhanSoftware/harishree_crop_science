@@ -91,6 +91,12 @@ export class ProductService {
             fullDescription: 'Cora-5 (Chlorantraniliprole 18.5% SC) is Harishree Crop Science\'s professional insecticide for borer and larval pest management in crops such as groundnut, maize, paddy, cotton, chilli and vegetables. It supports systemic and contact action with practical guidance of 5 ml per pump when used as per crop label and local advisory.',
             url: 'product/chlorantraniliprole-18-5-sc'
           },
+          { name: 'AMPIGO',
+            image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc.png',
+            description: 'Chlorantraniliprole 9.3% + Lambda Cyhalothrin 4.6% ZC dual-action insecticide',
+            fullDescription: 'AMPIGO (Chlorantraniliprole 9.3% + Lambda Cyhalothrin 4.6% ZC) is Harishree Crop Science\'s premium dual-action ZC insecticide for fast knockdown and long residual control of fall armyworm, bollworms, fruit borers, and caterpillars in cotton, maize, chilli, tomato, and vegetables. Field guidance: 10 ml per pump when used at early larval stage as per label and local advisory.',
+            url: 'products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc'
+          },
           { name: 'Fipronil 40% + Imidacloprid 40% WG (FI 40)', 
             image: 'assets/products/insecticide/fipronil-40-imidacloprid-40-wg.jpg', 
             description: 'Fipronil 40% + Imidacloprid 40% WG dual-action',
@@ -103,9 +109,10 @@ export class ProductService {
             fullDescription: 'Hilthene (Acephate 75% SP) is a professional, systemic and contact insecticide that provides quick knockdown and dependable control of caterpillars, aphids and other economic pests. The high-quality SP formulation dissolves rapidly, offering consistent performance, excellent leaf coverage and strong compatibility in tank mixes. Trusted by growers for its reliability and value across vegetables, cotton and other labeled crops.'
           },
           { name: 'Chilli H', 
-            image: 'assets/products/insecticide/chilli-h.jpg', 
+            image: 'assets/products/insecticide/fipronil-2-92-ec.jpg', 
             description: 'Fipronil 2.92% EC contact and stomach action',
-            fullDescription: 'Chilli H (Fipronil 2.92% EC) is engineered for fast, decisive control of thrips, mites and other hard-to-manage pests in chilli and vegetable crops. Its advanced EC base ensures superior penetration and persistent residual activity, helping reduce re-infestation. With excellent rainfastness and leaf adherence, Chilli H delivers premium protection while supporting clean, market-ready produce.'
+            fullDescription: 'Chilli H (Fipronil 2.92% EC) is engineered for fast, decisive control of thrips, stem borers, white grubs, termites, and soil pests in chilli, rice, cotton, sugarcane, and vegetable crops. Its advanced EC base ensures superior penetration and persistent residual activity, helping reduce re-infestation. With excellent rainfastness and leaf adherence, Chilli H delivers premium protection while supporting clean, market-ready produce.',
+            url: 'products/insecticide/fipronil-2-92-ec'
           },
           { name: 'Chloro Shield 20', 
             image: 'assets/products/insecticide/chloro-shield-20.jpg', 
@@ -125,12 +132,13 @@ export class ProductService {
             url: 'product/deltamethrin-2-8-ec'
           },
           { name: 'Eclipse', 
-            image: 'assets/products/insecticide/ethion-40-cypermethrin-5-ec', 
-            description: 'Ethion 40% + Cypermethrin 5% EC synergy mix',
-            fullDescription: 'Eclipse (Ethion 40% + Cypermethrin 5% EC) combines organophosphate and pyrethroid chemistries for broad-spectrum, dual-mode action. The formulation delivers rapid knockdown with strong residual effect, controlling both chewing and sucking pests over extended periods. Optimized for tank-mix compatibility and consistent performance across climates.'
+            image: 'assets/products/insecticide/ethion-40-cypermethrin-5-ec.jpg', 
+            description: 'Ethion 40% + Cypermethrin 5% EC dual-action insecticide',
+            fullDescription: 'ECLIPSE (Ethion 40% + Cypermethrin 5% EC) combines organophosphate and pyrethroid chemistries for broad-spectrum, dual-mode action. The formulation delivers rapid knockdown with strong residual effect, controlling bollworms, thrips, aphids, whiteflies, and caterpillars. Recommended dose: 25 ml per pump.',
+            url: 'products/insecticide/ethion-40-cypermethrin-5-ec-eclipse'
           },
           { name: 'Extra Mida 70', 
-            image: 'assets/products/insecticide/extra-mida-70.jpg', 
+            image: 'assets/products/insecticide/imidacloprid-70-wg.jpg', 
             description: 'Imidacloprid 70% WG high-load systemic',
             fullDescription: 'Extra Mida 70 (Imidacloprid 70% WG) is a high-load neonicotinoid that provides powerful systemic control of aphids, whiteflies and jassids at low use rates. The premium WG granules disperse instantly in water, offering excellent spray stability, superior leaf coverage and long-lasting protection for professional, residue-conscious programs.'
           },
@@ -167,14 +175,15 @@ export class ProductService {
             fullDescription: 'Oscar is a reliable, grower-friendly insecticide designed for consistent control of key sucking and chewing pests. The formulation focuses on superior coverage, quick uptake and strong adherence to plant surfaces, supporting clean foliage and market-ready produce with minimal sprays.'
           },
           // { name: 'Pilot',
-          //   image: 'assets/products/insecticide/pilot.jpg',
+          //   image: 'assets/products/insecticide/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc.jpg',
           //   description: 'Pyriproxyfen 8% + Dinotefuran 5% + Diafenthiuron 18% SC',
           //   fullDescription: 'Pilot combines Pyriproxyfen 8%, Dinotefuran 5% and Diafenthiuron 18% SC to deliver a modern, three-way assault on resistant pest populations. The unique blend targets multiple life stages, providing rapid knockdown, strong systemic movement and lasting residual control with excellent crop safety.'
           // },
           { name: 'Pro 5G',
-            image: 'assets/products/insecticide/pro-5g.jpg',
+            image: 'assets/products/insecticide/emamectin-benzoate-1-5-fipronil-3-5-sc.jpg',
             description: 'Emamectin benzoate 1.5% + Fipronil 3.5% SC synergy',
-            fullDescription: 'Pro 5G unites Emamectin benzoate 1.5% with Fipronil 3.5% SC for superior, synergistic control of tough caterpillars and sucking pests. The premium SC formulation mixes easily, offers excellent spray stability and ensures uniform leaf deposition for dependable, long-lasting protection.'
+            fullDescription: 'Pro 5G unites Emamectin benzoate 1.5% with Fipronil 3.5% SC for superior, synergistic control of tough caterpillars and sucking pests. The premium SC formulation mixes easily, offers excellent spray stability and ensures uniform leaf deposition for dependable, long-lasting protection.',
+            url: 'products/insecticide/emamectin-benzoate-1-5-fipronil-3-5-sc-pro-5g'
           },
           { name: 'Thiamethoxam 75% SG (Thio-H 75)',
             image: 'assets/products/insecticide/thiamethoxam-75-sg.jpg',
@@ -194,7 +203,7 @@ export class ProductService {
             url: 'product/novaluron-5-25-indoxacarb-4-5-sc-turbo'
           },
           { name: 'Yoddha',
-            image: 'assets/products/insecticide/yoddha.jpg',
+            image: 'assets/products/insecticide/flufenzine-20-ec.jpg',
             description: 'Flufenzin 20% SC insecticide/acaricide',
             fullDescription: 'Yoddha (Flufenzin 20% SC) is a specialized insecticide/acaricide designed to control stubborn mite and sucking pest populations. The stable suspension concentrate ensures even distribution and strong persistence, helping maintain clean canopies and healthier, high-yielding crops.'
           },
@@ -203,11 +212,17 @@ export class ProductService {
             description: 'Long-lasting protection',
             fullDescription: 'Hil Thene offers extended protection against various insect pests. Its innovative slow-release technology ensures consistent pest control over longer periods. The product\'s unique formulation provides excellent stability under various environmental conditions.'
           },
-          { name: 'H Gor', 
-            image: 'assets/products/insecticide/dimethoate-30-ec.jpg', 
+          { name: 'H Gor',
+            image: 'assets/products/insecticide/dimethoate-30-ec.jpg',
             description: 'Dimethoate 30% EC systemic and contact',
             fullDescription: 'H Gor (Dimethoate 30% EC) is a systemic and contact organophosphate effective against aphids, thrips and jassids. It moves within plant tissues to protect new growth while providing strong contact action on exposed pests. The formulation balances efficacy with crop safety for dependable, professional results.',
             url: 'products/insecticide/dimethoate-30-ec-h-gor'
+          },
+          { name: 'EXTRA MIDA 70',
+            image: 'assets/products/insecticide/imidacloprid-70-wg.jpg',
+            description: 'Imidacloprid 70% WG systemic neonicotinoid insecticide',
+            fullDescription: 'EXTRA MIDA 70 (Imidacloprid 70% WG) is Harishree Crop Science\'s premium systemic neonicotinoid insecticide for whiteflies, aphids, jassids, thrips, and sucking pests in cotton, chilli, paddy, sugarcane, citrus, and vegetables. Field guidance: 7 gm per pump when used at early infestation as per label and local advisory.',
+            url: 'products/insecticide/imidacloprid-70-wg-extra-mida-70'
           }
       ]
     },

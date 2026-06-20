@@ -66,4 +66,36 @@
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
+
+  <!-- ECLIPSE Product -->
+  <url>
+    <loc>https://harishreecropscience.com/products/insecticide/ethion-40-cypermethrin-5-ec-eclipse</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- CHILLI H Product -->
+  <url>
+    <loc>https://harishreecropscience.com/products/insecticide/fipronil-2-92-ec</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- AMPIGO Product -->
+  <url>
+    <loc>https://harishreecropscience.com/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- EXTRA MIDA 70 Product -->
+  <url>
+    <loc>https://harishreecropscience.com/products/insecticide/imidacloprid-70-wg-extra-mida-70</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
 </urlset> 
