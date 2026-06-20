@@ -160,7 +160,7 @@ export class ProductService {
           //   fullDescription: 'Kavach Plus is a premium, next-generation insect shield formulated for consistent performance across vegetables, cotton and other commercial crops. Its optimized chemistry ensures quick knockdown with dependable residual action, superior leaf adherence and strong rainfastness for season-long protection in professional programs.'
           // },
           { name: 'Lanser Gold',
-            image: 'assets/products/insecticide/Lanser-gold.jpg',
+            image: 'assets/products/insecticide/acephate-50-imidacloprid-1-8-sp.jpg',
             description: 'Acephate 50% + Imidacloprid 1.8% SP dual-mode',
             fullDescription: 'Lanser Gold (Acephate 50% + Imidacloprid 1.8% SP) delivers a powerful combination of contact and systemic action for fast control of sucking and chewing pests. The soluble powder technology disperses quickly, offers excellent tank-mix compatibility and supports resistance management with two proven modes of action.'
           },
@@ -201,6 +201,12 @@ export class ProductService {
             description: 'Novaluron 5.25% + Indoxacarb 4.5% SC dual-action',
             fullDescription: 'Turbo (Novaluron 5.25% + Indoxacarb 4.5% w/w SC) is Harishree Crop Science\'s premium dual-action insecticide combining an IGR with an oxadiazine for powerful caterpillar and borer control in cotton, chilli, tomato, cole crops, soybean, pulses, and vegetables. Field guidance: 20 ml per pump when used at early larval stage as per label and local advisory.',
             url: 'product/novaluron-5-25-indoxacarb-4-5-sc-turbo'
+          },
+          { name: 'Runner',
+            image: 'assets/products/insecticide/novaluron-10-ec.png',
+            description: 'Novaluron 10% EC IGR insecticide',
+            fullDescription: 'RUNNER (Novaluron 10% EC) is Harishree Crop Science\'s premium benzoylurea insect growth regulator for fruit borers, pod borers, bollworms, and caterpillars on cotton, chilli, tomato, cabbage, pulses, soybean, and vegetables. Field guidance: 20 ml per pump when used at early larval stage as per label and local advisory.',
+            url: 'products/insecticide/novaluron-10-ec-runner'
           },
           { name: 'Yoddha',
             image: 'assets/products/insecticide/flufenzine-20-ec.jpg',

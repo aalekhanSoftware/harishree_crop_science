@@ -464,6 +464,13 @@ export class Chlorantraniliprole93LambdaCyhalothrin46ZcAmpigoComponent implement
 
   relatedProducts = [
     {
+      name: 'RUNNER (Novaluron 10% EC)',
+      description: 'Standalone benzoylurea IGR for caterpillar, fruit borer, and pod borer control in cotton, chilli, and vegetables.',
+      route: '/products/insecticide/novaluron-10-ec-runner',
+      image: 'assets/products/insecticide/novaluron-10-ec.png',
+      imageAlt: 'RUNNER Novaluron 10% EC IGR insecticide by Harishree Crop Science'
+    },
+    {
       name: 'Chlorantraniliprole 18.5% SC',
       description: 'Cora-5 for borer and larval pest management with systemic and contact action.',
       route: '/product/chlorantraniliprole-18-5-sc',

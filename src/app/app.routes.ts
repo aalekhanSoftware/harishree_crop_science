@@ -67,6 +67,9 @@ export const routes: Routes = [
   { path: 'products/insecticide/flufenzine-20-ec-yoddha', loadComponent: () => import('./pages/all-products/flufenzine-20-ec-yoddha/flufenzine-20-ec-yoddha.component').then(m => m.Flufenzine20EcYoddhaComponent) },
   { path: 'product/flufenzine-20-ec', loadComponent: () => import('./pages/all-products/flufenzine-20-ec-yoddha/flufenzine-20-ec-yoddha.component').then(m => m.Flufenzine20EcYoddhaComponent) },
   { path: 'product/yoddha', redirectTo: 'products/insecticide/flufenzine-20-ec-yoddha', pathMatch: 'full' },
+  { path: 'products/insecticide/novaluron-10-ec-runner', loadComponent: () => import('./pages/all-products/novaluron-10-ec-runner/novaluron-10-ec-runner.component').then(m => m.Novaluron10EcRunnerComponent) },
+  { path: 'product/novaluron-10-ec', loadComponent: () => import('./pages/all-products/novaluron-10-ec-runner/novaluron-10-ec-runner.component').then(m => m.Novaluron10EcRunnerComponent) },
+  // { path: 'product/runner', redirectTo: 'products/insecticide/novaluron-10-ec-runner', pathMatch: 'full' },
   { path: 'product/dr-supreme', redirectTo: 'product/abamectin-1-9-ec', pathMatch: 'full' },
   { path: 'product/round', redirectTo: 'product/glyphosate-41-sl', pathMatch: 'full' },
 ];

@@ -319,6 +319,13 @@ export class EmamectinBenzoate15Fipronil35ScPro5gComponent implements OnInit, On
 
   relatedProducts = [
     {
+      name: 'RUNNER (Novaluron 10% EC)',
+      description: 'Standalone benzoylurea IGR for caterpillar, fruit borer, and pod borer control in cotton, chilli, and vegetables.',
+      route: '/products/insecticide/novaluron-10-ec-runner',
+      image: 'assets/products/insecticide/novaluron-10-ec.png',
+      imageAlt: 'RUNNER Novaluron 10% EC IGR insecticide by Harishree Crop Science'
+    },
+    {
       name: 'Fipronil 2.92% EC (CHILLI H)',
       description: 'Premium phenylpyrazole broad-spectrum insecticide for stem borers, thrips, and soil pests with contact and stomach action.',
       route: '/products/insecticide/fipronil-2-92-ec',

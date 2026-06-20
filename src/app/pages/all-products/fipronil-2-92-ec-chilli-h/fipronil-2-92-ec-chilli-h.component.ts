@@ -472,6 +472,13 @@ export class Fipronil292EcChilliHComponent implements OnInit, OnDestroy {
 
   relatedProducts = [
     {
+      name: 'RUNNER (Novaluron 10% EC)',
+      description: 'Standalone benzoylurea IGR for caterpillar, fruit borer, and pod borer control in cotton, chilli, and vegetables.',
+      route: '/products/insecticide/novaluron-10-ec-runner',
+      image: 'assets/products/insecticide/novaluron-10-ec.png',
+      imageAlt: 'RUNNER Novaluron 10% EC IGR insecticide by Harishree Crop Science'
+    },
+    {
       name: 'Fipronil 40% + Imidacloprid 40% WG (FI 40)',
       description: 'Dual-action fipronil and imidacloprid combination for chewing and sucking pest control with contact and systemic action.',
       route: '/product/fipronil-40-imidacloprid-40-wg',

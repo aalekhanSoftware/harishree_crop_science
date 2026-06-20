@@ -1617,3 +1617,18 @@
     }
   }
 }
+
+// RUNNER (Novaluron 10% EC) — subtle IGR accent on hero band
+.product-page--runner {
+  .hero-section {
+    background: linear-gradient(135deg, rgba(34, 139, 34, 0.06) 0%, rgba(255, 255, 255, 0) 55%);
+  }
+
+  .product-brand-line {
+    color: #2d6a2d;
+  }
+
+  .pack-card--featured {
+    border-color: #2d6a2d;
+  }
+}
