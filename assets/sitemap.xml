@@ -106,4 +106,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
+
+  <!-- RUNNER Product -->
+  <url>
+    <loc>https://harishreecropscience.com/products/insecticide/novaluron-10-ec-runner</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
 </urlset> 
