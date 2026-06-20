@@ -64,6 +64,9 @@ export const routes: Routes = [
   // { path: 'products/insecticide/imidacloprid-70-wg-extra-mida-70', loadComponent: () => import('./pages/all-products/imidacloprid-70-wg-extra-mida-70/imidacloprid-70-wg-extra-mida-70.component').then(m => m.Imidacloprid70WgExtraMida70Component) },
   { path: 'product/imidacloprid-70-wg', loadComponent: () => import('./pages/all-products/imidacloprid-70-wg-extra-mida-70/imidacloprid-70-wg-extra-mida-70.component').then(m => m.Imidacloprid70WgExtraMida70Component) },
   // { path: 'product/extra-mida-70', redirectTo: 'products/insecticide/imidacloprid-70-wg-extra-mida-70', pathMatch: 'full' },
+  { path: 'products/insecticide/flufenzine-20-ec-yoddha', loadComponent: () => import('./pages/all-products/flufenzine-20-ec-yoddha/flufenzine-20-ec-yoddha.component').then(m => m.Flufenzine20EcYoddhaComponent) },
+  { path: 'product/flufenzine-20-ec', loadComponent: () => import('./pages/all-products/flufenzine-20-ec-yoddha/flufenzine-20-ec-yoddha.component').then(m => m.Flufenzine20EcYoddhaComponent) },
+  { path: 'product/yoddha', redirectTo: 'products/insecticide/flufenzine-20-ec-yoddha', pathMatch: 'full' },
   { path: 'product/dr-supreme', redirectTo: 'product/abamectin-1-9-ec', pathMatch: 'full' },
   { path: 'product/round', redirectTo: 'product/glyphosate-41-sl', pathMatch: 'full' },
 ];

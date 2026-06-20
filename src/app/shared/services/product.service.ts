@@ -204,8 +204,9 @@ export class ProductService {
           },
           { name: 'Yoddha',
             image: 'assets/products/insecticide/flufenzine-20-ec.jpg',
-            description: 'Flufenzin 20% SC insecticide/acaricide',
-            fullDescription: 'Yoddha (Flufenzin 20% SC) is a specialized insecticide/acaricide designed to control stubborn mite and sucking pest populations. The stable suspension concentrate ensures even distribution and strong persistence, helping maintain clean canopies and healthier, high-yielding crops.'
+            description: 'Flufenzine 20% EC miticide/acaricide',
+            fullDescription: 'YODDHA (Flufenzine 20% EC) is Harishree Crop Science\'s premium miticide and acaricide for red spider mites, yellow mites, and broad mites on chilli, cotton, brinjal, tomato, vegetables, and horticulture crops. Field guidance: 25 ml per pump when used at early mite infestation as per label and local advisory.',
+            url: 'products/insecticide/flufenzine-20-ec-yoddha'
           },
           { name: 'Hil Thene', 
             image: 'assets/products/HILTHENE.png', 

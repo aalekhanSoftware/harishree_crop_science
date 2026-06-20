@@ -1,0 +1,1003 @@
+<main class="product-page product-page--detail product-page--yoddha" itemscope>
+  <nav class="container pt-3" aria-label="Breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+      <li class="breadcrumb-item"><a routerLink="/products">Products</a></li>
+      <li class="breadcrumb-item"><a routerLink="/products">Insecticides</a></li>
+      <li class="breadcrumb-item active" aria-current="page">YODDHA</li>
+    </ol>
+  </nav>
+
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <p class="product-brand-line" data-aos="fade-right">{{ brandName }}</p>
+          <h1 class="product-title" data-aos="fade-right" data-aos-delay="40">
+            {{ productTitle }}
+          </h1>
+          <p class="product-tagline" data-aos="fade-right" data-aos-delay="80">
+            EC &middot; Miticide/Acaricide &middot; Contact action &middot; Mite growth regulation
+          </p>
+          <div class="product-description" data-aos="fade-right" data-aos-delay="120">
+            <p>
+              <strong>{{ productTitle }}</strong> (marketed as <strong>YODDHA</strong>) is a premium EC miticide and
+              acaricide for reliable control of red spider mites, yellow mites, two-spotted spider mites, and broad mites.
+              The emulsifiable concentrate formulation delivers contact activity and mite growth regulation on chilli,
+              cotton, brinjal, tomato, okra, cucurbits, vegetables, fruits, and horticulture crops.
+            </p>
+            <p class="small text-muted mb-2" lang="hi">
+              योद्धा फ्लुफेंज़ीन 20% EC कीटनाशक — लेबल अनुसार 25 मिली प्रति पंप खुराक और समय फॉलो करें।
+            </p>
+            <div class="usps" data-aos="fade-right" data-aos-delay="180">
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> 25 ml/pump</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Red spider mite control</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Yellow mite control</span>
+              <span class="usp-tag"><i class="fas fa-check-circle"></i> Long residual activity</span>
+            </div>
+            <div class="cta-actions mt-3" role="group" aria-label="Hero actions">
+              <a routerLink="/contact-us" class="cta-button">Enquire now</a>
+              <a routerLink="/products" class="cta-button cta-button--outline">All products</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <div class="product-image-container" data-aos="zoom-in">
+            <div class="product-image-inner">
+              <img
+                [src]="productImagePath"
+                alt="YODDHA FLUFENZINE 20% EC Insecticide"
+                title="YODDHA FLUFENZINE 20% EC"
+                class="product-image"
+                width="400"
+                height="400"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="benefits-section" aria-labelledby="yoddha-highlights-heading">
+    <div class="container">
+      <h2 id="yoddha-highlights-heading" class="section-title" data-aos="fade-up">Quick highlights</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        At-a-glance reasons growers reach for <strong>YODDHA</strong> (<strong>{{ productTitle }}</strong>).
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let h of quickHighlights; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="h.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ h.title }}</h3>
+              <p>{{ h.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-pack-section" aria-labelledby="yoddha-pack-heading">
+    <div class="container">
+      <h2 id="yoddha-pack-heading" class="section-title text-center" data-aos="fade-up">Pack sizes</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        Authentic <strong>{{ productTitle }}</strong> (YODDHA) packed securely for every farming need.
+        Prices are shown in schema only; enquire for dealer availability.
+      </p>
+      <div class="pack-grid" data-aos="fade-up" data-aos-delay="100">
+        <article *ngFor="let pack of packSizes" class="pack-card" [class.pack-card--featured]="pack.featured">
+          <h3 class="pack-card__volume">{{ pack.volume }}</h3>
+          <p class="pack-card__hint">Harishree Quality &middot; dealer support</p>
+          <a routerLink="/contact-us" class="pack-card__cta">Enquire now</a>
+        </article>
+      </div>
+      <p class="dose-callout text-center" data-aos="fade-up">
+        <strong>Recommended dose:</strong> 25 ml per pump (15-litre water; confirm on label and crop advisory).
+      </p>
+    </div>
+  </section>
+
+  <section class="benefits-section" aria-labelledby="yoddha-why-heading">
+    <div class="container">
+      <h2 id="yoddha-why-heading" class="section-title" data-aos="fade-up">Why choose YODDHA</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        What sets <strong>YODDHA</strong> apart as a premium Flufenzine 20% EC miticide for Indian agriculture.
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let w of whyChoose; let i = index" class="col-md-6 col-lg-3" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="w.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ w.title }}</h3>
+              <p>{{ w.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits-section" aria-labelledby="yoddha-benefits-heading">
+    <div class="container">
+      <h2 id="yoddha-benefits-heading" class="section-title" data-aos="fade-up">Key benefits</h2>
+      <p class="section-subtitle" data-aos="fade-up" data-aos-delay="40">
+        Why growers trust <strong>YODDHA</strong> for dependable mite management.
+      </p>
+      <div class="row g-4">
+        <div *ngFor="let b of keyBenefits; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="50 * i">
+          <article class="product-benefit-card">
+            <span class="product-benefit-card__icon" aria-hidden="true"><i [class]="b.icon"></i></span>
+            <div>
+              <h3 class="h5">{{ b.title }}</h3>
+              <p>{{ b.description }}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-what-is-heading">
+    <div class="container">
+      <h2 id="yoddha-what-is-heading" class="section-title" data-aos="fade-up">
+        What is FLUFENZINE 20% EC?
+      </h2>
+      <article class="product-highlight-card product-snippet-answer" data-aos="fade-up" data-aos-delay="60">
+        <p>{{ featuredSnippetAnswer }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="mode-of-action-section product-moa" aria-labelledby="yoddha-moa-heading">
+    <div class="container">
+      <h2 id="yoddha-moa-heading" class="section-title text-center" data-aos="fade-up">How does FLUFENZINE 20% EC work?</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Contact acaricidal activity and mite growth regulation — <strong>Flufenzine</strong> disrupts mite feeding, development, and reproductive cycles on treated foliage.
+      </p>
+      <div class="product-moa__layout row justify-content-center mt-2 mt-lg-4">
+        <div class="col-12 col-xl-10" data-aos="fade-up">
+          <ol class="product-moa__steps list-unstyled mb-0" role="list">
+            <li *ngFor="let step of modeOfAction; let i = index" class="product-moa__step">
+              <div class="product-moa__step-num" aria-hidden="true">{{ i + 1 }}</div>
+              <div class="product-moa__step-body">
+                <h3 class="product-moa__step-title">{{ step.title }}</h3>
+                <p class="product-moa__step-text">{{ step.description }}</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pests-section" id="target-pests" aria-labelledby="yoddha-pests-heading">
+    <div class="container">
+      <h2 id="yoddha-pests-heading" class="section-title" data-aos="fade-up">Target pests</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="50">
+        <strong>YODDHA</strong> delivers strong contact and growth-regulation activity against major mite species when applied at early infestation with full leaf underside coverage.
+      </p>
+      <div class="pest-cards">
+        <div class="row">
+          <div *ngFor="let p of targetPests; let i = index" class="col-md-6 col-lg-4">
+            <article class="pest-card" data-aos="flip-up" [attr.data-aos-delay]="80 * i">
+              <div class="pest-icon"><i class="fas fa-bug"></i></div>
+              <h3>{{ p.name }}</h3>
+              <p>{{ p.description }}</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="crops-section product-applications" id="applications" aria-labelledby="yoddha-crops-heading">
+    <div class="product-applications__band">
+      <div class="container">
+        <div class="row align-items-end mb-2">
+          <div class="col-lg-8">
+            <h2 id="yoddha-crops-heading" class="section-title product-applications__title" data-aos="fade-up">Recommended crops</h2>
+            <p class="section-subtitle product-applications__lead" data-aos="fade-up" data-aos-delay="40">
+              <strong>YODDHA</strong> is trusted across India for protecting chilli, cotton, brinjal, tomato, okra, cucurbits, vegetables, fruits, and horticulture crops from mite damage.
+            </p>
+          </div>
+        </div>
+        <ul class="product-applications__grid list-unstyled mb-0" role="list">
+          <li *ngFor="let app of applications; let i = index" class="product-applications__item" data-aos="fade-up" [attr.data-aos-delay]="40 * i">
+            <article class="product-app-tile">
+              <div class="product-app-tile__head" aria-hidden="true"></div>
+              <div class="product-app-tile__body">
+                <div class="product-app-tile__icon-wrap">
+                  <span class="product-app-tile__icon"><i [class]="app.icon"></i></span>
+                </div>
+                <h3 class="product-app-tile__title">{{ app.title }}</h3>
+                <p class="product-app-tile__text">{{ app.description }}</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="yoddha-crop-table-heading">
+    <div class="container">
+      <h2 id="yoddha-crop-table-heading" class="section-title" data-aos="fade-up">Crop-wise usage guide</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Practical <strong>YODDHA</strong> application guidance by crop. Always confirm with label and local advisory.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="YODDHA crop-wise usage table">
+              <thead>
+                <tr>
+                  <th scope="col">Crop</th>
+                  <th scope="col">Target pests</th>
+                  <th scope="col">Dose</th>
+                  <th scope="col">Best timing</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of cropWiseUsage">
+                  <td><strong>{{ row.crop }}</strong></td>
+                  <td>{{ row.pests }}</td>
+                  <td>{{ row.dose }}</td>
+                  <td>{{ row.timing }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="yoddha-pest-table-heading">
+    <div class="container">
+      <h2 id="yoddha-pest-table-heading" class="section-title" data-aos="fade-up">Pest-wise control guide</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>YODDHA</strong> performs against key mite species across labeled crops.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="YODDHA pest-wise control table">
+              <thead>
+                <tr>
+                  <th scope="col">Pest</th>
+                  <th scope="col">Crops</th>
+                  <th scope="col">Mode of action</th>
+                  <th scope="col">Expected efficacy</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of pestWiseControl">
+                  <td><strong>{{ row.pest }}</strong></td>
+                  <td>{{ row.crops }}</td>
+                  <td>{{ row.mode }}</td>
+                  <td>{{ row.efficacy }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" id="specifications" aria-labelledby="yoddha-specs-heading">
+    <div class="container">
+      <h2 id="yoddha-specs-heading" class="section-title" data-aos="fade-up">Technical specifications</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Snapshot for dealers and agronomists. Always pair with the printed label for final guidance.
+      </p>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="80">
+        <div class="col-lg-6 mb-4">
+          <article class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-flask specs-icon"></i>
+              <h3>Product information</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.productInfo" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <article class="specs-card">
+            <div class="specs-header">
+              <i class="fas fa-prescription-bottle specs-icon"></i>
+              <h3>Dose &amp; application</h3>
+            </div>
+            <div class="specs-content">
+              <div *ngFor="let row of technicalSpecs.packs" class="spec-item">
+                <span class="spec-label">{{ row.label }}:</span>
+                <span class="spec-value">{{ row.value }}</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="120">
+        <article class="product-official-specs__card">
+          <header class="product-official-specs__head">
+            <h3>YODDHA &mdash; full parameter table</h3>
+            <p>
+              Complete technical profile for <strong>{{ productTitle }}</strong> (YODDHA). Values support dealer
+              review and agronomic planning.
+            </p>
+          </header>
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="YODDHA Flufenzine 20% EC technical profile">
+              <thead>
+                <tr>
+                  <th scope="col">Parameter</th>
+                  <th scope="col">Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of officialProductDetails">
+                  <td>{{ row.label }}</td>
+                  <td>{{ row.value }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-uses-heading">
+    <div class="container">
+      <h2 id="yoddha-uses-heading" class="section-title" data-aos="fade-up">FLUFENZINE 20% EC uses</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Key agricultural applications of <strong>YODDHA</strong> across Indian farming systems.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Flufenzine application</h3>
+            <p>Foliar spray at 25 ml per pump in a 15-litre knapsack sprayer. Apply at early mite infestation or economic threshold with full canopy and underside coverage.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Flufenzine benefits</h3>
+            <p>Contact activity plus mite growth regulation disrupts feeding, moulting, and reproductive cycles for sustained suppression of red spider mites, yellow mites, and broad mites.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Crop protection solution</h3>
+            <p>Trusted EC miticide for chilli red spider mites, cotton mite outbreaks, brinjal yellow mites, and mixed mite complexes on vegetables and horticulture crops across India.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-dose-heading">
+    <div class="container">
+      <h2 id="yoddha-dose-heading" class="section-title" data-aos="fade-up">FLUFENZINE 20% EC dose</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Clear, field-ready guidance for using <strong>YODDHA</strong> effectively.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Recommended dose</h3>
+            <p><strong>25 ml per pump</strong> in a standard 15-litre knapsack sprayer. Confirm crop-wise rate on the label.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Mixing instructions</h3>
+            <p>Half-fill with water, add 25 ml YODDHA, top up, and agitate. The EC formulation emulsifies easily for uniform spray coverage on leaf surfaces.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Best spray timing</h3>
+            <p>Apply at early mite infestation or ETL during calm morning or evening hours with emphasis on leaf undersides where mites colonize.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-price-heading">
+    <div class="container">
+      <h2 id="yoddha-price-heading" class="section-title" data-aos="fade-up">FLUFENZINE 20% EC price</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>YODDHA</strong> is available in 250 ML, 500 ML, and 1 LTR packs through authorized
+          Harishree Crop Science dealers across India. Pricing varies by region and pack size — contact your nearest
+          dealer or Harishree directly for current rates and bulk availability.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-moa-long-heading">
+    <div class="container">
+      <h2 id="yoddha-moa-long-heading" class="section-title" data-aos="fade-up">FLUFENZINE 20% EC mode of action</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>Flufenzine</strong> in <strong>YODDHA</strong> delivers contact knockdown and mite growth regulation for comprehensive acaricidal control.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-6" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Contact activity on mites</h3>
+            <p>Flufenzine forms an even EC deposit on foliage. Mites contacting treated surfaces absorb the active ingredient, disrupting feeding and movement.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Mite growth regulation</h3>
+            <p>Flufenzine interferes with mite development pathways, affecting moulting and growth so nymphs fail to reach reproductive adulthood.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Reproductive cycle disruption</h3>
+            <p>By impacting egg viability and nymph survival, YODDHA breaks the mite reproductive cycle and prevents rapid population explosions during hot dry periods.</p>
+          </article>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Resistance management benefits</h3>
+            <p>Rotate YODDHA with miticides and insecticides from other mode-of-action groups across the season to reduce selection pressure on mite populations.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-chilli-heading">
+    <div class="container">
+      <h2 id="yoddha-chilli-heading" class="section-title" data-aos="fade-up">YODDHA for chilli</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          In chilli, <strong>YODDHA</strong> controls red spider mites and yellow mites that cause bronzing, leaf
+          distortion, and pod quality loss. Spray at early infestation with 25 ml per pump, ensuring coverage of
+          leaf undersides where mites feed. Timely application at vegetative and fruit-set stages protects foliage
+          colour, pod size, and marketable yield.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-cotton-heading">
+    <div class="container">
+      <h2 id="yoddha-cotton-heading" class="section-title" data-aos="fade-up">YODDHA for cotton</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>YODDHA</strong> fits cotton programs facing red spider mite pressure during square, flowering,
+          and boll development stages. Use <strong>25 ml per pump</strong> at early infestation with full canopy
+          spray and underside coverage. Long residual EC activity helps maintain cleaner foliage and healthier
+          plants throughout the season.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-vegetables-heading">
+    <div class="container">
+      <h2 id="yoddha-vegetables-heading" class="section-title" data-aos="fade-up">YODDHA for vegetables</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Across brinjal, tomato, okra, cucurbits, and mixed vegetable crops, <strong>YODDHA</strong> controls
+          red spider mites, yellow mites, and two-spotted spider mite outbreaks. Use 25 ml per pump at early
+          mite colonization or ETL with full canopy coverage. Integrate with scouting and rotation across MOA
+          groups for sustainable vegetable crop protection throughout the growing season.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-red-spider-heading">
+    <div class="container">
+      <h2 id="yoddha-red-spider-heading" class="section-title" data-aos="fade-up">YODDHA for red spider mite control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>YODDHA</strong> delivers dependable control of red spider mites (<em>Tetranychus</em> species)
+          on chilli, cotton, brinjal, tomato, and vegetable crops. Apply at economic threshold with 25 ml per pump
+          and thorough underside coverage. Contact activity plus growth regulation suppresses eggs, nymphs, and
+          adults for sustained mite population reduction between spray intervals.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-yellow-mite-heading">
+    <div class="container">
+      <h2 id="yoddha-yellow-mite-heading" class="section-title" data-aos="fade-up">FLUFENZINE 20% EC for yellow mite control</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>FLUFENZINE 20% EC</strong> in <strong>YODDHA</strong> provides strong activity against yellow mites
+          (<em>Polyphagotarsonemus latus</em>) on chilli and brinjal when sprayed early with emphasis on leaf
+          undersides. Timely application at first signs of leaf curling and chlorosis helps restore photosynthetic
+          capacity and supports healthier harvest quality.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-best-chilli-heading">
+    <div class="container">
+      <h2 id="yoddha-best-chilli-heading" class="section-title" data-aos="fade-up">Best miticide for chilli</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Growers across India choose <strong>YODDHA</strong> as a trusted <strong>miticide for chilli</strong>
+          programs targeting red spider mites and yellow mites. Apply at ETL with 25 ml per pump, rotate with other
+          MOA classes, and maintain regular scouting for early detection — a proven approach for cleaner chilli
+          foliage and better pod quality at harvest.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-best-red-spider-heading">
+    <div class="container">
+      <h2 id="yoddha-best-red-spider-heading" class="section-title" data-aos="fade-up">Best red spider mite control solution</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          For fields facing persistent red spider mite pressure, <strong>YODDHA</strong> combines dedicated
+          acaricidal chemistry with long residual EC protection. Unlike general insecticides with limited mite
+          activity, Flufenzine 20% EC targets multiple mite life stages when applied at early infestation with
+          25 ml per pump and full underside spray coverage.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-horticulture-heading">
+    <div class="container">
+      <h2 id="yoddha-horticulture-heading" class="section-title" data-aos="fade-up">Agricultural miticide for horticulture crops</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>YODDHA</strong> is a reliable <strong>agricultural miticide for horticulture crops</strong>
+          including nursery stock, floriculture, fruits, and high-value produce facing spider mite and broad mite
+          outbreaks. The EC formulation mixes cleanly, spreads evenly, and maintains acaricidal activity on treated
+          foliage — supporting clean, mite-free leaves growers and buyers expect.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-results-heading">
+    <div class="container">
+      <h2 id="yoddha-results-heading" class="section-title" data-aos="fade-up">Results &amp; performance</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Field-level outcomes growers commonly report when dose, coverage, and mite stage are handled well.
+      </p>
+      <div class="row mt-4">
+        <div *ngFor="let ph of performanceHighlights; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="70 * i">
+          <article class="product-highlight-card">
+            <h3 class="h6">{{ ph.label }}</h3>
+            <p>{{ ph.value }}</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="usage-safety-section" id="safety" aria-labelledby="yoddha-safety-heading">
+    <div class="container">
+      <h2 id="yoddha-safety-heading" class="section-title text-center" data-aos="fade-up">Safety guidelines</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        PPE, storage, disposal, and first aid guidance for safe use of <strong>YODDHA</strong>.
+      </p>
+      <div class="usage-safety-shell mt-4">
+        <div class="usage-safety-shell__intro" data-aos="fade-up" data-aos-delay="60">
+          <span class="usage-pill"><i class="fas fa-spray-can"></i> 25 ml accurate dose</span>
+          <span class="usage-pill"><i class="fas fa-user-shield"></i> PPE &amp; environment</span>
+        </div>
+
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <article class="usage-safety-panel usage-safety-panel--usage">
+              <header class="usage-safety-panel__head">
+                <h3>Usage best practices</h3>
+                <p>Mix clean, spray calm, scout again after a few days.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i < 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="140">
+            <article class="usage-safety-panel usage-safety-panel--safety">
+              <header class="usage-safety-panel__head">
+                <h3>Storage, disposal &amp; first aid</h3>
+                <p>Respect the label hazard panel and local disposal rules.</p>
+              </header>
+              <ul class="usage-safety-list list-unstyled mb-0" role="list">
+                <ng-container *ngFor="let s of safetyItems; let i = index">
+                  <li *ngIf="i >= 3" class="usage-safety-list__item">
+                    <span class="usage-safety-list__num" aria-hidden="true">{{ i + 1 }}</span>
+                    <div class="usage-safety-list__content">
+                      <h4>{{ s.title }}</h4>
+                      <p>{{ s.text }}</p>
+                    </div>
+                  </li>
+                </ng-container>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-compatibility-heading">
+    <div class="container">
+      <h2 id="yoddha-compatibility-heading" class="section-title" data-aos="fade-up">Compatibility &amp; tank mix</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          <strong>YODDHA</strong> is generally compatible with commonly used insecticides and fungicides when
+          tank-mixed for integrated crop protection programs. Always perform a <strong>jar test</strong> before
+          mixing to confirm physical compatibility. Avoid alkaline mixes that may degrade active ingredients.
+          Consult your local Harishree dealer or agronomist for crop-specific tank-mix recommendations.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-resistance-heading">
+    <div class="container">
+      <h2 id="yoddha-resistance-heading" class="section-title" data-aos="fade-up">Resistance management</h2>
+      <article class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Dedicated acaricidal chemistry in <strong>YODDHA</strong> supports focused mite management when rotated
+          with other mode-of-action groups. For sustainable mite control, rotate YODDHA with contact miticides,
+          IGRs, and other acaricide classes across the season and avoid repeated applications of the same chemistry.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="yoddha-compare-traditional-heading">
+    <div class="container">
+      <h2 id="yoddha-compare-traditional-heading" class="section-title" data-aos="fade-up">YODDHA vs conventional miticides</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Semantic comparison showing why <strong>YODDHA</strong> outperforms many conventional mite control sprays.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="YODDHA vs conventional miticides comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col">YODDHA</th>
+                  <th scope="col">Conventional miticides</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonTraditional">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.yoddha }}</td>
+                  <td>{{ row.traditional }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="yoddha-compare-flufenzine-heading">
+    <div class="container">
+      <h2 id="yoddha-compare-flufenzine-heading" class="section-title" data-aos="fade-up">Flufenzine vs traditional mite control</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Why <strong>YODDHA</strong> Flufenzine 20% EC delivers broader mite protection than traditional acaricide approaches.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="Flufenzine vs traditional mite control comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">YODDHA (Flufenzine 20% EC)</th>
+                  <th scope="col">Traditional mite control</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonFlufenzineTraditional">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.yoddha }}</td>
+                  <td>{{ row.traditional }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="yoddha-compare-residual-heading">
+    <div class="container">
+      <h2 id="yoddha-compare-residual-heading" class="section-title" data-aos="fade-up">Long residual miticides vs contact miticides</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>YODDHA</strong> long residual EC protection compares with contact-only miticide options.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="Long residual miticides vs contact miticides comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">YODDHA (long residual miticide)</th>
+                  <th scope="col">Contact miticides</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonResidual">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.yoddha }}</td>
+                  <td>{{ row.contact }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-specs-section" aria-labelledby="yoddha-compare-ec-heading">
+    <div class="container">
+      <h2 id="yoddha-compare-ec-heading" class="section-title" data-aos="fade-up">EC formulation benefits</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        How <strong>YODDHA</strong> EC emulsifiable concentrate technology compares with other formulation types.
+      </p>
+      <div class="product-official-specs mt-4" data-aos="fade-up" data-aos-delay="80">
+        <article class="product-official-specs__card">
+          <div class="product-official-specs__table-wrap">
+            <table class="product-official-specs__table" aria-label="EC formulation benefits comparison">
+              <thead>
+                <tr>
+                  <th scope="col">Comparison point</th>
+                  <th scope="col">YODDHA (EC formulation)</th>
+                  <th scope="col">Other formulation types</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of comparisonEcFormulation">
+                  <td><strong>{{ row.feature }}</strong></td>
+                  <td>{{ row.yoddha }}</td>
+                  <td>{{ row.other }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-expert-heading">
+    <div class="container">
+      <h2 id="yoddha-expert-heading" class="section-title" data-aos="fade-up">Expert recommendation</h2>
+      <aside class="product-highlight-card" data-aos="fade-up" data-aos-delay="60">
+        <p>
+          Agricultural advisors recommend <strong>YODDHA</strong> when fields show mite pressure — particularly
+          red spider mites, yellow mites, or mixed mite complexes on chilli, cotton, and vegetables. Apply at
+          early infestation or economic threshold with 25 ml per pump and thorough leaf underside coverage for
+          best results. Integrate YODDHA into a broader IPM program with scouting, ETL-based decisions, and
+          rotation across MOA groups for long-term sustainable mite management.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="testimonials-section" aria-labelledby="yoddha-testimonials-heading">
+    <div class="container">
+      <h2 id="yoddha-testimonials-heading" class="section-title" data-aos="fade-up">What growers say</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Feedback from farmers using <strong>YODDHA</strong> across chilli, cotton, brinjal, tomato, and vegetable crops.
+      </p>
+      <div class="row">
+        <div *ngFor="let t of testimonials; let i = index" class="col-md-6 col-lg-4" data-aos="fade-up" [attr.data-aos-delay]="60 * i">
+          <article class="testimonial-card">
+            <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">{{ t.text }}</p>
+            <div class="testimonial-stars" [attr.aria-label]="t.rating + ' out of 5 stars'">
+              <i *ngFor="let star of [1, 2, 3, 4, 5]" class="fas fa-star" [class.star-filled]="star <= t.rating"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" aria-labelledby="yoddha-faq-heading">
+    <div class="container">
+      <h2 id="yoddha-faq-heading" class="section-title" data-aos="fade-up">Frequently asked questions</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Practical answers about <strong>{{ productTitle }}</strong>, <strong>YODDHA</strong>, dose, uses, and safe field use.
+      </p>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="accordion faq-accordion" id="yoddhaFaqAccordion" data-aos="fade-up" data-aos-delay="90">
+            <ng-container *ngFor="let faq of faqs.slice(0, 6); let i = index">
+              <div class="accordion-item">
+                <h3 class="accordion-header" [id]="'yoddha-faq-heading-' + i">
+                  <button
+                    class="accordion-button"
+                    [class.collapsed]="i !== 0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#yoddha-faq-collapse-' + i"
+                    [attr.aria-expanded]="i === 0 ? 'true' : 'false'"
+                    [attr.aria-controls]="'yoddha-faq-collapse-' + i"
+                  >
+                    {{ faq.question }}
+                  </button>
+                </h3>
+                <div
+                  [id]="'yoddha-faq-collapse-' + i"
+                  class="accordion-collapse collapse"
+                  [class.show]="i === 0"
+                  [attr.aria-labelledby]="'yoddha-faq-heading-' + i"
+                  data-bs-parent="#yoddhaFaqAccordion"
+                >
+                  <div class="accordion-body">
+                    <p [innerHTML]="faq.answer"></p>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-trust-heading">
+    <div class="container">
+      <h2 id="yoddha-trust-heading" class="section-title" data-aos="fade-up">Trust &amp; quality assurance</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card">
+            <h3 class="h6">Product quality</h3>
+            <p>YODDHA is manufactured under strict quality control with batch-to-batch consistency growers depend on.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card">
+            <h3 class="h6">Manufacturing standards</h3>
+            <p>Harishree Crop Science follows rigorous formulation and packaging standards for reliable YODDHA field performance.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card">
+            <h3 class="h6">Farmer confidence</h3>
+            <p>YODDHA is trusted by growers across Gujarat, Maharashtra, Andhra Pradesh, and other major agricultural regions in India.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card">
+            <h3 class="h6">Crop protection commitment</h3>
+            <p>Harishree is committed to delivering effective, farmer-friendly YODDHA mite control solutions for sustainable agriculture.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section product-results" aria-labelledby="yoddha-resources-heading">
+    <div class="container">
+      <h2 id="yoddha-resources-heading" class="section-title" data-aos="fade-up">Downloadable resources</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Product documentation — contact Harishree for the latest materials.
+      </p>
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Product brochure</h3>
+            <p>Coming soon — enquire for YODDHA product brochure and technical details.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request brochure</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="70">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Product label</h3>
+            <p>Coming soon — enquire for the official YODDHA product label and usage directions.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request label</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="140">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Technical sheet</h3>
+            <p>Coming soon — enquire for crop-wise usage technical sheet and mixing guidance.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request technical sheet</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="210">
+          <article class="product-highlight-card text-center">
+            <h3 class="h6">Safety data sheet</h3>
+            <p>Coming soon — enquire for safety data sheet and handling guidelines.</p>
+            <a routerLink="/contact-us" class="pack-card__cta">Request safety sheet</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pests-section" aria-labelledby="yoddha-related-heading">
+    <div class="container">
+      <h2 id="yoddha-related-heading" class="section-title" data-aos="fade-up">Related products</h2>
+      <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="40">
+        Explore more crop protection insecticides from <strong>Harishree Crop Science</strong> to build a strong IPM program.
+      </p>
+      <nav class="pest-cards product-related-grid" aria-label="Related insecticide products">
+        <div class="row">
+          <div *ngFor="let rp of relatedProducts; let i = index" class="col-md-6 col-lg-3">
+            <article class="product-related-card" data-aos="fade-up" [attr.data-aos-delay]="80 * i">
+              <a [routerLink]="rp.route" class="product-related-card__link">
+                <div class="product-related-card__image">
+                  <img
+                    [src]="rp.image"
+                    [alt]="rp.imageAlt"
+                    width="320"
+                    height="200"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product-related-card__body">
+                  <h3>{{ rp.name }}</h3>
+                  <p>{{ rp.description }}</p>
+                  <span class="pack-card__cta">View product</span>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section class="cta-section product-detail-cta" aria-labelledby="yoddhaCtaTitle">
+    <div class="container">
+      <div class="cta-container" data-aos="zoom-in">
+        <h2 id="yoddhaCtaTitle" class="cta-title">Get reliable mite control with YODDHA</h2>
+        <p class="cta-text">
+          Contact Harishree Crop Science for dealer stock, crop-wise usage notes, and mixing guidance for
+          <strong>YODDHA</strong> (<strong>{{ productTitle }}</strong>).
+        </p>
+        <div class="cta-actions" role="group" aria-label="Contact and navigation">
+          <a routerLink="/contact-us" class="cta-button">Contact Harishree</a>
+          <a routerLink="/products" class="cta-button cta-button--outline">All products</a>
+          <a routerLink="/about-us" class="cta-button cta-button--outline">About us</a>
+          <a routerLink="/quality-assurance" class="cta-button cta-button--outline">Quality assurance</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

@@ -98,4 +98,12 @@
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
+
+  <!-- YODDHA Product -->
+  <url>
+    <loc>https://harishreecropscience.com/products/insecticide/flufenzine-20-ec-yoddha</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
 </urlset> 
