@@ -519,8 +519,14 @@ export class ProductService {
       name: 'PGR',
       products: [
         { name: 'Black Gold', image: 'assets/products/BLACK GOLD.png', description: 'Premium growth regulator' },
-        { name: 'Husi', image: 'assets/products/gibberellic-acid-0-001-l.png', description: 'Advanced plant growth' },
-        { name: 'H Pro', image: 'assets/products/H PRO.png', description: 'Professional PGR solution' },
+        {
+          name: 'Husi',
+          image: 'assets/products/gibberellic-acid-0-001-l.png',
+          description: 'Gibberellic Acid 0.001% L GA3 plant growth regulator',
+          fullDescription: 'Husi (Gibberellic Acid 0.001% L) is a premium GA3 liquid plant growth regulator that promotes faster plant growth, better flowering, improved fruit setting, larger fruit size, and uniform crop development while reducing flower and fruit drop. It stimulates cell elongation and division to enhance both vegetative and reproductive growth, lifting marketable yield and produce quality across fruits, vegetables, cereals, pulses, and cash crops.',
+          url: 'products/gibberellic-acid-0-001-l-husi'
+        },
+        { name: 'H Pro', image: 'assets/products/paclobutrazol-23-sc.png', description: 'Professional PGR solution' },
         { name: 'HC-Gold', image: 'assets/products/triacontanol-ew-0-1-min.png', description: 'Superior growth control' },
         { name: 'Dhani Wet', image: 'assets/products/DHANI WET.png', description: 'Enhanced absorption' },        
         { name: 'Black Diamond', image: 'assets/products/BLACK DIAMOND.png', description: 'Premium growth regulator' },
