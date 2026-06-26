@@ -1164,6 +1164,14 @@
     color: var(--text);
   }
 
+  &__price {
+    font-size: var(--text-base);
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 0.35rem;
+    line-height: 1.3;
+  }
+
   &__hint {
     font-size: var(--text-xs);
     color: var(--text-muted, #5c6c5c);

@@ -140,7 +140,7 @@ export class ProductSchemaService {
         {
           '@type': 'ListItem',
           position: 3,
-          name: 'Insecticides',
+          name: data.breadcrumbCategory ?? 'Insecticides',
           item: `${data.baseUrl}/products`
         },
         {

@@ -266,7 +266,13 @@ export class ProductService {
     {
       name: 'Fungicide',
       products: [
-        { name: 'X-Pro', image: 'assets/products/X-PRO.png', description: 'Professional fungus control' },
+        {
+          name: 'X-Pro',
+          image: 'assets/products/X-PRO.png',
+          description: 'Azoxystrobin 16.7% + Tricyclazole 33.3% SC dual-action fungicide',
+          fullDescription: 'X PRO (Azoxystrobin 16.7% + Tricyclazole 33.3% SC) is a premium dual-action systemic fungicide for rice blast control, sheath blight, and brown spot in paddy. Recommended dose: 20 ml per pump.',
+          url: 'products/x-pro-azoxystrobin-16-7-tricyclazole-33-3-sc'
+        },
         {
           name: 'Confer Plus',
           image: 'assets/products/fungicide/confer-plus.jpg',
@@ -274,13 +280,20 @@ export class ProductService {
           fullDescription: 'Confer Plus (Hexaconazole 5% SC) is a premium, broad-spectrum systemic fungicide engineered for modern farming. Its advanced triazole chemistry moves rapidly within plant tissues to stop fungal growth at multiple stages, delivering fast-acting, long-lasting protection. Ideal for crops such as cereals, fruits and vegetables, it effectively controls diseases like powdery mildew, sheath blight and leaf spots. The optimized suspension concentrate ensures superior leaf coverage, rainfastness and excellent tank-mix compatibility. Designed for professional use, Confer Plus supports higher yield quality with reliable performance across climates and application methods while maintaining a strong safety profile when used as directed.'
         },
         { name: 'Tej-65', image: 'assets/products/TEJ 65.png', description: 'Rapid fungicide action' },
-        { name: 'Chemistry', image: 'assets/products/CHEMISTRY.jpg', description: 'Scientific fungal control' },
+        {
+          name: 'Chemistry',
+          image: 'assets/products/insecticide/azoxystrobin-11-tebuconazole-18-3-sc.jpg',
+          description: 'Azoxystrobin + Tebuconazole dual-action fungicide',
+          fullDescription:
+            'Chemistry (Azoxystrobin 11% + Tebuconazole 18.3% w/w SC) is a premium broad-spectrum systemic fungicide by Harishree Crop Science for preventive and curative fungal disease control. Recommended dose: 20 ml per pump.',
+          url: 'products/chemistry-azoxystrobin-11-tebuconazole-18-3-sc'
+        },
         {
           name: 'N-Tracol',
-          image: 'assets/products/fungicide/n-tracol.jpg',
+          image: 'assets/products/fungicide/propineb-70-wp.jpg',
           description: 'Propineb 70% WP contact fungicide',
           fullDescription: 'N-Tracol (Propineb 70% WP) is a premium contact fungicide formulated for exceptional disease control across a wide range of crops. This professional-grade solution creates a powerful protective barrier that prevents fungal spore germination and inhibits mycelial growth. With its multi-site mode of action, N-Tracol effectively manages resistance development while providing outstanding control of downy mildew, early and late blights, and various leaf spots. The advanced wettable powder formulation ensures superior coverage, excellent rainfastness, and optimal adhesion to plant surfaces, delivering consistent protection even under challenging weather conditions. Trusted by commercial growers, N-Tracol safeguards crop quality and yield potential with its reliable performance and excellent crop safety profile.',
-          url: 'product/n-tracol'
+          url: 'products/propineb-70-wp-n-tracol'
         },
         {
           name: 'Sulf Green',
@@ -289,54 +302,127 @@ export class ProductService {
           fullDescription: 'Sulf Green (Sulphur 80% WDG) is a versatile, high-performance fungicide and acaricide formulated for modern agriculture. This water-dispersible granule delivers exceptional control of powdery mildew, rust diseases, and mite infestations across fruits, vegetables, and field crops. The premium-grade elemental sulphur provides both preventive and curative action through multiple biochemical pathways, effectively disrupting fungal respiration while maintaining excellent crop safety. Sulf Green\'s advanced formulation technology ensures quick dispersion, uniform coverage, and enhanced adhesion to plant surfaces, resulting in superior disease control even under variable weather conditions. With its eco-friendly profile and minimal residue concerns, Sulf Green integrates seamlessly into sustainable pest management programs, supporting healthier crops and optimized yields for professional growers.',
           url: 'product/sulf-green'
         },
-        { name: 'Saf-63', image: 'assets/products/SAF-63.png', description: 'Safe and effective' },
+        {
+          name: 'Saf-63',
+          image: 'assets/products/carbendazim-12-mancozeb-63-wp.png',
+          description: 'Carbendazim 12% + Mancozeb 63% WP dual-action fungicide',
+          fullDescription: 'Saf 63 (Carbendazim 12% + Mancozeb 63% WP) is a premium dual-action fungicide by Harishree Crop Science that pairs systemic curative Carbendazim with multi-site contact Mancozeb. This combination delivers broad-spectrum preventive and curative control of blast, leaf spot, rust, anthracnose, fruit rot, powdery mildew, alternaria, and seedling diseases across paddy, groundnut, soybean, tomato, chilli, grapes, mango, and cotton. The systemic plus contact action protects the plant both inside and out, supports resistance management, and provides longer residual activity. Recommended dose: 20 gm per pump.',
+          url: 'products/carbendazim-12-mancozeb-63-wp-saf-63'
+        },
         {
           name: 'Milet Gold',
-          image: 'assets/products/fungicide/milet-gold.jpg',
+          image: 'assets/products/fungicide/metalaxyl-8-mancozeb-64-wp.jpg',
           description: 'Metalaxyl 8% + Mancozeb 64% WP dual-action',
-          fullDescription: 'Milet Gold combines Metalaxyl 8% with Mancozeb 64% WP to deliver a powerful dual-action shield against both systemic and contact fungal pathogens. The Metalaxyl component targets oomycete diseases from within the plant, while Mancozeb forms a protective barrier on the leaf surface for extended coverage. This synergy provides dependable control of late blight, downy mildew and seedling diseases in potatoes, grapes, vegetables and oilseeds. With excellent dispersibility, uniform coverage and strong resistance-management value, Milet Gold is a professional choice for preventive and early curative programs that protect yield and quality.'
+          fullDescription: 'Milet Gold combines Metalaxyl 8% with Mancozeb 64% WP to deliver a powerful dual-action shield against both systemic and contact fungal pathogens. The Metalaxyl component targets oomycete diseases from within the plant, while Mancozeb forms a protective barrier on the leaf surface for extended coverage. This synergy provides dependable control of late blight, downy mildew and seedling diseases in potatoes, grapes, vegetables and oilseeds. With excellent dispersibility, uniform coverage and strong resistance-management value, Milet Gold is a professional choice for preventive and early curative programs that protect yield and quality.',
+          url: 'products/metalaxyl-8-mancozeb-64-wp-milet-gold'
         },
-        { name: 'HTM', image: 'assets/products/HTM.png', description: 'Advanced fungicide formula' },
-        { name: 'King', image: 'assets/products/KING_2.png', description: 'Superior fungal control' },
-        { name: 'Captop', image: 'assets/products/CAPTOP.jpg', description: 'Complete fungal protection' },
+        {
+          name: 'HTM',
+          image: 'assets/products/thiophanate-methyl-70-wp.png',
+          description: 'Thiophanate Methyl 70% WP systemic fungicide',
+          fullDescription: 'HTM (Thiophanate Methyl 70% WP) is a premium broad-spectrum systemic fungicide by Harishree Crop Science. Its benzimidazole chemistry is absorbed and translocated within the plant to deliver both curative and preventive control of anthracnose, powdery mildew, leaf spot, fruit rot, scab, wilt, stem rot, and die back across mango, chilli, tomato, grapes, apple, pomegranate, cucumber, and brinjal. The wettable powder mixes easily and spreads uniformly for consistent coverage and long-lasting protection. Recommended dose: 20 gm per pump.',
+          url: 'products/thiophanate-methyl-70-wp-htm'
+        },
+        {
+          name: 'King',
+          image: 'assets/products/azoxystrobin-4-8-w-w-chlorothalonil-40-0-w-w-sc.png',
+          description: 'Azoxystrobin 4.8% + Chlorothalonil 40.0% SC dual-action fungicide',
+          fullDescription:
+            'King (Azoxystrobin 4.8% w/w + Chlorothalonil 40.0% w/w SC) is a premium broad-spectrum systemic plus contact fungicide by Harishree Crop Science for preventive and curative control of early blight, late blight, leaf spot, rust, anthracnose, and downy mildew. Recommended dose: 30 ml per pump.',
+          url: 'products/azoxystrobin-4-8-chlorothalonil-40-sc-king'
+        },
+        {
+          name: 'Captop',
+          image: 'assets/products/fungicide/azoxystrobin-18-2-difenoconazole-11-4-sc.jpg',
+          description: 'Azoxystrobin 18.2% + Difenoconazole 11.4% SC dual-action fungicide',
+          fullDescription:
+            'Captop (Azoxystrobin 18.2% w/w + Difenoconazole 11.4% w/w SC) is a premium broad-spectrum systemic fungicide by Harishree Crop Science for preventive and curative control of powdery mildew, anthracnose, rust, leaf spot, fruit rot, and sheath blight. Recommended dose: 20 ml per pump.',
+          url: 'products/captop-azoxystrobin-18-2-difenoconazole-11-4-sc'
+        },
         {
           name: 'Tebuja',
-          image: 'assets/products/fungicide/tebuja.jpg',
+          image: 'assets/products/fungicide/tebuconazole-25-9--ec.jpg',
           description: 'Tebuconazole 25.9% EC systemic fungicide',
           fullDescription: 'Tebuja (Tebuconazole 25.9% EC) is a premium systemic fungicide engineered for exceptional disease control across diverse crops. This professional-grade emulsifiable concentrate rapidly penetrates plant tissues and translocates throughout the vascular system, providing both protective and curative action against a broad spectrum of fungal pathogens. Tebuja\'s advanced triazole chemistry disrupts ergosterol biosynthesis, effectively halting fungal cell membrane formation and growth. Highly effective against powdery mildew, rusts, leaf spots, and blights in cereals, fruits, vegetables, and ornamentals, Tebuja delivers long-lasting protection with excellent rainfastness. The optimized formulation ensures superior coverage, enhanced absorption, and extended residual activity, making it an essential component of integrated disease management programs for commercial growers seeking reliable performance and superior harvest quality.',
-          url: 'product/tebuja'
+          url: 'products/tebuconazole-25-9-ec-tebuja'
         },
         { name: 'Haristin', image: 'assets/products/HARISTIN.png', description: 'Professional fungicide' },
         {
           name: 'Hari 45',
-          image: 'assets/products/fungicide/hari-45.jpg',
+          image: 'assets/products/fungicide/mancozeb-75-wp.jpg',
           description: 'Mancozeb 75% WP contact fungicide',
-          fullDescription: 'Hari-45 (Mancozeb 75% WP) is a trusted, multi-site contact fungicide that delivers reliable protection against a broad spectrum of foliar diseases. Its multi-mode activity minimizes resistance risk while safeguarding tender growth, canopy health and photosynthetic efficiency. Suitable for potatoes, pulses, fruits and vegetables, Hari-45 prevents early and late blights, leaf spots and rusts when applied preventively. The premium wettable powder mixes easily, spreads uniformly and adheres well for consistent coverage, making it a practical, performance-driven choice for growers seeking dependable disease control and market-ready produce.'
+          fullDescription: 'Hari-45 (Mancozeb 75% WP) is a trusted, multi-site contact fungicide that delivers reliable protection against a broad spectrum of foliar diseases. Its multi-mode activity minimizes resistance risk while safeguarding tender growth, canopy health and photosynthetic efficiency. Suitable for potatoes, pulses, fruits and vegetables, Hari-45 prevents early and late blights, leaf spots and rusts when applied preventively. The premium wettable powder mixes easily, spreads uniformly and adheres well for consistent coverage, making it a practical, performance-driven choice for growers seeking dependable disease control and market-ready produce.',
+          url: 'products/mancozeb-75-wp-hari-45'
         },
         {
           name: 'Hatayu',
-          image: 'assets/products/fungicide/hatayu.jpg',
+          image: 'assets/products/fungicide/chlorothalonil-75-wp.jpg',
           description: 'Chlorothalonil 75% WP durable barrier',
-          fullDescription: 'Hatayu (Chlorothalonil 75% WP) is a high-performance, contact fungicide known for its durable protective barrier and excellent residual action. It works on multiple sites of the pathogen, helping delay resistance while providing broad-spectrum control of early blight, fruit rots and leaf spots across vegetables, fruit crops and ornamentals. The fine, free-flowing WP formulation disperses quickly in water, ensuring even coverage and dependable performance under varied field conditions. Use Hatayu as a preventive spray or within a rotation program to keep foliage clean, healthy and productive throughout the season.'
+          fullDescription: 'Hatayu (Chlorothalonil 75% WP) is a high-performance, contact fungicide known for its durable protective barrier and excellent residual action. It works on multiple sites of the pathogen, helping delay resistance while providing broad-spectrum control of early blight, fruit rots and leaf spots across vegetables, fruit crops and ornamentals. The fine, free-flowing WP formulation disperses quickly in water, ensuring even coverage and dependable performance under varied field conditions. Use Hatayu as a preventive spray or within a rotation program to keep foliage clean, healthy and productive throughout the season.',
+          url: 'products/chlorothalonil-75-wp-hatayu'
+        },
+        {
+          name: 'GALION WAY',
+          image: 'assets/products/fungicide/picoxystrobin-7-05-propiconazole-11-71-sc.png',
+          description: 'Picoxystrobin 7.05% + Propiconazole 11.71% SC dual-action fungicide',
+          fullDescription: 'GALION WAY (Picoxystrobin 7.05% + Propiconazole 11.71% SC) is a premium dual-action strobilurin + triazole systemic fungicide by Harishree Crop Science for preventive and curative control of blast, rust, leaf spot, alternaria, anthracnose, sheath blight, and powdery mildew across paddy, wheat, soybean, groundnut, maize, cotton, chilli, and tomato. Recommended dose: 30 ml per pump.',
+          url: 'products/picoxystrobin-propiconazole-sc-galion-way'
+        },
+        {
+          name: 'TAIGAR 22',
+          image: 'assets/products/fungicide/lime-sulphur-22-sc.png',
+          description: 'Lime Sulphur 22% SC organic-compatible fungicide and miticide',
+          fullDescription: 'TAIGAR 22 (Lime Sulphur 22% SC) is a sulphur-based, organic-compatible contact fungicide and miticide by Harishree Crop Science for powdery mildew, scab, rust, mite infestation, fungal spots, sooty mold, and leaf-curl-related fungal infection across apple, grapes, pomegranate, citrus, mango, chilli, and vegetables. Recommended dose: 3 litres per acre.',
+          url: 'products/lime-sulphur-22-sc-taigar-22'
+        },
+        {
+          name: 'SULF 55',
+          image: 'assets/products/fungicide/sulphur-55-16-sc.png',
+          description: 'Sulphur 55.16% SC high-load liquid sulphur fungicide and miticide',
+          fullDescription: 'SULF 55 (Sulphur 55.16% SC) is a high-load liquid sulphur fungicide and miticide by Harishree Crop Science for powdery mildew, mites, rust, leaf spot, anthracnose, scab, and fungal spots across grapes, chilli, apple, cumin, mango, pomegranate, and vegetables. Recommended dose: 30 ml per pump.',
+          url: 'products/sulphur-55-16-sc'
+        },
+        {
+          name: 'TRIZOLE',
+          image: 'assets/products/fungicide/tricyclazole-75-wp.png',
+          description: 'Tricyclazole 75% WP systemic paddy blast fungicide',
+          fullDescription: 'TRIZOLE (Tricyclazole 75% WP) is a systemic paddy blast fungicide by Harishree Crop Science for preventive and curative control of leaf blast, neck blast, node blast, panicle blast, and the rice blast complex caused by Magnaporthe oryzae in paddy and rice. As a melanin biosynthesis inhibitor it stops fungal penetration. Recommended dose: 10 gm per pump.',
+          url: 'products/tricyclazole-75-wp-trizole'
         },
         {
           name: 'Magic',
-          image: 'assets/products/fungicide/magic.jpg',
+          image: 'assets/products/fungicide/validamycin-3-l.jpg',
           description: 'Validamycin 3% L specialized systemic',
-          fullDescription: 'Magic (Validamycin 3% L) is a specialized systemic antibiotic fungicide highly effective against sheath blight and other diseases caused by Rhizoctonia spp. The liquid formulation absorbs readily and translocates within plant tissues to stop disease development quickly while remaining gentle on crops. Magic fits seamlessly into integrated disease management programs with strong efficacy in paddy and horticultural crops. Its targeted mode of action, rainfastness and ease of use make it a professional solution that helps preserve crop quality and maximize yields with fewer application rounds.'
+          fullDescription: 'Magic (Validamycin 3% L) is a specialized systemic antibiotic fungicide highly effective against sheath blight and other diseases caused by Rhizoctonia spp. The liquid formulation absorbs readily and translocates within plant tissues to stop disease development quickly while remaining gentle on crops. Magic fits seamlessly into integrated disease management programs with strong efficacy in paddy and horticultural crops. Its targeted mode of action, rainfastness and ease of use make it a professional solution that helps preserve crop quality and maximize yields with fewer application rounds.',
+          url: 'products/validamycin-3-l-magic'
         },
         {
           name: 'Super COC',
-          image: 'assets/products/fungicide/super-coc.jpg',
+          image: 'assets/products/fungicide/copper-oxychloride-50-wp.jpg',
           description: 'Copper Oxychloride 50% WP broad-spectrum',
           fullDescription: 'Super COC (Copper Oxychloride containing copper content 50% WP) is a professional-grade, broad-spectrum fungicide and bactericide formulated for superior disease control. This premium wettable powder creates a protective barrier on plant surfaces that disrupts multiple cellular processes in pathogenic organisms. With its multi-site mode of action, Super COC effectively manages resistance development while providing outstanding control of downy mildew, blights, anthracnose, bacterial spots, and various fungal diseases across fruits, vegetables, and plantation crops. The optimized particle size ensures excellent suspension stability, uniform coverage, and enhanced adhesion to plant surfaces, delivering consistent protection even under challenging weather conditions. As an essential component of integrated disease management programs, Super COC supports healthier crops and optimized yields with its reliable performance and excellent crop safety profile.',
-          url: 'product/super-coc'
+          url: 'products/copper-oxychloride-50-wp-super-coc'
         },
         {
           name: 'H-Tilt',
-          image: 'assets/products/fungicide/h-tilt.jpg',
+          image: 'assets/products/fungicide/propiconazole-25-ec.jpg',
           description: 'Propiconazole 25% EC systemic triazole',
-          fullDescription: 'H-Tilt (Propiconazole 25% EC) is a premium systemic triazole fungicide formulated for rapid absorption and deep movement within the plant. It inhibits ergosterol biosynthesis, halting fungal growth and ensuring strong curative and protective action. Highly effective on rusts, leaf spots and sheath blight in cereals, oilseeds and horticultural crops, H-Tilt offers excellent rainfastness and crop safety when used as directed. The emulsifiable concentrate delivers consistent performance in both solo and tank-mix programs, supporting healthier canopies, longer green leaf area duration and superior harvest quality.'
+          fullDescription: 'H-Tilt (Propiconazole 25% EC) is a premium systemic triazole fungicide formulated for rapid absorption and deep movement within the plant. It inhibits ergosterol biosynthesis, halting fungal growth and ensuring strong curative and protective action. Highly effective on rusts, leaf spots and sheath blight in cereals, oilseeds and horticultural crops, H-Tilt offers excellent rainfastness and crop safety when used as directed. The emulsifiable concentrate delivers consistent performance in both solo and tank-mix programs, supporting healthier canopies, longer green leaf area duration and superior harvest quality.',
+          url: 'products/propiconazole-25-ec-h-tilt'
+        },
+        {
+          name: 'Meta 35',
+          image: 'assets/products/fungicide/metalaxyl-35-ws.png',
+          description: 'Metalaxyl 35% WS systemic seed-treatment fungicide',
+          fullDescription: 'Meta 35 (Metalaxyl 35% WS) is a premium systemic seed-treatment fungicide by Harishree Crop Science for protection against damping off, downy mildew, seedling blight, root rot, collar rot, and Pythium and Phytophthora diseases during germination and early growth in maize, groundnut, soybean, cotton, sunflower, vegetables, paddy, and wheat. Recommended dose: 25 gm per pump.',
+          url: 'products/metalaxyl-35-ws-meta-35'
+        },
+        {
+          name: 'Galion',
+          image: 'assets/products/fungicide/picoxystrobin-22-52-sc.png',
+          description: 'Picoxystrobin 22.52% SC systemic strobilurin fungicide',
+          fullDescription: 'Galion (Picoxystrobin 22.52% SC) is a premium systemic strobilurin (QoI) fungicide by Harishree Crop Science for preventive and curative control of rust, leaf spot, blast, anthracnose, alternaria, powdery mildew, sheath blight, and disease complex across paddy, soybean, wheat, groundnut, cotton, chilli, tomato, and maize. Recommended dose: 16 ml per pump.',
+          url: 'products/picoxystrobin-22-52-sc-galion'
         }
       ]
     },
@@ -433,9 +519,9 @@ export class ProductService {
       name: 'PGR',
       products: [
         { name: 'Black Gold', image: 'assets/products/BLACK GOLD.png', description: 'Premium growth regulator' },
-        { name: 'Husi', image: 'assets/products/HUSI.png', description: 'Advanced plant growth' },
+        { name: 'Husi', image: 'assets/products/gibberellic-acid-0-001-l.png', description: 'Advanced plant growth' },
         { name: 'H Pro', image: 'assets/products/H PRO.png', description: 'Professional PGR solution' },
-        { name: 'HC-Gold', image: 'assets/products/HC-GOLD.png', description: 'Superior growth control' },
+        { name: 'HC-Gold', image: 'assets/products/triacontanol-ew-0-1-min.png', description: 'Superior growth control' },
         { name: 'Dhani Wet', image: 'assets/products/DHANI WET.png', description: 'Enhanced absorption' },        
         { name: 'Black Diamond', image: 'assets/products/BLACK DIAMOND.png', description: 'Premium growth regulator' },
         { 
@@ -461,17 +547,24 @@ export class ProductService {
         },
         { 
           name: 'Dr.Root', 
-          image: 'assets/products/PGR/dr.root.jpg', 
+          image: 'assets/products/PGR/dr-root.jpg', 
           description: 'Specialized organic root development supplement',
           fullDescription: 'Dr.Root is an organic plant supplement specifically formulated to enhance root development and function. This premium product stimulates root initiation, elongation, and branching, creating a stronger foundation for plant growth. The organic formulation improves nutrient absorption efficiency, enhances drought tolerance, and promotes beneficial soil microorganism activity for sustainable agricultural practices and optimal plant performance.',
-          url: 'product/dr-root'
+          url: 'products/dr-root-humic-amino-fulvic-vitamin-organic-carbon'
         },
         { 
           name: 'Nutri Power Gold', 
-          image: 'assets/products/PGR/nutri-power-gold.jpg', 
+          image: 'assets/products/PGR/potassium-humate-98.jpg', 
           description: 'Premium potassium humate with organic carbon',
           fullDescription: 'Nutri Power Gold combines 98% potassium humate with 2% organic carbon to create a powerful soil amendment and plant growth enhancer. This premium formulation improves soil structure, increases cation exchange capacity, and enhances nutrient availability. Regular application results in better water retention, reduced fertilizer requirements, and improved overall soil health, leading to stronger plants with higher yield potential and quality.',
-          url: 'product/nutri-power-gold'
+          url: 'products/potassium-humate-98-organic-carbon-2-nutri-power-gold'
+        },
+        {
+          name: 'Humic 98%',
+          image: 'assets/products/PGR/potassium-humate-98.jpg',
+          description: 'High-grade humic acid 98% soil conditioner',
+          fullDescription: 'Humic 98% is a high-grade humic acid plant growth regulator and soil conditioner that enhances root development, improves nutrient absorption, and builds better soil structure. It increases microbial activity, boosts water retention and stress tolerance, and improves flowering, fruiting, and overall crop productivity across a wide range of field and horticultural crops.',
+          url: 'products/humic-98-plant-growth-regulator'
         },
         { 
           name: 'Silva', 

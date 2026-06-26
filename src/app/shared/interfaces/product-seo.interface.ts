@@ -61,6 +61,7 @@ export interface ProductSeoData {
   targetCrops: string[];
   benefits: string[];
   breadcrumbLabel: string;
+  breadcrumbCategory?: string;
   speakableSelectors?: string[];
   formulationMaterial?: string;
 }

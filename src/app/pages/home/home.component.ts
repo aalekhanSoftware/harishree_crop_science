@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   products = [
     { name: 'Bulldozer', image: 'assets/products/Buldozer.png', description: 'Long-lasting pest control with fewer sprays. Farmers use it for tough infestations in cotton and vegetables.' },
-    { name: 'Chemistry', image: 'assets/products/CHEMISTRY.jpg', description: 'Our blend for crop nutrition and protection. Supports healthy growth and yield in field and horticultural crops.' },
+    { name: 'Chemistry', image: 'assets/products/insecticide/azoxystrobin-11-tebuconazole-18-3-sc.jpg', description: 'Azoxystrobin + Tebuconazole dual-action fungicide for broad-spectrum fungal disease control. Supports healthy growth and yield in field and horticultural crops.' },
     { name: 'Green Out', image: 'assets/products/GREEN OUT.png', description: 'Fast-acting weed control. Used for burndown and inter-row spraying; inactivated on soil contact.' },
     { name: 'Kavach', image: 'assets/products/kavach.png', description: 'Fungicide that stops fungal diseases in their tracks. Fits into routine sprays for paddy, vegetables and fruits.' }
   ];
