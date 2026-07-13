@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://harishreecropscience.com/</loc>
+    <lastmod>2025-02-11T12:05:03+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Products Section -->
+  <url>
+    <loc>https://harishreecropscience.com/products</loc>
+    <lastmod>2025-01-31T12:05:03+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Research -->
+  <url>
+    <loc>https://harishreecropscience.com/research</loc>
+    <lastmod>2025-01-31T12:05:03+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Quality Assurance -->
+  <url>
+    <loc>https://harishreecropscience.com/quality-assurance</loc>
+    <lastmod>2025-01-31T12:05:03+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Catalogue -->
+  <url>
+    <loc>https://harishreecropscience.com/catalogue</loc>
+    <lastmod>2025-01-31T12:05:03+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- About Us -->
+  <url>
+    <loc>https://harishreecropscience.com/about-us</loc>
+    <lastmod>2025-01-31T12:05:03+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://harishreecropscience.com/contact-us</loc>
+    <lastmod>2025-01-31T12:05:03+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+</urlset> 
