@@ -442,13 +442,6 @@ export class Pyriproxyfen8Dinotefuran5Diafenthiuron18ScPilotComponent implements
       imageAlt: 'FINAL Pyriproxyfen Bifenthrin EC insecticide by Harishree Crop Science'
     },
     {
-      name: 'LANSER GOLD (Acephate + Imidacloprid SP)',
-      description: 'Dual-mode soluble powder insecticide for fast contact and systemic control of sucking and chewing pests.',
-      route: '/products/insecticide/acephate-50-imidacloprid-1-8-sp-lanser-gold',
-      image: 'assets/products/insecticide/acephate-50-imidacloprid-1-8-sp.jpg',
-      imageAlt: 'LANSER GOLD Acephate Imidacloprid SP insecticide by Harishree Crop Science'
-    },
-    {
       name: 'THIO-H 75 (Thiamethoxam 75% SG)',
       description: 'High-strength systemic neonicotinoid for aphids, jassids, whiteflies, and more on cotton and vegetables.',
       route: '/product/thiamethoxam-75-sg',

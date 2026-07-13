@@ -185,12 +185,6 @@ export class ProductService {
           //   description: 'Premium multi-crop insect shield',
           //   fullDescription: 'Kavach Plus is a premium, next-generation insect shield formulated for consistent performance across vegetables, cotton and other commercial crops. Its optimized chemistry ensures quick knockdown with dependable residual action, superior leaf adherence and strong rainfastness for season-long protection in professional programs.'
           // },
-          { name: 'Lanser Gold',
-            image: 'assets/products/insecticide/acephate-50-imidacloprid-1-8-sp.jpg',
-            description: 'Acephate 50% + Imidacloprid 1.8% SP dual-mode',
-            fullDescription: 'Lanser Gold (Acephate 50% + Imidacloprid 1.8% SP) delivers a powerful combination of contact and systemic action for fast control of sucking and chewing pests. The soluble powder technology disperses quickly, offers excellent tank-mix compatibility and supports resistance management with two proven modes of action.',
-            url: 'products/insecticide/acephate-50-imidacloprid-1-8-sp-lanser-gold'
-          },
           { name: 'Mite',
             image: 'assets/products/insecticide/mite.jpg',
             description: 'Propargite 57% EC dedicated acaricide',

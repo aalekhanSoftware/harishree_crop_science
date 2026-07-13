@@ -559,13 +559,6 @@ export class Tolfenpyrad15Bifenthrin75SeMegnumComponent implements OnInit, OnDes
 
   relatedProducts = [
     {
-      name: 'LANSER GOLD (Acephate 50% + Imidacloprid 1.8% SP)',
-      description: 'Dual-action systemic insecticide for whitefly, aphid, thrips, jassid, and leafhopper control in cotton, chilli, and vegetables.',
-      route: '/products/insecticide/acephate-50-imidacloprid-1-8-sp-lanser-gold',
-      image: 'assets/products/insecticide/acephate-50-imidacloprid-1-8-sp.jpg',
-      imageAlt: 'LANSER GOLD Acephate Imidacloprid SP insecticide by Harishree Crop Science'
-    },
-    {
       name: 'FINAL (Pyriproxyfen + Bifenthrin EC)',
       description: 'Dual-action IGR and pyrethroid insecticide for whitefly, thrips, mite, aphid, and jassid control.',
       route: '/product/pyriproxyfen-10-bifenthrin-10-w-w-ec',

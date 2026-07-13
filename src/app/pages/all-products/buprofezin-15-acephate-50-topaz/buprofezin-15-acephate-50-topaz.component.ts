@@ -505,13 +505,6 @@ export class Buprofezin15Acephate50TopazComponent implements OnInit, OnDestroy {
 
   relatedProducts = [
     {
-      name: 'LANSER GOLD (Acephate + Imidacloprid SP)',
-      description: 'Dual-action systemic insecticide for whitefly, aphid, thrips, and jassid control in cotton, chilli, and vegetables.',
-      route: '/products/insecticide/acephate-50-imidacloprid-1-8-sp-lanser-gold',
-      image: 'assets/products/insecticide/acephate-50-imidacloprid-1-8-sp.jpg',
-      imageAlt: 'LANSER GOLD Acephate Imidacloprid SP insecticide by Harishree Crop Science'
-    },
-    {
       name: 'HIL THENE (Acephate 75% SP)',
       description: 'Single-AI organophosphate insecticide for thrips, aphids, whiteflies, jassids, and bollworm control in cotton, chilli, and vegetables.',
       route: '/product/acephate-75-sp',

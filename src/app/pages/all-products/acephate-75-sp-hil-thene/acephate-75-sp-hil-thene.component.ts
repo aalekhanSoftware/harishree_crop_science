@@ -521,13 +521,6 @@ export class Acephate75SpHilTheneComponent implements OnInit, OnDestroy {
 
   relatedProducts = [
     {
-      name: 'LANSER GOLD (Acephate + Imidacloprid SP)',
-      description: 'Dual-action systemic insecticide for whitefly, aphid, thrips, and jassid control in cotton, chilli, and vegetables.',
-      route: '/products/insecticide/acephate-50-imidacloprid-1-8-sp-lanser-gold',
-      image: 'assets/products/insecticide/acephate-50-imidacloprid-1-8-sp.jpg',
-      imageAlt: 'LANSER GOLD dual-action insecticide by Harishree Crop Science'
-    },
-    {
       name: 'PRIDE H (Acetamiprid 20% SP)',
       description: 'Systemic neonicotinoid insecticide for whitefly, aphid, thrips, and jassid control in cotton, chilli, and vegetables.',
       route: '/product/acetamiprid-20-sp',
