@@ -83,7 +83,6 @@ export class SeoService {
       this.document.head.appendChild(link);
     }
     link.setAttribute('href', url);
-    this.meta.updateTag({ name: 'canonical', content: url });
 
     if (stateKey) {
       this.transferState.set(stateKey, url);

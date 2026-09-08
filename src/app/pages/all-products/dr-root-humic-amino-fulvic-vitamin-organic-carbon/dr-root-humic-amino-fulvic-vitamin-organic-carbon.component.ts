@@ -546,7 +546,13 @@ export class DrRootHumicAminoFulvicVitaminOrganicCarbonComponent implements OnIn
         'Field steps for preparing a knapsack sprayer of DR. ROOT (Humic + Amino + Fulvic + Vitamin C & E + Organic Carbon) for soil or foliar application at 30 ml/pump.',
       alternateNames: [
         'DR. ROOT',
-        'DR. ROOT PGR'
+        'DR. ROOT PGR',
+        'DR. ROOT Humic Amino Fulvic',
+        'Humic Amino Fulvic Vitamin Organic Carbon',
+        'Best Root Growth Promoter',
+        'Humic Fulvic Root Booster',
+        'Amino Acid Root Promoter',
+        'Organic Carbon Root Growth PGR'
       ],
       targetPests: [],
       targetCrops: this.applications.map((a) => a.title),
@@ -560,13 +566,14 @@ export class DrRootHumicAminoFulvicVitaminOrganicCarbonComponent implements OnIn
 
   private applySeo(): void {
     const desc =
-      'DR. ROOT Humic + Amino + Fulvic + Vitamin C & E + Organic Carbon — root growth promoter for stronger roots, better nutrient uptake & higher yield. Harishree Crop Science.';
+      'Buy DR. ROOT (Humic + Amino + Fulvic + Vitamin C & E + Organic Carbon) — root growth promoter for stronger roots, better uptake & higher yield. Best price. Harishree Crop Science. Dose: 30 ml/pump.';
 
     this.seo.setAll(
       {
-        title: 'Humic + Amino + Fulvic + Vitamin C & E + Organic Carbon | DR. ROOT',
+        title: 'Humic Amino Fulvic + Vitamin + Organic Carbon | DR. ROOT | Buy Online',
         description: desc,
-        keywords: this.productTitle,
+        keywords:
+          'Humic Amino Fulvic Vitamin Organic Carbon, DR. ROOT, DR ROOT PGR, Humic Amino Acid Root Promoter, Fulvic Acid Root Growth, Best Root Growth Promoter, Root Booster PGR Price, Root Growth Promoter Uses, DR ROOT Price, Humic Root Promoter, Amino Acid Growth Promoter, Fulvic Acid Growth Promoter, Vitamin C E Plant Growth, Organic Carbon Soil Health, Strong Root Development, Nutrient Uptake Enhancer, Cotton Root Booster, Vegetable Growth Promoter, Flowering Fruit Set Booster, Crop Yield Booster, Plant Growth Regulator, DR ROOT Dose, Harishree Crop Science',
         canonicalUrl: this.pageUrl,
         robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
         author: environment.metaDefaults.author,

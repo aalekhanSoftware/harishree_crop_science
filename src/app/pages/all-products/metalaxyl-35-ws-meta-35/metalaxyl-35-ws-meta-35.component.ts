@@ -583,7 +583,7 @@ export class Metalaxyl35WsMeta35Component implements OnInit, OnDestroy {
       description:
         'Meta 35 (Metalaxyl 35% WS) by Harishree Crop Science is a systemic seed-treatment fungicide for damping off, downy mildew, seedling blight, root rot, collar rot, and Pythium and Phytophthora diseases. Dose: 25 gm/pump.',
       primaryKeyword: this.productTitle,
-      secondaryKeyword: this.productTitle,
+      secondaryKeyword: this.brandName,
       category: 'Agricultural Fungicide',
       sku: 'META35-METALAXYL-WS',
       mpn: 'META35-METALAXYL-WS',
@@ -598,7 +598,16 @@ export class Metalaxyl35WsMeta35Component implements OnInit, OnDestroy {
       howToName: `How to treat seed with Meta 35 (${this.productTitle})`,
       howToDescription:
         'Field steps for preparing a seed-treatment slurry of Meta 35 (Metalaxyl 35% WS) and coating seed before sowing.',
-      alternateNames: ['Metalaxyl 35% WS'],
+      alternateNames: [
+        'Meta 35',
+        'Meta 35 Fungicide',
+        'Meta 35 Metalaxyl 35 WS',
+        'Metalaxyl 35% WS',
+        'Metalaxyl Seed Treatment Fungicide',
+        'Best Metalaxyl 35 WS',
+        'Systemic Seed Treatment Fungicide',
+        'Oomycete Seed Treatment Fungicide'
+      ],
       targetPests: this.targetPests.map((p) => p.name),
       targetCrops: this.targetCropsTable.map((r) => r.crop),
       benefits: this.keyBenefits.map((b) => b.title),
@@ -611,13 +620,14 @@ export class Metalaxyl35WsMeta35Component implements OnInit, OnDestroy {
 
   private applySeo(): void {
     const desc =
-      'Meta 35 Metalaxyl 35% WS is a systemic seed-treatment fungicide controlling damping off, downy mildew & oomycete diseases in maize, groundnut, soybean & cotton. Harishree Crop Science — order today.';
+      'Buy Metalaxyl 35% WS (Meta 35) — systemic seed-treatment fungicide for damping off, downy mildew & oomycete diseases in maize, groundnut & cotton. Best price. Harishree Crop Science.';
 
     this.seo.setAll(
       {
-        title: 'Metalaxyl 35% WS | Meta 35',
+        title: 'Metalaxyl 35% WS | Meta 35 | Buy Online Best Price',
         description: desc,
-        keywords: this.productTitle,
+        keywords:
+          'Metalaxyl 35% WS, Meta 35, Metalaxyl Seed Treatment, Meta 35 Fungicide, Best Metalaxyl 35 WS, Metalaxyl 35% WS Price, Metalaxyl 35% WS Uses, Meta 35 Price, Systemic Seed Treatment Fungicide, Oomycete Seed Treatment, Damping Off Control, Downy Mildew Seed Treatment, Maize Seed Treatment, Groundnut Seed Treatment, Soybean Seed Treatment, Cotton Seed Treatment, Seed Treatment Fungicide, Crop Establishment Fungicide, Agricultural Fungicide, Seed Coating Fungicide, Meta 35 Dose, Harishree Crop Science',
         canonicalUrl: this.pageUrl,
         robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
         author: environment.metaDefaults.author,

@@ -545,8 +545,14 @@ export class Humic98PlantGrowthRegulatorComponent implements OnInit, OnDestroy {
       howToDescription:
         'Field steps for preparing a knapsack sprayer of HUMIC 98% (Humic Acid 98%) for soil, drip, or foliar application at 25 gm/pump.',
       alternateNames: [
-        'HUMIC',
-        'HUMIC 98%'
+        'HUMIC 98%',
+        'HUMIC Humic Acid 98%',
+        'Humic Acid 98%',
+        'Humic Acid Soil Conditioner',
+        'Best Humic Acid 98%',
+        'Humic 98 Powder PGR',
+        'Soil Conditioner for Root Growth',
+        'Plant Growth Regulator Humic'
       ],
       targetPests: [],
       targetCrops: this.applications.map((a) => a.title),
@@ -560,13 +566,14 @@ export class Humic98PlantGrowthRegulatorComponent implements OnInit, OnDestroy {
 
   private applySeo(): void {
     const desc =
-      'HUMIC 98% (Humic Acid 98%) — humic acid soil conditioner & root growth promoter for better soil, strong roots & higher yield. Harishree Crop Science.';
+      'Buy Humic Acid 98% (HUMIC 98%) — concentrated humic soil conditioner for root growth, soil health & higher yield. Best price. Harishree Crop Science. Dose: 25 gm/pump.';
 
     this.seo.setAll(
       {
-        title: 'HUMIC 98% | Humic Acid 98% Plant Growth Regulator',
+        title: 'Humic Acid 98% | HUMIC 98% | Buy Online Best Price',
         description: desc,
-        keywords: 'HUMIC 98%',
+        keywords:
+          'Humic Acid 98%, HUMIC 98%, Humic 98 Powder, Humic Acid Soil Conditioner, Best Humic Acid 98, Humic Acid Price, Humic Acid Uses, HUMIC 98 Price, Humic Powder PGR, Root Growth Promoter, Soil Structure Improver, Nutrient Absorption Enhancer, Microbial Activity Booster, Water Retention Improver, Cotton PGR, Paddy PGR, Vegetable Growth Promoter, Fruit Growth Promoter, Crop Yield Booster, Plant Growth Regulator, HUMIC 98 Dose, Harishree Crop Science',
         canonicalUrl: this.pageUrl,
         robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
         author: environment.metaDefaults.author,

@@ -544,7 +544,13 @@ export class PotassiumHumate98OrganicCarbon2NutriPowerGoldComponent implements O
         'Field steps for preparing a knapsack sprayer of NUTRI POWER GOLD (Potassium Humate 98% + Organic Carbon 2%) for soil, drip, or foliar application at 25 gm/pump.',
       alternateNames: [
         'NUTRI POWER GOLD',
-        'Potassium Humate 98%'
+        'NUTRI POWER GOLD Potassium Humate',
+        'Potassium Humate 98%',
+        'Potassium Humate 98% + Organic Carbon 2%',
+        'Potassium Humate Soil Conditioner',
+        'Best Potassium Humate 98%',
+        'Humic Soil Conditioner',
+        'Root Growth Promoter PGR'
       ],
       targetPests: [],
       targetCrops: this.applications.map((a) => a.title),
@@ -558,13 +564,14 @@ export class PotassiumHumate98OrganicCarbon2NutriPowerGoldComponent implements O
 
   private applySeo(): void {
     const desc =
-      'NUTRI POWER GOLD Potassium Humate 98% + Organic Carbon 2% — humic acid soil conditioner & root growth promoter for better soil, strong roots & higher yield. Harishree Crop Science.';
+      'Buy Potassium Humate 98% + Organic Carbon 2% (NUTRI POWER GOLD) — humic soil conditioner for stronger roots, better soil & higher yield. Best price. Harishree Crop Science. Dose: 25 gm/pump.';
 
     this.seo.setAll(
       {
-        title: 'Potassium Humate 98% + Organic Carbon 2% | NUTRI POWER GOLD',
+        title: 'Potassium Humate 98% + Organic Carbon 2% | NUTRI POWER GOLD | Buy Online Best Price',
         description: desc,
-        keywords: this.productTitle,
+        keywords:
+          'Potassium Humate 98%, NUTRI POWER GOLD, Potassium Humate 98 Organic Carbon 2, Potassium Humate Soil Conditioner, Best Potassium Humate 98, Potassium Humate Price, Potassium Humate Uses, NUTRI POWER GOLD Price, Humic Acid Soil Conditioner, Organic Carbon Soil Conditioner, Root Growth Promoter, Soil Health Improver, Plant Growth Regulator, Water Retention Improver, Nutrient Uptake Enhancer, Cotton Soil Conditioner, Groundnut PGR, Vegetable Growth Promoter, Fruit Growth Promoter, Crop Yield Booster, Agricultural PGR, NUTRI POWER GOLD Dose, Harishree Crop Science',
         canonicalUrl: this.pageUrl,
         robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
         author: environment.metaDefaults.author,

@@ -608,13 +608,14 @@ export class ThiophanateMethyl70WpHtmComponent implements OnInit, OnDestroy {
 
   private applySeo(): void {
     const desc =
-      'HTM (Thiophanate Methyl 70% WP) systemic fungicide delivers curative control of anthracnose, powdery mildew, leaf spot & fruit rot. Harishree Crop Science — order today.';
+      'Buy Thiophanate Methyl 70% WP (HTM) — systemic fungicide for anthracnose, powdery mildew, leaf spot & fruit rot. Best price. Harishree Crop Science. Dose: 20 gm/pump.';
 
     this.seo.setAll(
       {
-        title: 'Thiophanate Methyl 70% WP | HTM Fungicide',
+        title: 'Thiophanate Methyl 70% WP | HTM | Buy Online Best Price',
         description: desc,
-        keywords: this.productTitle,
+        keywords:
+          'Thiophanate Methyl 70% WP, HTM, Thiophanate Methyl Fungicide, HTM Fungicide, Best Thiophanate Methyl 70 WP, Thiophanate Methyl Price, Thiophanate Methyl Uses, HTM Thiophanate Methyl 70 WP, Systemic Fungicide, Benzimidazole Fungicide, Anthracnose Control Fungicide, Powdery Mildew Control Fungicide, Leaf Spot Control Fungicide, Fruit Rot Control Fungicide, Mango Fungicide, Chilli Fungicide, Grapes Fungicide, Apple Fungicide, Broad Spectrum Systemic Fungicide, Curative Fungicide, Crop Protection Fungicide, Agricultural Fungicide, Thiophanate Dose Per Pump, HTM Dose, Harishree Crop Science',
         canonicalUrl: this.pageUrl,
         robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
         author: environment.metaDefaults.author,

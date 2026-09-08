@@ -584,7 +584,7 @@ export class Propineb70WpNTracolComponent implements OnInit, OnDestroy {
       description:
         'N Tracol (Propineb 70% WP) by Harishree Crop Science is a multi-site contact fungicide for early blight, late blight, downy mildew, leaf spot, rust, anthracnose, apple scab, and alternaria. Dose: 25 gm/pump.',
       primaryKeyword: this.productTitle,
-      secondaryKeyword: this.productTitle,
+      secondaryKeyword: this.brandName,
       category: 'Agricultural Fungicide',
       sku: 'NTRACOL-PROPINEB-WP',
       mpn: 'NTRACOL-PROPINEB-WP',
@@ -599,7 +599,16 @@ export class Propineb70WpNTracolComponent implements OnInit, OnDestroy {
       howToName: `How to mix and apply N Tracol (${this.productTitle})`,
       howToDescription:
         'Field steps for preparing a knapsack sprayer tank of N Tracol (Propineb 70% WP) for foliar application at 25 gm/pump.',
-      alternateNames: ['Propineb 70% WP'],
+      alternateNames: [
+        'N Tracol',
+        'N Tracol Fungicide',
+        'N Tracol Propineb 70 WP',
+        'Propineb 70 WP',
+        'Propineb 70% WP Fungicide',
+        'Propineb Fungicide',
+        'Best Propineb 70 WP',
+        'Contact Fungicide for Vegetables'
+      ],
       targetPests: this.targetPests.map((p) => p.name),
       targetCrops: this.targetCropsTable.map((r) => r.crop),
       benefits: this.keyBenefits.map((b) => b.title),
@@ -612,13 +621,14 @@ export class Propineb70WpNTracolComponent implements OnInit, OnDestroy {
 
   private applySeo(): void {
     const desc =
-      'N Tracol Propineb 70% WP delivers broad-spectrum disease control for potato, tomato, grapes, apple & vegetables. Harishree Crop Science — order today.';
+      'Buy Propineb 70% WP (N Tracol) — multi-site contact fungicide for early blight, late blight, downy mildew & leaf spot. Best price. Harishree Crop Science. Dose: 25 gm/pump.';
 
     this.seo.setAll(
       {
-        title: 'Propineb 70% WP | N Tracol',
+        title: 'Propineb 70% WP | N Tracol | Buy Online Best Price',
         description: desc,
-        keywords: this.productTitle,
+        keywords:
+          'Propineb 70% WP, N Tracol, Propineb 70 WP, Propineb Fungicide, N Tracol Fungicide, Best Propineb 70 WP, Propineb 70% WP Price, Propineb 70% WP Uses, N Tracol Propineb 70 WP, Propineb Fungicide for Potato, Propineb Fungicide for Tomato, Propineb Fungicide for Grapes, Early Blight Control Fungicide, Late Blight Control Fungicide, Downy Mildew Control Fungicide, Leaf Spot Control Fungicide, Multi-site Contact Fungicide, Dithiocarbamate Fungicide, Broad Spectrum Fungicide, Preventive Fungicide, Crop Protection Fungicide, Agricultural Fungicide, Propineb Dose Per Pump, N Tracol Dose, Harishree Crop Science',
         canonicalUrl: this.pageUrl,
         robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
         author: environment.metaDefaults.author,

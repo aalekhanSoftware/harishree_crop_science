@@ -316,18 +316,18 @@ export class Thiamethoxam30FsComponent implements OnInit, OnDestroy {
       return;
     }
 
-    const titleText = `${this.productTitle} | ${this.productName} Seed Treatment Insecticide | Harishree Crop Science`;
+    const titleText = `${this.productTitle} | ${this.productName} | Buy Online Best Price`;
     this.title.setTitle(titleText);
 
     const desc =
-      `${this.productName} is Harishree Crop Science ${this.productTitle} seed-treatment insecticide. Dose: 15 ml/pump. Explore technical specifications, target pests, crops, usage guidance, FAQs and official product reference.`;
+      `Buy ${this.productTitle} (${this.productName}) — systemic seed-treatment insecticide for termites, jassids, aphids & thrips. Best price. Harishree Crop Science. Dose: 15 ml/pump.`;
 
     const metaTags: MetaDefinition[] = [
       { name: 'description', content: desc },
       {
         name: 'keywords',
         content:
-          'Thiamethoxam 30% FS, Super FS, Thiamethoxam seed treatment, Thiamethoxam 30 FS insecticide, seed treatment insecticide, neonicotinoid seed treatment, 15 ml per pump dose, Harishree Crop Science'
+          'Thiamethoxam 30% FS, Super FS, Thiamethoxam 30 FS, Thiamethoxam seed treatment, Thiamethoxam 30 FS insecticide, Buy Thiamethoxam 30 FS, Best Thiamethoxam 30 FS, Thiamethoxam 30 FS Price, Thiamethoxam 30 FS Uses, Super FS Price, seed treatment insecticide, neonicotinoid seed treatment, systemic seed treatment, termite seed treatment, jassid seed treatment, aphid seed treatment, cotton seed treatment, maize seed treatment, 15 ml per pump dose, Harishree Crop Science'
       },
       { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
       { name: 'author', content: environment.metaDefaults.author },

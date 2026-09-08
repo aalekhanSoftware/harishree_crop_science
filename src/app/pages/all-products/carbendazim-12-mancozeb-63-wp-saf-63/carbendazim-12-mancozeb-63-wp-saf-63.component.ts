@@ -611,13 +611,14 @@ export class Carbendazim12Mancozeb63WpSaf63Component implements OnInit, OnDestro
 
   private applySeo(): void {
     const desc =
-      'Saf 63 (Carbendazim 12% + Mancozeb 63% WP) dual-action fungicide delivers systemic + contact control of blast, leaf spot, rust & fruit rot. Harishree Crop Science — order today.';
+      'Buy Saf 63 (Carbendazim 12% + Mancozeb 63% WP) — dual-action systemic + contact fungicide for blast, leaf spot, rust & fruit rot. Best price. Harishree Crop Science. Dose: 20 gm/pump.';
 
     this.seo.setAll(
       {
-        title: 'Carbendazim 12% + Mancozeb 63% WP | Saf 63',
+        title: 'Carbendazim 12% + Mancozeb 63% WP | Saf 63 | Buy Online Best Price',
         description: desc,
-        keywords: this.productTitle,
+        keywords:
+          'Carbendazim 12% + Mancozeb 63% WP, Saf 63, Carbendazim Mancozeb Fungicide, Saf 63 Fungicide, Best Carbendazim Mancozeb Fungicide, Carbendazim 12 Mancozeb 63 WP Price, Carbendazim Mancozeb Uses, Saf 63 Price, Dual Action Fungicide, Systemic and Contact Fungicide, Blast Control Fungicide, Leaf Spot Control Fungicide, Rust Control Fungicide, Fruit Rot Control Fungicide, Paddy Blast Fungicide, Groundnut Fungicide, Chilli Fungicide, Mango Fungicide, Broad Spectrum Fungicide, Crop Protection Fungicide, Agricultural Fungicide, Carbendazim Dose Per Pump, Saf 63 Dose, Harishree Crop Science',
         canonicalUrl: this.pageUrl,
         robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
         author: environment.metaDefaults.author,

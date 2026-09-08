@@ -607,13 +607,14 @@ export class Mancozeb75WpHari45Component implements OnInit, OnDestroy {
 
   private applySeo(): void {
     const desc =
-      'Hari 45 (Mancozeb 75% WP) contact fungicide delivers broad-spectrum control of early blight, late blight, downy mildew & leaf spot. Harishree Crop Science — order today.';
+      'Buy Mancozeb 75% WP (Hari 45) — multi-site contact fungicide for early blight, late blight, downy mildew & leaf spot. Best price. Harishree Crop Science. Dose: 30 gm/pump.';
 
     this.seo.setAll(
       {
-        title: 'Mancozeb 75% WP | Hari 45 Fungicide',
+        title: 'Mancozeb 75% WP | Hari 45 | Buy Online Best Price',
         description: desc,
-        keywords: this.productTitle,
+        keywords:
+          'Mancozeb 75% WP, Hari 45, Mancozeb Fungicide, Hari 45 Fungicide, Best Mancozeb 75 WP, Mancozeb 75% WP Price, Mancozeb 75% WP Uses, Hari 45 Mancozeb 75 WP, Multi-site Contact Fungicide, Dithiocarbamate Fungicide, Early Blight Control Fungicide, Late Blight Control Fungicide, Downy Mildew Control Fungicide, Leaf Spot Control Fungicide, Potato Fungicide, Tomato Fungicide, Onion Fungicide, Broad Spectrum Fungicide, Preventive Fungicide, Crop Protection Fungicide, Agricultural Fungicide, Mancozeb Dose Per Pump, Hari 45 Dose, Harishree Crop Science',
         canonicalUrl: this.pageUrl,
         robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
         author: environment.metaDefaults.author,
