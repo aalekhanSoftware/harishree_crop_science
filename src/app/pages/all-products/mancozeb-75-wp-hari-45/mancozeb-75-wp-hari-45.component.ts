@@ -324,29 +324,29 @@ export class Mancozeb75WpHari45Component implements OnInit, OnDestroy {
     productInfo: Array<{ label: string; value: string }>;
     packs: Array<{ label: string; value: string }>;
   } = {
-    productInfo: [
-      { label: 'Product name', value: 'Hari 45' },
-      { label: 'Technical name', value: this.productTitle },
-      { label: 'Pesticide type', value: 'Fungicide' },
-      { label: 'Formulation type', value: 'WP (Wettable Powder)' },
-      { label: 'Physical form', value: 'Powder' },
-      { label: 'Active ingredient', value: 'Mancozeb 75% WP' },
-      { label: 'Chemical group', value: 'Dithiocarbamate (FRAC M03)' },
-      { label: 'Action type', value: 'Contact, preventive, multi-site disease control' },
-      { label: 'Diseases controlled', value: 'Early blight, late blight, leaf spot, downy mildew, rust, anthracnose, alternaria, fruit rot' },
-      { label: 'Target crops', value: 'Potato, tomato, chilli, onion, grapes, groundnut, cucumber, watermelon' }
-    ],
-    packs: [
-      { label: 'Packaging', value: 'Pack; sizes 250 gm, 500 gm, 1 Kg' },
-      { label: 'Recommended dose', value: '30 gm/pump' },
-      { label: 'Water volume', value: '15-litre knapsack sprayer (~200 L/acre typical)' },
-      { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
-      { label: 'Application stage', value: 'Preventive or early disease appearance or as per label/agronomist' },
-      { label: 'Coverage', value: 'Uniform spray on leaves, stems, and fruits' },
-      { label: 'Re-entry interval', value: '24 hours (with PPE)' },
-      { label: 'Country of origin', value: 'Made in India' }
-    ]
-  };
+      productInfo: [
+        { label: 'Product name', value: 'Hari 45' },
+        { label: 'Technical name', value: this.productTitle },
+        { label: 'Pesticide type', value: 'Fungicide' },
+        { label: 'Formulation type', value: 'WP (Wettable Powder)' },
+        { label: 'Physical form', value: 'Powder' },
+        { label: 'Active ingredient', value: 'Mancozeb 75% WP' },
+        { label: 'Chemical group', value: 'Dithiocarbamate (FRAC M03)' },
+        { label: 'Action type', value: 'Contact, preventive, multi-site disease control' },
+        { label: 'Diseases controlled', value: 'Early blight, late blight, leaf spot, downy mildew, rust, anthracnose, alternaria, fruit rot' },
+        { label: 'Target crops', value: 'Potato, tomato, chilli, onion, grapes, groundnut, cucumber, watermelon' }
+      ],
+      packs: [
+        { label: 'Packaging', value: 'Pack; sizes 250 gm, 500 gm, 1 Kg' },
+        { label: 'Recommended dose', value: '30 gm/pump' },
+        { label: 'Water volume', value: '15-litre knapsack sprayer (~200 L/acre typical)' },
+        { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
+        { label: 'Application stage', value: 'Preventive or early disease appearance or as per label/agronomist' },
+        { label: 'Coverage', value: 'Uniform spray on leaves, stems, and fruits' },
+        { label: 'Re-entry interval', value: '24 hours (with PPE)' },
+        { label: 'Country of origin', value: 'Made in India' }
+      ]
+    };
 
   officialProductDetails = [
     { label: 'Product Name', value: 'Hari 45' },
@@ -416,7 +416,7 @@ export class Mancozeb75WpHari45Component implements OnInit, OnDestroy {
       name: 'Saf 63 (Carbendazim 12% + Mancozeb 63% WP)',
       description: 'Dual-action systemic plus contact fungicide for leaf spot, blast, rust, and fruit rot across field and horticultural crops.',
       route: '/products/carbendazim-12-mancozeb-63-wp-saf-63',
-      image: 'assets/products/carbendazim-12-mancozeb-63-wp.png',
+      image: 'assets/products/carbendazim-12-mancozeb-63-wp--.png',
       imageAlt: 'Saf 63 Carbendazim Mancozeb fungicide by Harishree Crop Science'
     },
     {
@@ -532,7 +532,7 @@ export class Mancozeb75WpHari45Component implements OnInit, OnDestroy {
     private seo: SeoService,
     private productSchema: ProductSchemaService,
     @Inject(PLATFORM_ID) private platformId: object
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.applySeo();

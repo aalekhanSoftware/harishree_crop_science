@@ -282,31 +282,31 @@ export class Flufenzine20EcYoddhaComponent implements OnInit, OnDestroy {
     productInfo: Array<{ label: string; value: string }>;
     packs: Array<{ label: string; value: string }>;
   } = {
-    productInfo: [
-      { label: 'Product name', value: 'YODDHA' },
-      { label: 'Technical name', value: this.productTitle },
-      { label: 'Pesticide type', value: 'Insecticide (Miticide/Acaricide)' },
-      { label: 'Formulation type', value: 'EC (Emulsifiable Concentrate)' },
-      { label: 'Physical form', value: 'Liquid' },
-      { label: 'Active ingredient', value: 'Flufenzine 20% EC' },
-      { label: 'Chemical group', value: 'Miticide / Acaricide' },
-      { label: 'Mode of action', value: 'Contact activity with mite growth regulation' },
-      { label: 'Action type', value: 'Contact action with residual activity' },
-      { label: 'Target pests', value: 'Red spider mites, yellow mites, two-spotted spider mites, broad mites' },
-      { label: 'Target crops', value: 'Chilli, cotton, brinjal, tomato, okra, cucurbits, vegetables, fruits, horticulture crops' }
-    ],
-    packs: [
-      { label: 'Packaging', value: 'Bottle (EC liquid); sizes 250 ML, 500 ML, 1 LTR' },
-      { label: 'Recommended dose', value: '25 ml/pump' },
-      { label: 'Water volume', value: '15-litre knapsack sprayer (adjust per canopy)' },
-      { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
-      { label: 'Application stage', value: 'At early mite infestation or as per ETL/label' },
-      { label: 'Coverage', value: 'Spray leaf undersides where mites colonize' },
-      { label: 'Re-entry interval', value: '24 hours (with PPE)' },
-      { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
-      { label: 'Country of origin', value: 'Made in India' }
-    ]
-  };
+      productInfo: [
+        { label: 'Product name', value: 'YODDHA' },
+        { label: 'Technical name', value: this.productTitle },
+        { label: 'Pesticide type', value: 'Insecticide (Miticide/Acaricide)' },
+        { label: 'Formulation type', value: 'EC (Emulsifiable Concentrate)' },
+        { label: 'Physical form', value: 'Liquid' },
+        { label: 'Active ingredient', value: 'Flufenzine 20% EC' },
+        { label: 'Chemical group', value: 'Miticide / Acaricide' },
+        { label: 'Mode of action', value: 'Contact activity with mite growth regulation' },
+        { label: 'Action type', value: 'Contact action with residual activity' },
+        { label: 'Target pests', value: 'Red spider mites, yellow mites, two-spotted spider mites, broad mites' },
+        { label: 'Target crops', value: 'Chilli, cotton, brinjal, tomato, okra, cucurbits, vegetables, fruits, horticulture crops' }
+      ],
+      packs: [
+        { label: 'Packaging', value: 'Bottle (EC liquid); sizes 250 ML, 500 ML, 1 LTR' },
+        { label: 'Recommended dose', value: '25 ml/pump' },
+        { label: 'Water volume', value: '15-litre knapsack sprayer (adjust per canopy)' },
+        { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
+        { label: 'Application stage', value: 'At early mite infestation or as per ETL/label' },
+        { label: 'Coverage', value: 'Spray leaf undersides where mites colonize' },
+        { label: 'Re-entry interval', value: '24 hours (with PPE)' },
+        { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
+        { label: 'Country of origin', value: 'Made in India' }
+      ]
+    };
 
   officialProductDetails = [
     { label: 'Product Name', value: 'YODDHA' },
@@ -446,7 +446,7 @@ export class Flufenzine20EcYoddhaComponent implements OnInit, OnDestroy {
       name: 'AMPIGO (Chlorantraniliprole + Lambda Cyhalothrin ZC)',
       description: 'Dual-action ZC insecticide for caterpillars, borers, and fall armyworm in cotton, maize, and vegetables.',
       route: '/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc',
-      image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc.png',
+      image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc--.png',
       imageAlt: 'AMPIGO Chlorantraniliprole Lambda Cyhalothrin ZC insecticide by Harishree Crop Science'
     }
   ];
@@ -705,7 +705,7 @@ export class Flufenzine20EcYoddhaComponent implements OnInit, OnDestroy {
     private seo: SeoService,
     private productSchema: ProductSchemaService,
     @Inject(PLATFORM_ID) private platformId: object
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.applySeo();

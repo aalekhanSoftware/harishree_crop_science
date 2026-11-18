@@ -22,7 +22,7 @@ export class Chlorantraniliprole93LambdaCyhalothrin46ZcAmpigoComponent implement
   private readonly baseUrl = environment.baseUrl;
   readonly productPath = '/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc';
   readonly pageUrl = `${this.baseUrl}${this.productPath}`;
-  readonly productImagePath = 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc.png';
+  readonly productImagePath = 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc--.png';
   readonly productImageUrl = `${this.baseUrl}/${this.productImagePath}`;
 
   private readonly metaStateKey = this.seo.createMetaStateKey(SEO_PAGE_ID);
@@ -325,37 +325,37 @@ export class Chlorantraniliprole93LambdaCyhalothrin46ZcAmpigoComponent implement
     productInfo: Array<{ label: string; value: string }>;
     packs: Array<{ label: string; value: string }>;
   } = {
-    productInfo: [
-      { label: 'Product name', value: 'AMPIGO' },
-      { label: 'Technical name', value: this.productTitle },
-      { label: 'Pesticide type', value: 'Insecticide' },
-      { label: 'Formulation type', value: 'ZC (Zinc/Capsule Suspension)' },
-      { label: 'Physical form', value: 'Liquid suspension' },
-      { label: 'Active ingredients', value: 'Chlorantraniliprole 9.3% + Lambda Cyhalothrin 4.6% ZC' },
-      { label: 'Chemical group', value: 'Anthranilic Diamide + Synthetic Pyrethroid' },
-      {
-        label: 'Mode of action',
-        value: 'Chlorantraniliprole activates ryanodine receptors (IRAC 28); Lambda Cyhalothrin modulates sodium channels (IRAC 3A)'
-      },
-      { label: 'Action type', value: 'Contact, stomach, and translaminar' },
-      {
-        label: 'Target pests',
-        value: 'Fall armyworm, Bollworms, Fruit borers, Pod borers, Stem borers, Spodoptera, Helicoverpa, Thrips, Cutworms'
-      },
-      { label: 'Target crops', value: 'Cotton, Maize, Chilli, Tomato, Brinjal, Okra, Cabbage, Cauliflower, Soybean, Pulses, Vegetables' }
-    ],
-    packs: [
-      { label: 'Packaging', value: 'Bottle (ZC liquid); sizes 100 ml, 250 ml, 500 ml' },
-      { label: 'Recommended dose', value: '10 ml/pump' },
-      { label: 'Water volume', value: '15-litre knapsack sprayer (adjust per canopy)' },
-      { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
-      { label: 'Application stage', value: 'At early pest infestation or as per ETL/label' },
-      { label: 'Rainfastness', value: 'Good adhesion once spray deposit dries on foliage' },
-      { label: 'Re-entry interval', value: '24 hours (with PPE)' },
-      { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
-      { label: 'Country of origin', value: 'Made in India' }
-    ]
-  };
+      productInfo: [
+        { label: 'Product name', value: 'AMPIGO' },
+        { label: 'Technical name', value: this.productTitle },
+        { label: 'Pesticide type', value: 'Insecticide' },
+        { label: 'Formulation type', value: 'ZC (Zinc/Capsule Suspension)' },
+        { label: 'Physical form', value: 'Liquid suspension' },
+        { label: 'Active ingredients', value: 'Chlorantraniliprole 9.3% + Lambda Cyhalothrin 4.6% ZC' },
+        { label: 'Chemical group', value: 'Anthranilic Diamide + Synthetic Pyrethroid' },
+        {
+          label: 'Mode of action',
+          value: 'Chlorantraniliprole activates ryanodine receptors (IRAC 28); Lambda Cyhalothrin modulates sodium channels (IRAC 3A)'
+        },
+        { label: 'Action type', value: 'Contact, stomach, and translaminar' },
+        {
+          label: 'Target pests',
+          value: 'Fall armyworm, Bollworms, Fruit borers, Pod borers, Stem borers, Spodoptera, Helicoverpa, Thrips, Cutworms'
+        },
+        { label: 'Target crops', value: 'Cotton, Maize, Chilli, Tomato, Brinjal, Okra, Cabbage, Cauliflower, Soybean, Pulses, Vegetables' }
+      ],
+      packs: [
+        { label: 'Packaging', value: 'Bottle (ZC liquid); sizes 100 ml, 250 ml, 500 ml' },
+        { label: 'Recommended dose', value: '10 ml/pump' },
+        { label: 'Water volume', value: '15-litre knapsack sprayer (adjust per canopy)' },
+        { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
+        { label: 'Application stage', value: 'At early pest infestation or as per ETL/label' },
+        { label: 'Rainfastness', value: 'Good adhesion once spray deposit dries on foliage' },
+        { label: 'Re-entry interval', value: '24 hours (with PPE)' },
+        { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
+        { label: 'Country of origin', value: 'Made in India' }
+      ]
+    };
 
   officialProductDetails = [
     { label: 'Product Name', value: 'AMPIGO' },
@@ -755,7 +755,7 @@ export class Chlorantraniliprole93LambdaCyhalothrin46ZcAmpigoComponent implement
     private seo: SeoService,
     private productSchema: ProductSchemaService,
     @Inject(PLATFORM_ID) private platformId: object
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.applySeo();

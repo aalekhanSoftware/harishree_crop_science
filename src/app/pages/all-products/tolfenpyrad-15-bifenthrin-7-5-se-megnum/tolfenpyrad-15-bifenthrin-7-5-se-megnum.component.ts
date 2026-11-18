@@ -410,37 +410,37 @@ export class Tolfenpyrad15Bifenthrin75SeMegnumComponent implements OnInit, OnDes
     productInfo: Array<{ label: string; value: string }>;
     packs: Array<{ label: string; value: string }>;
   } = {
-    productInfo: [
-      { label: 'Product name', value: 'MEGNUM' },
-      { label: 'Technical name', value: this.productTitle },
-      { label: 'Pesticide type', value: 'Insecticide (Dual Action)' },
-      { label: 'Formulation type', value: 'SE (Suspension Emulsion)' },
-      { label: 'Physical form', value: 'Liquid' },
-      { label: 'Active ingredients', value: 'Tolfenpyrad 15% + Bifenthrin 7.5% SE' },
-      { label: 'Chemical groups', value: 'IRAC 21A (Tolfenpyrad) + IRAC 3A (Bifenthrin)' },
-      { label: 'Mode of action', value: 'Contact + stomach action + respiratory inhibition' },
-      { label: 'Action type', value: 'Non-systemic contact and stomach poison with respiration inhibitor' },
-      {
-        label: 'Target pests',
-        value: 'Thrips, whiteflies, aphids, jassids, mites, leaf feeders, other sucking pests'
-      },
-      {
-        label: 'Target crops',
-        value: 'Cotton, chilli, brinjal, tomato, okra, cabbage, cauliflower, vegetables, horticultural crops'
-      }
-    ],
-    packs: [
-      { label: 'Packaging', value: 'Bottle (SE liquid); sizes 100 ml, 250 ml, 500 ml, 1 LTR' },
-      { label: 'Recommended dose', value: '25 ml/pump' },
-      { label: 'Water volume', value: '15-litre knapsack sprayer (~200 L/acre typical)' },
-      { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
-      { label: 'Application stage', value: 'At early sucking pest infestation or as per ETL/label' },
-      { label: 'Coverage', value: 'Spray both leaf surfaces and undersides where pests feed' },
-      { label: 'Re-entry interval', value: '24 hours (with PPE)' },
-      { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
-      { label: 'Country of origin', value: 'Made in India' }
-    ]
-  };
+      productInfo: [
+        { label: 'Product name', value: 'MEGNUM' },
+        { label: 'Technical name', value: this.productTitle },
+        { label: 'Pesticide type', value: 'Insecticide (Dual Action)' },
+        { label: 'Formulation type', value: 'SE (Suspension Emulsion)' },
+        { label: 'Physical form', value: 'Liquid' },
+        { label: 'Active ingredients', value: 'Tolfenpyrad 15% + Bifenthrin 7.5% SE' },
+        { label: 'Chemical groups', value: 'IRAC 21A (Tolfenpyrad) + IRAC 3A (Bifenthrin)' },
+        { label: 'Mode of action', value: 'Contact + stomach action + respiratory inhibition' },
+        { label: 'Action type', value: 'Non-systemic contact and stomach poison with respiration inhibitor' },
+        {
+          label: 'Target pests',
+          value: 'Thrips, whiteflies, aphids, jassids, mites, leaf feeders, other sucking pests'
+        },
+        {
+          label: 'Target crops',
+          value: 'Cotton, chilli, brinjal, tomato, okra, cabbage, cauliflower, vegetables, horticultural crops'
+        }
+      ],
+      packs: [
+        { label: 'Packaging', value: 'Bottle (SE liquid); sizes 100 ml, 250 ml, 500 ml, 1 LTR' },
+        { label: 'Recommended dose', value: '25 ml/pump' },
+        { label: 'Water volume', value: '15-litre knapsack sprayer (~200 L/acre typical)' },
+        { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
+        { label: 'Application stage', value: 'At early sucking pest infestation or as per ETL/label' },
+        { label: 'Coverage', value: 'Spray both leaf surfaces and undersides where pests feed' },
+        { label: 'Re-entry interval', value: '24 hours (with PPE)' },
+        { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
+        { label: 'Country of origin', value: 'Made in India' }
+      ]
+    };
 
   officialProductDetails = [
     { label: 'Product Name', value: 'MEGNUM' },
@@ -583,7 +583,7 @@ export class Tolfenpyrad15Bifenthrin75SeMegnumComponent implements OnInit, OnDes
       name: 'AMPIGO (Chlorantraniliprole + Lambda Cyhalothrin ZC)',
       description: 'Dual-action insecticide for caterpillars, borers, and fall armyworm with knockdown plus residual control.',
       route: '/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc',
-      image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc.png',
+      image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc--.png',
       imageAlt: 'AMPIGO dual-action insecticide by Harishree Crop Science'
     },
     {
@@ -696,7 +696,7 @@ export class Tolfenpyrad15Bifenthrin75SeMegnumComponent implements OnInit, OnDes
     private seo: SeoService,
     private productSchema: ProductSchemaService,
     @Inject(PLATFORM_ID) private platformId: object
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.applySeo();

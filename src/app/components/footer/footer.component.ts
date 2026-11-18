@@ -46,7 +46,7 @@ export class FooterComponent implements OnInit, OnDestroy {
     'Emamectin Benzoate 5% S G (Proceed)',
     'Thio-H',
     'Mpire 404',
-    'Mission',
+    // 'Mission',
     'Tolfenpyrad 15% EC (H Fun)'
   ];
 

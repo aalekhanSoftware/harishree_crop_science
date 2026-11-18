@@ -320,37 +320,37 @@ export class Imidacloprid70WgExtraMida70Component implements OnInit, OnDestroy {
     productInfo: Array<{ label: string; value: string }>;
     packs: Array<{ label: string; value: string }>;
   } = {
-    productInfo: [
-      { label: 'Product name', value: 'EXTRA MIDA 70' },
-      { label: 'Technical name', value: this.productTitle },
-      { label: 'Pesticide type', value: 'Insecticide' },
-      { label: 'Formulation type', value: 'WG (Water Dispersible Granule)' },
-      { label: 'Physical form', value: 'Granules' },
-      { label: 'Active ingredient', value: 'Imidacloprid 70% WG' },
-      { label: 'Chemical group', value: 'Neonicotinoid (IRAC Group 4A)' },
-      {
-        label: 'Mode of action',
-        value: 'Disrupts nicotinic acetylcholine receptors — systemic, contact, and stomach action'
-      },
-      { label: 'Action type', value: 'Systemic, contact, and stomach' },
-      {
-        label: 'Target pests',
-        value: 'Whiteflies, Aphids, Jassids, Thrips, Leafhoppers, Plant hoppers, Psylla, Termites, Mealybugs, Sucking pests'
-      },
-      { label: 'Target crops', value: 'Cotton, Chilli, Paddy, Sugarcane, Citrus, Tomato, Brinjal, Okra, Vegetables, Pulses' }
-    ],
-    packs: [
-      { label: 'Packaging', value: 'Pouch/bottle (WG granules); sizes 50 GM, 100 GM, 250 GM, 1 KG' },
-      { label: 'Recommended dose', value: '7 gm/pump' },
-      { label: 'Water volume', value: '15-litre knapsack sprayer (adjust per canopy)' },
-      { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
-      { label: 'Application stage', value: 'At early pest infestation or as per ETL/label' },
-      { label: 'Rainfastness', value: 'Good adhesion once spray deposit dries on foliage' },
-      { label: 'Re-entry interval', value: '24 hours (with PPE)' },
-      { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
-      { label: 'Country of origin', value: 'Made in India' }
-    ]
-  };
+      productInfo: [
+        { label: 'Product name', value: 'EXTRA MIDA 70' },
+        { label: 'Technical name', value: this.productTitle },
+        { label: 'Pesticide type', value: 'Insecticide' },
+        { label: 'Formulation type', value: 'WG (Water Dispersible Granule)' },
+        { label: 'Physical form', value: 'Granules' },
+        { label: 'Active ingredient', value: 'Imidacloprid 70% WG' },
+        { label: 'Chemical group', value: 'Neonicotinoid (IRAC Group 4A)' },
+        {
+          label: 'Mode of action',
+          value: 'Disrupts nicotinic acetylcholine receptors — systemic, contact, and stomach action'
+        },
+        { label: 'Action type', value: 'Systemic, contact, and stomach' },
+        {
+          label: 'Target pests',
+          value: 'Whiteflies, Aphids, Jassids, Thrips, Leafhoppers, Plant hoppers, Psylla, Termites, Mealybugs, Sucking pests'
+        },
+        { label: 'Target crops', value: 'Cotton, Chilli, Paddy, Sugarcane, Citrus, Tomato, Brinjal, Okra, Vegetables, Pulses' }
+      ],
+      packs: [
+        { label: 'Packaging', value: 'Pouch/bottle (WG granules); sizes 50 GM, 100 GM, 250 GM, 1 KG' },
+        { label: 'Recommended dose', value: '7 gm/pump' },
+        { label: 'Water volume', value: '15-litre knapsack sprayer (adjust per canopy)' },
+        { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
+        { label: 'Application stage', value: 'At early pest infestation or as per ETL/label' },
+        { label: 'Rainfastness', value: 'Good adhesion once spray deposit dries on foliage' },
+        { label: 'Re-entry interval', value: '24 hours (with PPE)' },
+        { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
+        { label: 'Country of origin', value: 'Made in India' }
+      ]
+    };
 
   officialProductDetails = [
     { label: 'Product Name', value: 'EXTRA MIDA 70' },
@@ -502,7 +502,7 @@ export class Imidacloprid70WgExtraMida70Component implements OnInit, OnDestroy {
       name: 'Chlorantraniliprole 9.3% + Lambda Cyhalothrin 4.6% ZC (AMPIGO)',
       description: 'Dual-action ZC insecticide for caterpillars, bollworms, and borers in cotton, maize, and vegetables.',
       route: '/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc',
-      image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc.png',
+      image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc--.png',
       imageAlt: 'AMPIGO Chlorantraniliprole Lambda Cyhalothrin insecticide by Harishree Crop Science'
     }
   ];
@@ -784,7 +784,7 @@ export class Imidacloprid70WgExtraMida70Component implements OnInit, OnDestroy {
     private seo: SeoService,
     private productSchema: ProductSchemaService,
     @Inject(PLATFORM_ID) private platformId: object
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.applySeo();

@@ -323,29 +323,29 @@ export class ThiophanateMethyl70WpHtmComponent implements OnInit, OnDestroy {
     productInfo: Array<{ label: string; value: string }>;
     packs: Array<{ label: string; value: string }>;
   } = {
-    productInfo: [
-      { label: 'Product name', value: 'HTM' },
-      { label: 'Technical name', value: this.productTitle },
-      { label: 'Pesticide type', value: 'Fungicide' },
-      { label: 'Formulation type', value: 'WP (Wettable Powder)' },
-      { label: 'Physical form', value: 'Powder' },
-      { label: 'Active ingredient', value: 'Thiophanate Methyl 70% WP' },
-      { label: 'Chemical group', value: 'Benzimidazole / MBC (FRAC 1)' },
-      { label: 'Action type', value: 'Systemic, preventive and curative disease control' },
-      { label: 'Diseases controlled', value: 'Anthracnose, powdery mildew, leaf spot, fruit rot, scab, wilt, stem rot, die back' },
-      { label: 'Target crops', value: 'Mango, chilli, tomato, grapes, apple, pomegranate, cucumber, brinjal' }
-    ],
-    packs: [
-      { label: 'Packaging', value: 'Pack; sizes 500 gm, 1 Kg' },
-      { label: 'Recommended dose', value: '20 gm/pump' },
-      { label: 'Water volume', value: '15-litre knapsack sprayer (~200 L/acre typical)' },
-      { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
-      { label: 'Application stage', value: 'Early disease appearance or as per label/agronomist' },
-      { label: 'Coverage', value: 'Uniform spray on leaves, stems, and fruits' },
-      { label: 'Re-entry interval', value: '24 hours (with PPE)' },
-      { label: 'Country of origin', value: 'Made in India' }
-    ]
-  };
+      productInfo: [
+        { label: 'Product name', value: 'HTM' },
+        { label: 'Technical name', value: this.productTitle },
+        { label: 'Pesticide type', value: 'Fungicide' },
+        { label: 'Formulation type', value: 'WP (Wettable Powder)' },
+        { label: 'Physical form', value: 'Powder' },
+        { label: 'Active ingredient', value: 'Thiophanate Methyl 70% WP' },
+        { label: 'Chemical group', value: 'Benzimidazole / MBC (FRAC 1)' },
+        { label: 'Action type', value: 'Systemic, preventive and curative disease control' },
+        { label: 'Diseases controlled', value: 'Anthracnose, powdery mildew, leaf spot, fruit rot, scab, wilt, stem rot, die back' },
+        { label: 'Target crops', value: 'Mango, chilli, tomato, grapes, apple, pomegranate, cucumber, brinjal' }
+      ],
+      packs: [
+        { label: 'Packaging', value: 'Pack; sizes 500 gm, 1 Kg' },
+        { label: 'Recommended dose', value: '20 gm/pump' },
+        { label: 'Water volume', value: '15-litre knapsack sprayer (~200 L/acre typical)' },
+        { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
+        { label: 'Application stage', value: 'Early disease appearance or as per label/agronomist' },
+        { label: 'Coverage', value: 'Uniform spray on leaves, stems, and fruits' },
+        { label: 'Re-entry interval', value: '24 hours (with PPE)' },
+        { label: 'Country of origin', value: 'Made in India' }
+      ]
+    };
 
   officialProductDetails = [
     { label: 'Product Name', value: 'HTM' },
@@ -415,7 +415,7 @@ export class ThiophanateMethyl70WpHtmComponent implements OnInit, OnDestroy {
       name: 'Saf 63 (Carbendazim 12% + Mancozeb 63% WP)',
       description: 'Dual-action systemic plus contact fungicide for leaf spot, blast, rust, and fruit rot across field and horticultural crops.',
       route: '/products/carbendazim-12-mancozeb-63-wp-saf-63',
-      image: 'assets/products/carbendazim-12-mancozeb-63-wp.png',
+      image: 'assets/products/carbendazim-12-mancozeb-63-wp--.png',
       imageAlt: 'Saf 63 Carbendazim Mancozeb fungicide by Harishree Crop Science'
     },
     {
@@ -531,7 +531,7 @@ export class ThiophanateMethyl70WpHtmComponent implements OnInit, OnDestroy {
     private seo: SeoService,
     private productSchema: ProductSchemaService,
     @Inject(PLATFORM_ID) private platformId: object
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.applySeo();

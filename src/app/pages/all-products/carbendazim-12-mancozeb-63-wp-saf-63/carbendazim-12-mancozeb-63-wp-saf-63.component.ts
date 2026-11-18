@@ -22,7 +22,7 @@ export class Carbendazim12Mancozeb63WpSaf63Component implements OnInit, OnDestro
   private readonly baseUrl = environment.baseUrl;
   readonly productPath = '/products/carbendazim-12-mancozeb-63-wp-saf-63';
   readonly pageUrl = `${this.baseUrl}${this.productPath}`;
-  readonly productImagePath = 'assets/products/carbendazim-12-mancozeb-63-wp.png';
+  readonly productImagePath = 'assets/products/carbendazim-12-mancozeb-63-wp--.png';
   readonly productImageUrl = `${this.baseUrl}/${this.productImagePath}`;
 
   private readonly metaStateKey = this.seo.createMetaStateKey(SEO_PAGE_ID);
@@ -326,29 +326,29 @@ export class Carbendazim12Mancozeb63WpSaf63Component implements OnInit, OnDestro
     productInfo: Array<{ label: string; value: string }>;
     packs: Array<{ label: string; value: string }>;
   } = {
-    productInfo: [
-      { label: 'Product name', value: 'Saf 63' },
-      { label: 'Technical name', value: this.productTitle },
-      { label: 'Pesticide type', value: 'Fungicide' },
-      { label: 'Formulation type', value: 'WP (Wettable Powder)' },
-      { label: 'Physical form', value: 'Powder' },
-      { label: 'Active ingredients', value: 'Carbendazim 12% + Mancozeb 63% WP' },
-      { label: 'Chemical group', value: 'Benzimidazole (FRAC 1) + Dithiocarbamate (FRAC M03)' },
-      { label: 'Action type', value: 'Systemic + contact, preventive and curative disease control' },
-      { label: 'Diseases controlled', value: 'Blast, leaf spot, rust, anthracnose, fruit rot, powdery mildew, alternaria, seedling diseases' },
-      { label: 'Target crops', value: 'Paddy, groundnut, soybean, tomato, chilli, grapes, mango, cotton' }
-    ],
-    packs: [
-      { label: 'Packaging', value: 'Pack; sizes 500 gm, 1 Kg' },
-      { label: 'Recommended dose', value: '20 gm/pump' },
-      { label: 'Water volume', value: '15-litre knapsack sprayer (~200 L/acre typical)' },
-      { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
-      { label: 'Application stage', value: 'Early disease appearance or as per label/agronomist' },
-      { label: 'Coverage', value: 'Uniform spray on leaves, stems, and fruits' },
-      { label: 'Re-entry interval', value: '24 hours (with PPE)' },
-      { label: 'Country of origin', value: 'Made in India' }
-    ]
-  };
+      productInfo: [
+        { label: 'Product name', value: 'Saf 63' },
+        { label: 'Technical name', value: this.productTitle },
+        { label: 'Pesticide type', value: 'Fungicide' },
+        { label: 'Formulation type', value: 'WP (Wettable Powder)' },
+        { label: 'Physical form', value: 'Powder' },
+        { label: 'Active ingredients', value: 'Carbendazim 12% + Mancozeb 63% WP' },
+        { label: 'Chemical group', value: 'Benzimidazole (FRAC 1) + Dithiocarbamate (FRAC M03)' },
+        { label: 'Action type', value: 'Systemic + contact, preventive and curative disease control' },
+        { label: 'Diseases controlled', value: 'Blast, leaf spot, rust, anthracnose, fruit rot, powdery mildew, alternaria, seedling diseases' },
+        { label: 'Target crops', value: 'Paddy, groundnut, soybean, tomato, chilli, grapes, mango, cotton' }
+      ],
+      packs: [
+        { label: 'Packaging', value: 'Pack; sizes 500 gm, 1 Kg' },
+        { label: 'Recommended dose', value: '20 gm/pump' },
+        { label: 'Water volume', value: '15-litre knapsack sprayer (~200 L/acre typical)' },
+        { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
+        { label: 'Application stage', value: 'Early disease appearance or as per label/agronomist' },
+        { label: 'Coverage', value: 'Uniform spray on leaves, stems, and fruits' },
+        { label: 'Re-entry interval', value: '24 hours (with PPE)' },
+        { label: 'Country of origin', value: 'Made in India' }
+      ]
+    };
 
   officialProductDetails = [
     { label: 'Product Name', value: 'Saf 63' },
@@ -534,7 +534,7 @@ export class Carbendazim12Mancozeb63WpSaf63Component implements OnInit, OnDestro
     private seo: SeoService,
     private productSchema: ProductSchemaService,
     @Inject(PLATFORM_ID) private platformId: object
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.applySeo();

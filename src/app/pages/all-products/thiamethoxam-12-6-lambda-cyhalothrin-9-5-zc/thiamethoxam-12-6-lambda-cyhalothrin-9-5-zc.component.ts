@@ -40,7 +40,7 @@ export class Thiamethoxam12_6LambdaCyhalothrin9_5ZcComponent implements OnInit, 
     'https://www.indiamart.com/proddetail/mission-thiamethoxam-12-6-lambda-cyhalothrin-9-5-zc-2855406674355.html';
 
   /** Used for hero + og image and JSON-LD. */
-  readonly bottleImageUrl = `${this.baseUrl}/assets/products/thiamethoxam-12-6-lambda-cyhalothrin-9-5-zc.jpg`;
+  readonly bottleImageUrl = `${this.baseUrl}/assets/products/thiamethoxam-12-6-lambda-cyhalothrin-9-5-zc--.jpg`;
   readonly specFigureImage = 'assets/products/mission-indiamart-spec-reference.png';
 
   productTitle = 'Thiamethoxam 12.6% + Lambda Cyhalothrin 9.5% ZC';
@@ -415,7 +415,7 @@ export class Thiamethoxam12_6LambdaCyhalothrin9_5ZcComponent implements OnInit, 
     private transferState: TransferState,
     @Inject(PLATFORM_ID) private platformId: object,
     @Inject(DOCUMENT) private document: Document
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.setMetaData();

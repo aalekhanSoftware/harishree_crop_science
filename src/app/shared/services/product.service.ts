@@ -10,251 +10,293 @@ export class ProductService {
     {
       name: 'Insecticide',
       products: [
-        { name: 'Emamectin Benzoate 5% S G (Proceed)', 
-          image: 'assets/products/PROCEED.png', 
+        {
+          name: 'Emamectin Benzoate 5% S G (Proceed)',
+          image: 'assets/products/PROCEED.png',
           description: 'Advanced water-soluble granular insecticide for caterpillar and pest control',
           fullDescription: 'Emamectin Benzoate 5% S G (Proceed) is our advanced insecticide formulation designed for comprehensive pest management. It offers rapid knockdown and long-lasting residual control against a broad spectrum of agricultural pests, especially caterpillars. The unique soluble granule formulation ensures better crop coverage, perfect solubility, and enhanced resistance to wash-off, making it ideal for professional farmers seeking reliable pest control solutions.',
           url: 'product/emamectin-benzoate-5-sg'
-         },
-        { name: 'Thio-H', image: 'assets/products/THIO-H.png', description: 'Effective pest management',
-            fullDescription: 'Thio-h represents the latest in systemic insecticide technology. This powerful formulation penetrates plant tissues to provide protection from within, effectively controlling both sucking and chewing pests. Its balanced composition ensures crop safety while delivering outstanding pest control performance across various agricultural applications.',
-            url: 'product/thiamethoxam-75-sg'
-         },
-        { name: 'Super FS', image: 'assets/products/thiamethoxam-30-fs.png', description: 'Thiamethoxam 30% FS seed treatment',
-            fullDescription: 'Super FS (Thiamethoxam 30% FS) is our professional seed-treatment insecticide for early-stage crop protection. It supports cleaner crop establishment with practical dose guidance and broad compatibility in integrated farm advisory programs.',
-            url: 'all-products/thiamethoxam-30-fs'
-         },
-        { name: 'Mpire 404', image: 'assets/products/MPIRE-404.png', description: 'Complete pest control',
-            fullDescription: 'Mpire 404 delivers comprehensive pest management through its innovative dual-action formula. This professional-grade solution provides both contact and systemic activity, ensuring thorough pest elimination at all life stages. Its unique composition offers excellent crop safety while maintaining high efficacy against resistant pest populations.',
-            url: 'product/mpire-404'
-         },
-        { name: 'Profenofos 40% + Cypermethrin 4% EC (Mpire 404)',
-            image: 'assets/products/MPIRE-404.png',
-            description: 'Profenofos 40% + Cypermethrin 4% EC broad-spectrum insecticide',
-            fullDescription: 'Profenofos 40% + Cypermethrin 4% EC (Mpire 404) is Harishree Crop Science\'s EC combination insecticide for practical control of mixed chewing and sucking pest pressure. Recommended field guidance is 30 ml per pump, with usage based on crop stage, ETL and local advisory for consistent performance.',
-            url: 'product/profenofos-40-cypermethrin-4-ec'
-         },
-         { name: 'Tolfenpyrad 15% EC (H Fun)', 
-            image: 'assets/products/tolfenpyrad-15-ec.png', 
-            description: 'EC insecticide for aphids, whiteflies, thrips, mites and young caterpillars',
-            fullDescription: 'H Fun (Tolfenpyrad 15% EC) is Harishree Crop Science’s emulsifiable concentrate for sucking pests and early-instar caterpillars—contact and stomach action via IRAC Group 21A (mitochondrial Complex I). Field guidance: 30 ml per knapsack pump with ~200 L water per acre on cotton, chilli, tomato, brinjal, okra, groundnut, tea, paddy, soybean and other label crops when used with scouting and rotation.',
-            url: 'product/tolfenpyrad-15-ec'
-          },
-         { name: 'Tolfenpyrad 15% + Bifenthrin 7.5% SE (MEGNUM)',
-            image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
-            description: 'Dual-action SE insecticide for thrips, whiteflies, aphids, jassids and mites',
-            fullDescription: 'MEGNUM (Tolfenpyrad 15% + Bifenthrin 7.5% SE) is Harishree Crop Science’s dual-action suspension emulsion for fast knockdown and long-lasting control of thrips, whiteflies, aphids, jassids, mites and other sucking pests. Combines IRAC 21A respiratory inhibition with IRAC 3A contact and stomach action. Field guidance: 25 ml per knapsack pump on cotton, chilli, brinjal, tomato, okra, cabbage, cauliflower and vegetables.',
-            url: 'products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum'
-          },
-         { name: 'Pyriproxyfen 10% + Bifenthrin 10% w/w EC (FINAL)',
-            image: 'assets/products/insecticide/pyriproxyfen-10-bifenthrin-10-w-w-ec.png',
-            description: 'Dual-action EC insecticide for whiteflies, thrips, mites, aphids and jassids',
-            fullDescription: 'FINAL (Pyriproxyfen 10% + Bifenthrin 10% w/w EC) is Harishree Crop Science’s dual-action emulsifiable concentrate combining insect growth regulation with contact and stomach action for fast knockdown and long-term suppression of whiteflies, thrips, mites, aphids, jassids and other sucking pests. Field guidance: 30 ml per knapsack pump on cotton, chilli, brinjal, tomato, okra, cabbage, cauliflower and vegetables.',
-            url: 'product/pyriproxyfen-10-bifenthrin-10-w-w-ec'
-          },
-          { name: 'Neem Pro', 
-            image: 'assets/products/NEEM PRO.png', 
-            description: 'Natural pest control',
-            fullDescription: 'Neem Pro harnesses the power of natural neem extracts enhanced with advanced formulation technology. This eco-friendly solution provides effective control against multiple pest species while being safe for the environment. Its botanical origin ensures minimal residue concerns and better acceptance in organic farming.'
-          },
-          { name: 'Mission', 
-            image: 'assets/products/thiamethoxam-12-6-lambda-cyhalothrin-9-5-zc.jpg', 
-            description: 'Target-specific insecticide',
-            fullDescription: 'Mission is a precision-engineered insecticide designed for specific pest targets. Its selective action ensures maximum effectiveness against target pests while minimizing impact on non-target organisms. The advanced formulation provides excellent rainfastness and extended protection periods.',
-            url: 'product/thiamethoxam-12-6-lambda-cyhalothrin-9-5-zc'
-          },
-          { name: 'Kavach', 
-            image: 'assets/products/kavach.png', 
-            description: 'Protective insect shield',
-            fullDescription: 'Kavach creates a powerful protective shield against destructive insect pests. This innovative formulation provides both contact and residual activity, ensuring comprehensive crop protection. Its unique shield technology ensures better adherence to plant surfaces and resistance to environmental factors.'
-          },
-          { name: 'Pride H (Acetamiprid 20% SP)',
-            image: 'assets/products/insecticide/acetamiprid-20-sp.png',
-            description: 'Systemic neonicotinoid insecticide for whitefly, aphid & thrips control',
-            fullDescription: 'PRIDE H (Acetamiprid 20% SP) is Harishree Crop Science\'s systemic neonicotinoid insecticide for whitefly control, aphid control, thrips control, and jassid control in cotton, chilli, tomato, brinjal, okra, cabbage, and vegetables. Recommended dose: 10 gm per pump. Competitive pricing from ₹100 for 100 GM.',
-            url: 'product/acetamiprid-20-sp'
-          },
-          { name: 'Hmida', 
-            image: 'assets/products/H MIDA.png', 
-            description: 'Advanced insect management',
-            fullDescription: 'Hmida delivers cutting-edge insect management through its innovative systemic action. The product provides comprehensive protection by controlling pests at multiple life stages. Its advanced formulation ensures quick absorption and uniform distribution throughout the plant system.'
-          },
-          { name: 'Abamectin 1.9% EC (Dr. Supreme)',
-            image: 'assets/products/abamectin-1-9-ec.png',
-            description: 'EC insecticide and acaricide for mites, thrips and leaf miners',
-            fullDescription:
-              'Dr. Supreme (Abamectin 1.9% EC) is Harishree Crop Science\'s emulsifiable concentrate for mites, thrips, leaf miners and light caterpillar pressure. IRAC Group 6 (avermectin) chemistry with contact, stomach and translaminar activity—suited to chilli, tomato, brinjal, okra, cotton, tea, grapes, citrus and other label crops when used at the recommended dose and PHI.',
-            url: 'product/abamectin-1-9-ec'
-          },
-          { name: 'Emamectin Benzoate 1.9% EC (Buldozer)', 
-            image: 'assets/products/Buldozer.png', 
-            description: 'Emamectin Benzoate 1.9% EC — powerful pest elimination',
-            fullDescription: 'Buldozer (Emamectin Benzoate 1.9% EC) is a powerful emulsifiable concentrate insecticide designed for fast knockdown and translaminar control of caterpillars, leaf miners, borers and thrips. Its unique chloride-channel-activating mode of action (IRAC Group 6) ensures reliable efficacy even against resistant pest populations on cotton, vegetables, chilli, paddy and more.',
-            url: 'product/emamectin-benzoate-1-9-ec'
-          },
-          { name: 'Chlorpyriphos 50% + Cypermethrin 5% EC (Combi 505)', 
-            image: 'assets/products/chlorpyriphos-50-cypermethrin-5-ec.png', 
-            description: 'Chlorpyriphos 50% + Cypermethrin 5% EC broad-spectrum combination',
-            fullDescription: 'Chlorpyriphos 50% + Cypermethrin 5% EC (Combi 505) is Harishree Crop Science\'s combination insecticide for practical field control of mixed pest pressure. The EC formulation supports fast knockdown and dependable follow-through with contact, stomach and fumigant action when used at 25 ml per pump as per crop label and local advisory.',
-            url: 'product/chlorpyriphos-50-cypermethrin-5-ec'
-          },
-          { name: 'Chlorantraniliprole 18.5% SC (Cora-5)',
-            image: 'assets/products/chlorantraniliprole-18-5-sc.png',
-            description: 'Chlorantraniliprole 18.5% SC for top borers, stem borers and FAW support',
-            fullDescription: 'Cora-5 (Chlorantraniliprole 18.5% SC) is Harishree Crop Science\'s professional insecticide for borer and larval pest management in crops such as groundnut, maize, paddy, cotton, chilli and vegetables. It supports systemic and contact action with practical guidance of 5 ml per pump when used as per crop label and local advisory.',
-            url: 'product/chlorantraniliprole-18-5-sc'
-          },
-          { name: 'AMPIGO',
-            image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc.png',
-            description: 'Chlorantraniliprole 9.3% + Lambda Cyhalothrin 4.6% ZC dual-action insecticide',
-            fullDescription: 'AMPIGO (Chlorantraniliprole 9.3% + Lambda Cyhalothrin 4.6% ZC) is Harishree Crop Science\'s premium dual-action ZC insecticide for fast knockdown and long residual control of fall armyworm, bollworms, fruit borers, and caterpillars in cotton, maize, chilli, tomato, and vegetables. Field guidance: 10 ml per pump when used at early larval stage as per label and local advisory.',
-            url: 'products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc'
-          },
-          { name: 'Fipronil 40% + Imidacloprid 40% WG (FI 40)', 
-            image: 'assets/products/insecticide/fipronil-40-imidacloprid-40-wg.jpg', 
-            description: 'Fipronil 40% + Imidacloprid 40% WG dual-action',
-            fullDescription: 'Fipronil 40% + Imidacloprid 40% WG (FI 40) combines two proven actives to deliver both contact and systemic action against tough pest complexes. The water-dispersible granule ensures quick dispersion, uniform spray coverage and strong residual control on key crops. Designed for professional growers, FI 40 provides rapid knockdown of chewing and sucking insects while promoting excellent crop safety and resistance-management value.',
-            url: 'product/fipronil-40-imidacloprid-40-wg'
-          },
-          { name: 'Hil Thene', 
-            image: 'assets/products/insecticide/acephate-75-sp.jpg', 
-            description: 'Acephate 75% SP broad-spectrum control',
-            fullDescription: 'Hil Thene (Acephate 75% SP) is a professional, systemic and contact insecticide that provides quick knockdown and dependable control of thrips, aphids, whiteflies, jassids, bollworms, and caterpillars. The high-quality SP formulation dissolves rapidly, offering consistent performance, excellent leaf coverage and strong compatibility in tank mixes. Trusted by growers for its reliability and value across cotton, chilli, paddy, and vegetable crops.',
-            url: 'product/acephate-75-sp'
-          },
-          { name: 'Chilli H', 
-            image: 'assets/products/insecticide/fipronil-2-92-ec.jpg', 
-            description: 'Fipronil 2.92% EC contact and stomach action',
-            fullDescription: 'Chilli H (Fipronil 2.92% EC) is engineered for fast, decisive control of thrips, stem borers, white grubs, termites, and soil pests in chilli, rice, cotton, sugarcane, and vegetable crops. Its advanced EC base ensures superior penetration and persistent residual activity, helping reduce re-infestation. With excellent rainfastness and leaf adherence, Chilli H delivers premium protection while supporting clean, market-ready produce.',
-            url: 'products/insecticide/fipronil-2-92-ec'
-          },
-          { name: 'Chloro Shield 20', 
-            image: 'assets/products/insecticide/chloro-shield-20.jpg', 
-            description: 'Chlorpyriphos 20% EC reliable broad-spectrum',
-            fullDescription: 'Chloro Shield 20 (Chlorpyriphos 20% EC) is a robust organophosphate insecticide offering dependable contact, stomach and fumigant action. Ideal for soil and foliar insect management, it effectively controls termites, borers and sucking pests across multiple crops. The optimized EC formulation ensures strong knockdown, lasting field performance and flexible application options for professional programs.',
-            url: 'product/chlorpyriphos-20-ec'
-          },
-          { name: 'Cloro GR', 
-            image: 'assets/products/insecticide/cloro-gr.jpg', 
-            description: 'Chlorpyriphos 10% GR soil insecticide',
-            fullDescription: 'Cloro GR (Chlorpyriphos 10% GR) provides targeted, season-long protection from soil-dwelling insects including termites and root grubs. The granular formulation enables convenient basal application and uniform distribution in the root zone, safeguarding emerging seedlings and establishing crops. Designed for reliability and ease of use in nursery and field situations.'
-          },
-          { name: 'DR. Delta',
-            image: 'assets/products/insecticide/dr-delta.jpg',
-            description: 'Deltamethrin 2.8% EC fast knockdown pyrethroid',
-            fullDescription: 'DR. Delta (Deltamethrin 2.8% EC) is a premium pyrethroid delivering lightning-fast knockdown and excellent residual control of lepidopteran and sucking pests. Its advanced solvent system improves spread, coverage and rainfastness while remaining gentle on crops when used as directed. A go-to choice for quick, visible results in vegetables, cotton and other labeled crops.',
-            url: 'product/deltamethrin-2-8-ec'
-          },
-          { name: 'DELTA PLUS',
-            image: 'assets/products/insecticide/deltamethrin-11-w-w-ec.png',
-            description: 'Deltamethrin 11% w/w EC fast knockdown pyrethroid',
-            fullDescription: 'DELTA PLUS (Deltamethrin 11% w/w EC) is Harishree Crop Science\'s premium synthetic pyrethroid insecticide for bollworms, fruit borers, stem borers, caterpillars, thrips, and aphids in cotton, chilli, vegetables, paddy, pulses, and oilseeds. Recommended dose: 10 ml per pump.',
-            url: 'products/insecticide/deltamethrin-11-w-w-ec-delta-plus'
-          },
-          { name: 'INTERPRID',
-            image: 'assets/products/insecticide/chlorfenapyr-10-sc.png',
-            description: 'Chlorfenapyr 10% SC pyrrole insecticide and acaricide',
-            fullDescription: 'INTERPRID (Chlorfenapyr 10% SC) is Harishree Crop Science\'s premium pyrrole insecticide and acaricide for thrips, mites, caterpillars, diamondback moth, and fruit borers in chilli, cotton, brinjal, tomato, cabbage, cauliflower, okra, and vegetables. Recommended dose: 30 ml per pump.',
-            url: 'products/chlorfenapyr-10-sc-interprid'
-          },
-          { name: 'Eclipse', 
-            image: 'assets/products/insecticide/ethion-40-cypermethrin-5-ec.jpg', 
-            description: 'Ethion 40% + Cypermethrin 5% EC dual-action insecticide',
-            fullDescription: 'ECLIPSE (Ethion 40% + Cypermethrin 5% EC) combines organophosphate and pyrethroid chemistries for broad-spectrum, dual-mode action. The formulation delivers rapid knockdown with strong residual effect, controlling bollworms, thrips, aphids, whiteflies, and caterpillars. Recommended dose: 25 ml per pump.',
-            url: 'products/insecticide/ethion-40-cypermethrin-5-ec-eclipse'
-          },
-          { name: 'Extra Mida 70', 
-            image: 'assets/products/insecticide/imidacloprid-70-wg.jpg', 
-            description: 'Imidacloprid 70% WG high-load systemic',
-            fullDescription: 'Extra Mida 70 (Imidacloprid 70% WG) is a high-load neonicotinoid that provides powerful systemic control of aphids, whiteflies and jassids at low use rates. The premium WG granules disperse instantly in water, offering excellent spray stability, superior leaf coverage and long-lasting protection for professional, residue-conscious programs.'
-          },
-          { name: 'Profenofos 50% EC (EXTRA PROFEX)',
-            image: 'assets/products/insecticide/profenofos-50-ec.jpg',
-            description: 'Profenofos 50% EC broad-spectrum contact and stomach insecticide',
-            fullDescription: 'EXTRA PROFEX (Profenofos 50% EC) is Harishree Crop Science\'s premium broad-spectrum organophosphate insecticide for bollworms, whiteflies, aphids, thrips, jassids, and caterpillars in cotton, chilli, vegetables, pulses, and oilseeds. Recommended dose: 30 ml per pump.',
-            url: 'products/insecticide/profenofos-50-ec'
-          },
-          { name: 'H-Cyper 25 (Cypermethrin 25% EC)', 
-            image: 'assets/products/insecticide/cypermethrin-25-ec.jpg', 
-            description: 'Cypermethrin 25% EC contact and stomach insecticide',
-            fullDescription: 'H-Cyper 25 (Cypermethrin 25% EC) is Harishree Crop Science\'s practical EC insecticide for rapid knockdown and disciplined field control of bollworms, aphids, jassids, thrips and other major crop pests. With clear guidance of 25 ml per pump and broad crop fit, it supports dependable on-farm pest management when used at early infestation stage as per label and local advisory.',
-            url: 'product/cypermethrin-25-ec'
-          },
-          // { name: 'Kavach Plus',
-          //   image: 'assets/products/insecticide/kavach-plus.jpg',
-          //   description: 'Premium multi-crop insect shield',
-          //   fullDescription: 'Kavach Plus is a premium, next-generation insect shield formulated for consistent performance across vegetables, cotton and other commercial crops. Its optimized chemistry ensures quick knockdown with dependable residual action, superior leaf adherence and strong rainfastness for season-long protection in professional programs.'
-          // },
-          { name: 'Mite',
-            image: 'assets/products/insecticide/mite.jpg',
-            description: 'Propargite 57% EC dedicated acaricide',
-            fullDescription: 'Mite (Propargite 57% EC) is a specialist acaricide engineered to knock down and control red spider mites and other damaging mite species. Its contact action provides quick results while the advanced EC system improves spread and coverage over dense canopies for dependable field performance.'
-          },
-          { name: 'Oscar',
-            image: 'assets/products/insecticide/oscar.jpg',
-            description: 'Reliable broad-spectrum insecticide',
-            fullDescription: 'Oscar is a reliable, grower-friendly insecticide designed for consistent control of key sucking and chewing pests. The formulation focuses on superior coverage, quick uptake and strong adherence to plant surfaces, supporting clean foliage and market-ready produce with minimal sprays.'
-          },
-          { name: 'Pilot',
-            image: 'assets/products/insecticide/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc.jpg',
-            description: 'Pyriproxyfen 8% + Dinotefuran 5% + Diafenthiuron 18% SC',
-            fullDescription: 'Pilot (Pyriproxyfen 8% + Dinotefuran 5% + Diafenthiuron 18% SC) combines three proven actives to deliver a modern triple-action assault on whitefly, aphids, thrips, and jassids. The unique blend targets multiple life stages with rapid knockdown, strong systemic movement, IGR lifecycle disruption, and lasting residual control with excellent crop safety.',
-            url: 'products/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc-pilot'
-          },
-          { name: 'Pro 5G',
-            image: 'assets/products/insecticide/emamectin-benzoate-1-5-fipronil-3-5-sc.jpg',
-            description: 'Emamectin benzoate 1.5% + Fipronil 3.5% SC synergy',
-            fullDescription: 'Pro 5G unites Emamectin benzoate 1.5% with Fipronil 3.5% SC for superior, synergistic control of tough caterpillars and sucking pests. The premium SC formulation mixes easily, offers excellent spray stability and ensures uniform leaf deposition for dependable, long-lasting protection.',
-            url: 'products/insecticide/emamectin-benzoate-1-5-fipronil-3-5-sc-pro-5g'
-          },
-          { name: 'Thiamethoxam 75% SG (Thio-H 75)',
-            image: 'assets/products/insecticide/thiamethoxam-75-sg.jpg',
-            description: 'Thiamethoxam 75% SG systemic shield',
-            fullDescription: 'Thiamethoxam 75% SG (Thio-H 75) is a high-strength neonicotinoid that moves quickly within plant tissues to protect new growth from aphids, jassids, whiteflies and more. The water-soluble granule disperses instantly for hassle-free mixing, excellent coverage and season-ready performance.',
-            url: 'product/thiamethoxam-75-sg'
-          },
-          { name: 'Topaz',
-            image: 'assets/products/insecticide/buprofezin-15-acephate-50.jpg',
-            description: 'Buprofezin 15% + ACEPHATE 50% WP',
-            fullDescription: 'TOPAZ (Buprofezin 15% + ACEPHATE 50% WP) combines IGR lifecycle disruption with acephate systemic and contact knockdown for whitefly, brown planthopper, jassid, aphid, and thrips control. The wettable powder ensures strong suspension, uniform coverage, and dependable efficacy in cotton, paddy, chilli, and vegetables.',
-            url: 'products/insecticide/buprofezin-15-acephate-50'
-          },
-          { name: 'Turbo',
-            image: 'assets/products/insecticide/novaluron-5-25-indoxacarb-4-5-sc-turbo.jpg',
-            description: 'Novaluron 5.25% + Indoxacarb 4.5% SC dual-action',
-            fullDescription: 'Turbo (Novaluron 5.25% + Indoxacarb 4.5% w/w SC) is Harishree Crop Science\'s premium dual-action insecticide combining an IGR with an oxadiazine for powerful caterpillar and borer control in cotton, chilli, tomato, cole crops, soybean, pulses, and vegetables. Field guidance: 20 ml per pump when used at early larval stage as per label and local advisory.',
-            url: 'product/novaluron-5-25-indoxacarb-4-5-sc-turbo'
-          },
-          { name: 'Fenvalerate 20% EC (FENVAL)',
-            image: 'assets/products/insecticide/fenvalerate-20-ec.png',
-            description: 'Fenvalerate 20% EC synthetic pyrethroid insecticide',
-            fullDescription: 'FENVAL (Fenvalerate 20% EC) is Harishree Crop Science\'s premium synthetic pyrethroid insecticide with contact and stomach action for bollworms, caterpillars, borers, and chewing pests on cotton, chilli, vegetables, and pulses. Field guidance: 30 ml per pump.',
-            url: 'products/insecticide/fenvalerate-20-ec-fenval'
-          },
-          { name: 'Runner',
-            image: 'assets/products/insecticide/novaluron-10-ec.png',
-            description: 'Novaluron 10% EC IGR insecticide',
-            fullDescription: 'RUNNER (Novaluron 10% EC) is Harishree Crop Science\'s premium benzoylurea insect growth regulator for fruit borers, pod borers, bollworms, and caterpillars on cotton, chilli, tomato, cabbage, pulses, soybean, and vegetables. Field guidance: 20 ml per pump when used at early larval stage as per label and local advisory.',
-            url: 'products/insecticide/novaluron-10-ec-runner'
-          },
-          { name: 'Yoddha',
-            image: 'assets/products/insecticide/flufenzine-20-ec.jpg',
-            description: 'Flufenzine 20% EC miticide/acaricide',
-            fullDescription: 'YODDHA (Flufenzine 20% EC) is Harishree Crop Science\'s premium miticide and acaricide for red spider mites, yellow mites, and broad mites on chilli, cotton, brinjal, tomato, vegetables, and horticulture crops. Field guidance: 25 ml per pump when used at early mite infestation as per label and local advisory.',
-            url: 'products/insecticide/flufenzine-20-ec-yoddha'
-          },
-          { name: 'H Gor',
-            image: 'assets/products/insecticide/dimethoate-30-ec.jpg',
-            description: 'Dimethoate 30% EC systemic and contact',
-            fullDescription: 'H Gor (Dimethoate 30% EC) is a systemic and contact organophosphate effective against aphids, thrips and jassids. It moves within plant tissues to protect new growth while providing strong contact action on exposed pests. The formulation balances efficacy with crop safety for dependable, professional results.',
-            url: 'products/insecticide/dimethoate-30-ec-h-gor'
-          },
-          { name: 'EXTRA MIDA 70',
-            image: 'assets/products/insecticide/imidacloprid-70-wg.jpg',
-            description: 'Imidacloprid 70% WG systemic neonicotinoid insecticide',
-            fullDescription: 'EXTRA MIDA 70 (Imidacloprid 70% WG) is Harishree Crop Science\'s premium systemic neonicotinoid insecticide for whiteflies, aphids, jassids, thrips, and sucking pests in cotton, chilli, paddy, sugarcane, citrus, and vegetables. Field guidance: 7 gm per pump when used at early infestation as per label and local advisory.',
-            url: 'products/insecticide/imidacloprid-70-wg-extra-mida-70'
-          }
+        },
+        {
+          name: 'Thio-H', image: 'assets/products/THIO-H.png', description: 'Effective pest management',
+          fullDescription: 'Thio-h represents the latest in systemic insecticide technology. This powerful formulation penetrates plant tissues to provide protection from within, effectively controlling both sucking and chewing pests. Its balanced composition ensures crop safety while delivering outstanding pest control performance across various agricultural applications.',
+          url: 'product/thiamethoxam-75-sg'
+        },
+        {
+          name: 'Super FS', image: 'assets/products/thiamethoxam-30-fs.png', description: 'Thiamethoxam 30% FS seed treatment',
+          fullDescription: 'Super FS (Thiamethoxam 30% FS) is our professional seed-treatment insecticide for early-stage crop protection. It supports cleaner crop establishment with practical dose guidance and broad compatibility in integrated farm advisory programs.',
+          url: 'all-products/thiamethoxam-30-fs'
+        },
+        {
+          name: 'Mpire 404', image: 'assets/products/MPIRE-404.png', description: 'Complete pest control',
+          fullDescription: 'Mpire 404 delivers comprehensive pest management through its innovative dual-action formula. This professional-grade solution provides both contact and systemic activity, ensuring thorough pest elimination at all life stages. Its unique composition offers excellent crop safety while maintaining high efficacy against resistant pest populations.',
+          url: 'product/mpire-404'
+        },
+        {
+          name: 'Profenofos 40% + Cypermethrin 4% EC (Mpire 404)',
+          image: 'assets/products/MPIRE-404.png',
+          description: 'Profenofos 40% + Cypermethrin 4% EC broad-spectrum insecticide',
+          fullDescription: 'Profenofos 40% + Cypermethrin 4% EC (Mpire 404) is Harishree Crop Science\'s EC combination insecticide for practical control of mixed chewing and sucking pest pressure. Recommended field guidance is 30 ml per pump, with usage based on crop stage, ETL and local advisory for consistent performance.',
+          url: 'product/profenofos-40-cypermethrin-4-ec'
+        },
+        {
+          name: 'Tolfenpyrad 15% EC (H Fun)',
+          image: 'assets/products/tolfenpyrad-15-ec.png',
+          description: 'EC insecticide for aphids, whiteflies, thrips, mites and young caterpillars',
+          fullDescription: 'H Fun (Tolfenpyrad 15% EC) is Harishree Crop Science’s emulsifiable concentrate for sucking pests and early-instar caterpillars—contact and stomach action via IRAC Group 21A (mitochondrial Complex I). Field guidance: 30 ml per knapsack pump with ~200 L water per acre on cotton, chilli, tomato, brinjal, okra, groundnut, tea, paddy, soybean and other label crops when used with scouting and rotation.',
+          url: 'product/tolfenpyrad-15-ec'
+        },
+        {
+          name: 'Tolfenpyrad 15% + Bifenthrin 7.5% SE (MEGNUM)',
+          image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
+          description: 'Dual-action SE insecticide for thrips, whiteflies, aphids, jassids and mites',
+          fullDescription: 'MEGNUM (Tolfenpyrad 15% + Bifenthrin 7.5% SE) is Harishree Crop Science’s dual-action suspension emulsion for fast knockdown and long-lasting control of thrips, whiteflies, aphids, jassids, mites and other sucking pests. Combines IRAC 21A respiratory inhibition with IRAC 3A contact and stomach action. Field guidance: 25 ml per knapsack pump on cotton, chilli, brinjal, tomato, okra, cabbage, cauliflower and vegetables.',
+          url: 'products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum'
+        },
+        {
+          name: 'Pyriproxyfen 10% + Bifenthrin 10% w/w EC (FINAL)',
+          image: 'assets/products/insecticide/pyriproxyfen-10-bifenthrin-10-w-w-ec.png',
+          description: 'Dual-action EC insecticide for whiteflies, thrips, mites, aphids and jassids',
+          fullDescription: 'FINAL (Pyriproxyfen 10% + Bifenthrin 10% w/w EC) is Harishree Crop Science’s dual-action emulsifiable concentrate combining insect growth regulation with contact and stomach action for fast knockdown and long-term suppression of whiteflies, thrips, mites, aphids, jassids and other sucking pests. Field guidance: 30 ml per knapsack pump on cotton, chilli, brinjal, tomato, okra, cabbage, cauliflower and vegetables.',
+          url: 'product/pyriproxyfen-10-bifenthrin-10-w-w-ec'
+        },
+        {
+          name: 'Neem Pro',
+          image: 'assets/products/NEEM PRO.png',
+          description: 'Natural pest control',
+          fullDescription: 'Neem Pro harnesses the power of natural neem extracts enhanced with advanced formulation technology. This eco-friendly solution provides effective control against multiple pest species while being safe for the environment. Its botanical origin ensures minimal residue concerns and better acceptance in organic farming.'
+        },
+        {
+          name: 'Mission',
+          image: 'assets/products/thiamethoxam-12-6-lambda-cyhalothrin-9-5-zc--.jpg',
+          description: 'Target-specific insecticide',
+          fullDescription: 'Mission is a precision-engineered insecticide designed for specific pest targets. Its selective action ensures maximum effectiveness against target pests while minimizing impact on non-target organisms. The advanced formulation provides excellent rainfastness and extended protection periods.',
+          url: 'product/thiamethoxam-12-6-lambda-cyhalothrin-9-5-zc'
+        },
+        {
+          name: 'Kavach',
+          image: 'assets/products/kavach--.png',
+          description: 'Protective insect shield',
+          fullDescription: 'Kavach creates a powerful protective shield against destructive insect pests. This innovative formulation provides both contact and residual activity, ensuring comprehensive crop protection. Its unique shield technology ensures better adherence to plant surfaces and resistance to environmental factors.'
+        },
+        {
+          name: 'Pride H (Acetamiprid 20% SP)',
+          image: 'assets/products/insecticide/acetamiprid-20-sp.png',
+          description: 'Systemic neonicotinoid insecticide for whitefly, aphid & thrips control',
+          fullDescription: 'PRIDE H (Acetamiprid 20% SP) is Harishree Crop Science\'s systemic neonicotinoid insecticide for whitefly control, aphid control, thrips control, and jassid control in cotton, chilli, tomato, brinjal, okra, cabbage, and vegetables. Recommended dose: 10 gm per pump. Competitive pricing from ₹100 for 100 GM.',
+          url: 'product/acetamiprid-20-sp'
+        },
+        {
+          name: 'Hmida',
+          image: 'assets/products/H MIDA.png',
+          description: 'Advanced insect management',
+          fullDescription: 'Hmida delivers cutting-edge insect management through its innovative systemic action. The product provides comprehensive protection by controlling pests at multiple life stages. Its advanced formulation ensures quick absorption and uniform distribution throughout the plant system.'
+        },
+        {
+          name: 'Abamectin 1.9% EC (Dr. Supreme)',
+          image: 'assets/products/abamectin-1-9-ec.png',
+          description: 'EC insecticide and acaricide for mites, thrips and leaf miners',
+          fullDescription:
+            'Dr. Supreme (Abamectin 1.9% EC) is Harishree Crop Science\'s emulsifiable concentrate for mites, thrips, leaf miners and light caterpillar pressure. IRAC Group 6 (avermectin) chemistry with contact, stomach and translaminar activity—suited to chilli, tomato, brinjal, okra, cotton, tea, grapes, citrus and other label crops when used at the recommended dose and PHI.',
+          url: 'product/abamectin-1-9-ec'
+        },
+        {
+          name: 'Emamectin Benzoate 1.9% EC (Buldozer)',
+          image: 'assets/products/Buldozer.png',
+          description: 'Emamectin Benzoate 1.9% EC — powerful pest elimination',
+          fullDescription: 'Buldozer (Emamectin Benzoate 1.9% EC) is a powerful emulsifiable concentrate insecticide designed for fast knockdown and translaminar control of caterpillars, leaf miners, borers and thrips. Its unique chloride-channel-activating mode of action (IRAC Group 6) ensures reliable efficacy even against resistant pest populations on cotton, vegetables, chilli, paddy and more.',
+          url: 'product/emamectin-benzoate-1-9-ec'
+        },
+        {
+          name: 'Chlorpyriphos 50% + Cypermethrin 5% EC (Combi 505)',
+          image: 'assets/products/chlorpyriphos-50-cypermethrin-5-ec.png',
+          description: 'Chlorpyriphos 50% + Cypermethrin 5% EC broad-spectrum combination',
+          fullDescription: 'Chlorpyriphos 50% + Cypermethrin 5% EC (Combi 505) is Harishree Crop Science\'s combination insecticide for practical field control of mixed pest pressure. The EC formulation supports fast knockdown and dependable follow-through with contact, stomach and fumigant action when used at 25 ml per pump as per crop label and local advisory.',
+          url: 'product/chlorpyriphos-50-cypermethrin-5-ec'
+        },
+        {
+          name: 'Chlorantraniliprole 18.5% SC (Cora-5)',
+          image: 'assets/products/chlorantraniliprole-18-5-sc.png',
+          description: 'Chlorantraniliprole 18.5% SC for top borers, stem borers and FAW support',
+          fullDescription: 'Cora-5 (Chlorantraniliprole 18.5% SC) is Harishree Crop Science\'s professional insecticide for borer and larval pest management in crops such as groundnut, maize, paddy, cotton, chilli and vegetables. It supports systemic and contact action with practical guidance of 5 ml per pump when used as per crop label and local advisory.',
+          url: 'product/chlorantraniliprole-18-5-sc'
+        },
+        {
+          name: 'AMPIGO',
+          image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc--.png',
+          description: 'Chlorantraniliprole 9.3% + Lambda Cyhalothrin 4.6% ZC dual-action insecticide',
+          fullDescription: 'AMPIGO (Chlorantraniliprole 9.3% + Lambda Cyhalothrin 4.6% ZC) is Harishree Crop Science\'s premium dual-action ZC insecticide for fast knockdown and long residual control of fall armyworm, bollworms, fruit borers, and caterpillars in cotton, maize, chilli, tomato, and vegetables. Field guidance: 10 ml per pump when used at early larval stage as per label and local advisory.',
+          url: 'products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc'
+        },
+        {
+          name: 'Fipronil 40% + Imidacloprid 40% WG (FI 40)',
+          image: 'assets/products/insecticide/fipronil-40-imidacloprid-40-wg.jpg',
+          description: 'Fipronil 40% + Imidacloprid 40% WG dual-action',
+          fullDescription: 'Fipronil 40% + Imidacloprid 40% WG (FI 40) combines two proven actives to deliver both contact and systemic action against tough pest complexes. The water-dispersible granule ensures quick dispersion, uniform spray coverage and strong residual control on key crops. Designed for professional growers, FI 40 provides rapid knockdown of chewing and sucking insects while promoting excellent crop safety and resistance-management value.',
+          url: 'product/fipronil-40-imidacloprid-40-wg'
+        },
+        {
+          name: 'Hil Thene',
+          image: 'assets/products/insecticide/acephate-75-sp.jpg',
+          description: 'Acephate 75% SP broad-spectrum control',
+          fullDescription: 'Hil Thene (Acephate 75% SP) is a professional, systemic and contact insecticide that provides quick knockdown and dependable control of thrips, aphids, whiteflies, jassids, bollworms, and caterpillars. The high-quality SP formulation dissolves rapidly, offering consistent performance, excellent leaf coverage and strong compatibility in tank mixes. Trusted by growers for its reliability and value across cotton, chilli, paddy, and vegetable crops.',
+          url: 'product/acephate-75-sp'
+        },
+        {
+          name: 'Chilli H',
+          image: 'assets/products/insecticide/fipronil-2-92-ec.jpg',
+          description: 'Fipronil 2.92% EC contact and stomach action',
+          fullDescription: 'Chilli H (Fipronil 2.92% EC) is engineered for fast, decisive control of thrips, stem borers, white grubs, termites, and soil pests in chilli, rice, cotton, sugarcane, and vegetable crops. Its advanced EC base ensures superior penetration and persistent residual activity, helping reduce re-infestation. With excellent rainfastness and leaf adherence, Chilli H delivers premium protection while supporting clean, market-ready produce.',
+          url: 'products/insecticide/fipronil-2-92-ec'
+        },
+        {
+          name: 'Chloro Shield 20',
+          image: 'assets/products/insecticide/chloro-shield-20.jpg',
+          description: 'Chlorpyriphos 20% EC reliable broad-spectrum',
+          fullDescription: 'Chloro Shield 20 (Chlorpyriphos 20% EC) is a robust organophosphate insecticide offering dependable contact, stomach and fumigant action. Ideal for soil and foliar insect management, it effectively controls termites, borers and sucking pests across multiple crops. The optimized EC formulation ensures strong knockdown, lasting field performance and flexible application options for professional programs.',
+          url: 'product/chlorpyriphos-20-ec'
+        },
+        {
+          name: 'Cloro GR',
+          image: 'assets/products/insecticide/cloro-gr.jpg',
+          description: 'Chlorpyriphos 10% GR soil insecticide',
+          fullDescription: 'Cloro GR (Chlorpyriphos 10% GR) provides targeted, season-long protection from soil-dwelling insects including termites and root grubs. The granular formulation enables convenient basal application and uniform distribution in the root zone, safeguarding emerging seedlings and establishing crops. Designed for reliability and ease of use in nursery and field situations.'
+        },
+        {
+          name: 'DR. Delta',
+          image: 'assets/products/insecticide/dr-delta.jpg',
+          description: 'Deltamethrin 2.8% EC fast knockdown pyrethroid',
+          fullDescription: 'DR. Delta (Deltamethrin 2.8% EC) is a premium pyrethroid delivering lightning-fast knockdown and excellent residual control of lepidopteran and sucking pests. Its advanced solvent system improves spread, coverage and rainfastness while remaining gentle on crops when used as directed. A go-to choice for quick, visible results in vegetables, cotton and other labeled crops.',
+          url: 'product/deltamethrin-2-8-ec'
+        },
+        {
+          name: 'DELTA PLUS',
+          image: 'assets/products/insecticide/deltamethrin-11-w-w-ec.png',
+          description: 'Deltamethrin 11% w/w EC fast knockdown pyrethroid',
+          fullDescription: 'DELTA PLUS (Deltamethrin 11% w/w EC) is Harishree Crop Science\'s premium synthetic pyrethroid insecticide for bollworms, fruit borers, stem borers, caterpillars, thrips, and aphids in cotton, chilli, vegetables, paddy, pulses, and oilseeds. Recommended dose: 10 ml per pump.',
+          url: 'products/insecticide/deltamethrin-11-w-w-ec-delta-plus'
+        },
+        {
+          name: 'INTERPRID',
+          image: 'assets/products/insecticide/chlorfenapyr-10-sc.png',
+          description: 'Chlorfenapyr 10% SC pyrrole insecticide and acaricide',
+          fullDescription: 'INTERPRID (Chlorfenapyr 10% SC) is Harishree Crop Science\'s premium pyrrole insecticide and acaricide for thrips, mites, caterpillars, diamondback moth, and fruit borers in chilli, cotton, brinjal, tomato, cabbage, cauliflower, okra, and vegetables. Recommended dose: 30 ml per pump.',
+          url: 'products/chlorfenapyr-10-sc-interprid'
+        },
+        {
+          name: 'Eclipse',
+          image: 'assets/products/insecticide/ethion-40-cypermethrin-5-ec.jpg',
+          description: 'Ethion 40% + Cypermethrin 5% EC dual-action insecticide',
+          fullDescription: 'ECLIPSE (Ethion 40% + Cypermethrin 5% EC) combines organophosphate and pyrethroid chemistries for broad-spectrum, dual-mode action. The formulation delivers rapid knockdown with strong residual effect, controlling bollworms, thrips, aphids, whiteflies, and caterpillars. Recommended dose: 25 ml per pump.',
+          url: 'products/insecticide/ethion-40-cypermethrin-5-ec-eclipse'
+        },
+        {
+          name: 'Extra Mida 70',
+          image: 'assets/products/insecticide/imidacloprid-70-wg.jpg',
+          description: 'Imidacloprid 70% WG high-load systemic',
+          fullDescription: 'Extra Mida 70 (Imidacloprid 70% WG) is a high-load neonicotinoid that provides powerful systemic control of aphids, whiteflies and jassids at low use rates. The premium WG granules disperse instantly in water, offering excellent spray stability, superior leaf coverage and long-lasting protection for professional, residue-conscious programs.'
+        },
+        {
+          name: 'Profenofos 50% EC (EXTRA PROFEX)',
+          image: 'assets/products/insecticide/profenofos-50-ec.jpg',
+          description: 'Profenofos 50% EC broad-spectrum contact and stomach insecticide',
+          fullDescription: 'EXTRA PROFEX (Profenofos 50% EC) is Harishree Crop Science\'s premium broad-spectrum organophosphate insecticide for bollworms, whiteflies, aphids, thrips, jassids, and caterpillars in cotton, chilli, vegetables, pulses, and oilseeds. Recommended dose: 30 ml per pump.',
+          url: 'products/insecticide/profenofos-50-ec'
+        },
+        {
+          name: 'H-Cyper 25 (Cypermethrin 25% EC)',
+          image: 'assets/products/insecticide/cypermethrin-25-ec.jpg',
+          description: 'Cypermethrin 25% EC contact and stomach insecticide',
+          fullDescription: 'H-Cyper 25 (Cypermethrin 25% EC) is Harishree Crop Science\'s practical EC insecticide for rapid knockdown and disciplined field control of bollworms, aphids, jassids, thrips and other major crop pests. With clear guidance of 25 ml per pump and broad crop fit, it supports dependable on-farm pest management when used at early infestation stage as per label and local advisory.',
+          url: 'product/cypermethrin-25-ec'
+        },
+        // { name: 'Kavach Plus',
+        //   image: 'assets/products/insecticide/kavach-plus.jpg',
+        //   description: 'Premium multi-crop insect shield',
+        //   fullDescription: 'Kavach Plus is a premium, next-generation insect shield formulated for consistent performance across vegetables, cotton and other commercial crops. Its optimized chemistry ensures quick knockdown with dependable residual action, superior leaf adherence and strong rainfastness for season-long protection in professional programs.'
+        // },
+        {
+          name: 'Mite',
+          image: 'assets/products/insecticide/mite.jpg',
+          description: 'Propargite 57% EC dedicated acaricide',
+          fullDescription: 'Mite (Propargite 57% EC) is a specialist acaricide engineered to knock down and control red spider mites and other damaging mite species. Its contact action provides quick results while the advanced EC system improves spread and coverage over dense canopies for dependable field performance.'
+        },
+        {
+          name: 'Oscar',
+          image: 'assets/products/insecticide/oscar.jpg',
+          description: 'Reliable broad-spectrum insecticide',
+          fullDescription: 'Oscar is a reliable, grower-friendly insecticide designed for consistent control of key sucking and chewing pests. The formulation focuses on superior coverage, quick uptake and strong adherence to plant surfaces, supporting clean foliage and market-ready produce with minimal sprays.'
+        },
+        {
+          name: 'Pilot',
+          image: 'assets/products/insecticide/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc.jpg',
+          description: 'Pyriproxyfen 8% + Dinotefuran 5% + Diafenthiuron 18% SC',
+          fullDescription: 'Pilot (Pyriproxyfen 8% + Dinotefuran 5% + Diafenthiuron 18% SC) combines three proven actives to deliver a modern triple-action assault on whitefly, aphids, thrips, and jassids. The unique blend targets multiple life stages with rapid knockdown, strong systemic movement, IGR lifecycle disruption, and lasting residual control with excellent crop safety.',
+          url: 'products/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc-pilot'
+        },
+        {
+          name: 'Pro 5G',
+          image: 'assets/products/insecticide/emamectin-benzoate-1-5-fipronil-3-5-sc.jpg',
+          description: 'Emamectin benzoate 1.5% + Fipronil 3.5% SC synergy',
+          fullDescription: 'Pro 5G unites Emamectin benzoate 1.5% with Fipronil 3.5% SC for superior, synergistic control of tough caterpillars and sucking pests. The premium SC formulation mixes easily, offers excellent spray stability and ensures uniform leaf deposition for dependable, long-lasting protection.',
+          url: 'products/insecticide/emamectin-benzoate-1-5-fipronil-3-5-sc-pro-5g'
+        },
+        {
+          name: 'Thiamethoxam 75% SG (Thio-H 75)',
+          image: 'assets/products/insecticide/thiamethoxam-75-sg.jpg',
+          description: 'Thiamethoxam 75% SG systemic shield',
+          fullDescription: 'Thiamethoxam 75% SG (Thio-H 75) is a high-strength neonicotinoid that moves quickly within plant tissues to protect new growth from aphids, jassids, whiteflies and more. The water-soluble granule disperses instantly for hassle-free mixing, excellent coverage and season-ready performance.',
+          url: 'product/thiamethoxam-75-sg'
+        },
+        {
+          name: 'Topaz',
+          image: 'assets/products/insecticide/buprofezin-15-acephate-50.jpg',
+          description: 'Buprofezin 15% + ACEPHATE 50% WP',
+          fullDescription: 'TOPAZ (Buprofezin 15% + ACEPHATE 50% WP) combines IGR lifecycle disruption with acephate systemic and contact knockdown for whitefly, brown planthopper, jassid, aphid, and thrips control. The wettable powder ensures strong suspension, uniform coverage, and dependable efficacy in cotton, paddy, chilli, and vegetables.',
+          url: 'products/insecticide/buprofezin-15-acephate-50'
+        },
+        {
+          name: 'Turbo',
+          image: 'assets/products/insecticide/novaluron-5-25-indoxacarb-4-5-sc-turbo.jpg',
+          description: 'Novaluron 5.25% + Indoxacarb 4.5% SC dual-action',
+          fullDescription: 'Turbo (Novaluron 5.25% + Indoxacarb 4.5% w/w SC) is Harishree Crop Science\'s premium dual-action insecticide combining an IGR with an oxadiazine for powerful caterpillar and borer control in cotton, chilli, tomato, cole crops, soybean, pulses, and vegetables. Field guidance: 20 ml per pump when used at early larval stage as per label and local advisory.',
+          url: 'product/novaluron-5-25-indoxacarb-4-5-sc-turbo'
+        },
+        {
+          name: 'Fenvalerate 20% EC (FENVAL)',
+          image: 'assets/products/insecticide/fenvalerate-20-ec.png',
+          description: 'Fenvalerate 20% EC synthetic pyrethroid insecticide',
+          fullDescription: 'FENVAL (Fenvalerate 20% EC) is Harishree Crop Science\'s premium synthetic pyrethroid insecticide with contact and stomach action for bollworms, caterpillars, borers, and chewing pests on cotton, chilli, vegetables, and pulses. Field guidance: 30 ml per pump.',
+          url: 'products/insecticide/fenvalerate-20-ec-fenval'
+        },
+        {
+          name: 'Runner',
+          image: 'assets/products/insecticide/novaluron-10-ec.png',
+          description: 'Novaluron 10% EC IGR insecticide',
+          fullDescription: 'RUNNER (Novaluron 10% EC) is Harishree Crop Science\'s premium benzoylurea insect growth regulator for fruit borers, pod borers, bollworms, and caterpillars on cotton, chilli, tomato, cabbage, pulses, soybean, and vegetables. Field guidance: 20 ml per pump when used at early larval stage as per label and local advisory.',
+          url: 'products/insecticide/novaluron-10-ec-runner'
+        },
+        {
+          name: 'Yoddha',
+          image: 'assets/products/insecticide/flufenzine-20-ec.jpg',
+          description: 'Flufenzine 20% EC miticide/acaricide',
+          fullDescription: 'YODDHA (Flufenzine 20% EC) is Harishree Crop Science\'s premium miticide and acaricide for red spider mites, yellow mites, and broad mites on chilli, cotton, brinjal, tomato, vegetables, and horticulture crops. Field guidance: 25 ml per pump when used at early mite infestation as per label and local advisory.',
+          url: 'products/insecticide/flufenzine-20-ec-yoddha'
+        },
+        {
+          name: 'H Gor',
+          image: 'assets/products/insecticide/dimethoate-30-ec.jpg',
+          description: 'Dimethoate 30% EC systemic and contact',
+          fullDescription: 'H Gor (Dimethoate 30% EC) is a systemic and contact organophosphate effective against aphids, thrips and jassids. It moves within plant tissues to protect new growth while providing strong contact action on exposed pests. The formulation balances efficacy with crop safety for dependable, professional results.',
+          url: 'products/insecticide/dimethoate-30-ec-h-gor'
+        },
+        {
+          name: 'EXTRA MIDA 70',
+          image: 'assets/products/insecticide/imidacloprid-70-wg.jpg',
+          description: 'Imidacloprid 70% WG systemic neonicotinoid insecticide',
+          fullDescription: 'EXTRA MIDA 70 (Imidacloprid 70% WG) is Harishree Crop Science\'s premium systemic neonicotinoid insecticide for whiteflies, aphids, jassids, thrips, and sucking pests in cotton, chilli, paddy, sugarcane, citrus, and vegetables. Field guidance: 7 gm per pump when used at early infestation as per label and local advisory.',
+          url: 'products/insecticide/imidacloprid-70-wg-extra-mida-70'
+        }
       ]
     },
     {
@@ -298,7 +340,7 @@ export class ProductService {
         },
         {
           name: 'Saf-63',
-          image: 'assets/products/carbendazim-12-mancozeb-63-wp.png',
+          image: 'assets/products/carbendazim-12-mancozeb-63-wp--.png',
           description: 'Carbendazim 12% + Mancozeb 63% WP dual-action fungicide',
           fullDescription: 'Saf 63 (Carbendazim 12% + Mancozeb 63% WP) is a premium dual-action fungicide by Harishree Crop Science that pairs systemic curative Carbendazim with multi-site contact Mancozeb. This combination delivers broad-spectrum preventive and curative control of blast, leaf spot, rust, anthracnose, fruit rot, powdery mildew, alternaria, and seedling diseases across paddy, groundnut, soybean, tomato, chilli, grapes, mango, and cotton. The systemic plus contact action protects the plant both inside and out, supports resistance management, and provides longer residual activity. Recommended dose: 20 gm per pump.',
           url: 'products/carbendazim-12-mancozeb-63-wp-saf-63'
@@ -430,37 +472,37 @@ export class ProductService {
         //   fullDescription: 'Laser (Quizalofop-p-ethyl 5% EC) is a selective post-emergence herbicide designed for superior grass weed control in broadleaf crops. This advanced emulsifiable concentrate rapidly penetrates leaf tissues and translocates to growing points, effectively inhibiting fatty acid synthesis and halting weed growth. Laser provides exceptional control of annual and perennial grass weeds in soybeans, cotton, pulses, oilseeds, and vegetables, while maintaining excellent crop safety. The optimized formulation ensures quick absorption, rainfastness, and extended residual activity, making it an essential component of integrated weed management programs for commercial growers seeking reliable performance and superior harvest quality.',
         //   url: 'product/laser'
         // },
-        { 
-          name: 'Pendimethalin 30% EC (Paddy)', 
-          image: 'assets/products/herbicide/pendimethalin-30-ec.jpg', 
+        {
+          name: 'Pendimethalin 30% EC (Paddy)',
+          image: 'assets/products/herbicide/pendimethalin-30-ec.jpg',
           description: 'Pendimethalin 30% EC (Paddy)',
           fullDescription: 'Paddy, featuring Pendimethalin 30% EC, is a premium pre-emergence herbicide engineered for comprehensive weed control in paddy, wheat, soybean, and cotton. It forms a powerful soil barrier that prevents the emergence of grassy and broadleaf weeds by inhibiting cell division. Highly selective and crop-safe, it ensures clean fields and maximum yield potential.',
           url: 'product/pendimethalin-30-ec'
         },
-        { 
-          name: 'Oxy Green', 
-          image: 'assets/products/herbicide/oxy-green.jpg', 
+        {
+          name: 'Oxy Green',
+          image: 'assets/products/herbicide/oxy-green.jpg',
           description: 'Eco-friendly herbicide',
           fullDescription: 'Oxy Green (Oxyfluorfen 23.5% EC) is a versatile contact herbicide with residual activity, designed for pre-emergence and early post-emergence weed control. This premium emulsifiable concentrate creates a soil barrier that prevents weed emergence while also controlling small emerged weeds through contact action. Highly effective against annual broadleaf weeds and grasses in vegetables, fruit crops, plantation crops, and ornamentals, Oxy Green provides long-lasting protection with minimal soil mobility. The optimized formulation ensures excellent soil binding, UV stability, and consistent performance across various soil types and environmental conditions. As an essential component of integrated weed management programs, Oxy Green supports cleaner fields and optimized yields with its reliable performance and excellent crop safety profile when used as directed.',
           url: 'product/oxy-green'
         },
-        { 
-          name: 'Glyphosate 41% SL (H ROUND)', 
-          image: 'assets/products/herbicide/glyphosate-41-sl.jpg', 
+        {
+          name: 'Glyphosate 41% SL (H ROUND)',
+          image: 'assets/products/herbicide/glyphosate-41-sl.jpg',
           description: 'Complete weed management',
           fullDescription: 'Glyphosate 41% SL(H ROUND) is a professional-grade, non-selective systemic herbicide formulated for comprehensive weed management. This soluble liquid concentrate is rapidly absorbed through foliage and translocated throughout the plant, including roots and rhizomes, for complete control of annual and perennial weeds, grasses, and woody brush. With its unique mode of action inhibiting the EPSP synthase enzyme, Glyphosate 41% SL effectively eliminates even the most stubborn weeds while breaking down into natural soil components. The advanced formulation includes premium surfactants for enhanced absorption, rainfastness, and consistent performance across various environmental conditions. Ideal for pre-planting field preparation, non-crop areas, and directed applications in plantation crops, Glyphosate 41% SL delivers reliable results for commercial growers and land managers seeking effective vegetation control.',
           url: 'product/glyphosate-41-sl'
         },
-        { 
-          name: 'Green Out', 
-          image: 'assets/products/GREEN OUT.png', 
+        {
+          name: 'Green Out',
+          image: 'assets/products/GREEN OUT.png',
           description: 'Effective weed control',
           fullDescription: 'Green Out (Paraquat Dichloride 24% SL) is a fast-acting, non-selective contact herbicide designed for rapid vegetation control. This professional-grade soluble liquid concentrate delivers visible results within hours of application by disrupting photosynthesis and causing rapid desiccation of green plant tissues. Highly effective against a broad spectrum of annual grasses and broadleaf weeds, Green Out becomes inactive upon soil contact, allowing for immediate planting in conservation tillage systems. The optimized formulation ensures excellent coverage, rapid absorption, and reliable performance even under challenging weather conditions. As an essential tool for pre-plant burndown, inter-row weed control, and harvest aid applications, Green Out supports efficient field operations and weed management strategies for commercial growers seeking quick, dependable results.',
           url: 'product/green-out'
         },
-        { 
-          name: 'Glufosinate ammonium 13.5% SL (GLUFO 13)', 
-          image: 'assets/products/glufosinate-ammonium-13-5-sl.png', 
+        {
+          name: 'Glufosinate ammonium 13.5% SL (GLUFO 13)',
+          image: 'assets/products/glufosinate-ammonium-13-5-sl.png',
           description: 'Premium non-selective herbicide',
           fullDescription: 'Glufosinate ammonium 13.5% SL (GLUFO 13) is a premium broad-spectrum non-selective herbicide for rapid post-emergence weed knockdown in orchards, plantations, and non-crop areas. This high-quality soluble liquid formulation works by inhibiting glutamine synthetase in susceptible weeds, causing ammonia accumulation and tissue collapse. GLUFO 13 delivers dependable control of annual grasses and broadleaf weeds, including difficult escapes in resistance-management programs. With practical pack sizes and field-ready mixing convenience, GLUFO 13 supports clean fields, efficient operations, and consistent agronomic outcomes when used as directed.',
           url: 'product/glufosinate-ammonium-13-5-sl'
@@ -472,37 +514,37 @@ export class ProductService {
         //   fullDescription: 'H-Man (2,4-D Amine Salt 58% SL) is a selective systemic herbicide specifically formulated for broadleaf weed control. This professional-grade soluble liquid concentrate is rapidly absorbed through foliage and roots, translocating throughout the plant to disrupt normal growth processes through auxin-like activity. Highly effective against a wide range of annual and perennial broadleaf weeds in cereals, maize, sugarcane, and non-crop areas, H-Man provides economical and reliable control while preserving grass species. The advanced formulation ensures excellent coverage, quick absorption, and consistent performance across various environmental conditions. As an essential component of integrated weed management programs, H-Man supports cleaner fields and optimized yields with its proven performance and excellent crop safety profile when used as directed.',
         //   url: 'product/h-man'
         // },
-        { 
-          name: 'Paraquat Dichloride 24% SL (PENDI-PRO)', 
-          image: 'assets/products/herbicide/paraquat-dichloride-24-sl.jpg', 
+        {
+          name: 'Paraquat Dichloride 24% SL (PENDI-PRO)',
+          image: 'assets/products/herbicide/paraquat-dichloride-24-sl.jpg',
           description: 'Paraquat Dichloride 24% SL',
           fullDescription: 'Pendi Pro (Paraquat Dichloride 24% SL) is a high-performance, rapid-action, non-selective contact herbicide offering unparalleled broad-spectrum weed control. It yields immediate desiccation and wilting of numerous annual grasses and broadleaf weeds. Rapidly inactivated on soil contact, providing safe sequential planting.',
           url: 'product/paraquat-dichloride-24-sl'
         },
-        { 
-          name: 'Quizalofop Ethyl 10% EC (T-10)', 
-          image: 'assets/products/herbicide/quizalofop-ethyl-10-ec.jpg', 
+        {
+          name: 'Quizalofop Ethyl 10% EC (T-10)',
+          image: 'assets/products/herbicide/quizalofop-ethyl-10-ec.jpg',
           description: 'Targeted weed elimination',
           fullDescription: 'T-10 (Metribuzin 70% WP) is a versatile selective herbicide with both contact and residual activity. This premium wettable powder formulation is absorbed by roots and foliage, inhibiting photosynthesis in susceptible weed species while maintaining safety in labeled crops. Highly effective against annual broadleaf weeds and certain grasses in potatoes, soybeans, tomatoes, and other vegetables, T-10 provides flexible application timing from pre-plant to early post-emergence. The advanced formulation ensures uniform distribution, excellent soil activity, and consistent performance across various soil types and environmental conditions. With its unique mode of action, T-10 serves as a valuable resistance management tool while supporting cleaner fields and optimized crop development for commercial growers seeking reliable, broad-spectrum weed control.',
           url: 'product/quizalofop-ethyl-10-ec'
         },
-        { 
-          name: 'T-Super', 
-          image: 'assets/products/herbicide/t-super.jpg', 
+        {
+          name: 'T-Super',
+          image: 'assets/products/herbicide/t-super.jpg',
           description: 'Superior weed control',
           fullDescription: 'T-Super (Sulfosulfuron 75% WG) is a premium selective herbicide specifically formulated for post-emergence grass and broadleaf weed control in wheat. This advanced water-dispersible granule is rapidly absorbed through foliage and roots, inhibiting the ALS enzyme and halting amino acid synthesis in susceptible weed species. Highly effective against problematic weeds including Phalaris minor and broadleaf species, T-Super provides exceptional crop safety in wheat when used as directed. The optimized formulation ensures excellent dispersion, rapid absorption, and consistent performance across various environmental conditions. With its low use rate and extended soil activity, T-Super delivers cost-effective, reliable weed control while serving as an important component of resistance management programs for commercial wheat growers seeking to maximize yield potential.',
           url: 'product/t-super'
         },
-        { 
-          name: 'Imaza 10', 
-          image: 'assets/products/herbicide/imaza10.jpg', 
+        {
+          name: 'Imaza 10',
+          image: 'assets/products/herbicide/imaza10.jpg',
           description: 'Specialized herbicide',
           fullDescription: 'Imaza 10 (Imazethapyr 10% SL) is a selective systemic herbicide designed for pre and post-emergence weed control in legume crops. This advanced soluble liquid formulation is absorbed by roots and foliage, translocating throughout the plant to inhibit the ALS enzyme and halt amino acid synthesis in susceptible weed species. Highly effective against a broad spectrum of annual grasses and broadleaf weeds in soybeans, groundnuts, and other pulses, Imaza 10 provides extended residual activity for season-long protection. The optimized formulation ensures rapid absorption, excellent translocation, and consistent performance across various soil types and environmental conditions. With its unique mode of action, Imaza 10 serves as a valuable resistance management tool while supporting cleaner fields and optimized crop development for commercial growers seeking reliable, broad-spectrum weed control with excellent crop safety.',
           url: 'product/imaza10'
         },
         {
-          name: 'Tembotrione 34.4% w/w SC', 
-          image: 'assets/products/herbicide/tembotrione-34-4-w-w-sc.jpg', 
+          name: 'Tembotrione 34.4% w/w SC',
+          image: 'assets/products/herbicide/tembotrione-34-4-w-w-sc.jpg',
           description: 'Tembotrione 34.4% w/w SC (Maize Herbicide)',
           fullDescription: 'Tembo-H, featuring Tembotrione 34.4% w/w SC, is a premium early post-emergence herbicide engineered for comprehensive weed control in maize. It delivers powerful bleaching action through HPPD inhibition, providing exceptional broad-spectrum control over tough broadleaf and grassy weeds. With an optimized suspension concentrate formulation, it ensures rapid foliar absorption, excellent rainfastness, and dependable performance. Highly selective and safe for maize crops, Tembo-H offers an advanced, economical solution for professional growers seeking clean fields and maximum yield potential.',
           url: 'product/tembotrione-34-4-w-w-sc'
@@ -522,39 +564,39 @@ export class ProductService {
         },
         { name: 'H Pro', image: 'assets/products/paclobutrazol-23-sc.png', description: 'Professional PGR solution' },
         { name: 'HC-Gold', image: 'assets/products/triacontanol-ew-0-1-min.png', description: 'Superior growth control' },
-        { name: 'Dhani Wet', image: 'assets/products/DHANI WET.png', description: 'Enhanced absorption' },        
+        { name: 'Dhani Wet', image: 'assets/products/DHANI WET.png', description: 'Enhanced absorption' },
         { name: 'Black Diamond', image: 'assets/products/BLACK DIAMOND.png', description: 'Premium growth regulator' },
-        { 
-          name: 'Advocate', 
-          image: 'assets/products/PGR/advocate.jpg', 
+        {
+          name: 'Advocate',
+          image: 'assets/products/PGR/advocate.jpg',
           description: 'Advanced amino acid & vitamins bio stimulant',
           fullDescription: 'Advocate is a premium bio stimulant formulation containing essential amino acids and vitamins that enhance plant metabolism and growth. This advanced solution promotes stronger root development, improves nutrient uptake, and increases crop resilience against environmental stressors. Regular application results in healthier plants with improved yield potential and quality.',
           url: 'product/advocate'
         },
-        { 
-          name: 'Black Diamond', 
-          image: 'assets/products/PGR/black-diamond.jpg', 
+        {
+          name: 'Black Diamond',
+          image: 'assets/products/PGR/black-diamond.jpg',
           description: 'Premium humic acid 98% soil conditioner',
           fullDescription: 'Black Diamond contains 98% humic acid, making it an exceptional soil conditioner for stronger, longer, and healthier roots and plants. This premium formulation improves soil structure, enhances nutrient availability, and stimulates beneficial microbial activity. Black Diamond increases water retention capacity, reduces fertilizer requirements, and promotes sustainable agricultural practices for optimal plant growth and development.',
           url: 'product/black-diamond'
         },
-        { 
-          name: 'Bonus Plus', 
-          image: 'assets/products/PGR/bonus-plus.jpg', 
+        {
+          name: 'Bonus Plus',
+          image: 'assets/products/PGR/bonus-plus.jpg',
           description: 'Professional plant growth promoter',
           fullDescription: 'Bonus Plus is a specialized plant growth promoter designed to enhance overall plant development and productivity. This scientifically formulated solution stimulates cell division and elongation, resulting in improved vegetative growth and reproductive development. Regular application leads to stronger plants with enhanced flowering, fruiting, and yield potential while promoting natural resistance to environmental stresses.',
           url: 'product/bonus-plus'
         },
-        { 
-          name: 'Dr.Root', 
-          image: 'assets/products/PGR/dr-root.jpg', 
+        {
+          name: 'Dr.Root',
+          image: 'assets/products/PGR/dr-root.jpg',
           description: 'Specialized organic root development supplement',
           fullDescription: 'Dr.Root is an organic plant supplement specifically formulated to enhance root development and function. This premium product stimulates root initiation, elongation, and branching, creating a stronger foundation for plant growth. The organic formulation improves nutrient absorption efficiency, enhances drought tolerance, and promotes beneficial soil microorganism activity for sustainable agricultural practices and optimal plant performance.',
           url: 'products/dr-root-humic-amino-fulvic-vitamin-organic-carbon'
         },
-        { 
-          name: 'Nutri Power Gold', 
-          image: 'assets/products/PGR/potassium-humate-98.jpg', 
+        {
+          name: 'Nutri Power Gold',
+          image: 'assets/products/PGR/potassium-humate-98.jpg',
           description: 'Premium potassium humate with organic carbon',
           fullDescription: 'Nutri Power Gold combines 98% potassium humate with 2% organic carbon to create a powerful soil amendment and plant growth enhancer. This premium formulation improves soil structure, increases cation exchange capacity, and enhances nutrient availability. Regular application results in better water retention, reduced fertilizer requirements, and improved overall soil health, leading to stronger plants with higher yield potential and quality.',
           url: 'products/potassium-humate-98-organic-carbon-2-nutri-power-gold'
@@ -566,9 +608,9 @@ export class ProductService {
           fullDescription: 'Humic 98% is a high-grade humic acid plant growth regulator and soil conditioner that enhances root development, improves nutrient absorption, and builds better soil structure. It increases microbial activity, boosts water retention and stress tolerance, and improves flowering, fruiting, and overall crop productivity across a wide range of field and horticultural crops.',
           url: 'products/humic-98-plant-growth-regulator'
         },
-        { 
-          name: 'Silva', 
-          image: 'assets/products/PGR/silva.jpg', 
+        {
+          name: 'Silva',
+          image: 'assets/products/PGR/silva.jpg',
           description: 'Advanced spreader activator for enhanced absorption',
           fullDescription: 'Silva is a professional-grade spreader activator designed to maximize the effectiveness of agricultural sprays. This advanced formulation reduces surface tension, improves spray coverage, and enhances absorption of nutrients and crop protection products. Silva ensures uniform distribution on plant surfaces, increases rainfastness, and optimizes the performance of tank-mixed products for more efficient and economical crop management.',
           url: 'product/silva'
@@ -577,7 +619,7 @@ export class ProductService {
     }
   ];
 
-  constructor() {}
+  constructor() { }
 
   getAllCategories(): Observable<ProductCategory[]> {
     return of(this.categories);
@@ -602,8 +644,8 @@ export class ProductService {
   searchProducts(query: string): Observable<Product[]> {
     const searchTerm = query.toLowerCase();
     const matchingProducts = this.categories.reduce((acc, category) => {
-      const matches = category.products.filter(product => 
-        product.name.toLowerCase().includes(searchTerm) || 
+      const matches = category.products.filter(product =>
+        product.name.toLowerCase().includes(searchTerm) ||
         product.description.toLowerCase().includes(searchTerm)
       );
       return [...acc, ...matches];

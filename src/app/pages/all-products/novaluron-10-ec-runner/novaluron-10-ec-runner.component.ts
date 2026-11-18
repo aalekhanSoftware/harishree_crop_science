@@ -320,37 +320,37 @@ export class Novaluron10EcRunnerComponent implements OnInit, OnDestroy {
     productInfo: Array<{ label: string; value: string }>;
     packs: Array<{ label: string; value: string }>;
   } = {
-    productInfo: [
-      { label: 'Product name', value: 'RUNNER' },
-      { label: 'Technical name', value: this.productTitle },
-      { label: 'Pesticide type', value: 'Insecticide (Insect Growth Regulator)' },
-      { label: 'Formulation type', value: 'EC (Emulsifiable Concentrate)' },
-      { label: 'Physical form', value: 'Liquid' },
-      { label: 'Active ingredient', value: 'Novaluron 10% EC' },
-      { label: 'Chemical group', value: 'Benzoylurea (IGR) — IRAC Group 15' },
-      { label: 'Mode of action', value: 'Inhibits chitin synthesis; disrupts larval moulting' },
-      { label: 'Action type', value: 'Insect growth regulator with residual activity' },
-      {
-        label: 'Target pests',
-        value: 'Fruit borers, pod borers, bollworms, Spodoptera, armyworms, diamondback moth, leaf-eating caterpillars, Helicoverpa, cutworms'
-      },
-      {
-        label: 'Target crops',
-        value: 'Cotton, chilli, tomato, brinjal, okra, cabbage, cauliflower, pulses, soybean, vegetables'
-      }
-    ],
-    packs: [
-      { label: 'Packaging', value: 'Bottle (EC liquid); sizes 100 ML, 250 ML, 500 ML, 1 LTR' },
-      { label: 'Recommended dose', value: '20 ml/pump' },
-      { label: 'Water volume', value: '15-litre knapsack sprayer (adjust per canopy)' },
-      { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
-      { label: 'Application stage', value: 'At early larval infestation or as per ETL/label' },
-      { label: 'Coverage', value: 'Spray leaf undersides where caterpillars feed and hide' },
-      { label: 'Re-entry interval', value: '24 hours (with PPE)' },
-      { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
-      { label: 'Country of origin', value: 'Made in India' }
-    ]
-  };
+      productInfo: [
+        { label: 'Product name', value: 'RUNNER' },
+        { label: 'Technical name', value: this.productTitle },
+        { label: 'Pesticide type', value: 'Insecticide (Insect Growth Regulator)' },
+        { label: 'Formulation type', value: 'EC (Emulsifiable Concentrate)' },
+        { label: 'Physical form', value: 'Liquid' },
+        { label: 'Active ingredient', value: 'Novaluron 10% EC' },
+        { label: 'Chemical group', value: 'Benzoylurea (IGR) — IRAC Group 15' },
+        { label: 'Mode of action', value: 'Inhibits chitin synthesis; disrupts larval moulting' },
+        { label: 'Action type', value: 'Insect growth regulator with residual activity' },
+        {
+          label: 'Target pests',
+          value: 'Fruit borers, pod borers, bollworms, Spodoptera, armyworms, diamondback moth, leaf-eating caterpillars, Helicoverpa, cutworms'
+        },
+        {
+          label: 'Target crops',
+          value: 'Cotton, chilli, tomato, brinjal, okra, cabbage, cauliflower, pulses, soybean, vegetables'
+        }
+      ],
+      packs: [
+        { label: 'Packaging', value: 'Bottle (EC liquid); sizes 100 ML, 250 ML, 500 ML, 1 LTR' },
+        { label: 'Recommended dose', value: '20 ml/pump' },
+        { label: 'Water volume', value: '15-litre knapsack sprayer (adjust per canopy)' },
+        { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
+        { label: 'Application stage', value: 'At early larval infestation or as per ETL/label' },
+        { label: 'Coverage', value: 'Spray leaf undersides where caterpillars feed and hide' },
+        { label: 'Re-entry interval', value: '24 hours (with PPE)' },
+        { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
+        { label: 'Country of origin', value: 'Made in India' }
+      ]
+    };
 
   officialProductDetails = [
     { label: 'Product Name', value: 'RUNNER' },
@@ -479,7 +479,7 @@ export class Novaluron10EcRunnerComponent implements OnInit, OnDestroy {
       name: 'AMPIGO (Chlorantraniliprole + Lambda Cyhalothrin ZC)',
       description: 'Dual-action ZC insecticide for caterpillars, borers, and fall armyworm in cotton, maize, and vegetables.',
       route: '/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc',
-      image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc.png',
+      image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc--.png',
       imageAlt: 'AMPIGO Chlorantraniliprole Lambda Cyhalothrin ZC insecticide by Harishree Crop Science'
     },
     {
@@ -584,7 +584,7 @@ export class Novaluron10EcRunnerComponent implements OnInit, OnDestroy {
     private seo: SeoService,
     private productSchema: ProductSchemaService,
     @Inject(PLATFORM_ID) private platformId: object
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.applySeo();
