@@ -365,37 +365,37 @@ export class Fenvalerate20EcFenvalComponent implements OnInit, OnDestroy {
     productInfo: Array<{ label: string; value: string }>;
     packs: Array<{ label: string; value: string }>;
   } = {
-    productInfo: [
-      { label: 'Product name', value: 'FENVAL' },
-      { label: 'Technical name', value: this.productTitle },
-      { label: 'Pesticide type', value: 'Insecticide (Synthetic Pyrethroid)' },
-      { label: 'Formulation type', value: 'EC (Emulsifiable Concentrate)' },
-      { label: 'Physical form', value: 'Liquid' },
-      { label: 'Active ingredient', value: 'Fenvalerate 20% EC' },
-      { label: 'Chemical group', value: 'Type-II Pyrethroid — IRAC Group 3A' },
-      { label: 'Mode of action', value: 'Contact + stomach action; sodium channel modulator' },
-      { label: 'Action type', value: 'Non-systemic contact and stomach poison insecticide' },
-      {
-        label: 'Target pests',
-        value: 'Bollworms, caterpillars, fruit borers, shoot borers, pod borers, Spodoptera, leaf feeders, defoliators'
-      },
-      {
-        label: 'Target crops',
-        value: 'Cotton, chilli, brinjal, tomato, okra, pulses, oilseed crops, vegetables'
-      }
-    ],
-    packs: [
-      { label: 'Packaging', value: 'Bottle (EC liquid); sizes 100 ml, 250 ml, 500 ml, 1 LTR' },
-      { label: 'Recommended dose', value: '30 ml/pump' },
-      { label: 'Water volume', value: '15-litre knapsack sprayer (adjust per canopy)' },
-      { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
-      { label: 'Application stage', value: 'At early larval infestation or as per ETL/label' },
-      { label: 'Coverage', value: 'Spray both leaf surfaces and undersides where pests feed' },
-      { label: 'Re-entry interval', value: '24 hours (with PPE)' },
-      { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
-      { label: 'Country of origin', value: 'Made in India' }
-    ]
-  };
+      productInfo: [
+        { label: 'Product name', value: 'FENVAL' },
+        { label: 'Technical name', value: this.productTitle },
+        { label: 'Pesticide type', value: 'Insecticide (Synthetic Pyrethroid)' },
+        { label: 'Formulation type', value: 'EC (Emulsifiable Concentrate)' },
+        { label: 'Physical form', value: 'Liquid' },
+        { label: 'Active ingredient', value: 'Fenvalerate 20% EC' },
+        { label: 'Chemical group', value: 'Type-II Pyrethroid — IRAC Group 3A' },
+        { label: 'Mode of action', value: 'Contact + stomach action; sodium channel modulator' },
+        { label: 'Action type', value: 'Non-systemic contact and stomach poison insecticide' },
+        {
+          label: 'Target pests',
+          value: 'Bollworms, caterpillars, fruit borers, shoot borers, pod borers, Spodoptera, leaf feeders, defoliators'
+        },
+        {
+          label: 'Target crops',
+          value: 'Cotton, chilli, brinjal, tomato, okra, pulses, oilseed crops, vegetables'
+        }
+      ],
+      packs: [
+        { label: 'Packaging', value: 'Bottle (EC liquid); sizes 100 ml, 250 ml, 500 ml, 1 LTR' },
+        { label: 'Recommended dose', value: '30 ml/pump' },
+        { label: 'Water volume', value: '15-litre knapsack sprayer (adjust per canopy)' },
+        { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
+        { label: 'Application stage', value: 'At early larval infestation or as per ETL/label' },
+        { label: 'Coverage', value: 'Spray both leaf surfaces and undersides where pests feed' },
+        { label: 'Re-entry interval', value: '24 hours (with PPE)' },
+        { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
+        { label: 'Country of origin', value: 'Made in India' }
+      ]
+    };
 
   officialProductDetails = [
     { label: 'Product Name', value: 'FENVAL' },
@@ -524,7 +524,7 @@ export class Fenvalerate20EcFenvalComponent implements OnInit, OnDestroy {
       name: 'RUNNER (Novaluron 10% EC)',
       description: 'IGR insecticide for fruit borers, pod borers, bollworms, and caterpillars with chitin synthesis inhibition.',
       route: '/products/insecticide/novaluron-10-ec-runner',
-      image: 'assets/products/insecticide/novaluron-10-ec.png',
+      image: 'assets/products/insecticide/novaluron-10-ec--.png',
       imageAlt: 'RUNNER Novaluron 10% EC insecticide by Harishree Crop Science'
     },
     {
@@ -672,7 +672,7 @@ export class Fenvalerate20EcFenvalComponent implements OnInit, OnDestroy {
     private seo: SeoService,
     private productSchema: ProductSchemaService,
     @Inject(PLATFORM_ID) private platformId: object
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.applySeo();

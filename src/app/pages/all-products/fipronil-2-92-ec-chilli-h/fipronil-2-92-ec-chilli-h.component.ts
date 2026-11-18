@@ -323,37 +323,37 @@ export class Fipronil292EcChilliHComponent implements OnInit, OnDestroy {
     productInfo: Array<{ label: string; value: string }>;
     packs: Array<{ label: string; value: string }>;
   } = {
-    productInfo: [
-      { label: 'Product name', value: 'CHILLI H' },
-      { label: 'Technical name', value: this.productTitle },
-      { label: 'Pesticide type', value: 'Insecticide' },
-      { label: 'Formulation type', value: 'EC (Emulsifiable Concentrate)' },
-      { label: 'Physical form', value: 'Liquid emulsion' },
-      { label: 'Active ingredient', value: 'Fipronil 2.92% EC' },
-      { label: 'Chemical group', value: 'Phenylpyrazole' },
-      {
-        label: 'Mode of action',
-        value: 'Contact and stomach action — GABA-gated chloride channel blocker (IRAC Group 2B)'
-      },
-      { label: 'Action type', value: 'Contact and stomach' },
-      {
-        label: 'Target pests',
-        value: 'Stem borers, Thrips, White grubs, Termites, Root feeders, Leaf feeders, Soil insects, BPH, Leaf folder, Aphids, Jassids'
-      },
-      { label: 'Target crops', value: 'Rice, Chilli, Cotton, Sugarcane, Vegetables, Pulses, Oilseeds, Tomato, Brinjal, Okra' }
-    ],
-    packs: [
-      { label: 'Packaging', value: 'Bottle (EC liquid); sizes 250 ml, 500 ml, 1 LTR' },
-      { label: 'Recommended dose', value: '20 ml/pump' },
-      { label: 'Water volume', value: '15-litre knapsack sprayer (adjust per canopy)' },
-      { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
-      { label: 'Application stage', value: 'At early pest infestation or as per ETL/label' },
-      { label: 'Rainfastness', value: 'Good adhesion once spray deposit dries on foliage' },
-      { label: 'Re-entry interval', value: '24 hours (with PPE)' },
-      { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
-      { label: 'Country of origin', value: 'Made in India' }
-    ]
-  };
+      productInfo: [
+        { label: 'Product name', value: 'CHILLI H' },
+        { label: 'Technical name', value: this.productTitle },
+        { label: 'Pesticide type', value: 'Insecticide' },
+        { label: 'Formulation type', value: 'EC (Emulsifiable Concentrate)' },
+        { label: 'Physical form', value: 'Liquid emulsion' },
+        { label: 'Active ingredient', value: 'Fipronil 2.92% EC' },
+        { label: 'Chemical group', value: 'Phenylpyrazole' },
+        {
+          label: 'Mode of action',
+          value: 'Contact and stomach action — GABA-gated chloride channel blocker (IRAC Group 2B)'
+        },
+        { label: 'Action type', value: 'Contact and stomach' },
+        {
+          label: 'Target pests',
+          value: 'Stem borers, Thrips, White grubs, Termites, Root feeders, Leaf feeders, Soil insects, BPH, Leaf folder, Aphids, Jassids'
+        },
+        { label: 'Target crops', value: 'Rice, Chilli, Cotton, Sugarcane, Vegetables, Pulses, Oilseeds, Tomato, Brinjal, Okra' }
+      ],
+      packs: [
+        { label: 'Packaging', value: 'Bottle (EC liquid); sizes 250 ml, 500 ml, 1 LTR' },
+        { label: 'Recommended dose', value: '20 ml/pump' },
+        { label: 'Water volume', value: '15-litre knapsack sprayer (adjust per canopy)' },
+        { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
+        { label: 'Application stage', value: 'At early pest infestation or as per ETL/label' },
+        { label: 'Rainfastness', value: 'Good adhesion once spray deposit dries on foliage' },
+        { label: 'Re-entry interval', value: '24 hours (with PPE)' },
+        { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
+        { label: 'Country of origin', value: 'Made in India' }
+      ]
+    };
 
   officialProductDetails = [
     { label: 'Product Name', value: 'CHILLI H' },
@@ -475,7 +475,7 @@ export class Fipronil292EcChilliHComponent implements OnInit, OnDestroy {
       name: 'RUNNER (Novaluron 10% EC)',
       description: 'Standalone benzoylurea IGR for caterpillar, fruit borer, and pod borer control in cotton, chilli, and vegetables.',
       route: '/products/insecticide/novaluron-10-ec-runner',
-      image: 'assets/products/insecticide/novaluron-10-ec.png',
+      image: 'assets/products/insecticide/novaluron-10-ec--.png',
       imageAlt: 'RUNNER Novaluron 10% EC IGR insecticide by Harishree Crop Science'
     },
     {
@@ -722,7 +722,7 @@ export class Fipronil292EcChilliHComponent implements OnInit, OnDestroy {
     private seo: SeoService,
     private productSchema: ProductSchemaService,
     @Inject(PLATFORM_ID) private platformId: object
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.applySeo();

@@ -237,31 +237,31 @@ export class EmamectinBenzoate15Fipronil35ScPro5gComponent implements OnInit, On
     productInfo: Array<{ label: string; value: string }>;
     packs: Array<{ label: string; value: string }>;
   } = {
-    productInfo: [
-      { label: 'Product name', value: 'PRO 5G' },
-      { label: 'Technical name', value: this.productTitle },
-      { label: 'Pesticide type', value: 'Insecticide' },
-      { label: 'Formulation type', value: 'SC (Suspension Concentrate)' },
-      { label: 'Physical form', value: 'Liquid suspension' },
-      { label: 'Active ingredient', value: 'Emamectin Benzoate 1.5% + FIPRONIL 3.5% SC' },
-      { label: 'Chemical group', value: 'Avermectin + Phenylpyrazole combination' },
-      { label: 'Mode of action', value: 'Contact, stomach, and translaminar — GluCl (IRAC 6) + GABA (IRAC 2B)' },
-      { label: 'Action type', value: 'Contact, stomach, translaminar' },
-      { label: 'Target pests', value: 'Bollworms, Fruit borers, Stem borers, Pod borers, Thrips, Aphids, Whiteflies, Caterpillars, Spodoptera, Helicoverpa' },
-      { label: 'Target crops', value: 'Cotton, Chilli, Tomato, Brinjal, Okra, Cabbage, Cauliflower, Pulses, Soybean, Oilseeds, Vegetables' }
-    ],
-    packs: [
-      { label: 'Packaging', value: 'Bottle (SC liquid); sizes 500 ml, 1 LTR' },
-      { label: 'Recommended dose', value: '25 ml/pump' },
-      { label: 'Water volume', value: '15-litre knapsack sprayer (adjust per canopy)' },
-      { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
-      { label: 'Application stage', value: 'At early pest infestation or as per ETL/label' },
-      { label: 'Rainfastness', value: 'Good adhesion once spray deposit dries on foliage' },
-      { label: 'Re-entry interval', value: '24 hours (with PPE)' },
-      { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
-      { label: 'Country of origin', value: 'Made in India' }
-    ]
-  };
+      productInfo: [
+        { label: 'Product name', value: 'PRO 5G' },
+        { label: 'Technical name', value: this.productTitle },
+        { label: 'Pesticide type', value: 'Insecticide' },
+        { label: 'Formulation type', value: 'SC (Suspension Concentrate)' },
+        { label: 'Physical form', value: 'Liquid suspension' },
+        { label: 'Active ingredient', value: 'Emamectin Benzoate 1.5% + FIPRONIL 3.5% SC' },
+        { label: 'Chemical group', value: 'Avermectin + Phenylpyrazole combination' },
+        { label: 'Mode of action', value: 'Contact, stomach, and translaminar — GluCl (IRAC 6) + GABA (IRAC 2B)' },
+        { label: 'Action type', value: 'Contact, stomach, translaminar' },
+        { label: 'Target pests', value: 'Bollworms, Fruit borers, Stem borers, Pod borers, Thrips, Aphids, Whiteflies, Caterpillars, Spodoptera, Helicoverpa' },
+        { label: 'Target crops', value: 'Cotton, Chilli, Tomato, Brinjal, Okra, Cabbage, Cauliflower, Pulses, Soybean, Oilseeds, Vegetables' }
+      ],
+      packs: [
+        { label: 'Packaging', value: 'Bottle (SC liquid); sizes 500 ml, 1 LTR' },
+        { label: 'Recommended dose', value: '25 ml/pump' },
+        { label: 'Water volume', value: '15-litre knapsack sprayer (adjust per canopy)' },
+        { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
+        { label: 'Application stage', value: 'At early pest infestation or as per ETL/label' },
+        { label: 'Rainfastness', value: 'Good adhesion once spray deposit dries on foliage' },
+        { label: 'Re-entry interval', value: '24 hours (with PPE)' },
+        { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
+        { label: 'Country of origin', value: 'Made in India' }
+      ]
+    };
 
   officialProductDetails = [
     { label: 'Product Name', value: 'PRO 5G' },
@@ -322,7 +322,7 @@ export class EmamectinBenzoate15Fipronil35ScPro5gComponent implements OnInit, On
       name: 'RUNNER (Novaluron 10% EC)',
       description: 'Standalone benzoylurea IGR for caterpillar, fruit borer, and pod borer control in cotton, chilli, and vegetables.',
       route: '/products/insecticide/novaluron-10-ec-runner',
-      image: 'assets/products/insecticide/novaluron-10-ec.png',
+      image: 'assets/products/insecticide/novaluron-10-ec--.png',
       imageAlt: 'RUNNER Novaluron 10% EC IGR insecticide by Harishree Crop Science'
     },
     {
@@ -413,7 +413,7 @@ export class EmamectinBenzoate15Fipronil35ScPro5gComponent implements OnInit, On
     private seo: SeoService,
     private productSchema: ProductSchemaService,
     @Inject(PLATFORM_ID) private platformId: object
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.applySeo();

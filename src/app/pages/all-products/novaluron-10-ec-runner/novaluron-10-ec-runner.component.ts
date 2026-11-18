@@ -22,8 +22,8 @@ export class Novaluron10EcRunnerComponent implements OnInit, OnDestroy {
   private readonly baseUrl = environment.baseUrl;
   readonly productPath = '/products/insecticide/novaluron-10-ec-runner';
   readonly pageUrl = `${this.baseUrl}${this.productPath}`;
-  readonly productImagePath = 'assets/products/insecticide/novaluron-10-ec.png';
-  readonly productImageWebpPath = 'assets/products/insecticide/novaluron-10-ec.png';
+  readonly productImagePath = 'assets/products/insecticide/novaluron-10-ec--.png';
+  readonly productImageWebpPath = 'assets/products/insecticide/novaluron-10-ec--.png';
   readonly productImageUrl = `${this.baseUrl}/${this.productImagePath}`;
 
   private readonly metaStateKey = this.seo.createMetaStateKey(SEO_PAGE_ID);

@@ -271,7 +271,7 @@ export class ProductService {
         },
         {
           name: 'Runner',
-          image: 'assets/products/insecticide/novaluron-10-ec.png',
+          image: 'assets/products/insecticide/novaluron-10-ec--.png',
           description: 'Novaluron 10% EC IGR insecticide',
           fullDescription: 'RUNNER (Novaluron 10% EC) is Harishree Crop Science\'s premium benzoylurea insect growth regulator for fruit borers, pod borers, bollworms, and caterpillars on cotton, chilli, tomato, cabbage, pulses, soybean, and vegetables. Field guidance: 20 ml per pump when used at early larval stage as per label and local advisory.',
           url: 'products/insecticide/novaluron-10-ec-runner'

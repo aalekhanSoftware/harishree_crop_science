@@ -474,7 +474,7 @@ export class Chlorantraniliprole93LambdaCyhalothrin46ZcAmpigoComponent implement
       name: 'RUNNER (Novaluron 10% EC)',
       description: 'Standalone benzoylurea IGR for caterpillar, fruit borer, and pod borer control in cotton, chilli, and vegetables.',
       route: '/products/insecticide/novaluron-10-ec-runner',
-      image: 'assets/products/insecticide/novaluron-10-ec.png',
+      image: 'assets/products/insecticide/novaluron-10-ec--.png',
       imageAlt: 'RUNNER Novaluron 10% EC IGR insecticide by Harishree Crop Science'
     },
     {

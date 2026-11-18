@@ -255,37 +255,37 @@ export class Novaluron525Indoxacarb45ScTurboComponent implements OnInit, OnDestr
     productInfo: Array<{ label: string; value: string }>;
     packs: Array<{ label: string; value: string }>;
   } = {
-    productInfo: [
-      { label: 'Product name', value: 'TURBO' },
-      { label: 'Technical name', value: this.productTitle },
-      { label: 'Pesticide type', value: 'Insecticide' },
-      { label: 'Formulation type', value: 'SC (Suspension Concentrate)' },
-      { label: 'Physical form', value: 'Liquid suspension' },
-      { label: 'Active ingredients', value: 'Novaluron 5.25% + Indoxacarb 4.5% w/w' },
-      { label: 'Chemical group', value: 'Benzoylurea (IGR) + Oxadiazine' },
-      {
-        label: 'Mode of action',
-        value: 'Novaluron inhibits chitin synthesis (IRAC 15); Indoxacarb blocks sodium channels (IRAC 22A)'
-      },
-      { label: 'Action type', value: 'Contact, stomach, and insect growth regulator' },
-      {
-        label: 'Target pests',
-        value: 'Bollworms, Fruit borers, Pod borers, Stem borers, Leaf eating caterpillars, Spodoptera, Helicoverpa'
-      },
-      { label: 'Target crops', value: 'Cotton, Chilli, Tomato, Cabbage, Cauliflower, Soybean, Pulses, Vegetables' }
-    ],
-    packs: [
-      { label: 'Packaging', value: 'Bottle (SC liquid); sizes 250 ml, 500 ml, 1 LTR' },
-      { label: 'Recommended dose', value: '20 ml/pump' },
-      { label: 'Water volume', value: '15-litre knapsack sprayer (adjust per canopy)' },
-      { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
-      { label: 'Application stage', value: 'At early pest infestation or as per ETL/label' },
-      { label: 'Rainfastness', value: 'Good adhesion once spray deposit dries on foliage' },
-      { label: 'Re-entry interval', value: '24 hours (with PPE)' },
-      { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
-      { label: 'Country of origin', value: 'Made in India' }
-    ]
-  };
+      productInfo: [
+        { label: 'Product name', value: 'TURBO' },
+        { label: 'Technical name', value: this.productTitle },
+        { label: 'Pesticide type', value: 'Insecticide' },
+        { label: 'Formulation type', value: 'SC (Suspension Concentrate)' },
+        { label: 'Physical form', value: 'Liquid suspension' },
+        { label: 'Active ingredients', value: 'Novaluron 5.25% + Indoxacarb 4.5% w/w' },
+        { label: 'Chemical group', value: 'Benzoylurea (IGR) + Oxadiazine' },
+        {
+          label: 'Mode of action',
+          value: 'Novaluron inhibits chitin synthesis (IRAC 15); Indoxacarb blocks sodium channels (IRAC 22A)'
+        },
+        { label: 'Action type', value: 'Contact, stomach, and insect growth regulator' },
+        {
+          label: 'Target pests',
+          value: 'Bollworms, Fruit borers, Pod borers, Stem borers, Leaf eating caterpillars, Spodoptera, Helicoverpa'
+        },
+        { label: 'Target crops', value: 'Cotton, Chilli, Tomato, Cabbage, Cauliflower, Soybean, Pulses, Vegetables' }
+      ],
+      packs: [
+        { label: 'Packaging', value: 'Bottle (SC liquid); sizes 250 ml, 500 ml, 1 LTR' },
+        { label: 'Recommended dose', value: '20 ml/pump' },
+        { label: 'Water volume', value: '15-litre knapsack sprayer (adjust per canopy)' },
+        { label: 'Application method', value: 'Foliar spray using knapsack or power sprayer' },
+        { label: 'Application stage', value: 'At early pest infestation or as per ETL/label' },
+        { label: 'Rainfastness', value: 'Good adhesion once spray deposit dries on foliage' },
+        { label: 'Re-entry interval', value: '24 hours (with PPE)' },
+        { label: 'Compatibility', value: 'Jar test before tank-mixing with other products' },
+        { label: 'Country of origin', value: 'Made in India' }
+      ]
+    };
 
   officialProductDetails = [
     { label: 'Product Name', value: 'TURBO' },
@@ -397,7 +397,7 @@ export class Novaluron525Indoxacarb45ScTurboComponent implements OnInit, OnDestr
       name: 'RUNNER (Novaluron 10% EC)',
       description: 'Standalone benzoylurea IGR for caterpillar, fruit borer, and pod borer control in cotton, chilli, and vegetables.',
       route: '/products/insecticide/novaluron-10-ec-runner',
-      image: 'assets/products/insecticide/novaluron-10-ec.png',
+      image: 'assets/products/insecticide/novaluron-10-ec--.png',
       imageAlt: 'RUNNER Novaluron 10% EC IGR insecticide by Harishree Crop Science'
     },
     {
@@ -614,7 +614,7 @@ export class Novaluron525Indoxacarb45ScTurboComponent implements OnInit, OnDestr
     private seo: SeoService,
     private productSchema: ProductSchemaService,
     @Inject(PLATFORM_ID) private platformId: object
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.applySeo();
