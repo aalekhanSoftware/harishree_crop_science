@@ -446,13 +446,13 @@ export class ProductService {
           fullDescription: 'H-Tilt (Propiconazole 25% EC) is a premium systemic triazole fungicide formulated for rapid absorption and deep movement within the plant. It inhibits ergosterol biosynthesis, halting fungal growth and ensuring strong curative and protective action. Highly effective on rusts, leaf spots and sheath blight in cereals, oilseeds and horticultural crops, H-Tilt offers excellent rainfastness and crop safety when used as directed. The emulsifiable concentrate delivers consistent performance in both solo and tank-mix programs, supporting healthier canopies, longer green leaf area duration and superior harvest quality.',
           url: 'products/propiconazole-25-ec-h-tilt'
         },
-        {
-          name: 'Meta 35',
-          image: 'assets/products/fungicide/metalaxyl-35-ws.png',
-          description: 'Metalaxyl 35% WS systemic seed-treatment fungicide',
-          fullDescription: 'Meta 35 (Metalaxyl 35% WS) is a premium systemic seed-treatment fungicide by Harishree Crop Science for protection against damping off, downy mildew, seedling blight, root rot, collar rot, and Pythium and Phytophthora diseases during germination and early growth in maize, groundnut, soybean, cotton, sunflower, vegetables, paddy, and wheat. Recommended dose: 25 gm per pump.',
-          url: 'products/metalaxyl-35-ws-meta-35'
-        },
+        // {
+        //   name: 'Meta 35',
+        //   image: 'assets/products/fungicide/metalaxyl-35-ws.png',
+        //   description: 'Metalaxyl 35% WS systemic seed-treatment fungicide',
+        //   fullDescription: 'Meta 35 (Metalaxyl 35% WS) is a premium systemic seed-treatment fungicide by Harishree Crop Science for protection against damping off, downy mildew, seedling blight, root rot, collar rot, and Pythium and Phytophthora diseases during germination and early growth in maize, groundnut, soybean, cotton, sunflower, vegetables, paddy, and wheat. Recommended dose: 25 gm per pump.',
+        //   url: 'products/metalaxyl-35-ws-meta-35'
+        // },
         {
           name: 'Galion',
           image: 'assets/products/fungicide/picoxystrobin-22-52-sc.png',
