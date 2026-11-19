@@ -511,20 +511,20 @@ export class Buprofezin15Acephate50TopazComponent implements OnInit, OnDestroy {
       image: 'assets/products/insecticide/acephate-75-sp.jpg',
       imageAlt: 'HIL THENE Acephate 75% SP insecticide by Harishree Crop Science'
     },
-    {
-      name: 'PILOT (Pyriproxyfen + Dinotefuran + Diafenthiuron SC)',
-      description: 'Triple-action insecticide for whitefly, aphid, thrips, and jassid control with IGR lifecycle disruption.',
-      route: '/products/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc-pilot',
-      image: 'assets/products/insecticide/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc.jpg',
-      imageAlt: 'PILOT triple-action insecticide by Harishree Crop Science'
-    },
-    {
-      name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
-      description: 'Dual-action insecticide for thrips, whitefly, aphid, jassid, and mite control in cotton and vegetables.',
-      route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum',
-      image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
-      imageAlt: 'MEGNUM dual-action insecticide by Harishree Crop Science'
-    }
+//     {
+//       name: 'PILOT (Pyriproxyfen + Dinotefuran + Diafenthiuron SC)',
+//       description: 'Triple-action insecticide for whitefly, aphid, thrips, and jassid control with IGR lifecycle disruption.',
+//       route: '/products/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc-pilot',
+//       image: 'assets/products/insecticide/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc.jpg',
+//       imageAlt: 'PILOT triple-action insecticide by Harishree Crop Science'
+//     },
+//     {
+//       name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
+//       description: 'Dual-action insecticide for thrips, whitefly, aphid, jassid, and mite control in cotton and vegetables.',
+//       route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum',
+//       image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
+//       imageAlt: 'MEGNUM dual-action insecticide by Harishree Crop Science'
+//     }
   ];
 
   faqs = [

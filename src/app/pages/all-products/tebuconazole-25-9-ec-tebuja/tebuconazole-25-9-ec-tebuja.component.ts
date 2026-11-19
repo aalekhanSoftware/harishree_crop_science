@@ -513,13 +513,13 @@ export class Tebuconazole259EcTebujaComponent implements OnInit, OnDestroy {
   ];
 
   relatedProducts = [
-    {
-      name: 'X PRO (Azoxystrobin + Tricyclazole SC)',
-      description: 'Dual-action systemic fungicide for rice blast, sheath blight, and brown spot in paddy.',
-      route: '/products/x-pro-azoxystrobin-16-7-tricyclazole-33-3-sc',
-      image: 'assets/products/X-PRO.png',
-      imageAlt: 'X PRO Azoxystrobin Tricyclazole fungicide by Harishree Crop Science'
-    },
+//     {
+//       name: 'X PRO (Azoxystrobin + Tricyclazole SC)',
+//       description: 'Dual-action systemic fungicide for rice blast, sheath blight, and brown spot in paddy.',
+//       route: '/products/x-pro-azoxystrobin-16-7-tricyclazole-33-3-sc',
+//       image: 'assets/products/X-PRO.png',
+//       imageAlt: 'X PRO Azoxystrobin Tricyclazole fungicide by Harishree Crop Science'
+//     },
     {
       name: 'Super COC (Copper Oxychloride 50% WP)',
       description: 'Broad-spectrum contact fungicide for blight, anthracnose, and bacterial diseases.',

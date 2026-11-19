@@ -408,13 +408,13 @@ export class Tricyclazole75WpTrizoleComponent implements OnInit, OnDestroy {
   ];
 
   relatedProducts = [
-    {
-      name: 'X PRO (Azoxystrobin 16.7% + Tricyclazole 33.3% SC)',
-      description: 'Dual-action systemic fungicide for rice blast, sheath blight, and brown spot in paddy crops.',
-      route: '/products/x-pro-azoxystrobin-16-7-tricyclazole-33-3-sc',
-      image: 'assets/products/X-PRO.png',
-      imageAlt: 'X PRO Azoxystrobin Tricyclazole fungicide by Harishree Crop Science'
-    },
+//     {
+//       name: 'X PRO (Azoxystrobin 16.7% + Tricyclazole 33.3% SC)',
+//       description: 'Dual-action systemic fungicide for rice blast, sheath blight, and brown spot in paddy crops.',
+//       route: '/products/x-pro-azoxystrobin-16-7-tricyclazole-33-3-sc',
+//       image: 'assets/products/X-PRO.png',
+//       imageAlt: 'X PRO Azoxystrobin Tricyclazole fungicide by Harishree Crop Science'
+//     },
     {
       name: 'Magic (Validamycin 3% L)',
       description: 'Systemic antibiotic fungicide for sheath blight and Rhizoctonia diseases in paddy and horticultural crops.',

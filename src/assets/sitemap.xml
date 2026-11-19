@@ -83,14 +83,6 @@
     <priority>0.90</priority>
   </url>
 
-  <!-- AMPIGO Product -->
-  <url>
-    <loc>https://harishreecropscience.com/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
   <!-- EXTRA MIDA 70 Product -->
   <url>
     <loc>https://harishreecropscience.com/products/insecticide/imidacloprid-70-wg-extra-mida-70</loc>
@@ -99,33 +91,9 @@
     <priority>0.90</priority>
   </url>
 
-  <!-- YODDHA Product -->
-  <url>
-    <loc>https://harishreecropscience.com/products/insecticide/flufenzine-20-ec-yoddha</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <!-- RUNNER Product -->
-  <url>
-    <loc>https://harishreecropscience.com/products/insecticide/novaluron-10-ec-runner</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
   <!-- FENVAL Product -->
   <url>
     <loc>https://harishreecropscience.com/products/insecticide/fenvalerate-20-ec-fenval</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <!-- PILOT Product -->
-  <url>
-    <loc>https://harishreecropscience.com/products/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc-pilot</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>

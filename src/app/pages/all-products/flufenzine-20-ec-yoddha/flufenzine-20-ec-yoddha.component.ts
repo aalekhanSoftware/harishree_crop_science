@@ -442,13 +442,13 @@ export class Flufenzine20EcYoddhaComponent implements OnInit, OnDestroy {
       image: 'assets/products/insecticide/dimethoate-30-ec.jpg',
       imageAlt: 'H GOR Dimethoate 30% EC insecticide by Harishree Crop Science'
     },
-    {
-      name: 'AMPIGO (Chlorantraniliprole + Lambda Cyhalothrin ZC)',
-      description: 'Dual-action ZC insecticide for caterpillars, borers, and fall armyworm in cotton, maize, and vegetables.',
-      route: '/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc',
-      image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc--.png',
-      imageAlt: 'AMPIGO Chlorantraniliprole Lambda Cyhalothrin ZC insecticide by Harishree Crop Science'
-    }
+//     {
+//       name: 'AMPIGO (Chlorantraniliprole + Lambda Cyhalothrin ZC)',
+//       description: 'Dual-action ZC insecticide for caterpillars, borers, and fall armyworm in cotton, maize, and vegetables.',
+//       route: '/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc',
+//       image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc--.png',
+//       imageAlt: 'AMPIGO Chlorantraniliprole Lambda Cyhalothrin ZC insecticide by Harishree Crop Science'
+//     }
   ];
 
   faqs = [

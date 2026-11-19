@@ -423,20 +423,20 @@ export class PicoxystrobinPropiconazoleScGalionWayComponent implements OnInit, O
   ];
 
   relatedProducts = [
-    {
-      name: 'X PRO (Azoxystrobin 16.7% + Tricyclazole 33.3% SC)',
-      description: 'Dual-action systemic fungicide for rice blast, sheath blight, and brown spot in paddy crops.',
-      route: '/products/x-pro-azoxystrobin-16-7-tricyclazole-33-3-sc',
-      image: 'assets/products/X-PRO.png',
-      imageAlt: 'X PRO Azoxystrobin Tricyclazole fungicide by Harishree Crop Science'
-    },
-    {
-      name: 'Captop (Azoxystrobin 18.2% + Difenoconazole 11.4% SC)',
-      description: 'Dual-action systemic fungicide for powdery mildew, anthracnose, rust, leaf spot, and sheath blight.',
-      route: '/products/captop-azoxystrobin-18-2-difenoconazole-11-4-sc',
-      image: 'assets/products/fungicide/azoxystrobin-18-2-difenoconazole-11-4-sc.jpg',
-      imageAlt: 'Captop Azoxystrobin Difenoconazole fungicide by Harishree Crop Science'
-    },
+//     {
+//       name: 'X PRO (Azoxystrobin 16.7% + Tricyclazole 33.3% SC)',
+//       description: 'Dual-action systemic fungicide for rice blast, sheath blight, and brown spot in paddy crops.',
+//       route: '/products/x-pro-azoxystrobin-16-7-tricyclazole-33-3-sc',
+//       image: 'assets/products/X-PRO.png',
+//       imageAlt: 'X PRO Azoxystrobin Tricyclazole fungicide by Harishree Crop Science'
+//     },
+//     {
+//       name: 'Captop (Azoxystrobin 18.2% + Difenoconazole 11.4% SC)',
+//       description: 'Dual-action systemic fungicide for powdery mildew, anthracnose, rust, leaf spot, and sheath blight.',
+//       route: '/products/captop-azoxystrobin-18-2-difenoconazole-11-4-sc',
+//       image: 'assets/products/fungicide/azoxystrobin-18-2-difenoconazole-11-4-sc.jpg',
+//       imageAlt: 'Captop Azoxystrobin Difenoconazole fungicide by Harishree Crop Science'
+//     },
     {
       name: 'H-Tilt (Propiconazole 25% EC)',
       description: 'Systemic triazole fungicide for rusts, leaf spots, and sheath blight across cereals and horticultural crops.',

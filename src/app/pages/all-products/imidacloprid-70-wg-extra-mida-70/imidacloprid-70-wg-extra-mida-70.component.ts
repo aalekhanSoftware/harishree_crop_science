@@ -498,13 +498,13 @@ export class Imidacloprid70WgExtraMida70Component implements OnInit, OnDestroy {
       image: 'assets/products/insecticide/dimethoate-30-ec.jpg',
       imageAlt: 'Dimethoate 30% EC H GOR insecticide by Harishree Crop Science'
     },
-    {
-      name: 'Chlorantraniliprole 9.3% + Lambda Cyhalothrin 4.6% ZC (AMPIGO)',
-      description: 'Dual-action ZC insecticide for caterpillars, bollworms, and borers in cotton, maize, and vegetables.',
-      route: '/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc',
-      image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc--.png',
-      imageAlt: 'AMPIGO Chlorantraniliprole Lambda Cyhalothrin insecticide by Harishree Crop Science'
-    }
+//     {
+//       name: 'Chlorantraniliprole 9.3% + Lambda Cyhalothrin 4.6% ZC (AMPIGO)',
+//       description: 'Dual-action ZC insecticide for caterpillars, bollworms, and borers in cotton, maize, and vegetables.',
+//       route: '/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc',
+//       image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc--.png',
+//       imageAlt: 'AMPIGO Chlorantraniliprole Lambda Cyhalothrin insecticide by Harishree Crop Science'
+//     }
   ];
 
   faqs = [

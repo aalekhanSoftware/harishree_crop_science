@@ -350,14 +350,14 @@ export class Acephate75SpHilTheneComponent implements OnInit, OnDestroy {
     { feature: 'Application convenience', hilThene: 'SP — dissolves easily at 25 gm/pump', generic: 'Dose and mixing vary by acephate product' }
   ];
 
-  comparisonLanserGold = [
-    { feature: 'Active chemistry', hilThene: 'Acephate 75% SP — single-AI organophosphate', lanserGold: 'Acephate 50% + Imidacloprid 1.8% SP — dual-AI' },
-    { feature: 'Mode of action', hilThene: 'Systemic + contact organophosphate (IRAC 1B)', lanserGold: 'Dual MOA — organophosphate + neonicotinoid (1B + 4A)' },
-    { feature: 'Best fit', hilThene: 'Affordable broad-spectrum acephate for sucking and chewing pests', lanserGold: 'Premium dual-action for resistant sucking pest complexes' },
-    { feature: 'Dose', hilThene: '25 gm per pump', lanserGold: '25 gm per pump' },
-    { feature: 'Pricing', hilThene: '₹277/500 GM — cost-effective single-AI option', lanserGold: '₹454/500 GM — premium dual-AI formulation' },
-    { feature: 'Resistance management', hilThene: 'Rotate with neonicotinoids and other MOA groups', lanserGold: 'Built-in dual MOA for resistance-prone whitefly and thrips' }
-  ];
+//   comparisonLanserGold = [
+//     { feature: 'Active chemistry', hilThene: 'Acephate 75% SP — single-AI organophosphate', lanserGold: 'Acephate 50% + Imidacloprid 1.8% SP — dual-AI' },
+//     { feature: 'Mode of action', hilThene: 'Systemic + contact organophosphate (IRAC 1B)', lanserGold: 'Dual MOA — organophosphate + neonicotinoid (1B + 4A)' },
+//     { feature: 'Best fit', hilThene: 'Affordable broad-spectrum acephate for sucking and chewing pests', lanserGold: 'Premium dual-action for resistant sucking pest complexes' },
+//     { feature: 'Dose', hilThene: '25 gm per pump', lanserGold: '25 gm per pump' },
+//     { feature: 'Pricing', hilThene: '₹277/500 GM — cost-effective single-AI option', lanserGold: '₹454/500 GM — premium dual-AI formulation' },
+//     { feature: 'Resistance management', hilThene: 'Rotate with neonicotinoids and other MOA groups', lanserGold: 'Built-in dual MOA for resistance-prone whitefly and thrips' }
+//   ];
 
   comparisonSpFormulation = [
     { feature: 'Tank mixing', hilThene: 'SP dissolves evenly in water for uniform suspension', other: 'WP may require more agitation; EC/oil-based mixes differ' },
@@ -534,13 +534,13 @@ export class Acephate75SpHilTheneComponent implements OnInit, OnDestroy {
       image: 'assets/products/insecticide/dimethoate-30-ec.jpg',
       imageAlt: 'H GOR Dimethoate 30% EC insecticide by Harishree Crop Science'
     },
-    {
-      name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
-      description: 'Dual-action insecticide for thrips, whitefly, aphid, jassid, and mite control in cotton and vegetables.',
-      route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum',
-      image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
-      imageAlt: 'MEGNUM dual-action insecticide by Harishree Crop Science'
-    }
+//     {
+//       name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
+//       description: 'Dual-action insecticide for thrips, whitefly, aphid, jassid, and mite control in cotton and vegetables.',
+//       route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum',
+//       image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
+//       imageAlt: 'MEGNUM dual-action insecticide by Harishree Crop Science'
+//     }
   ];
 
   faqs = [

@@ -411,13 +411,13 @@ export class ThiophanateMethyl70WpHtmComponent implements OnInit, OnDestroy {
       image: 'assets/products/fungicide/mancozeb-75-wp.jpg',
       imageAlt: 'Hari 45 Mancozeb 75% WP fungicide by Harishree Crop Science'
     },
-    {
-      name: 'Saf 63 (Carbendazim 12% + Mancozeb 63% WP)',
-      description: 'Dual-action systemic plus contact fungicide for leaf spot, blast, rust, and fruit rot across field and horticultural crops.',
-      route: '/products/carbendazim-12-mancozeb-63-wp-saf-63',
-      image: 'assets/products/carbendazim-12-mancozeb-63-wp--.png',
-      imageAlt: 'Saf 63 Carbendazim Mancozeb fungicide by Harishree Crop Science'
-    },
+//     {
+//       name: 'Saf 63 (Carbendazim 12% + Mancozeb 63% WP)',
+//       description: 'Dual-action systemic plus contact fungicide for leaf spot, blast, rust, and fruit rot across field and horticultural crops.',
+//       route: '/products/carbendazim-12-mancozeb-63-wp-saf-63',
+//       image: 'assets/products/carbendazim-12-mancozeb-63-wp--.png',
+//       imageAlt: 'Saf 63 Carbendazim Mancozeb fungicide by Harishree Crop Science'
+//     },
     {
       name: 'Tebuja (Tebuconazole 25.9% EC)',
       description: 'Systemic triazole fungicide for rust, powdery mildew, leaf spot, and anthracnose across multiple crops.',

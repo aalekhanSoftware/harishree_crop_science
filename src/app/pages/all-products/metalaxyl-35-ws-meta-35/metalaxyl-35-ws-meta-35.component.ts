@@ -438,13 +438,13 @@ export class Metalaxyl35WsMeta35Component implements OnInit, OnDestroy {
       image: 'assets/products/fungicide/copper-oxychloride-50-wp.jpg',
       imageAlt: 'Super COC Copper Oxychloride 50% WP fungicide by Harishree Crop Science'
     },
-    {
-      name: 'N-Tracol (Propineb 70% WP)',
-      description: 'Multi-site contact fungicide for early blight, downy mildew, leaf spot, and rust across vegetables and fruit crops.',
-      route: '/products/propineb-70-wp-n-tracol',
-      image: 'assets/products/fungicide/propineb-70-wp.jpg',
-      imageAlt: 'N-Tracol Propineb 70% WP fungicide by Harishree Crop Science'
-    }
+//     {
+//       name: 'N-Tracol (Propineb 70% WP)',
+//       description: 'Multi-site contact fungicide for early blight, downy mildew, leaf spot, and rust across vegetables and fruit crops.',
+//       route: '/products/propineb-70-wp-n-tracol',
+//       image: 'assets/products/fungicide/propineb-70-wp.jpg',
+//       imageAlt: 'N-Tracol Propineb 70% WP fungicide by Harishree Crop Science'
+//     }
   ];
 
   faqs = [

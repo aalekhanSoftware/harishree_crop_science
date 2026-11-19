@@ -579,13 +579,13 @@ export class Tolfenpyrad15Bifenthrin75SeMegnumComponent implements OnInit, OnDes
       image: 'assets/products/insecticide/profenofos-50-ec.jpg',
       imageAlt: 'EXTRA PROFEX Profenofos 50% EC insecticide by Harishree Crop Science'
     },
-    {
-      name: 'AMPIGO (Chlorantraniliprole + Lambda Cyhalothrin ZC)',
-      description: 'Dual-action insecticide for caterpillars, borers, and fall armyworm with knockdown plus residual control.',
-      route: '/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc',
-      image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc--.png',
-      imageAlt: 'AMPIGO dual-action insecticide by Harishree Crop Science'
-    },
+//     {
+//       name: 'AMPIGO (Chlorantraniliprole + Lambda Cyhalothrin ZC)',
+//       description: 'Dual-action insecticide for caterpillars, borers, and fall armyworm with knockdown plus residual control.',
+//       route: '/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc',
+//       image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc--.png',
+//       imageAlt: 'AMPIGO dual-action insecticide by Harishree Crop Science'
+//     },
     {
       name: 'FENVAL (Fenvalerate 20% EC)',
       description: 'Synthetic pyrethroid insecticide for bollworms, caterpillars, and chewing pests in cotton and vegetables.',

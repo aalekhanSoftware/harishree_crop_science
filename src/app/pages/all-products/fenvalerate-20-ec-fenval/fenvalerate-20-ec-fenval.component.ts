@@ -513,20 +513,20 @@ export class Fenvalerate20EcFenvalComponent implements OnInit, OnDestroy {
   ];
 
   relatedProducts = [
-    {
-      name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
-      description: 'Dual-action insecticide for thrips, whiteflies, aphids, jassids, and mites in cotton and vegetables.',
-      route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum',
-      image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
-      imageAlt: 'MEGNUM Tolfenpyrad 15% + Bifenthrin 7.5% SE insecticide by Harishree Crop Science'
-    },
-    {
-      name: 'RUNNER (Novaluron 10% EC)',
-      description: 'IGR insecticide for fruit borers, pod borers, bollworms, and caterpillars with chitin synthesis inhibition.',
-      route: '/products/insecticide/novaluron-10-ec-runner',
-      image: 'assets/products/insecticide/novaluron-10-ec--.png',
-      imageAlt: 'RUNNER Novaluron 10% EC insecticide by Harishree Crop Science'
-    },
+//     {
+//       name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
+//       description: 'Dual-action insecticide for thrips, whiteflies, aphids, jassids, and mites in cotton and vegetables.',
+//       route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum',
+//       image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
+//       imageAlt: 'MEGNUM Tolfenpyrad 15% + Bifenthrin 7.5% SE insecticide by Harishree Crop Science'
+//     },
+//     {
+//       name: 'RUNNER (Novaluron 10% EC)',
+//       description: 'IGR insecticide for fruit borers, pod borers, bollworms, and caterpillars with chitin synthesis inhibition.',
+//       route: '/products/insecticide/novaluron-10-ec-runner',
+//       image: 'assets/products/insecticide/novaluron-10-ec--.png',
+//       imageAlt: 'RUNNER Novaluron 10% EC insecticide by Harishree Crop Science'
+//     },
     {
       name: 'EXTRA PROFEX (Profenofos 50% EC)',
       description: 'Broad-spectrum organophosphate for bollworms, whiteflies, aphids, thrips, and caterpillars in cotton and vegetables.',

@@ -564,20 +564,20 @@ export class Pyriproxyfen10Bifenthrin10WwEcFinalComponent implements OnInit, OnD
   ];
 
   relatedProducts = [
-    {
-      name: 'PILOT (Pyriproxyfen + Dinotefuran + Diafenthiuron SC)',
-      description: 'Triple-action systemic insecticide for whitefly, aphids, thrips, and jassids with IGR lifecycle disruption.',
-      route: '/products/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc-pilot',
-      image: 'assets/products/insecticide/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc.jpg',
-      imageAlt: 'PILOT Pyriproxyfen Dinotefuran Diafenthiuron SC insecticide by Harishree Crop Science'
-    },
-    {
-      name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
-      description: 'Dual-action insecticide for thrips, whiteflies, aphids, jassids, and mites in cotton and vegetables.',
-      route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum',
-      image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
-      imageAlt: 'MEGNUM Tolfenpyrad Bifenthrin SE insecticide by Harishree Crop Science'
-    },
+//     {
+//       name: 'PILOT (Pyriproxyfen + Dinotefuran + Diafenthiuron SC)',
+//       description: 'Triple-action systemic insecticide for whitefly, aphids, thrips, and jassids with IGR lifecycle disruption.',
+//       route: '/products/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc-pilot',
+//       image: 'assets/products/insecticide/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc.jpg',
+//       imageAlt: 'PILOT Pyriproxyfen Dinotefuran Diafenthiuron SC insecticide by Harishree Crop Science'
+//     },
+//     {
+//       name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
+//       description: 'Dual-action insecticide for thrips, whiteflies, aphids, jassids, and mites in cotton and vegetables.',
+//       route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum',
+//       image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
+//       imageAlt: 'MEGNUM Tolfenpyrad Bifenthrin SE insecticide by Harishree Crop Science'
+//     },
     {
       name: 'DELTA PLUS (Deltamethrin 11% w/w EC)',
       description: 'Synthetic pyrethroid insecticide for bollworms, caterpillars, thrips, and aphids with fast knockdown action.',

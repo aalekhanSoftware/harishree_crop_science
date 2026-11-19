@@ -563,13 +563,13 @@ export class Deltamethrin11WwEcDeltaPlusComponent implements OnInit, OnDestroy {
       image: 'assets/products/insecticide/profenofos-50-ec.jpg',
       imageAlt: 'EXTRA PROFEX Profenofos 50% EC insecticide by Harishree Crop Science'
     },
-    {
-      name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
-      description: 'Dual-action insecticide for thrips, whiteflies, aphids, jassids, and mites in cotton and vegetables.',
-      route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum',
-      image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
-      imageAlt: 'MEGNUM Tolfenpyrad 15% + Bifenthrin 7.5% SE insecticide by Harishree Crop Science'
-    },
+//     {
+//       name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
+//       description: 'Dual-action insecticide for thrips, whiteflies, aphids, jassids, and mites in cotton and vegetables.',
+//       route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum',
+//       image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
+//       imageAlt: 'MEGNUM Tolfenpyrad 15% + Bifenthrin 7.5% SE insecticide by Harishree Crop Science'
+//     },
     {
       name: 'TURBO (Novaluron + Indoxacarb SC)',
       description: 'Dual-action IGR and oxadiazine insecticide for caterpillar and borer control with knockdown plus moult disruption.',

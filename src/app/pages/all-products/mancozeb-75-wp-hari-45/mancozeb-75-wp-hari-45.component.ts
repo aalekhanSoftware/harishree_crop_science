@@ -412,13 +412,13 @@ export class Mancozeb75WpHari45Component implements OnInit, OnDestroy {
       image: 'assets/products/thiophanate-methyl-70-wp.png',
       imageAlt: 'HTM Thiophanate Methyl 70% WP fungicide by Harishree Crop Science'
     },
-    {
-      name: 'Saf 63 (Carbendazim 12% + Mancozeb 63% WP)',
-      description: 'Dual-action systemic plus contact fungicide for leaf spot, blast, rust, and fruit rot across field and horticultural crops.',
-      route: '/products/carbendazim-12-mancozeb-63-wp-saf-63',
-      image: 'assets/products/carbendazim-12-mancozeb-63-wp--.png',
-      imageAlt: 'Saf 63 Carbendazim Mancozeb fungicide by Harishree Crop Science'
-    },
+//     {
+//       name: 'Saf 63 (Carbendazim 12% + Mancozeb 63% WP)',
+//       description: 'Dual-action systemic plus contact fungicide for leaf spot, blast, rust, and fruit rot across field and horticultural crops.',
+//       route: '/products/carbendazim-12-mancozeb-63-wp-saf-63',
+//       image: 'assets/products/carbendazim-12-mancozeb-63-wp--.png',
+//       imageAlt: 'Saf 63 Carbendazim Mancozeb fungicide by Harishree Crop Science'
+//     },
     {
       name: 'King (Azoxystrobin 4.8% + Chlorothalonil 40.0% SC)',
       description: 'Dual-action systemic plus contact fungicide for early blight, late blight, leaf spot, rust, and downy mildew.',

@@ -463,20 +463,20 @@ export class Chlorantraniliprole93LambdaCyhalothrin46ZcAmpigoComponent implement
   ];
 
   relatedProducts = [
-    {
-      name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
-      description: 'Dual-action insecticide for thrips, whiteflies, aphids, jassids, and mites in cotton and vegetables.',
-      route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum',
-      image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
-      imageAlt: 'MEGNUM Tolfenpyrad 15% + Bifenthrin 7.5% SE insecticide by Harishree Crop Science'
-    },
-    {
-      name: 'RUNNER (Novaluron 10% EC)',
-      description: 'Standalone benzoylurea IGR for caterpillar, fruit borer, and pod borer control in cotton, chilli, and vegetables.',
-      route: '/products/insecticide/novaluron-10-ec-runner',
-      image: 'assets/products/insecticide/novaluron-10-ec--.png',
-      imageAlt: 'RUNNER Novaluron 10% EC IGR insecticide by Harishree Crop Science'
-    },
+//     {
+//       name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
+//       description: 'Dual-action insecticide for thrips, whiteflies, aphids, jassids, and mites in cotton and vegetables.',
+//       route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum',
+//       image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
+//       imageAlt: 'MEGNUM Tolfenpyrad 15% + Bifenthrin 7.5% SE insecticide by Harishree Crop Science'
+//     },
+//     {
+//       name: 'RUNNER (Novaluron 10% EC)',
+//       description: 'Standalone benzoylurea IGR for caterpillar, fruit borer, and pod borer control in cotton, chilli, and vegetables.',
+//       route: '/products/insecticide/novaluron-10-ec-runner',
+//       image: 'assets/products/insecticide/novaluron-10-ec--.png',
+//       imageAlt: 'RUNNER Novaluron 10% EC IGR insecticide by Harishree Crop Science'
+//     },
     {
       name: 'Chlorantraniliprole 18.5% SC',
       description: 'Cora-5 for borer and larval pest management with systemic and contact action.',

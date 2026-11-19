@@ -431,26 +431,47 @@ export class Azoxystrobin48Chlorothalonil40ScKingComponent implements OnInit, On
   ];
 
   relatedProducts = [
+//     {
+//       name: 'Captop (Azoxystrobin 18.2% + Difenoconazole 11.4% SC)',
+//       description: 'Dual-action systemic fungicide for powdery mildew, anthracnose, rust, leaf spot, fruit rot, and sheath blight control.',
+//       route: '/products/captop-azoxystrobin-18-2-difenoconazole-11-4-sc',
+//       image: 'assets/products/fungicide/azoxystrobin-18-2-difenoconazole-11-4-sc.jpg',
+//       imageAlt: 'Captop Azoxystrobin Difenoconazole fungicide by Harishree Crop Science'
+//     },
+//     {
+//       name: 'Chemistry (Azoxystrobin 11% + Tebuconazole 18.3% SC)',
+//       description: 'Dual-action systemic fungicide for rust, powdery mildew, leaf spot, anthracnose, and sheath blight control.',
+//       route: '/products/chemistry-azoxystrobin-11-tebuconazole-18-3-sc',
+//       image: 'assets/products/insecticide/azoxystrobin-11-tebuconazole-18-3-sc.jpg',
+//       imageAlt: 'Chemistry Azoxystrobin Tebuconazole fungicide by Harishree Crop Science'
+//     },
+//     {
+//       name: 'X PRO (Azoxystrobin 16.7% + Tricyclazole 33.3% SC)',
+//       description: 'Dual-action systemic fungicide for rice blast, sheath blight, and brown spot in paddy crops.',
+//       route: '/products/x-pro-azoxystrobin-16-7-tricyclazole-33-3-sc',
+//       image: 'assets/products/X-PRO.png',
+//       imageAlt: 'X PRO Azoxystrobin Tricyclazole fungicide by Harishree Crop Science'
+//     }
     {
-      name: 'Captop (Azoxystrobin 18.2% + Difenoconazole 11.4% SC)',
-      description: 'Dual-action systemic fungicide for powdery mildew, anthracnose, rust, leaf spot, fruit rot, and sheath blight control.',
-      route: '/products/captop-azoxystrobin-18-2-difenoconazole-11-4-sc',
-      image: 'assets/products/fungicide/azoxystrobin-18-2-difenoconazole-11-4-sc.jpg',
-      imageAlt: 'Captop Azoxystrobin Difenoconazole fungicide by Harishree Crop Science'
+      name: 'H TILT (Propiconazole 25% EC)',
+      description: 'Systemic triazole fungicide for rust, powdery mildew, blast, leaf spot, and anthracnose across many crops.',
+      route: '/products/propiconazole-25-ec-h-tilt',
+      image: 'assets/products/fungicide/propiconazole-25-ec.jpg',
+      imageAlt: 'H TILT Propiconazole 25% EC fungicide by Harishree Crop Science'
     },
     {
-      name: 'Chemistry (Azoxystrobin 11% + Tebuconazole 18.3% SC)',
-      description: 'Dual-action systemic fungicide for rust, powdery mildew, leaf spot, anthracnose, and sheath blight control.',
-      route: '/products/chemistry-azoxystrobin-11-tebuconazole-18-3-sc',
-      image: 'assets/products/insecticide/azoxystrobin-11-tebuconazole-18-3-sc.jpg',
-      imageAlt: 'Chemistry Azoxystrobin Tebuconazole fungicide by Harishree Crop Science'
+      name: 'Magic (Validamycin 3% L)',
+      description: 'Antibiotic fungicide for sheath blight and Rhizoctonia disease control in paddy and rice crops.',
+      route: '/products/validamycin-3-l-magic',
+      image: 'assets/products/fungicide/validamycin-3-l.jpg',
+      imageAlt: 'Magic Validamycin 3% L fungicide by Harishree Crop Science'
     },
     {
-      name: 'X PRO (Azoxystrobin 16.7% + Tricyclazole 33.3% SC)',
-      description: 'Dual-action systemic fungicide for rice blast, sheath blight, and brown spot in paddy crops.',
-      route: '/products/x-pro-azoxystrobin-16-7-tricyclazole-33-3-sc',
-      image: 'assets/products/X-PRO.png',
-      imageAlt: 'X PRO Azoxystrobin Tricyclazole fungicide by Harishree Crop Science'
+      name: 'Tebuja (Tebuconazole 25.9% EC)',
+      description: 'Systemic triazole fungicide for rust, powdery mildew, leaf spot, and anthracnose across multiple crops.',
+      route: '/products/tebuconazole-25-9-ec-tebuja',
+      image: 'assets/products/fungicide/tebuconazole-25-9--ec.jpg',
+      imageAlt: 'Tebuja Tebuconazole 25.9% EC fungicide by Harishree Crop Science'
     }
   ];
 

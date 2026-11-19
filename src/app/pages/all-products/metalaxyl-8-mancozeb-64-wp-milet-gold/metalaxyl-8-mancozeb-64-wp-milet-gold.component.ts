@@ -434,13 +434,13 @@ export class Metalaxyl8Mancozeb64WpMiletGoldComponent implements OnInit, OnDestr
       image: 'assets/products/azoxystrobin-4-8-w-w-chlorothalonil-40-0-w-w-sc.png',
       imageAlt: 'King Azoxystrobin Chlorothalonil fungicide by Harishree Crop Science'
     },
-    {
-      name: 'Captop (Azoxystrobin 18.2% + Difenoconazole 11.4% SC)',
-      description: 'Dual-action systemic fungicide for powdery mildew, anthracnose, rust, leaf spot, and sheath blight.',
-      route: '/products/captop-azoxystrobin-18-2-difenoconazole-11-4-sc',
-      image: 'assets/products/fungicide/azoxystrobin-18-2-difenoconazole-11-4-sc.jpg',
-      imageAlt: 'Captop Azoxystrobin Difenoconazole fungicide by Harishree Crop Science'
-    }
+//     {
+//       name: 'Captop (Azoxystrobin 18.2% + Difenoconazole 11.4% SC)',
+//       description: 'Dual-action systemic fungicide for powdery mildew, anthracnose, rust, leaf spot, and sheath blight.',
+//       route: '/products/captop-azoxystrobin-18-2-difenoconazole-11-4-sc',
+//       image: 'assets/products/fungicide/azoxystrobin-18-2-difenoconazole-11-4-sc.jpg',
+//       imageAlt: 'Captop Azoxystrobin Difenoconazole fungicide by Harishree Crop Science'
+//     }
   ];
 
   faqs = [

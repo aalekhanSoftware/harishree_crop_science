@@ -46,13 +46,13 @@ export class ProductService {
           fullDescription: 'H Fun (Tolfenpyrad 15% EC) is Harishree Crop Science’s emulsifiable concentrate for sucking pests and early-instar caterpillars—contact and stomach action via IRAC Group 21A (mitochondrial Complex I). Field guidance: 30 ml per knapsack pump with ~200 L water per acre on cotton, chilli, tomato, brinjal, okra, groundnut, tea, paddy, soybean and other label crops when used with scouting and rotation.',
           url: 'product/tolfenpyrad-15-ec'
         },
-        {
-          name: 'Tolfenpyrad 15% + Bifenthrin 7.5% SE (MEGNUM)',
-          image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
-          description: 'Dual-action SE insecticide for thrips, whiteflies, aphids, jassids and mites',
-          fullDescription: 'MEGNUM (Tolfenpyrad 15% + Bifenthrin 7.5% SE) is Harishree Crop Science’s dual-action suspension emulsion for fast knockdown and long-lasting control of thrips, whiteflies, aphids, jassids, mites and other sucking pests. Combines IRAC 21A respiratory inhibition with IRAC 3A contact and stomach action. Field guidance: 25 ml per knapsack pump on cotton, chilli, brinjal, tomato, okra, cabbage, cauliflower and vegetables.',
-          url: 'products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum'
-        },
+//         {
+//           name: 'Tolfenpyrad 15% + Bifenthrin 7.5% SE (MEGNUM)',
+//           image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
+//           description: 'Dual-action SE insecticide for thrips, whiteflies, aphids, jassids and mites',
+//           fullDescription: 'MEGNUM (Tolfenpyrad 15% + Bifenthrin 7.5% SE) is Harishree Crop Science’s dual-action suspension emulsion for fast knockdown and long-lasting control of thrips, whiteflies, aphids, jassids, mites and other sucking pests. Combines IRAC 21A respiratory inhibition with IRAC 3A contact and stomach action. Field guidance: 25 ml per knapsack pump on cotton, chilli, brinjal, tomato, okra, cabbage, cauliflower and vegetables.',
+//           url: 'products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se-megnum'
+//         },
         {
           name: 'Pyriproxyfen 10% + Bifenthrin 10% w/w EC (FINAL)',
           image: 'assets/products/insecticide/pyriproxyfen-10-bifenthrin-10-w-w-ec.png',
@@ -66,19 +66,19 @@ export class ProductService {
           description: 'Natural pest control',
           fullDescription: 'Neem Pro harnesses the power of natural neem extracts enhanced with advanced formulation technology. This eco-friendly solution provides effective control against multiple pest species while being safe for the environment. Its botanical origin ensures minimal residue concerns and better acceptance in organic farming.'
         },
-        {
-          name: 'Mission',
-          image: 'assets/products/thiamethoxam-12-6-lambda-cyhalothrin-9-5-zc--.jpg',
-          description: 'Target-specific insecticide',
-          fullDescription: 'Mission is a precision-engineered insecticide designed for specific pest targets. Its selective action ensures maximum effectiveness against target pests while minimizing impact on non-target organisms. The advanced formulation provides excellent rainfastness and extended protection periods.',
-          url: 'product/thiamethoxam-12-6-lambda-cyhalothrin-9-5-zc'
-        },
-        {
-          name: 'Kavach',
-          image: 'assets/products/kavach--.png',
-          description: 'Protective insect shield',
-          fullDescription: 'Kavach creates a powerful protective shield against destructive insect pests. This innovative formulation provides both contact and residual activity, ensuring comprehensive crop protection. Its unique shield technology ensures better adherence to plant surfaces and resistance to environmental factors.'
-        },
+//         {
+//           name: 'Mission',
+//           image: 'assets/products/thiamethoxam-12-6-lambda-cyhalothrin-9-5-zc--.jpg',
+//           description: 'Target-specific insecticide',
+//           fullDescription: 'Mission is a precision-engineered insecticide designed for specific pest targets. Its selective action ensures maximum effectiveness against target pests while minimizing impact on non-target organisms. The advanced formulation provides excellent rainfastness and extended protection periods.',
+//           url: 'product/thiamethoxam-12-6-lambda-cyhalothrin-9-5-zc'
+//         },
+//         {
+//           name: 'Kavach',
+//           image: 'assets/products/kavach--.png',
+//           description: 'Protective insect shield',
+//           fullDescription: 'Kavach creates a powerful protective shield against destructive insect pests. This innovative formulation provides both contact and residual activity, ensuring comprehensive crop protection. Its unique shield technology ensures better adherence to plant surfaces and resistance to environmental factors.'
+//         },
         {
           name: 'Pride H (Acetamiprid 20% SP)',
           image: 'assets/products/insecticide/acetamiprid-20-sp.png',
@@ -121,13 +121,13 @@ export class ProductService {
           fullDescription: 'Cora-5 (Chlorantraniliprole 18.5% SC) is Harishree Crop Science\'s professional insecticide for borer and larval pest management in crops such as groundnut, maize, paddy, cotton, chilli and vegetables. It supports systemic and contact action with practical guidance of 5 ml per pump when used as per crop label and local advisory.',
           url: 'product/chlorantraniliprole-18-5-sc'
         },
-        {
-          name: 'AMPIGO',
-          image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc--.png',
-          description: 'Chlorantraniliprole 9.3% + Lambda Cyhalothrin 4.6% ZC dual-action insecticide',
-          fullDescription: 'AMPIGO (Chlorantraniliprole 9.3% + Lambda Cyhalothrin 4.6% ZC) is Harishree Crop Science\'s premium dual-action ZC insecticide for fast knockdown and long residual control of fall armyworm, bollworms, fruit borers, and caterpillars in cotton, maize, chilli, tomato, and vegetables. Field guidance: 10 ml per pump when used at early larval stage as per label and local advisory.',
-          url: 'products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc'
-        },
+//         {
+//           name: 'AMPIGO',
+//           image: 'assets/products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc--.png',
+//           description: 'Chlorantraniliprole 9.3% + Lambda Cyhalothrin 4.6% ZC dual-action insecticide',
+//           fullDescription: 'AMPIGO (Chlorantraniliprole 9.3% + Lambda Cyhalothrin 4.6% ZC) is Harishree Crop Science\'s premium dual-action ZC insecticide for fast knockdown and long residual control of fall armyworm, bollworms, fruit borers, and caterpillars in cotton, maize, chilli, tomato, and vegetables. Field guidance: 10 ml per pump when used at early larval stage as per label and local advisory.',
+//           url: 'products/insecticide/chlorantraniliprole-9-3-lambda-cyhalothrin-4-6-zc'
+//         },
         {
           name: 'Fipronil 40% + Imidacloprid 40% WG (FI 40)',
           image: 'assets/products/insecticide/fipronil-40-imidacloprid-40-wg.jpg',
@@ -176,13 +176,13 @@ export class ProductService {
           fullDescription: 'DELTA PLUS (Deltamethrin 11% w/w EC) is Harishree Crop Science\'s premium synthetic pyrethroid insecticide for bollworms, fruit borers, stem borers, caterpillars, thrips, and aphids in cotton, chilli, vegetables, paddy, pulses, and oilseeds. Recommended dose: 10 ml per pump.',
           url: 'products/insecticide/deltamethrin-11-w-w-ec-delta-plus'
         },
-        {
-          name: 'INTERPRID',
-          image: 'assets/products/insecticide/chlorfenapyr-10-sc.png',
-          description: 'Chlorfenapyr 10% SC pyrrole insecticide and acaricide',
-          fullDescription: 'INTERPRID (Chlorfenapyr 10% SC) is Harishree Crop Science\'s premium pyrrole insecticide and acaricide for thrips, mites, caterpillars, diamondback moth, and fruit borers in chilli, cotton, brinjal, tomato, cabbage, cauliflower, okra, and vegetables. Recommended dose: 30 ml per pump.',
-          url: 'products/chlorfenapyr-10-sc-interprid'
-        },
+//         {
+//           name: 'INTERPRID',
+//           image: 'assets/products/insecticide/chlorfenapyr-10-sc.png',
+//           description: 'Chlorfenapyr 10% SC pyrrole insecticide and acaricide',
+//           fullDescription: 'INTERPRID (Chlorfenapyr 10% SC) is Harishree Crop Science\'s premium pyrrole insecticide and acaricide for thrips, mites, caterpillars, diamondback moth, and fruit borers in chilli, cotton, brinjal, tomato, cabbage, cauliflower, okra, and vegetables. Recommended dose: 30 ml per pump.',
+//           url: 'products/chlorfenapyr-10-sc-interprid'
+//         },
         {
           name: 'Eclipse',
           image: 'assets/products/insecticide/ethion-40-cypermethrin-5-ec.jpg',
@@ -221,19 +221,19 @@ export class ProductService {
           description: 'Propargite 57% EC dedicated acaricide',
           fullDescription: 'Mite (Propargite 57% EC) is a specialist acaricide engineered to knock down and control red spider mites and other damaging mite species. Its contact action provides quick results while the advanced EC system improves spread and coverage over dense canopies for dependable field performance.'
         },
-        {
-          name: 'Oscar',
-          image: 'assets/products/insecticide/oscar.jpg',
-          description: 'Reliable broad-spectrum insecticide',
-          fullDescription: 'Oscar is a reliable, grower-friendly insecticide designed for consistent control of key sucking and chewing pests. The formulation focuses on superior coverage, quick uptake and strong adherence to plant surfaces, supporting clean foliage and market-ready produce with minimal sprays.'
-        },
-        {
-          name: 'Pilot',
-          image: 'assets/products/insecticide/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc.jpg',
-          description: 'Pyriproxyfen 8% + Dinotefuran 5% + Diafenthiuron 18% SC',
-          fullDescription: 'Pilot (Pyriproxyfen 8% + Dinotefuran 5% + Diafenthiuron 18% SC) combines three proven actives to deliver a modern triple-action assault on whitefly, aphids, thrips, and jassids. The unique blend targets multiple life stages with rapid knockdown, strong systemic movement, IGR lifecycle disruption, and lasting residual control with excellent crop safety.',
-          url: 'products/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc-pilot'
-        },
+//         {
+//           name: 'Oscar',
+//           image: 'assets/products/insecticide/oscar.jpg',
+//           description: 'Reliable broad-spectrum insecticide',
+//           fullDescription: 'Oscar is a reliable, grower-friendly insecticide designed for consistent control of key sucking and chewing pests. The formulation focuses on superior coverage, quick uptake and strong adherence to plant surfaces, supporting clean foliage and market-ready produce with minimal sprays.'
+//         },
+//         {
+//           name: 'Pilot',
+//           image: 'assets/products/insecticide/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc.jpg',
+//           description: 'Pyriproxyfen 8% + Dinotefuran 5% + Diafenthiuron 18% SC',
+//           fullDescription: 'Pilot (Pyriproxyfen 8% + Dinotefuran 5% + Diafenthiuron 18% SC) combines three proven actives to deliver a modern triple-action assault on whitefly, aphids, thrips, and jassids. The unique blend targets multiple life stages with rapid knockdown, strong systemic movement, IGR lifecycle disruption, and lasting residual control with excellent crop safety.',
+//           url: 'products/pyriproxyfen-8-dinotefuran-5-diafenthiuron-18-sc-pilot'
+//         },
         {
           name: 'Pro 5G',
           image: 'assets/products/insecticide/emamectin-benzoate-1-5-fipronil-3-5-sc.jpg',
@@ -269,20 +269,20 @@ export class ProductService {
           fullDescription: 'FENVAL (Fenvalerate 20% EC) is Harishree Crop Science\'s premium synthetic pyrethroid insecticide with contact and stomach action for bollworms, caterpillars, borers, and chewing pests on cotton, chilli, vegetables, and pulses. Field guidance: 30 ml per pump.',
           url: 'products/insecticide/fenvalerate-20-ec-fenval'
         },
-        {
-          name: 'Runner',
-          image: 'assets/products/insecticide/novaluron-10-ec--.png',
-          description: 'Novaluron 10% EC IGR insecticide',
-          fullDescription: 'RUNNER (Novaluron 10% EC) is Harishree Crop Science\'s premium benzoylurea insect growth regulator for fruit borers, pod borers, bollworms, and caterpillars on cotton, chilli, tomato, cabbage, pulses, soybean, and vegetables. Field guidance: 20 ml per pump when used at early larval stage as per label and local advisory.',
-          url: 'products/insecticide/novaluron-10-ec-runner'
-        },
-        {
-          name: 'Yoddha',
-          image: 'assets/products/insecticide/flufenzine-20-ec.jpg',
-          description: 'Flufenzine 20% EC miticide/acaricide',
-          fullDescription: 'YODDHA (Flufenzine 20% EC) is Harishree Crop Science\'s premium miticide and acaricide for red spider mites, yellow mites, and broad mites on chilli, cotton, brinjal, tomato, vegetables, and horticulture crops. Field guidance: 25 ml per pump when used at early mite infestation as per label and local advisory.',
-          url: 'products/insecticide/flufenzine-20-ec-yoddha'
-        },
+//         {
+//           name: 'Runner',
+//           image: 'assets/products/insecticide/novaluron-10-ec--.png',
+//           description: 'Novaluron 10% EC IGR insecticide',
+//           fullDescription: 'RUNNER (Novaluron 10% EC) is Harishree Crop Science\'s premium benzoylurea insect growth regulator for fruit borers, pod borers, bollworms, and caterpillars on cotton, chilli, tomato, cabbage, pulses, soybean, and vegetables. Field guidance: 20 ml per pump when used at early larval stage as per label and local advisory.',
+//           url: 'products/insecticide/novaluron-10-ec-runner'
+//         },
+//         {
+//           name: 'Yoddha',
+//           image: 'assets/products/insecticide/flufenzine-20-ec.jpg',
+//           description: 'Flufenzine 20% EC miticide/acaricide',
+//           fullDescription: 'YODDHA (Flufenzine 20% EC) is Harishree Crop Science\'s premium miticide and acaricide for red spider mites, yellow mites, and broad mites on chilli, cotton, brinjal, tomato, vegetables, and horticulture crops. Field guidance: 25 ml per pump when used at early mite infestation as per label and local advisory.',
+//           url: 'products/insecticide/flufenzine-20-ec-yoddha'
+//         },
         {
           name: 'H Gor',
           image: 'assets/products/insecticide/dimethoate-30-ec.jpg',
@@ -302,13 +302,13 @@ export class ProductService {
     {
       name: 'Fungicide',
       products: [
-        {
-          name: 'X-Pro',
-          image: 'assets/products/X-PRO.png',
-          description: 'Azoxystrobin 16.7% + Tricyclazole 33.3% SC dual-action fungicide',
-          fullDescription: 'X PRO (Azoxystrobin 16.7% + Tricyclazole 33.3% SC) is a premium dual-action systemic fungicide for rice blast control, sheath blight, and brown spot in paddy. Recommended dose: 20 ml per pump.',
-          url: 'products/x-pro-azoxystrobin-16-7-tricyclazole-33-3-sc'
-        },
+//         {
+//           name: 'X-Pro',
+//           image: 'assets/products/X-PRO.png',
+//           description: 'Azoxystrobin 16.7% + Tricyclazole 33.3% SC dual-action fungicide',
+//           fullDescription: 'X PRO (Azoxystrobin 16.7% + Tricyclazole 33.3% SC) is a premium dual-action systemic fungicide for rice blast control, sheath blight, and brown spot in paddy. Recommended dose: 20 ml per pump.',
+//           url: 'products/x-pro-azoxystrobin-16-7-tricyclazole-33-3-sc'
+//         },
         {
           name: 'Confer Plus',
           image: 'assets/products/fungicide/confer-plus.jpg',
@@ -316,21 +316,21 @@ export class ProductService {
           fullDescription: 'Confer Plus (Hexaconazole 5% SC) is a premium, broad-spectrum systemic fungicide engineered for modern farming. Its advanced triazole chemistry moves rapidly within plant tissues to stop fungal growth at multiple stages, delivering fast-acting, long-lasting protection. Ideal for crops such as cereals, fruits and vegetables, it effectively controls diseases like powdery mildew, sheath blight and leaf spots. The optimized suspension concentrate ensures superior leaf coverage, rainfastness and excellent tank-mix compatibility. Designed for professional use, Confer Plus supports higher yield quality with reliable performance across climates and application methods while maintaining a strong safety profile when used as directed.'
         },
         { name: 'Tej-65', image: 'assets/products/TEJ 65.png', description: 'Rapid fungicide action' },
-        {
-          name: 'Chemistry',
-          image: 'assets/products/insecticide/azoxystrobin-11-tebuconazole-18-3-sc.jpg',
-          description: 'Azoxystrobin + Tebuconazole dual-action fungicide',
-          fullDescription:
-            'Chemistry (Azoxystrobin 11% + Tebuconazole 18.3% w/w SC) is a premium broad-spectrum systemic fungicide by Harishree Crop Science for preventive and curative fungal disease control. Recommended dose: 20 ml per pump.',
-          url: 'products/chemistry-azoxystrobin-11-tebuconazole-18-3-sc'
-        },
-        {
-          name: 'N-Tracol',
-          image: 'assets/products/fungicide/propineb-70-wp.jpg',
-          description: 'Propineb 70% WP contact fungicide',
-          fullDescription: 'N-Tracol (Propineb 70% WP) is a premium contact fungicide formulated for exceptional disease control across a wide range of crops. This professional-grade solution creates a powerful protective barrier that prevents fungal spore germination and inhibits mycelial growth. With its multi-site mode of action, N-Tracol effectively manages resistance development while providing outstanding control of downy mildew, early and late blights, and various leaf spots. The advanced wettable powder formulation ensures superior coverage, excellent rainfastness, and optimal adhesion to plant surfaces, delivering consistent protection even under challenging weather conditions. Trusted by commercial growers, N-Tracol safeguards crop quality and yield potential with its reliable performance and excellent crop safety profile.',
-          url: 'products/propineb-70-wp-n-tracol'
-        },
+//         {
+//           name: 'Chemistry',
+//           image: 'assets/products/insecticide/azoxystrobin-11-tebuconazole-18-3-sc.jpg',
+//           description: 'Azoxystrobin + Tebuconazole dual-action fungicide',
+//           fullDescription:
+//             'Chemistry (Azoxystrobin 11% + Tebuconazole 18.3% w/w SC) is a premium broad-spectrum systemic fungicide by Harishree Crop Science for preventive and curative fungal disease control. Recommended dose: 20 ml per pump.',
+//           url: 'products/chemistry-azoxystrobin-11-tebuconazole-18-3-sc'
+//         },
+//         {
+//           name: 'N-Tracol',
+//           image: 'assets/products/fungicide/propineb-70-wp.jpg',
+//           description: 'Propineb 70% WP contact fungicide',
+//           fullDescription: 'N-Tracol (Propineb 70% WP) is a premium contact fungicide formulated for exceptional disease control across a wide range of crops. This professional-grade solution creates a powerful protective barrier that prevents fungal spore germination and inhibits mycelial growth. With its multi-site mode of action, N-Tracol effectively manages resistance development while providing outstanding control of downy mildew, early and late blights, and various leaf spots. The advanced wettable powder formulation ensures superior coverage, excellent rainfastness, and optimal adhesion to plant surfaces, delivering consistent protection even under challenging weather conditions. Trusted by commercial growers, N-Tracol safeguards crop quality and yield potential with its reliable performance and excellent crop safety profile.',
+//           url: 'products/propineb-70-wp-n-tracol'
+//         },
         {
           name: 'Sulf Green',
           image: 'assets/products/fungicide/sulf-green.jpg',
@@ -338,13 +338,13 @@ export class ProductService {
           fullDescription: 'Sulf Green (Sulphur 80% WDG) is a versatile, high-performance fungicide and acaricide formulated for modern agriculture. This water-dispersible granule delivers exceptional control of powdery mildew, rust diseases, and mite infestations across fruits, vegetables, and field crops. The premium-grade elemental sulphur provides both preventive and curative action through multiple biochemical pathways, effectively disrupting fungal respiration while maintaining excellent crop safety. Sulf Green\'s advanced formulation technology ensures quick dispersion, uniform coverage, and enhanced adhesion to plant surfaces, resulting in superior disease control even under variable weather conditions. With its eco-friendly profile and minimal residue concerns, Sulf Green integrates seamlessly into sustainable pest management programs, supporting healthier crops and optimized yields for professional growers.',
           url: 'product/sulf-green'
         },
-        {
-          name: 'Saf-63',
-          image: 'assets/products/carbendazim-12-mancozeb-63-wp--.png',
-          description: 'Carbendazim 12% + Mancozeb 63% WP dual-action fungicide',
-          fullDescription: 'Saf 63 (Carbendazim 12% + Mancozeb 63% WP) is a premium dual-action fungicide by Harishree Crop Science that pairs systemic curative Carbendazim with multi-site contact Mancozeb. This combination delivers broad-spectrum preventive and curative control of blast, leaf spot, rust, anthracnose, fruit rot, powdery mildew, alternaria, and seedling diseases across paddy, groundnut, soybean, tomato, chilli, grapes, mango, and cotton. The systemic plus contact action protects the plant both inside and out, supports resistance management, and provides longer residual activity. Recommended dose: 20 gm per pump.',
-          url: 'products/carbendazim-12-mancozeb-63-wp-saf-63'
-        },
+//         {
+//           name: 'Saf-63',
+//           image: 'assets/products/carbendazim-12-mancozeb-63-wp--.png',
+//           description: 'Carbendazim 12% + Mancozeb 63% WP dual-action fungicide',
+//           fullDescription: 'Saf 63 (Carbendazim 12% + Mancozeb 63% WP) is a premium dual-action fungicide by Harishree Crop Science that pairs systemic curative Carbendazim with multi-site contact Mancozeb. This combination delivers broad-spectrum preventive and curative control of blast, leaf spot, rust, anthracnose, fruit rot, powdery mildew, alternaria, and seedling diseases across paddy, groundnut, soybean, tomato, chilli, grapes, mango, and cotton. The systemic plus contact action protects the plant both inside and out, supports resistance management, and provides longer residual activity. Recommended dose: 20 gm per pump.',
+//           url: 'products/carbendazim-12-mancozeb-63-wp-saf-63'
+//         },
         {
           name: 'Milet Gold',
           image: 'assets/products/fungicide/metalaxyl-8-mancozeb-64-wp.jpg',
@@ -367,14 +367,14 @@ export class ProductService {
             'King (Azoxystrobin 4.8% w/w + Chlorothalonil 40.0% w/w SC) is a premium broad-spectrum systemic plus contact fungicide by Harishree Crop Science for preventive and curative control of early blight, late blight, leaf spot, rust, anthracnose, and downy mildew. Recommended dose: 30 ml per pump.',
           url: 'products/azoxystrobin-4-8-chlorothalonil-40-sc-king'
         },
-        {
-          name: 'Captop',
-          image: 'assets/products/fungicide/azoxystrobin-18-2-difenoconazole-11-4-sc.jpg',
-          description: 'Azoxystrobin 18.2% + Difenoconazole 11.4% SC dual-action fungicide',
-          fullDescription:
-            'Captop (Azoxystrobin 18.2% w/w + Difenoconazole 11.4% w/w SC) is a premium broad-spectrum systemic fungicide by Harishree Crop Science for preventive and curative control of powdery mildew, anthracnose, rust, leaf spot, fruit rot, and sheath blight. Recommended dose: 20 ml per pump.',
-          url: 'products/captop-azoxystrobin-18-2-difenoconazole-11-4-sc'
-        },
+//         {
+//           name: 'Captop',
+//           image: 'assets/products/fungicide/azoxystrobin-18-2-difenoconazole-11-4-sc.jpg',
+//           description: 'Azoxystrobin 18.2% + Difenoconazole 11.4% SC dual-action fungicide',
+//           fullDescription:
+//             'Captop (Azoxystrobin 18.2% w/w + Difenoconazole 11.4% w/w SC) is a premium broad-spectrum systemic fungicide by Harishree Crop Science for preventive and curative control of powdery mildew, anthracnose, rust, leaf spot, fruit rot, and sheath blight. Recommended dose: 20 ml per pump.',
+//           url: 'products/captop-azoxystrobin-18-2-difenoconazole-11-4-sc'
+//         },
         {
           name: 'Tebuja',
           image: 'assets/products/fungicide/tebuconazole-25-9--ec.jpg',

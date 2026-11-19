@@ -533,13 +533,13 @@ export class Chlorfenapyr10ScInterpridComponent implements OnInit, OnDestroy {
   ];
 
   relatedProducts = [
-    {
-      name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
-      description: 'Dual-action insecticide for thrips, whiteflies, aphids, jassids, and mites in cotton and vegetables.',
-      route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se',
-      image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
-      imageAlt: 'MEGNUM Tolfenpyrad 15% + Bifenthrin 7.5% SE insecticide by Harishree Crop Science'
-    },
+//     {
+//       name: 'MEGNUM (Tolfenpyrad + Bifenthrin SE)',
+//       description: 'Dual-action insecticide for thrips, whiteflies, aphids, jassids, and mites in cotton and vegetables.',
+//       route: '/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se',
+//       image: 'assets/products/insecticide/tolfenpyrad-15-bifenthrin-7-5-se.png',
+//       imageAlt: 'MEGNUM Tolfenpyrad 15% + Bifenthrin 7.5% SE insecticide by Harishree Crop Science'
+//     },
     {
       name: 'TURBO (Novaluron + Indoxacarb SC)',
       description: 'Dual-action IGR and oxadiazine insecticide for caterpillar, DBM, and borer control with knockdown plus moult disruption.',
@@ -561,13 +561,13 @@ export class Chlorfenapyr10ScInterpridComponent implements OnInit, OnDestroy {
       image: 'assets/products/insecticide/profenofos-50-ec.jpg',
       imageAlt: 'EXTRA PROFEX Profenofos 50% EC insecticide by Harishree Crop Science'
     },
-    {
-      name: 'RUNNER (Novaluron 10% EC)',
-      description: 'IGR insecticide for caterpillar and DBM control through moult disruption in vegetables and cole crops.',
-      route: '/products/insecticide/novaluron-10-ec-runner',
-      image: 'assets/products/insecticide/novaluron-10-ec--.png',
-      imageAlt: 'RUNNER Novaluron 10% EC insecticide by Harishree Crop Science'
-    },
+//     {
+//       name: 'RUNNER (Novaluron 10% EC)',
+//       description: 'IGR insecticide for caterpillar and DBM control through moult disruption in vegetables and cole crops.',
+//       route: '/products/insecticide/novaluron-10-ec-runner',
+//       image: 'assets/products/insecticide/novaluron-10-ec--.png',
+//       imageAlt: 'RUNNER Novaluron 10% EC insecticide by Harishree Crop Science'
+//     },
     {
       name: 'FENVAL (Fenvalerate 20% EC)',
       description: 'Synthetic pyrethroid insecticide for bollworms, caterpillars, and chewing pests in cotton and vegetables.',
