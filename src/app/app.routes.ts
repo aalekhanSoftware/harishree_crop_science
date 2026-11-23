@@ -99,7 +99,7 @@ export const routes: Routes = [
   { path: 'product/gibberellic-acid-0-001-l', loadComponent: () => import('./pages/all-products/gibberellic-acid-0-001-l-husi/gibberellic-acid-0-001-l-husi.component').then(m => m.GibberellicAcid0001LHusiComponent) },
   { path: 'product/husi', redirectTo: 'products/gibberellic-acid-0-001-l-husi', pathMatch: 'full' },
   { path: 'products/:productName', loadComponent: () => import('./pages/products/products.component').then(m => m.ProductsComponent) },
-  { path: 'catalogue', loadComponent: () => import('./pages/catalogue/catalogue.component').then(m => m.CatalogueComponent) },
+  // { path: 'catalogue', loadComponent: () => import('./pages/catalogue/catalogue.component').then(m => m.CatalogueComponent) },
   { path: 'research', loadComponent: () => import('./pages/research/research.component').then(m => m.ResearchComponent) },
   { path: 'quality-assurance', loadComponent: () => import('./pages/quality-assurance/quality-assurance.component').then(m => m.QualityAssuranceComponent) },
   { path: 'product/emamectin-benzoate-5-sg', loadComponent: () => import('./pages/all-products/emamectin-benzoate-5-sg/emamectin-benzoate-5-sg.component').then(m => m.EmamectinBenzoate5SgComponent) },

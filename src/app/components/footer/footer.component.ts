@@ -37,7 +37,7 @@ export class FooterComponent implements OnInit, OnDestroy {
     { name: 'Contact Us', path: '/contact-us' },
     { name: 'R&D', path: '/research' },
     { name: 'Quality', path: '/quality-assurance' },
-    { name: 'Catalogue', path: '/catalogue' }
+    // { name: 'Catalogue', path: '/catalogue' }
   ];
 
   readonly allProductsLink: FooterNavLink = { name: 'All Products', path: '/products' };

@@ -76,12 +76,14 @@ server.get('/sitemap.xml', (req, res) => {
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
     </url>
+    <!-- Catalogue page removed - catalogue PDF taken off the website
     <url>
       <loc>${req.protocol}://${req.get('host')}/catalogue</loc>
       <lastmod>${new Date().toISOString()}</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
     </url>
+    -->
     <url>
       <loc>${req.protocol}://${req.get('host')}/research</loc>
       <lastmod>${new Date().toISOString()}</lastmod>

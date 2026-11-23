@@ -2,7 +2,6 @@
   "routes": [
     "/",
     "/about-us",
-    "/catalogue",
     "/contact-us",
     "/product/abamectin-1-9-ec",
     "/product/acephate-75-sp",

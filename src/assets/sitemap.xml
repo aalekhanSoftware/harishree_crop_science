@@ -44,12 +44,14 @@
   </url>
 
   <!-- Catalogue -->
+  <!-- Catalogue page removed - catalogue PDF taken off the website
   <url>
     <loc>https://harishreecropscience.com/catalogue</loc>
     <lastmod>2025-01-31T12:05:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
+  -->
 
   <!-- About Us -->
   <url>
